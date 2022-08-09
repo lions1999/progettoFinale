@@ -7,8 +7,6 @@ S
 Osrc/logic/controller/guicontroller/second/general/registration/RegisterGUI.java,f\c\fc5a959091defefb858c8077379f1d44cc9afac4
 f
 6src/logic/engineeringclasses/query/ApartmentQuery.java,9\1\9156634883594c7e484109b8ddcbf8d1745a4e8d
-H
-src/logic/model/Fee.java,c\1\c15f424fc2142a0f358337bef9c9176f87ab05a6
 ]
 -src/logic/engineeringclasses/dao/UserDAO.java,f\4\f4cd4a47447355b59569130f117571d07b7b5e27
 |
@@ -17,8 +15,6 @@ s
 Csrc/logic/controller/applicationcontroller/ApartmentController.java,c\b\cb087b39c1cfb8c8ebc1d4fe97068f85e35a0d9c
 \
 ,src/logic/engineeringclasses/dao/FeeDAO.java,7\f\7f332dca5db890e94ea80afa1c3ef3d7e9f53687
-b
-2src/logic/engineeringclasses/dao/ApartmentDAO.java,6\c\6c6ef7ac17243997380326c41e19ab1701a6044e
 ]
 -src/logic/engineeringclasses/dao/MeetDAO.java,d\9\d9d51e99a433ef99a11b98ea1a533f4d372c45c0
 o

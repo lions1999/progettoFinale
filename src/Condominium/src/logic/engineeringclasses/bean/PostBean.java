@@ -12,39 +12,39 @@ public class PostBean {
 	private InputStream img;
 	private String text;
 	
-	public String getId() {
+	public String getPostId() {
 		return this.id;
 	}
 
-	public void setId(String id) {
+	public void setPostId(String id) {
 		this.id = id;
 	}
 
-	public void setUser(String usr) {
+	public void setPostUser(String usr) {
 		this.usr = usr;
 	}
 	
-	public String getUser() {
+	public String getPostUser() {
 		return this.usr;
 	}
 
-	public void setRole(Role role){this.role = role;}
+	public void setPostRole(Role role){this.role = role;}
 
-	public Role getRole(){return this.role;}
+	public Role getPostRole(){return this.role;}
 	
-	public void setImage(InputStream img) {
+	public void setPostImage(InputStream img) {
 		this.img = img;
 	}
 	
-	public InputStream getImage() {
+	public InputStream getPostImage() {
 		return this.img;
 	}	
 
-	public String getText() {
+	public String getPostText() {
 		return text;
 	}
 
-	public void setText(String text) {
+	public void setPostText(String text) {
 		this.text = text;
 	}
 }

@@ -21,67 +21,43 @@ public class FeeBean {
         this.apartment = apartment;
     }
 
-    public Double getWater() {
-        return water;
-    }
-
-    public void setWater(Double water) {
-        this.water = water;
-    }
-
-    public Double getGas() {
-        return gas;
-    }
-
-    public void setGas(Double gas) {
-        this.gas = gas;
-    }
-
-    public Double getElect() {
-        return elect;
-    }
-
-    public void setElect(Double elect) {
-        this.elect = elect;
-    }
-
-    public Double getAdmin() {
+    public Double getFeeAdmin() {
         return admin;
     }
 
-    public void setAdmin(Double admin) {
+    public void setFeeAdmin(Double admin) {
         this.admin = admin;
     }
 
-    public Double getPark() {
+    public Double getFeePark() {
         return park;
     }
 
-    public void setPark(Double park) {
+    public void setFeePark(Double park) {
         this.park = park;
     }
 
-    public Double getElevator() {
+    public Double getFeeElevator() {
         return elevator;
     }
 
-    public void setElevator(Double elevator) {
+    public void setFeeElevator(Double elevator) {
         this.elevator = elevator;
     }
 
-    public Double getPet() {
+    public Double getFeePet() {
         return pet;
     }
 
-    public void setPet(Double pet) {
+    public void setFeePet(Double pet) {
         this.pet = pet;
     }
 
-    public Double getWifi() {
+    public Double getFeeWifi() {
         return wifi;
     }
 
-    public void setWifi(Double wifi) {
+    public void setFeeWifi(Double wifi) {
         this.wifi = wifi;
     }
 

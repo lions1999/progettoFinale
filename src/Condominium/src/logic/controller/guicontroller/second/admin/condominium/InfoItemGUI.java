@@ -118,10 +118,10 @@ public class InfoItemGUI {
 
     private RateBean setUpReview(Rate rate) {
         RateBean bean = new RateBean();
-        bean.setRateId(rate.getRateId());
-        bean.setResId(rate.getResId());
-        bean.setRateVal(rate.getRateVal());
-        bean.setRateTxt(rate.getRateTxt());
+        bean.setRateBeanId(rate.getRateId());
+        bean.setResBeanId(rate.getResId());
+        bean.setRateBeanVal(rate.getRateVal());
+        bean.setRateBeanTxt(rate.getRateTxt());
         return bean;
     }
 
