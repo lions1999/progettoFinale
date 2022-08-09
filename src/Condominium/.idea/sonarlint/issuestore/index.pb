@@ -17,10 +17,6 @@ H
 -src/logic/engineeringclasses/dao/UserDAO.java,f\4\f4cd4a47447355b59569130f117571d07b7b5e27
 |
 Lsrc/logic/controller/guicontroller/second/owner/RequestMeetingDialogGUI.java,5\e\5e230d3718486236d0883483d335bcabbbb42d2d
-}
-Msrc/logic/controller/guicontroller/first/admin/condominium/InfoDetailGUI.java,1\6\1612c217072a3d1996ef3a8005d5f1b909f72f08
-o
-?src/logic/controller/applicationcontroller/EmailController.java,3\9\39a3412cb594f0d7d4f3725da4e77f52c5741031
 s
 Csrc/logic/controller/applicationcontroller/ApartmentController.java,c\b\cb087b39c1cfb8c8ebc1d4fe97068f85e35a0d9c
 \
