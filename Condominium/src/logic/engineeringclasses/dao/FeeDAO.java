@@ -44,20 +44,20 @@ public class FeeDAO extends SqlDAO{
         return fee;
     }
 
-    public void addFees(FeeBean fee,String table) throws SQLException{
+    public void addFees(FeeBean feeBean,String table) throws SQLException{
         try{
             String sql = "INSERT INTO "+table+" (fee_apt,fee_admin,fee_park,fee_elevator,fee_pet,fee_wifi) VALUES (?,?,?,?,?,?)";
             preset = prepConnect(sql);
-            preset.setString(1,fee.getApt());
-            preset.setDouble(2,fee.getAdmin());
-            if(fee.getPark().equals(0.0)) preset.setNull(3, Types.NULL);
-            else preset.setDouble(3,fee.getPark());
-            if(fee.getElevator().equals(0.0)) preset.setNull(4, Types.NULL);
-            else preset.setDouble(4,fee.getElevator());
-            if(fee.getPet().equals(0.0)) preset.setNull(5, Types.NULL);
-            else preset.setDouble(5,fee.getPet());
-            if(fee.getWifi().equals(0.0)) preset.setNull(6, Types.NULL);
-            else preset.setDouble(6,fee.getWifi());
+            preset.setString(1,feeBean.getApt());
+            preset.setDouble(2,feeBean.getFeeAdmin());
+            if(feeBean.getFeePark().equals(0.0)) preset.setNull(3, Types.NULL);
+            else preset.setDouble(3,feeBean.getFeePark());
+            if(feeBean.getFeeElevator().equals(0.0)) preset.setNull(4, Types.NULL);
+            else preset.setDouble(4,feeBean.getFeeElevator());
+            if(feeBean.getFeePet().equals(0.0)) preset.setNull(5, Types.NULL);
+            else preset.setDouble(5,feeBean.getFeePet());
+            if(feeBean.getFeeWifi().equals(0.0)) preset.setNull(6, Types.NULL);
+            else preset.setDouble(6,feeBean.getFeeWifi());
             preset.execute();
         } finally {
             disconnect();
@@ -69,15 +69,15 @@ public class FeeDAO extends SqlDAO{
             connect();
             String sql = "UPDATE "+table+" SET fee_admin=?, fee_park=?, fee_elevator=?, fee_pet=?, fee_wifi=? WHERE fee_apt='"+fee.getApt()+"'";
             preset = prepConnect(sql);
-            preset.setDouble(1,fee.getAdmin());
-            if(fee.getPark().equals(0.0)) preset.setNull(2, Types.NULL);
-            else preset.setDouble(2,fee.getPark());
-            if(fee.getElevator().equals(0.0)) preset.setNull(3, Types.NULL);
-            else preset.setDouble(3,fee.getElevator());
-            if(fee.getPet().equals(0.0)) preset.setNull(4, Types.NULL);
-            else preset.setDouble(4,fee.getPet());
-            if(fee.getWifi().equals(0.0)) preset.setNull(5, Types.NULL);
-            else preset.setDouble(5,fee.getWifi());
+            preset.setDouble(1,fee.getFeeAdmin());
+            if(fee.getFeePark().equals(0.0)) preset.setNull(2, Types.NULL);
+            else preset.setDouble(2,fee.getFeePark());
+            if(fee.getFeeElevator().equals(0.0)) preset.setNull(3, Types.NULL);
+            else preset.setDouble(3,fee.getFeeElevator());
+            if(fee.getFeePet().equals(0.0)) preset.setNull(4, Types.NULL);
+            else preset.setDouble(4,fee.getFeePet());
+            if(fee.getFeeWifi().equals(0.0)) preset.setNull(5, Types.NULL);
+            else preset.setDouble(5,fee.getFeeWifi());
             preset.execute();
         } finally {
             disconnect();

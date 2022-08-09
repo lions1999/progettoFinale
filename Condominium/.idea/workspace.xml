@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e934ded-b2fb-4671-8a0c-f8e48abf4266" name="Changes" comment="fee and query code smells">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2e934ded-b2fb-4671-8a0c-f8e48abf4266" name="Changes" comment="fee and query code smells" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +72,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last.edited.regexp" value="dasdsa" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -114,7 +112,7 @@
       <module name="Condominium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="logic.controller.guicontroller.*" />
+          <option name="PATTERN" value="logic.controller.guicontroller.AlertGUI" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -301,6 +299,7 @@
       <workItem from="1644787593438" duration="387000" />
       <workItem from="1644788955923" duration="262000" />
       <workItem from="1644789656988" duration="707000" />
+      <workItem from="1660039445556" duration="5712000" />
     </task>
     <task id="LOCAL-00001" summary="prova pack">
       <created>1638798010140</created>

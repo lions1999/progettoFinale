@@ -60,26 +60,6 @@ public class ApartmentDAO extends SqlDAO{
         return list;
     }
 
-    public ObservableList<Apartment> loadApartments(String address) throws SQLException {
-        ObservableList<Apartment> apartments = FXCollections.observableArrayList();
-        ResultSet rs;
-        try {
-            connect();
-            rs = ApartmentQuery.loadApt(stmt,address);
-            while(rs.next()) {
-                String aptID = rs.getString(APARTMENT);
-                String aptAdd = rs.getString(APARTMENT_ADDRESS);
-                String aptOwn = rs.getString(APARTMENT_OWNER);
-                String aptRes = rs.getString(APARTMENT_RESIDENT);
-                Apartment apartment = new Apartment(aptID, aptAdd, userDao.checkNameByID(aptOwn), userDao.checkNameByID(aptRes), "0");
-                apartments.add(apartment);
-            }
-        } finally {
-            disconnect();
-        }
-        return apartments;
-    }
-
     public Apartment checkApartments(String userId,String condAddress, String typeUsr) throws SQLException{
         Apartment apartment = null;
         ResultSet rs;
@@ -119,28 +99,28 @@ public class ApartmentDAO extends SqlDAO{
         return list;
     }
 
-    public void addResident(String apartment,String address) throws SQLException{
+    public void addResident(String resApartment, String resAddress) throws SQLException{
         try{
             connect();
             String sql = "UPDATE apartment SET apt_res=? where apt_name=? and apt_addr=?";
             preset = prepConnect(sql);
             preset.setString(1, loadLatestId("users","user_id"));
-            preset.setString(2,apartment);
-            preset.setString(3,address);
+            preset.setString(2, resApartment);
+            preset.setString(3,resAddress);
             preset.executeUpdate();
         } finally {
             disconnect();
         }
     }
 
-    public void addOwner(String apartment, String address) throws SQLException{
+    public void addOwner(String ownApartment, String ownAddress) throws SQLException{
         try{
             connect();
             String sql = "UPDATE apartment SET apt_own=? where apt_name=? and apt_addr=?";
             preset = prepConnect(sql);
             preset.setString(1, loadLatestId("users","user_id"));
-            preset.setString(2,apartment);
-            preset.setString(3,address);
+            preset.setString(2,ownApartment);
+            preset.setString(3,ownAddress);
             preset.executeUpdate();
         } finally {
             disconnect();

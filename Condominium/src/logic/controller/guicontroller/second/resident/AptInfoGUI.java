@@ -20,6 +20,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import logic.controller.applicationcontroller.ApartmentController;
 import logic.controller.applicationcontroller.FeeController;
+import logic.controller.guicontroller.ChartGUI;
 import logic.model.Apartment;
 import logic.model.Fee;
 import logic.model.UserSingleton;
@@ -115,6 +116,8 @@ public class AptInfoGUI implements Initializable {
                 if (lastMonthFee.isSelected()){
                     ObservableList<PieChart.Data> valueList = chart.value(chartDataList,seriesName);
                     PieChart pc = chart.newPieChart(valueList,"Outgoing Last Month");
+                    pc.setPrefHeight((Screen.getPrimary().getBounds().getHeight()-300));
+                    pc.setPrefWidth(Screen.getPrimary().getBounds().getWidth()/4);
                     hBox.getChildren().add(pc);
                 } else if (!lastMonthFee.isSelected() && hBox.getChildren().size() == 2) {
                         hBox.getChildren().remove(1);
@@ -142,7 +145,8 @@ public class AptInfoGUI implements Initializable {
                 secondBorder.setRight(null);
                 break;
             case(BAR_CHART):
-                BarChart<String, Number> bc = chart.barChart("Fees","","Outgoings");
+                BarChart<String, Number> bc = chart.newBarChart("Fees","","Outgoings");
+                bc.setPrefWidth((Screen.getPrimary().getBounds().getWidth()/3));
                 XYChart.Series<String, Number> bcSeries = chart.newSeries(chartDataList,seriesName,chartTitle);
                 bc.getData().add(bcSeries);
                 tabChart.setContent(bc);
@@ -150,12 +154,15 @@ public class AptInfoGUI implements Initializable {
             case(PIE_CHART):
                 ObservableList<PieChart.Data> valueList = chart.value(chartDataList,seriesName);
                 PieChart pc = chart.newPieChart(valueList,chartTitle);
+                pc.setPrefHeight((Screen.getPrimary().getBounds().getHeight()-300));
+                pc.setPrefWidth(Screen.getPrimary().getBounds().getWidth()/4);
                 HBox hBox = new HBox(pc);
                 Pane paneC = new Pane(hBox);
                 tabChart.setContent(paneC);
                 break;
             case(LINE_CHART):
                 LineChart<String ,Number> lc = chart.newLineChart("Fees","","Outgoings");
+                lc.setPrefWidth((Screen.getPrimary().getBounds().getWidth()/3));
                 XYChart.Series<String, Number> lcSeries = chart.newSeries(chartDataList,seriesName,chartTitle);
                 lc.getData().add(lcSeries);
                 tabChart.setContent(lc);

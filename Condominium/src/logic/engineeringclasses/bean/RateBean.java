@@ -8,40 +8,40 @@ public class RateBean {
     private String rateVal;
     private String rateTxt;
 
-    public String getRateId(){
+    public String getRateBeanId(){
         return rateId;
     }
 
-    public void setRateId(String rateId){
+    public void setRateBeanId(String rateId){
         this.rateId = rateId;
     }
 
-    public String getOwnId() {return ownId;}
+    public String getOwnBeanId() {return ownId;}
 
-    public void setOwnId(String ownId) {
+    public void setOwnBeanId(String ownId) {
         this.ownId = ownId;}
 
-    public String getResId() {
+    public String getResBeanId() {
         return resId;
     }
 
-    public void setResId(String resId) {
+    public void setResBeanId(String resId) {
         this.resId = resId;
     }
 
-    public String getRateVal() {
+    public String getRateBeanVal() {
         return rateVal;
     }
 
-    public void setRateVal(String rateVal) {
+    public void setRateBeanVal(String rateVal) {
         this.rateVal = rateVal;
     }
 
-    public String getRateTxt() {
+    public String getRateBeanTxt() {
         return rateTxt;
     }
 
-    public void setRateTxt(String rateTxt) {
+    public void setRateBeanTxt(String rateTxt) {
         this.rateTxt = rateTxt;
     }
 }

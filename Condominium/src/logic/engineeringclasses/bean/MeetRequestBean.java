@@ -8,43 +8,43 @@ public class MeetRequestBean{
     private String object;
     private String textArea;
 
-    public String getId() {
+    public String getMeetId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setMeetId(String id) {
         this.id = id;
     }
 
-    public String getName() {
+    public String getMeetName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setMeetName(String name) {
         this.name = name;
     }
 
-    public String getAddress() {
+    public String getMeetAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setMeetAddress(String address) {
         this.address = address;
     }
 
-    public String getObject() {
+    public String getMeetObject() {
         return object;
     }
 
-    public void setObject(String object) {
+    public void setMeetObject(String object) {
         this.object = object;
     }
 
-    public String getTextArea() {
+    public String getMeetTextArea() {
         return textArea;
     }
 
-    public void setTextArea(String textArea) {
+    public void setMeetTextArea(String textArea) {
         this.textArea = textArea;
     }
 }
