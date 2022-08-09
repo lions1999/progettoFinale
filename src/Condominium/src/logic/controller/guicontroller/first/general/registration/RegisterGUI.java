@@ -23,32 +23,32 @@ import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
 
 public class RegisterGUI implements Initializable{
 	 
-	private final RegisterController controller = new RegisterController();
-	private final ViewController view = new ViewController();
-	private final AlertGUI alert = new AlertGUI();
+	private final RegisterController registerController = new RegisterController();
+	private final ViewController viewController = new ViewController();
+	private final AlertGUI alertGUI = new AlertGUI();
 
-	@FXML private TextField tfName;
-	@FXML private TextField tfSurname;
-	@FXML private TextField tfEmail;
-	@FXML private PasswordField tfPassword;
-	@FXML private PasswordField tfOkPwd;
-	@FXML private ComboBox<String> roleBox;
-    @FXML private ComboBox<String> addressBox;
+	@FXML private TextField tfname;
+	@FXML private TextField tfsurname;
+	@FXML private TextField tfemail;
+	@FXML private PasswordField tfpassword;
+	@FXML private PasswordField tfokpwd;
+	@FXML private ComboBox<String> rolebox;
+    @FXML private ComboBox<String> addressbox;
 
 	@FXML private void onSignClick() {
-		Pane pane = view.getPage("Login",1);
+		Pane pane = viewController.getPage("Login",1);
 		firstBorder.setCenter(pane);
     }
 
     @FXML
     void onSignupClick() throws IOException, SQLException {
-    	UserBean bean = getUsrBean(tfName.getText(),tfSurname.getText(),tfEmail.getText(),tfPassword.getText(),tfOkPwd.getText(),roleBox.getValue(),addressBox.getValue());
-		if(controller.registration(bean)){
+    	UserBean bean = getUsrBean(tfname.getText(), tfsurname.getText(), tfemail.getText(), tfpassword.getText(), tfokpwd.getText(), rolebox.getValue(), addressbox.getValue());
+		if(registerController.registration(bean)){
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(getClass().getResource("/logic/view/first/SelectApartmentDialog.fxml"));
 			DialogPane pane = loader.load();
 			SelectApartmentDialogGUI apt = loader.getController();
-			ObservableList<String> list = controller.loadAddress(bean);
+			ObservableList<String> list = registerController.loadAddress(bean);
 			apt.setUp(list,bean);
 			Dialog<ButtonType> dialog = new Dialog<>();
 			dialog.setDialogPane(pane);
@@ -57,14 +57,14 @@ public class RegisterGUI implements Initializable{
 				for(String aptName : apt.getApt()){
 					String name = bean.getUsrName() +" "+ bean.getUsrSurname();
 					User user = new User(null,name,bean.getUsrEmail(),bean.getUsrPwd(),bean.getUsrAddr());
-					controller.addRegistrationUser(user,bean.getUsrRole().toUpperCase(),aptName);
+					registerController.addRegistrationUser(user,bean.getUsrRole().toUpperCase(),aptName);
 				}
-				alert.alertInfo("Condominium/Register/Info","Successful Registration" ,
+				alertGUI.alertInfo("Condominium/Register/Info","Successful Registration" ,
 						"Your request has successfully sent to the administrator of the condominium");
 				clearState();
 			}
 		}else{
-			alert.alertError("Condominium/Register/Error","Incorrect Data","ERROR TYPE:\nDATABASE NOT CONNECTED\nEmpty Fields\nPASSWORD:least one letter and one number maximum 15 charters\nPassword mismatch");
+			alertGUI.alertError("Condominium/Register/Error","Incorrect Data","ERROR TYPE:\nDATABASE NOT CONNECTED\nEmpty Fields\nPASSWORD:least one letter and one number maximum 15 charters\nPassword mismatch");
 		}
     }
 
@@ -81,26 +81,26 @@ public class RegisterGUI implements Initializable{
 	}
 
     private void clearState() {
-    	tfName.setText("");
-    	tfSurname.setText("");
-    	tfEmail.setText("");
-    	tfPassword.setText("");
-    	tfOkPwd.setText("");
-    	roleBox.setValue(null);
-    	addressBox.setValue(null);
+    	tfname.setText("");
+    	tfsurname.setText("");
+    	tfemail.setText("");
+    	tfpassword.setText("");
+    	tfokpwd.setText("");
+    	rolebox.setValue(null);
+    	addressbox.setValue(null);
     }
 
     private void setUp() {
-    	roleBox.getItems().addAll("Resident","Owner");
+    	rolebox.getItems().addAll("Resident","Owner");
     }
 
     @Override
    	public void initialize(URL location, ResourceBundle resources){
        	setUp();
        	try {
-			 addressBox.setItems(controller.loadAddresses());
+			 addressbox.setItems(registerController.loadAddresses());
 		 }catch(Exception e) {
-			 alert.alertError("DATA BASE ERROR","DATA BASE not connected ","Please Restart the Application");
+			 alertGUI.alertError("DATA BASE ERROR","DATA BASE not connected ","Please Restart the Application");
 			 Platform.exit();
 		 }
     }

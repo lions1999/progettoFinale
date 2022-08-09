@@ -1,14 +1,10 @@
 
-q
-Asrc/logic/controller/guicontroller/first/resident/AptInfoGUI.java,2\7\27afda862601c1e3023279a266b9e93d46dc8511
 a
 1src/logic/engineeringclasses/query/UserQuery.java,2\d\2d2d3711426460221ee0198d419443b4c66cafcb
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 
 Osrc/logic/controller/guicontroller/second/general/registration/RegisterGUI.java,f\c\fc5a959091defefb858c8077379f1d44cc9afac4
-~
-Nsrc/logic/controller/guicontroller/first/general/registration/RegisterGUI.java,0\6\06362b3eca927b7b273bbda44cf9e2d5c6baaf48
 f
 6src/logic/engineeringclasses/query/ApartmentQuery.java,9\1\9156634883594c7e484109b8ddcbf8d1745a4e8d
 H

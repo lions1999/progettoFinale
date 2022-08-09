@@ -126,7 +126,7 @@ public class AptInfoGUI extends Main1GUI implements Initializable {
         submitLastMonth();
     }
 
-    private void noFee(Text t){
+    private void thereAreNoFee(Text t){
         t.setText("Unavailable in your Condominium");
     }
 
@@ -142,13 +142,17 @@ public class AptInfoGUI extends Main1GUI implements Initializable {
             sg.setPastfee(pastFee);
 
             if (boolFee.getAvailablePark()) { tfPark.setText(currentFee.getPark() + " €"); tfPastPark.setText(pastFee.getPark() + " €");}
-            else {noFee(tfPark); noFee(tfPastPark);}
+            else {
+                thereAreNoFee(tfPark); thereAreNoFee(tfPastPark);}
             if (boolFee.getAvailableElevator()) { tfElevator.setText(currentFee.getElevator() + " €"); tfPastElevator.setText(pastFee.getElevator()+" €"); }
-            else {noFee(tfElevator); noFee(tfPastElevator);}
+            else {
+                thereAreNoFee(tfElevator); thereAreNoFee(tfPastElevator);}
             if (boolFee.getAvailablePet()) { tfPet.setText(currentFee.getPet() + " €"); tfPastPet.setText(pastFee.getPet()+" €"); }
-            else {noFee(tfPet); noFee(tfPastPet);}
+            else {
+                thereAreNoFee(tfPet); thereAreNoFee(tfPastPet);}
             if (boolFee.getAvailableWifi()) { tfWifi.setText(currentFee.getWifi()+" €"); tfPastWifi.setText(pastFee.getWifi()+" €"); }
-            else {noFee(tfWifi); noFee(tfPastWifi);}
+            else {
+                thereAreNoFee(tfWifi); thereAreNoFee(tfPastWifi);}
 
             tfAdmin.setText(currentFee.getAdmin()+" €");
             tfPastAdmin.setText(pastFee.getAdmin()+" €");
