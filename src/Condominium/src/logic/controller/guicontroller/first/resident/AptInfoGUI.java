@@ -13,13 +13,14 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Screen;
 import logic.controller.applicationcontroller.ApartmentController;
 import logic.controller.applicationcontroller.FeeController;
 import logic.controller.guicontroller.first.general.Main1GUI;
 import logic.model.Apartment;
 import logic.model.Fee;
 import logic.model.UserSingleton;
-
+import logic.controller.guicontroller.ChartGUI;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.Arrays;
@@ -87,7 +88,9 @@ public class AptInfoGUI extends Main1GUI implements Initializable {
                 VBox vBox = (VBox) oldPieChart.getChildren().get(0);
                 if (lastMonthBtn.isSelected()) {
                     ObservableList<PieChart.Data> valueList = chart.value(chartDataList, seriesName);
-                    PieChart pc = chart.buildPieChart(valueList, "Outgoing Last Month");
+                    PieChart pc = chart.newPieChart(valueList, "Outgoing Last Month");
+                    pc.setPrefHeight((Screen.getPrimary().getBounds().getHeight()-100)/2);
+                    pc.setPrefWidth(Screen.getPrimary().getBounds().getWidth()/3);
                     vBox.getChildren().add(pc);
                 } else if (!lastMonthBtn.isSelected() && vBox.getChildren().size() == 2) {
                         vBox.getChildren().remove(1);
@@ -104,20 +107,24 @@ public class AptInfoGUI extends Main1GUI implements Initializable {
                 firstBorder.setRight(null);
                 break;
             case BAR_CHART:
-                BarChart<String, Number> bc = chart.buildBarChart("Fees","","Outgoings");
+                BarChart<String, Number> bc = chart.newBarChart("Fees","","Outgoings");
                 XYChart.Series<String, Number> bcSeries = chart.newSeries(chartDataList,seriesName,chartTitle);
                 bc.getData().add(bcSeries);
+                bc.setPrefWidth((Screen.getPrimary().getBounds().getWidth()/2));
                 firstBorder.setRight(bc);
                 break;
             case PIE_CHART:
                 ObservableList<PieChart.Data> valueList = chart.value(chartDataList,seriesName);
-                PieChart pc = chart.buildPieChart(valueList,chartTitle);
+                PieChart pc = chart.newPieChart(valueList,chartTitle);
+                pc.setPrefHeight((Screen.getPrimary().getBounds().getHeight()-100)/2);
+                pc.setPrefWidth(Screen.getPrimary().getBounds().getWidth()/3);
                 VBox vbox = new VBox(pc);
                 Pane paneC = new Pane(vbox);
                 firstBorder.setRight(paneC);
                 break;
             case LINE_CHART:
-                LineChart<String ,Number> lc = chart.buildLineChart("Fees","","Outgoings");
+                LineChart<String ,Number> lc = chart.newLineChart("Fees","","Outgoings");
+                lc.setPrefWidth((Screen.getPrimary().getBounds().getWidth()/2));
                 XYChart.Series<String, Number> lcSeries = chart.newSeries(chartDataList,seriesName,chartTitle);
                 lc.getData().add(lcSeries);
                 firstBorder.setRight(lc);

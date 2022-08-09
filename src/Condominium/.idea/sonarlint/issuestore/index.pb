@@ -19,8 +19,6 @@ Csrc/logic/controller/applicationcontroller/ApartmentController.java,c\b\cb087b
 ,src/logic/engineeringclasses/dao/FeeDAO.java,7\f\7f332dca5db890e94ea80afa1c3ef3d7e9f53687
 b
 2src/logic/engineeringclasses/dao/ApartmentDAO.java,6\c\6c6ef7ac17243997380326c41e19ab1701a6044e
-r
-Bsrc/logic/controller/guicontroller/second/resident/AptInfoGUI.java,7\c\7c0075c691012e355e4ae737120728f701d29fee
 ]
 -src/logic/engineeringclasses/dao/MeetDAO.java,d\9\d9d51e99a433ef99a11b98ea1a533f4d372c45c0
 o
