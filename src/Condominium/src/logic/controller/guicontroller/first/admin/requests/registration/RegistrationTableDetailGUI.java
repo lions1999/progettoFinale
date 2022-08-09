@@ -26,20 +26,20 @@ public class RegistrationTableDetailGUI  {
     protected final ViewController view = new ViewController();
     private final AlertGUI alert = new AlertGUI();
 
-    @FXML private TextField tfID;
-    @FXML private TextField tfName;
-    @FXML private TextField tfEmail;
-    @FXML private TextField tfPwd;
-    @FXML private TextField tfRole;
-    @FXML private TextField tfAddr;
-    @FXML private TextField tfApartment;
+    @FXML private TextField tfRegID;
+    @FXML private TextField tfRegName;
+    @FXML private TextField tfRegEmail;
+    @FXML private TextField tfRegPwd;
+    @FXML private TextField tfRegRole;
+    @FXML private TextField tfRegAddr;
+    @FXML private TextField tfRegApartment;
 
     @FXML private void btnX() {
         firstBorder.setRight(null);
     }
 
     @FXML private void btnAddClick() throws IOException, SQLException {
-        switch(Role.valueOf(tfRole.getText())){
+        switch(Role.valueOf(tfRegRole.getText())){
             case RESIDENT:
                 residentAdd();
                 break;
@@ -64,7 +64,7 @@ public class RegistrationTableDetailGUI  {
         FXMLLoader fee = view.loader("FeeInfo",1);
         Parent feeInfo = fee.load();
         FeeInfoGUI ctrlFee = fee.getController();
-        ctrlFee.setUp(tfAddr.getText());
+        ctrlFee.setUp(tfRegAddr.getText());
         pane.setContent(feeInfo);
         Dialog<ButtonType> dialog = new Dialog<>();
         dialog.setDialogPane(pane);
@@ -79,15 +79,15 @@ public class RegistrationTableDetailGUI  {
     }
 
     private void ownerAdd() throws IOException {
-        if(alert.alertConfirm("Registration/Confirm","Are you sure to add "+tfName.getText() +" to apartment "+tfApartment.getText()+"?","WARNING:\nAll other requests to apartment "+tfApartment.getText()+" will be deleted")){
+        if(alert.alertConfirm("Registration/Confirm","Are you sure to add "+ tfRegName.getText() +" to apartment "+ tfRegApartment.getText()+"?","WARNING:\nAll other requests to apartment "+ tfRegApartment.getText()+" will be deleted")){
             controller.addRegistered(getRegistered(), null);
-            alert.alertInfo("Registration/Info","User Successfully Registered","Removed all requests to apartment "+tfApartment.getText());
+            alert.alertInfo("Registration/Info","User Successfully Registered","Removed all requests to apartment "+ tfRegApartment.getText());
             removeAll();
         }
     }
 
     private RegistrationBean getRegistered(){
-        return regBean(tfName.getText(),tfEmail.getText(),tfPwd.getText(),tfRole.getText(),tfAddr.getText(),tfApartment.getText());
+        return regBean(tfRegName.getText(), tfRegEmail.getText(), tfRegPwd.getText(), tfRegRole.getText(), tfRegAddr.getText(), tfRegApartment.getText());
     }
 
     public RegistrationBean regBean(String name, String email, String pwd, String role, String addr, String apt){
@@ -102,13 +102,13 @@ public class RegistrationTableDetailGUI  {
     }
 
     private void removeAll() throws IOException {
-        controller.removeAllRegistered(tfApartment.getText());
+        controller.removeAllRegistered(tfRegApartment.getText());
         btnX();
         reloadPage();
     }
 
     private void remove() throws IOException {
-        controller.removeRegistered(Integer.parseInt(tfID.getText()));
+        controller.removeRegistered(Integer.parseInt(tfRegID.getText()));
         btnX();
         reloadPage();
     }
@@ -122,12 +122,12 @@ public class RegistrationTableDetailGUI  {
     }
 
     protected void setUp(RegistrationBean bean){
-        tfID.setText(bean.getID());
-        tfName.setText(bean.getName());
-        tfEmail.setText(bean.getEmail());
-        tfPwd.setText(bean.getPassword());
-        tfRole.setText(bean.getRole());
-        tfAddr.setText(bean.getAddress());
-        tfApartment.setText(bean.getApartment());
+        tfRegID.setText(bean.getID());
+        tfRegName.setText(bean.getName());
+        tfRegEmail.setText(bean.getEmail());
+        tfRegPwd.setText(bean.getPassword());
+        tfRegRole.setText(bean.getRole());
+        tfRegAddr.setText(bean.getAddress());
+        tfRegApartment.setText(bean.getApartment());
     }
 }
