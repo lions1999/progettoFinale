@@ -3,9 +3,6 @@ package logic.engineeringclasses.bean;
 public class FeeBean {
 
     private String apartment;
-    private Double water;
-    private Double gas;
-    private Double elect;
     private Double admin;
     private Double park;
     private Double elevator;

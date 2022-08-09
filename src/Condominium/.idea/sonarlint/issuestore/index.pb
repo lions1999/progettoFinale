@@ -13,8 +13,6 @@ f
 Lsrc/logic/controller/guicontroller/second/owner/RequestMeetingDialogGUI.java,5\e\5e230d3718486236d0883483d335bcabbbb42d2d
 s
 Csrc/logic/controller/applicationcontroller/ApartmentController.java,c\b\cb087b39c1cfb8c8ebc1d4fe97068f85e35a0d9c
-\
-,src/logic/engineeringclasses/dao/FeeDAO.java,7\f\7f332dca5db890e94ea80afa1c3ef3d7e9f53687
 ]
 -src/logic/engineeringclasses/dao/MeetDAO.java,d\9\d9d51e99a433ef99a11b98ea1a533f4d372c45c0
 o

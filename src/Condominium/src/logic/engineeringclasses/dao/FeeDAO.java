@@ -44,20 +44,20 @@ public class FeeDAO extends SqlDAO{
         return fee;
     }
 
-    public void addFees(FeeBean fee,String table) throws SQLException{
+    public void addFees(FeeBean feeBean,String table) throws SQLException{
         try{
             String sql = "INSERT INTO "+table+" (fee_apt,fee_admin,fee_park,fee_elevator,fee_pet,fee_wifi) VALUES (?,?,?,?,?,?)";
             preset = prepConnect(sql);
-            preset.setString(1,fee.getApt());
-            preset.setDouble(2,fee.getFeeAdmin());
-            if(fee.getFeePark().equals(0.0)) preset.setNull(3, Types.NULL);
-            else preset.setDouble(3,fee.getFeePark());
-            if(fee.getFeeElevator().equals(0.0)) preset.setNull(4, Types.NULL);
-            else preset.setDouble(4,fee.getFeeElevator());
-            if(fee.getFeePet().equals(0.0)) preset.setNull(5, Types.NULL);
-            else preset.setDouble(5,fee.getFeePet());
-            if(fee.getFeeWifi().equals(0.0)) preset.setNull(6, Types.NULL);
-            else preset.setDouble(6,fee.getFeeWifi());
+            preset.setString(1,feeBean.getApt());
+            preset.setDouble(2,feeBean.getFeeAdmin());
+            if(feeBean.getFeePark().equals(0.0)) preset.setNull(3, Types.NULL);
+            else preset.setDouble(3,feeBean.getFeePark());
+            if(feeBean.getFeeElevator().equals(0.0)) preset.setNull(4, Types.NULL);
+            else preset.setDouble(4,feeBean.getFeeElevator());
+            if(feeBean.getFeePet().equals(0.0)) preset.setNull(5, Types.NULL);
+            else preset.setDouble(5,feeBean.getFeePet());
+            if(feeBean.getFeeWifi().equals(0.0)) preset.setNull(6, Types.NULL);
+            else preset.setDouble(6,feeBean.getFeeWifi());
             preset.execute();
         } finally {
             disconnect();
