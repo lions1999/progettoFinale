@@ -1,2 +1,2 @@
-progettoFinale :Ü‰¬ò§œ€Ÿ	%Œö™¶†½‚–ƒ›Àş¸ó‡Çìî÷ ¤¦·¼û’­¨ˆë®ıñ&Á#üáç•ğ˜—»ê£¾“³šª±ù$ú´È¡²íºÆÂ‘õ¶…°
-ÿ+ïô¯é¢ŠÃ©Şø¿¹å‰µÄ«æèÅ”‹¥„B/+https://github.com/lions1999/progettoFinaleB2.https://travis-ci.org/lions1999/progettoFinaleB62https://github.com/lions1999/progettoFinale/issuesB/+https://github.com/lions1999/progettoFinaleRlions1999_progettoFinale
+progettoFinale :é¹İ¡ØÌ¯Ï	Q¼¥Éçµî±Æ²¿Ëñ­é¢½ÍÀ¶ø›¦ĞÕ×èíªÂŞ1Ù¸šß¬ RòO«¾–ÅŸÈÇì™ÔïÃäÊÛâ¨P©·åùÒãœë÷óÁ¤ä°´á
+®W£à˜ÓºôÚÑ§ğê”ºÎæõÜ•—öÄ»Ö³B/+https://github.com/lions1999/progettoFinaleB2.https://travis-ci.org/lions1999/progettoFinaleB62https://github.com/lions1999/progettoFinale/issuesB/+https://github.com/lions1999/progettoFinaleRlions1999_progettoFinale

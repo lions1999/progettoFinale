@@ -3,5 +3,5 @@ projectKey=lions1999_progettoFinale
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.30876
 dashboardUrl=https://sonarcloud.io/dashboard?id=lions1999_progettoFinale
-ceTaskId=AYKC_-VieCj7NrDc4hYE
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYKC_-VieCj7NrDc4hYE
+ceTaskId=AYKDBCeeykLesXgYlDUP
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYKDBCeeykLesXgYlDUP
