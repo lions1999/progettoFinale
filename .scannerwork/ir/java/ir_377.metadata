@@ -1,3 +1,2 @@
-logic.controller.guicontroller.second.resident.ContactDialogGUI#instance-init#
-null
-logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;
+logic.controller.guicontroller.second.resident.ContactDialogGUI#getMessage()Ljava/util/List;
+java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;

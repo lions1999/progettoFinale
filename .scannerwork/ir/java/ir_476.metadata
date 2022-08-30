@@ -1,1 +1,1 @@
-logic.model.Registration#setRegRole(Ljava/lang/String;)V
+logic.model.Registration#getRegAddr()Ljava/lang/String;

@@ -1,1 +1,1 @@
-Ç 2javaX-hr,Condominium/src/logic/model/Condominium.java
+Ç 2javaX@hr%Condominium/src/logic/model/Rate.java

@@ -1,22 +1,59 @@
-package logic.engineeringclasses.query;
+package logic.model;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 
-public class PostQuery {
+public class Apartment {
 
-    private PostQuery() {}
+	private String number;
+	private String address;
+	private String owner;
+	private String resident;
+	private String fee;
 
-    public static ResultSet selectListPost(Statement stmt, String address) throws SQLException {
-        String sql = "SELECT post_id,post_usr,post_txt,post_img FROM posts where post_id IN (SELECT  post_id FROM `posts` WHERE post_addr='"+ address + "')";
-        
-        return stmt.executeQuery(sql);
-    }
+	public Apartment(String number,String address,String owner,String resident,String fee) {
+		this.number = number;
+		this.address = address;
+		this.owner = owner;
+		this.resident = resident;
+		this.fee = fee;
+	}
 
-    public static ResultSet selectNameByID(Statement stmt, String id) throws SQLException {
-        String sql = "SELECT user_name FROM users WHERE user_id='" + id + "'";
-        
-        return stmt.executeQuery(sql);
-    }
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setResident(String resident) {
+		this.resident = resident;
+	}
+
+	public String getResident() {
+		return resident;
+	}
+
+	public void setFee(String fee) {
+		this.fee = fee;
+	}
+
+	public String getFee() {
+		return fee;
+	}
 }

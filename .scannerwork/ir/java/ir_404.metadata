@@ -1,1 +1,1 @@
-logic.model.Rate#getRateVal()Ljava/lang/String;
+logic.model.Rate#setRateVal(Ljava/lang/String;)V

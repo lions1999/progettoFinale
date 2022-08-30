@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.RegistrationBean#getPassword()Ljava/lang/String;
+logic.engineeringclasses.bean.RegistrationBean#setPassword(Ljava/lang/String;)V

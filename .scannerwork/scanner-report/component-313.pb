@@ -1,1 +1,1 @@
-¹ 2javaX>hr8Condominium/src/logic/engineeringclasses/dao/SqlDAO.java
+¹ 2javaXhrDCondominium/src/logic/engineeringclasses/query/CondominiumQuery.java

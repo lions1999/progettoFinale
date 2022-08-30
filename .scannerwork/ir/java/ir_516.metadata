@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.ApartmentController#checkUserAptFromNumber(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+logic.controller.applicationcontroller.ApartmentController#checkApartmentsList(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LObservableList;

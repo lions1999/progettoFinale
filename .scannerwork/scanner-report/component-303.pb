@@ -1,1 +1,1 @@
-¯ 2javaX0hr;Condominium/src/logic/engineeringclasses/bean/RateBean.java
+¯ 2javaXkhr8Condominium/src/logic/engineeringclasses/dao/FeeDAO.java

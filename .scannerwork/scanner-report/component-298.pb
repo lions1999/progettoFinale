@@ -1,1 +1,1 @@
-ª 2javaXæhrNCondominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.java
+ª 2javaX0hr;Condominium/src/logic/engineeringclasses/bean/RateBean.java

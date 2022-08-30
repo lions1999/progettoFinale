@@ -1,2 +1,1 @@
-logic.controller.applicationcontroller.ApartmentController#instance-init#
-null
+logic.controller.applicationcontroller.ApartmentController#loadApartmentResident(Ljava/lang/String;)LObservableList;

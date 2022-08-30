@@ -1,1 +1,2 @@
-logic.controller.applicationcontroller.ViewController#addImage(Llogic/model/Role;)Ljava/lang/String;
+logic.controller.applicationcontroller.ViewController#secondRight(LParent;LButton;)V
+null

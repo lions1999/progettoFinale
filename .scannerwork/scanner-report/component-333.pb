@@ -1,1 +1,1 @@
-Í 2javaXKhr-Condominium/src/logic/model/Registration.java
+Í 2javaXihr.Condominium/src/logic/model/UserSingleton.java

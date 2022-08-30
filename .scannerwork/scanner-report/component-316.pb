@@ -1,1 +1,1 @@
-¼ 2javaXhrHCondominium/src/logic/engineeringclasses/exception/PatternException.java
+¼ 2javaXhr=Condominium/src/logic/engineeringclasses/query/PostQuery.java

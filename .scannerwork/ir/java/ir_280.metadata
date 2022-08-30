@@ -1,4 +1,2 @@
-logic.controller.guicontroller.second.general.Menu2GUI#btnHomeClick()V
-null
-logic.controller.guicontroller.second.general.Menu2GUI#loadPosts(LObservableList;)V
 logic.controller.guicontroller.second.general.Menu2GUI#addPost()V
+null

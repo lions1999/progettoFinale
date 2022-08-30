@@ -1,38 +1,38 @@
 SonarCloud plugins:
-  - IaC Code Quality and Security 1.9.1.2264 (iac)
+  - IaC Code Quality and Security 1.9.2.2279 (iac)
   - PL/SQL Code Quality and Security 3.7.0.4372 (plsql)
   - Scala Code Quality and Security 1.10.0.3710 (sonarscala)
-  - C# Code Quality and Security 8.42.0.51121 (csharp)
-  - Vulnerability Analysis 9.6.0-M1.16920 (security)
+  - C# Code Quality and Security 8.44.0.52574 (csharp)
+  - Vulnerability Analysis 9.6.1.17278 (security)
   - Java Code Quality and Security 7.13.0.29990 (java)
   - HTML Code Quality and Security 3.6.0.3106 (web)
   - Flex Code Quality and Security 2.7.0.2865 (flex)
   - XML Code Quality and Security 2.5.0.3376 (xml)
   - Text file Code Quality and Security 1.1.0.282 (text)
-  - VB.NET Code Quality and Security 8.42.0.51121 (vbnet)
+  - VB.NET Code Quality and Security 8.44.0.52574 (vbnet)
   - Swift Code Quality and Security 4.6.1.5444 (swift)
-  - CFamily Code Quality and Security 6.35.0.50389 (cpp)
+  - CFamily Code Quality and Security 6.36.0.52033 (cpp)
   - Python Code Quality and Security 3.15.1.9817 (python)
-  - Dataflow Bug Detection Rules for Python 1.4.0.1890 (dbdpythonfrontend)
-  - Dataflow Bug Detection 1.4.0.1890 (dbd)
+  - Dataflow Bug Detection Rules for Python 1.5.0.1969 (dbdpythonfrontend)
+  - Dataflow Bug Detection 1.5.0.1969 (dbd)
   - Go Code Quality and Security 1.10.0.3710 (go)
   - JaCoCo 1.1.1.1157 (jacoco)
   - Kotlin Code Quality and Security 2.10.0.1456 (kotlin)
-  - Dataflow Bug Detection Rules for Java 1.4.0.1890 (dbdjavafrontend)
+  - Dataflow Bug Detection Rules for Java 1.5.0.1969 (dbdjavafrontend)
   - T-SQL Code Quality and Security 1.6.0.4844 (tsql)
   - Apex Code Quality and Security 1.10.0.3710 (sonarapex)
-  - JavaScript/TypeScript/CSS Code Quality and Security 9.5.0.18531 (javascript)
+  - JavaScript/TypeScript/CSS Code Quality and Security 9.7.0.18911 (javascript)
   - Ruby Code Quality and Security 1.10.0.3710 (ruby)
-  - Vulnerability Rules for C# 9.6.0-M1.16920 (securitycsharpfrontend)
-  - Vulnerability Rules for Java 9.6.0-M1.16920 (securityjavafrontend)
-  - License for SonarLint 8.0.0.30876 (license)
-  - Vulnerability Rules for JS 9.6.0-M1.16920 (securityjsfrontend)
+  - Vulnerability Rules for C# 9.6.1.17278 (securitycsharpfrontend)
+  - Vulnerability Rules for Java 9.6.1.17278 (securityjavafrontend)
+  - License for SonarLint 8.0.0.31512 (license)
+  - Vulnerability Rules for JS 9.6.1.17278 (securityjsfrontend)
   - COBOL Code Quality 5.0.0.5433 (cobol)
-  - Vulnerability Rules for Python 9.6.0-M1.16920 (securitypythonfrontend)
-  - PHP Code Quality and Security 3.23.1.8766 (php)
+  - Vulnerability Rules for Python 9.6.1.17278 (securitypythonfrontend)
+  - PHP Code Quality and Security 3.24.0.8949 (php)
   - ABAP Code Quality and Security 3.10.0.3628 (abap)
   - Configuration detection fot Code Quality and Security 1.2.0.267 (config)
-  - Vulnerability Rules for PHP 9.6.0-M1.16920 (securityphpfrontend)
+  - Vulnerability Rules for PHP 9.6.1.17278 (securityphpfrontend)
 Global server settings:
   - email.from=noreply@sonarcloud.io
   - email.fromName=SonarCloud
@@ -41,7 +41,7 @@ Global server settings:
   - sonar.auth.microsoft.enabled=true
   - sonar.core.id=1BD809FA-AWHW8ct9-T_TB3XqouNu
   - sonar.core.serverBaseURL=https://sonarcloud.io
-  - sonar.core.startTime=2022-08-09T12:32:00+0200
+  - sonar.core.startTime=2022-08-30T09:25:34+0200
   - sonar.dbcleaner.weeksBeforeDeletingAllSnapshots=260
   - sonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByMonth=4
   - sonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByWeek=1

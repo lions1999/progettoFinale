@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.PostQuery#selectNameByID(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;
+logic.model.Apartment#instance-init#

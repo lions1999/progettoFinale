@@ -1,1 +1,3 @@
-logic.controller.guicontroller.second.general.login.LoginGUI#error()V
+logic.controller.guicontroller.second.general.login.LoginGUI#loginBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/UserBean;
+logic.engineeringclasses.bean.UserBean#instance-init#
+logic.engineeringclasses.bean.UserBean#<init>()V

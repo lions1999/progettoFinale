@@ -1,1 +1,1 @@
-° 2javaXGhrCCondominium/src/logic/engineeringclasses/bean/RegistrationBean.java
+° 2javaX4hr9Condominium/src/logic/engineeringclasses/dao/MeetDAO.java

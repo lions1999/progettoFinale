@@ -1,135 +1,161 @@
-package logic.controller.applicationcontroller;
+package logic.controller.guicontroller.first.admin.condominium;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.control.*;
+import logic.controller.applicationcontroller.FeeController;
+import logic.controller.applicationcontroller.UserController;
+import logic.controller.applicationcontroller.ViewController;
+import logic.controller.guicontroller.AlertGUI;
+import logic.controller.guicontroller.first.general.FeeInfoGUI;
+import logic.controller.guicontroller.second.admin.condominium.InfoItemGUI;
 import logic.engineeringclasses.bean.FeeBean;
-import logic.engineeringclasses.bean.RegistrationBean;
 import logic.engineeringclasses.bean.UserBean;
-import logic.engineeringclasses.dao.CondominiumDAO;
-import logic.engineeringclasses.dao.RegisterDAO;
-import logic.engineeringclasses.exception.InputException;
-import logic.model.Registration;
 import logic.model.Role;
-import logic.model.User;
-
+import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Optional;
 
-public class RegisterController{
+import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
 
-	private final CondominiumDAO cond = new CondominiumDAO();
-	private final RegisterDAO register = new RegisterDAO();
-	private final ApartmentController aptController = new ApartmentController();
-	private final PatternController pattern = new PatternController();
+public class InfoDetailGUI {
 
-	public boolean registration(UserBean bean){
-		try {
-			if(pattern.isName(bean.getUsrName())) {
-				throw new InputException("Incorrect Name : "+bean.getUsrName());
-			}
-			if(pattern.isName(bean.getUsrSurname())) {
-				throw new InputException("Incorrect Surname : "+bean.getUsrSurname());
-			}
-			if(!pattern.isEmail(bean.getUsrEmail())) {
-				throw new InputException("Incorrect Email : "+bean.getUsrEmail());
-			}
-			if(!pattern.isPassword(bean.getUsrPwd())){
-				throw new InputException("Incorrect Password");
-			}
-			if(!bean.getUsrPwd().equals(bean.getOkPassword())) {
-				throw new InputException("Password Mismatch");
-			}
-			if(bean.getUsrRole() == null) {
-				throw new InputException("No Role Selected");
-			}
-			if(bean.getUsrAddr() == null || bean.getUsrAddr().isEmpty()) {
-				throw new InputException("No Address Selected");
-			}
-			return checkRegistration(bean.getUsrEmail(),bean.getUsrAddr());
-		}catch(InputException | SQLException e){
-			return false;
-		}
-	}
+    private final UserController usrController = new UserController();
+    private final FeeController feeController = new FeeController();
+    private final ViewController view = new ViewController();
+    private final AlertGUI alert = new AlertGUI();
+    static final String TITLE = "Condominium/Info";
 
-	private boolean checkRegistration(String email, String address) throws SQLException{
-		return register.checkRegistration(email,address);
-	}
+    @FXML private Button btnRemove;
+    @FXML private Button btnRole;
+    @FXML private TextField tfID;
+    @FXML private TextField tfName;
+    @FXML private TextField tfEmail;
+    @FXML private TextField tfPwd;
+    @FXML private TextField tfRole;
+    @FXML private TextField tfAddr;
 
-	public ObservableList<String> loadAddresses() throws SQLException{
-		return cond.checkAddressesList();
-	}
+    @FXML private void btnX() {
+        firstBorder.setRight(null);
+    }
 
-	public ObservableList<Registration> loadRegistration(String address)throws SQLException{
-		return register.loadRegistrationList(address);
-	}
+    protected void setUp(UserBean bean){
+        tfID.setText(bean.getUsrID());
+        tfName.setText(bean.getUsrName());
+        tfEmail.setText(bean.getUsrEmail());
+        tfPwd.setText(bean.getUsrPwd());
+        tfRole.setText(bean.getUsrRole());
+        tfAddr.setText(bean.getUsrAddr());
+        switch (Role.valueOf(bean.getUsrRole())){
+            case RESIDENT:
+                btnRole.setText("Update Fee");
+                break;
+            case OWNER:
+                btnRole.setText("Update Rating");
+                btnRemove.setVisible(false);
+                break;
+            default:
+                break;
+        }
+    }
 
-	public void addRegistered(RegistrationBean reg, FeeBean fee){
-		ApartmentController aptCtrl = new ApartmentController();
-		switch (Role.valueOf(reg.getRole())){
-			case OWNER:
-				try {
-					register.addRegistered(reg);
-					aptCtrl.addOwner(reg.getApartment(), reg.getAddress());
-				}catch (SQLException e){
-					e.printStackTrace();
-				}
-				break;
-			case RESIDENT:
-				try{
-					FeeController feeCtrl = new FeeController();
-					register.addRegistered(reg);
-					fee.setApt(aptCtrl.loadApartmentId(reg.getApartment(),reg.getAddress()));
-					feeCtrl.addFees(fee,"fee");
-					aptCtrl.addResident(reg.getApartment(),reg.getAddress());
-				}catch(SQLException e) {
-					e.printStackTrace();
-				}
-				break;
-			default:
-				break;
-		}
+    public void btnUpdateClick() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/logic/view/first/Dialog.fxml"));
+        DialogPane pane = loader.load();
+        FXMLLoader loadInfo = view.loader("UpdateInfo",1);
+        Parent info = loadInfo.load();
+        UpdateInfoGUI ctrlInfo = loadInfo.getController();
+        ctrlInfo.setUp(getUserBean());
+        pane.setContent(info);
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setDialogPane(pane);
+        Optional<ButtonType> btn = dialog.showAndWait();
+        if(btn.isPresent() && btn.get() == ButtonType.OK && ctrlInfo.checkInfo()){
+            usrController.updateInfo(ctrlInfo.getBean());
+            alert.alertInfo(TITLE,"User Successfully Updated",null);
+            btnX();
+            reloadPage();
+        } else {
+            alert.alertError("Condominium/Error","Incorrect Data",null);
+        }
+    }
 
-	}
+    public void btnRemoveClick() throws IOException {
+        if(alert.alertConfirm(TITLE,"Are you sure you want to permanently delete user "+tfName.getText()+"?",null)){
+            if (Role.valueOf(tfRole.getText()) == Role.RESIDENT) {
+                usrController.removeResident(tfID.getText());
+            }
+            btnX();
+            reloadPage();
+        }
+    }
 
-	public void removeRegistered(int id) {
-		try{
-			register.deleteRegistered(id);
-		}catch(SQLException e){
-			e.printStackTrace();
-		}
-	}
+    public void btnRoleClick() throws SQLException, IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/logic/view/first/Dialog.fxml"));
+        DialogPane pane = loader.load();
+        switch (Role.valueOf(tfRole.getText())){
+            case RESIDENT:
+                updateFee(pane);
+                break;
+            case OWNER:
+                removeRating(pane);
+                break;
+            default:
+                break;
+        }
+        btnX();
+    }
 
-	public void removeAllRegistered(String apartment) {
-		try{
-			register.deleteAllRegistered(apartment);
-		}catch(SQLException e){
-			e.printStackTrace();
-		}
-	}
 
-	public ObservableList<String> loadAddress(UserBean bean) {
-		ObservableList<String> list = FXCollections.observableArrayList();
-		try {
-			switch (Role.valueOf(bean.getUsrRole().toUpperCase())) {
-				case OWNER:
-					list = aptController.loadApartmentOwner(bean.getUsrAddr());
-					break;
-				case RESIDENT:
-					list = aptController.loadApartmentResident(bean.getUsrAddr());
-					break;
-				default:
-					break;
-			}
-			if (list.isEmpty()) {
-				throw new InputException("No Apartment Available");
-			} else {
-				return list;
-			}
-		}catch (InputException|SQLException e){
-			 return list;
-		}
-	}
+    private void removeRating(DialogPane pane) {
+        InfoItemGUI info = new InfoItemGUI();
+        pane.setContent(info.setUpTableReview(1,tfName.getText(),tfID.getText(),"first"));
+        pane.getStylesheets().clear();
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setDialogPane(pane);
+        dialog.showAndWait();
+    }
 
-	public void addRegistrationUser(User user, String role, String aptName) throws SQLException {
-		register.addRegistrationUser(user,role,aptName);
-	}
+    private void updateFee(DialogPane pane) throws SQLException, IOException {
+        FXMLLoader feeInfo = view.loader("FeeInfo",1);
+        Parent feeParent = feeInfo.load();
+        FeeInfoGUI ctrlFee = feeInfo.getController();
+        ctrlFee.setUp(tfAddr.getText());
+        ctrlFee.loadFeeInfo(tfID.getText());
+        FeeBean past = ctrlFee.getFees();
+        pane.setContent(feeParent);
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setDialogPane(pane);
+        Optional<ButtonType> btn = dialog.showAndWait();
+        if(btn.isPresent() && btn.get() == ButtonType.OK && ctrlFee.check()){
+            feeController.updateFees(past,ctrlFee.getFees());
+            alert.alertInfo(TITLE,"Fee Successfully Updated",null);
+        } else{
+            alert.alertError("Condominium/Error","Incorrect/Empty Credential","\n-Empty Field\n-More than 4 digits fee\n-Negative Value");
+        }
+    }
+
+    private UserBean getUserBean(){
+        return setUserBean(tfID.getText(),tfName.getText(),tfEmail.getText(),tfPwd.getText());
+    }
+
+    public UserBean setUserBean(String id,String name, String email, String pwd) {
+        UserBean bean = new UserBean();
+        bean.setUsrID(id);
+        bean.setUsrName(name);
+        bean.setUsrEmail(email);
+        bean.setUsrPwd(pwd);
+        return bean;
+    }
+
+    private void reloadPage() throws IOException {
+        FXMLLoader loader = view.loader("Info",1);
+        Parent root = loader.load();
+        InfoGUI infoCtrl = loader.getController();
+        infoCtrl.setUp(tfAddr.getText());
+        firstBorder.setCenter(root);
+    }
 }

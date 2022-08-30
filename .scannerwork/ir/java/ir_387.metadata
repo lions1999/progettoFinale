@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.UserQuery#<init>()V
+logic.engineeringclasses.query.UserQuery#selectUserID(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;

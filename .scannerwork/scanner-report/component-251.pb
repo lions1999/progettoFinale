@@ -1,1 +1,1 @@
-û 2javaX:hr<Condominium/src/logic/controller/guicontroller/ChartGUI.java
+û 2javaXVhrfCondominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetDetailGUI.java

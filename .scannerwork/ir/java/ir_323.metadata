@@ -1,1 +1,1 @@
-logic.controller.guicontroller.second.general.home.AddPostGUI#addFileClick()V
+logic.controller.guicontroller.second.general.home.AddPostGUI#getMsg()Ljava/lang/String;

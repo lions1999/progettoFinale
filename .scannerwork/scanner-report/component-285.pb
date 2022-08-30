@@ -1,1 +1,1 @@
-ù 2javaX*hrRCondominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java
+ù 2javaXéhr[Condominium/src/logic/controller/guicontroller/second/general/registration/RegisterGUI.java

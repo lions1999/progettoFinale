@@ -1,1 +1,1 @@
-logic.model.Fee#<init>(ZZZZ)V
+logic.model.Fee#getApt()Ljava/lang/String;

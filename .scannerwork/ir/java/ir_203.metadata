@@ -1,1 +1,6 @@
-logic.model.Apartment#getFee()Ljava/lang/String;
+logic.controller.guicontroller.first.general.FeeInfoGUI#instance-init#
+null
+logic.controller.applicationcontroller.FeeController#instance-init#
+logic.controller.applicationcontroller.PatternController#<init>()V
+logic.controller.applicationcontroller.FeeController#<init>()V
+logic.controller.applicationcontroller.PatternController#instance-init#

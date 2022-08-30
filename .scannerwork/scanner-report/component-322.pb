@@ -1,1 +1,1 @@
-Â 2javaXhr=Condominium/src/logic/engineeringclasses/query/RateQuery.java
+Â 2javaX-hr,Condominium/src/logic/model/Condominium.java

@@ -1,4 +1,1 @@
-logic.controller.applicationcontroller.ViewController#loader(Ljava/lang/String;I)LFXMLLoader;
-null
-java.lang.Object#getClass()Ljava/lang/Class;
-java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;
+logic.controller.applicationcontroller.ViewController#addImage(Llogic/model/Role;)Ljava/lang/String;

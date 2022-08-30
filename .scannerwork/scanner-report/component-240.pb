@@ -1,1 +1,1 @@
-ð 2javaX?hrKCondominium/src/logic/controller/applicationcontroller/EmailController.java
+ð 2javaXJhrJCondominium/src/logic/controller/applicationcontroller/PostController.java

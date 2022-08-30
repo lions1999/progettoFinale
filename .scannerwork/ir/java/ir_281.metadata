@@ -1,2 +1,3 @@
-logic.controller.guicontroller.second.general.Menu2GUI#addPost()V
-null
+logic.controller.guicontroller.second.general.Menu2GUI#setUpBean(Llogic/model/User;)Llogic/engineeringclasses/bean/UserBean;
+logic.engineeringclasses.bean.UserBean#instance-init#
+logic.engineeringclasses.bean.UserBean#<init>()V

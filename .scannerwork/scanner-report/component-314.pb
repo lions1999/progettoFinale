@@ -1,1 +1,1 @@
-º 2javaX¼hr9Condominium/src/logic/engineeringclasses/dao/UserDAO.java
+º 2javaXhr<Condominium/src/logic/engineeringclasses/query/FeeQuery.java

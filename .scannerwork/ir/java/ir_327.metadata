@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.ApartmentQuery#<init>()V
+logic.engineeringclasses.query.ApartmentQuery#selectApartmentResident(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;

@@ -1,1 +1,1 @@
-÷ 2javaXˆhrNCondominium/src/logic/controller/applicationcontroller/RegisterController.java
+÷ 2javaX¢hrYCondominium/src/logic/controller/guicontroller/first/admin/condominium/InfoDetailGUI.java

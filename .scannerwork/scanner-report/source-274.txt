@@ -1,63 +1,81 @@
-package logic.controller.guicontroller.first.resident;
+package logic.controller.guicontroller.second.admin.requests.meeting;
 
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
-import logic.controller.applicationcontroller.ApartmentController;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.Region;
 import logic.controller.applicationcontroller.EmailController;
-import logic.controller.applicationcontroller.PatternController;
-import logic.controller.guicontroller.AlertGUI;
-import logic.model.UserSingleton;
-
-import java.net.URL;
+import logic.controller.applicationcontroller.MeetController;
+import logic.controller.applicationcontroller.ViewController;
+import logic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetGUI;
+import logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI;
+import logic.engineeringclasses.bean.MeetRequestBean;
+import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ResourceBundle;
 
-public class ContactGUI implements Initializable{
+import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
 
-	UserSingleton sg = UserSingleton.getInstance();
-	private final ApartmentController aptCtrl = new ApartmentController();
-	private final PatternController pattern = new PatternController();
-	private final AlertGUI alert = new AlertGUI();
+public class MeetingItemGUI {
 
+    protected final ViewController view = new ViewController();
+    protected final MeetController controller = new MeetController();
+    private final EmailController ctrlEmail = new EmailController();
 
-	@FXML private TextArea reasonText;
-	@FXML private Button btnSend;
+    @FXML private Label lbID;
+    @FXML private Label lbName;
+    @FXML private Label lbAddr;
+    @FXML private Label lbObject;
+    @FXML private TextArea txtArea;
 
+    public void onAcceptPress() throws IOException {
+        Button btnSend = new Button("Send");
+        btnSend.getStyleClass().add("btnGeneral");
+        FXMLLoader meet = view.loader("OrganizeMeet",1);
+        Pane orgMeet = meet.load();
+        OrganizeMeetGUI ctrlMeet = meet.getController();
+        ctrlMeet.setUp(lbObject.getText());
+        btnSend.setOnAction(e->{
+            try {
+                ObservableList<String> list = controller.loadMailList(lbAddr.getText());
+                MeetRequestBean bean = ctrlMeet.getMeetBean();
+                ctrlEmail.meetEmail(list,bean);
+                remove();
+            }catch (SQLException|IOException w){
+                w.printStackTrace();
+            }
+            secondBorder.setRight(null);
+        });
+        view.secondRight(orgMeet,btnSend);
+    }
 
-	@Override
-	public void initialize(URL location, ResourceBundle resources){
-		btnSend.setDisable(true);
-		reasonText.setPromptText("What do you want to communicate to your apartment Owner?");
-	}
+    public void onDeletePress() throws IOException {
+        remove();
+    }
 
+    private void remove() throws IOException {
+        controller.removeMeetRequest(Integer.parseInt(lbID.getText()));
+        reloadPage();
+    }
 
-	@FXML void clearReason() {
-		reasonText.setText("");
-		btnSend.setDisable(true);
-	}
+    private void reloadPage() throws IOException {
+        FXMLLoader loader = view.loader("RequestBottomNavMenu",2);
+        Pane root = loader.load();
+        RequestBottomNavMenuGUI bottomMenu = loader.getController();
+        bottomMenu.setAddress(lbAddr.getText());
+        bottomMenu.btnMeetClick();
+        root.setMaxSize(Double.MAX_VALUE, Region.USE_COMPUTED_SIZE);
+        secondBorder.setBottom(root);
+    }
 
-	@FXML void sendMail()  throws SQLException {
-		String mail;
-		mail = aptCtrl.checkMailById(aptCtrl.checkUserAptFromNumber(sg.getAddress(),aptCtrl.checkApartments(sg.getUserID(),sg.getAddress(),"apt_res").getNumber(),"apt_own"));
-		String subject = "Message Request from "+sg.getResident();
-		String body = reasonText.getText();
-		if(pattern.isText(body)) {
-			alert.alertError("Error","Incorrect Text!","You cannot insert more that one consecutive space, please control text before send");
-		}
-		else{
-			String[] recipients = new String[]{mail};
-
-			if (alert.alertConfirm("Confirmation","Confirm to send email?","Are you sure to send mail to your Owner with text '" + reasonText.getText() + "'?")) {
-				new EmailController().send(recipients, recipients, subject, body);
-				clearReason();
-			}
-		}
-	}
-
-	public void disableSend() {
-		btnSend.setDisable(reasonText.getText().matches("( *)"));
-	}
-
+    public void setUp(MeetRequestBean bean) {
+        lbID.setText(bean.getMeetId());
+        lbName.setText(bean.getMeetName());
+        lbAddr.setText(bean.getMeetAddress());
+        lbObject.setText(bean.getMeetObject());
+        txtArea.setText(bean.getMeetTextArea());
+    }
 }

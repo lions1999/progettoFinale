@@ -1822,7 +1822,11 @@ $logic.engineeringclasses.dao.MeetDAOSqlDAOy
  loadMeetList(Ljava/lang/String;)Ulogic.engineeringclasses.dao.MeetDAO#loadMeetList(Ljava/lang/String;)LObservableList;Ò
 TaddMeeting(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)zlogic.engineeringclasses.dao.MeetDAO#addMeeting(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VR
 deleteMeetRequest(I):logic.engineeringclasses.dao.MeetDAO#deleteMeetRequest(I)V:
-<init>().logic.engineeringclasses.dao.MeetDAO#<init>()Vø
+<init>().logic.engineeringclasses.dao.MeetDAO#<init>()VÆ
+	test.testjava.lang.Object
+<init>()test.test#<init>()VK
+testRegistrationAlreadyExist())test.test#testRegistrationAlreadyExist()V9
+testAddRegistration() test.test#testAddRegistration()Vø
 6logic.controller.applicationcontroller.EmailControllerjava.lang.ObjectL
 <init>()@logic.controller.applicationcontroller.EmailController#<init>()VÝ
 Psend([Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)ˆlogic.controller.applicationcontroller.EmailController#send([Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)ZÎ1

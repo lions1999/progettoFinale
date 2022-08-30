@@ -1,2 +1,2 @@
-logic.controller.guicontroller.second.resident.AptInfoGUI#getList(Llogic/model/Fee;)Ljava/util/List;
-java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
+logic.controller.guicontroller.second.resident.AptInfoGUI#setUpGrid(LGridPane;Ljava/util/List;)LGridPane;
+null

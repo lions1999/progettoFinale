@@ -1,5 +1,3 @@
-logic.controller.guicontroller.second.general.AddressesDialogGUI#instance-init#
-logic.controller.applicationcontroller.RegisterController#<init>()V
-logic.controller.applicationcontroller.RegisterController#instance-init#
-logic.controller.guicontroller.AlertGUI#instance-init#
-logic.controller.guicontroller.AlertGUI#<init>()V
+logic.engineeringclasses.dao.RateDAO#instance-init#
+logic.engineeringclasses.dao.UserDAO#instance-init#
+logic.engineeringclasses.dao.UserDAO#<init>()V

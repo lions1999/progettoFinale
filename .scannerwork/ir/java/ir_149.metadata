@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.UserController#loadUserList(Ljava/lang/String;)LObservableList;
+logic.controller.applicationcontroller.UserController#loadMailList(Ljava/lang/String;)LObservableList;

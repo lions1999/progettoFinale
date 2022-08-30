@@ -1,3 +1,1 @@
-logic.controller.guicontroller.second.owner.RateResidentGUI#instance-init#
-logic.controller.applicationcontroller.ApartmentController#instance-init#
-logic.controller.applicationcontroller.ApartmentController#<init>()V
+logic.engineeringclasses.query.FeeQuery#instance-init#

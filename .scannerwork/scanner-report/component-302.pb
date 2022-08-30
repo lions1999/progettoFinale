@@ -1,1 +1,1 @@
-® 2javaX3hr;Condominium/src/logic/engineeringclasses/bean/PostBean.java
+® 2javaXhr@Condominium/src/logic/engineeringclasses/dao/CondominiumDAO.java

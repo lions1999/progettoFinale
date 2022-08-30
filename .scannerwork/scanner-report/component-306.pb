@@ -1,1 +1,1 @@
-² 2javaXÃhr>Condominium/src/logic/engineeringclasses/dao/ApartmentDAO.java
+² 2javaXOhr9Condominium/src/logic/engineeringclasses/dao/RateDAO.java

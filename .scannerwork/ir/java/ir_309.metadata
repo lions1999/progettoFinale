@@ -1,1 +1,1 @@
-logic.model.Fee#setAdmin(Ljava/lang/Double;)V
+logic.model.Fee#getPark()Ljava/lang/Double;

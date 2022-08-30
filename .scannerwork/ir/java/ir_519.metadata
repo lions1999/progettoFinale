@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.ApartmentController#getAptName(Ljava/lang/String;)Ljava/lang/String;
+logic.controller.applicationcontroller.ApartmentController#removeAptRes(Ljava/lang/String;)V

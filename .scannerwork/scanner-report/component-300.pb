@@ -1,1 +1,1 @@
-¬ 2javaX?hr:Condominium/src/logic/engineeringclasses/bean/FeeBean.java
+¬ 2javaXOhr;Condominium/src/logic/engineeringclasses/bean/UserBean.java

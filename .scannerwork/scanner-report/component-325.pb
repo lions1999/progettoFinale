@@ -1,1 +1,1 @@
-Å 2javaX	hr.Condominium/src/logic/model/Administrator.java
+Å 2javaXhr&Condominium/src/logic/model/Owner.java

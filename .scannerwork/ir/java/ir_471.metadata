@@ -1,1 +1,1 @@
-logic.model.Registration#getRegEmail()Ljava/lang/String;
+logic.model.Registration#setRegEmail(Ljava/lang/String;)V

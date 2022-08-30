@@ -1,1 +1,1 @@
-logic.model.UserSingleton#getAdministrator()Llogic/model/Administrator;
+logic.model.UserSingleton#setAddress(Ljava/lang/String;)V

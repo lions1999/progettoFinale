@@ -1,1 +1,1 @@
-Ê 2javaXhr&Condominium/src/logic/model/Owner.java
+Ê 2javaXhr)Condominium/src/logic/model/Resident.java

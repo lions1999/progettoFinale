@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.CondominiumQuery#selectAddressList(Ljava/sql/Statement;)Ljava/sql/ResultSet;
+logic.model.UserSingleton#instance-init#

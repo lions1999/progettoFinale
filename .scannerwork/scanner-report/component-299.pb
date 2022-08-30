@@ -1,1 +1,1 @@
-« 2javaXhrTCondominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java
+« 2javaXGhrCCondominium/src/logic/engineeringclasses/bean/RegistrationBean.java

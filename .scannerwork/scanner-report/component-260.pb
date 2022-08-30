@@ -1,1 +1,1 @@
-„ 2javaX=hrWCondominium/src/logic/controller/guicontroller/first/admin/requests/TabOrganizeGUI.java
+„ 2javaX hrJCondominium/src/logic/controller/guicontroller/first/general/Main1GUI.java

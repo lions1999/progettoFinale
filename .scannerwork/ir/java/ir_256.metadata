@@ -1,1 +1,8 @@
-logic.controller.applicationcontroller.FeeController#checkPastId(Ljava/lang/String;)Z
+logic.controller.guicontroller.second.general.login.LoginGUI#instance-init#
+null
+logic.controller.applicationcontroller.ViewController#<init>()V
+logic.controller.guicontroller.second.general.Main2GUI#instance-init#
+logic.controller.guicontroller.AlertGUI#instance-init#
+logic.controller.guicontroller.second.general.Main2GUI#<init>()V
+logic.controller.guicontroller.AlertGUI#<init>()V
+logic.controller.applicationcontroller.ViewController#instance-init#

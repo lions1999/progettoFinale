@@ -1,1 +1,1 @@
-ø 2javaX5hrJCondominium/src/logic/controller/applicationcontroller/UserController.java
+ø 2javaXIhrSCondominium/src/logic/controller/guicontroller/first/admin/condominium/InfoGUI.java

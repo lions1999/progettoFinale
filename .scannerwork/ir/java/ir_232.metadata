@@ -1,2 +1,2 @@
-logic.controller.guicontroller.ChartGUI#newSeries(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)LXYChart;
+logic.controller.guicontroller.ChartGUI#value(Ljava/util/List;Ljava/util/List;)LObservableList;
 null

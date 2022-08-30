@@ -1,1 +1,1 @@
-· 2javaXOhr9Condominium/src/logic/engineeringclasses/dao/RateDAO.java
+· 2javaXhrHCondominium/src/logic/engineeringclasses/exception/PatternException.java

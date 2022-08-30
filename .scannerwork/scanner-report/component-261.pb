@@ -1,1 +1,1 @@
-… 2javaXihrLCondominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java
+… 2javaX®hrJCondominium/src/logic/controller/guicontroller/first/general/Menu1GUI.java

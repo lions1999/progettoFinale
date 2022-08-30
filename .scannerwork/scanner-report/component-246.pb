@@ -1,1 +1,1 @@
-ö 2javaXhrJCondominium/src/logic/controller/applicationcontroller/RateController.java
+ö 2javaX:hr<Condominium/src/logic/controller/guicontroller/ChartGUI.java

@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.RegistrationBean#instance-init#
+logic.engineeringclasses.bean.RegistrationBean#getID()Ljava/lang/String;

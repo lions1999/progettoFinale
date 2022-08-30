@@ -1,1 +1,2 @@
-logic.engineeringclasses.query.RegisterQuery#selectRegisteredUserList(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;
+logic.controller.applicationcontroller.ApartmentController#instance-init#
+null

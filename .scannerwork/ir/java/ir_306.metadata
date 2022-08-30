@@ -1,1 +1,1 @@
-logic.model.Fee#getApt()Ljava/lang/String;
+logic.model.Fee#setApt(Ljava/lang/String;)V

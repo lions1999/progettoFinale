@@ -1,1 +1,1 @@
-ž 2javaXFhrOCondominium/src/logic/controller/guicontroller/second/general/home/PostGUI.java
+ž 2javaX2hrMCondominium/src/logic/controller/guicontroller/second/owner/AddRatingGUI.java

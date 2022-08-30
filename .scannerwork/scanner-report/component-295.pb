@@ -1,1 +1,1 @@
-§ 2javaXhrHCondominium/src/logic/controller/guicontroller/second/owner/RateGUI.java
+§ 2javaX?hr:Condominium/src/logic/engineeringclasses/bean/FeeBean.java

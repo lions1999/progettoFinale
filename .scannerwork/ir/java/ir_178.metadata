@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.RegistrationBean#getEmail()Ljava/lang/String;
+logic.engineeringclasses.bean.RegistrationBean#setEmail(Ljava/lang/String;)V

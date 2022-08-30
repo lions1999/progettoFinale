@@ -1,1 +1,1 @@
-logic.controller.guicontroller.second.resident.AptInfoGUI#initialize(Ljava/net/URL;Ljava/util/ResourceBundle;)V
+logic.controller.guicontroller.second.resident.AptInfoGUI#noFee(LLabel;)V

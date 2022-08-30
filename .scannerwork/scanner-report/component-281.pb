@@ -1,1 +1,1 @@
-™ 2javaX}hrjCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java
+™ 2javaXFhrOCondominium/src/logic/controller/guicontroller/second/general/home/PostGUI.java

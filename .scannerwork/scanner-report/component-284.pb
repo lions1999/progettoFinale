@@ -1,1 +1,1 @@
-œ 2javaX*hrUCondominium/src/logic/controller/guicontroller/second/general/AddressesDialogGUI.java
+œ 2javaXÎhrKCondominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java

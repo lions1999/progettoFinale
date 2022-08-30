@@ -1,23 +1,44 @@
-package logic.engineeringclasses.query;
+package logic.model;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
-public class RateQuery {
+import java.util.List;
 
 
-    private RateQuery() {}
+public class Condominium {
+	
+	
+	private int codiceCondominio;
+	private String via;
+	private List<User> listaPartecipanti;
+	
+	public Condominium(int codiceCondominio,String via, List<User> listaPartecipanti) {
+		this.codiceCondominio = codiceCondominio;
+		this.via = via;
+		this.listaPartecipanti = listaPartecipanti;
+	}
 
-    public static ResultSet getRates(Statement stmt, String userId) throws SQLException {
-        String sql = "SELECT * FROM rating WHERE rate_res = '"+userId+"' ";
-        
-        return stmt.executeQuery(sql);
-    }
-
-    public static ResultSet getRatesOwner(Statement stmt, String ownerID) throws SQLException {
-        String sql = "SELECT * FROM rating WHERE rate_own = '"+ownerID+"' ";
-        
-        return stmt.executeQuery(sql);
-    }
+	public void setCodiceCondominio(int codiceCondominio) {
+		this.codiceCondominio = codiceCondominio;
+	}
+	
+	
+	public int getCodiceCondominio() {
+		return this.codiceCondominio;
+	}
+		
+	public void setVia(String via) {
+		this.via = via;
+	}
+	
+	public String getVia() {
+		return this.via;
+	}
+	
+	public void setlistaPartecipanti(List<User> listaPartecipanti) {
+		this.listaPartecipanti = listaPartecipanti;
+	}
+	
+	public List<User> getlistaPartecipanti() {
+		return this.listaPartecipanti;
+	}
+	
 }

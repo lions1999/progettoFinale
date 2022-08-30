@@ -1,1 +1,1 @@
-þ 2javaX)hrYCondominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java
+þ 2javaXPhrjCondominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableGUI.java

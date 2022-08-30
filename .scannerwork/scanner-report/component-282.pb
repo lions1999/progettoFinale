@@ -1,1 +1,1 @@
-š 2javaXhrkCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationTableGUI.java
+š 2javaXJhrQCondominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java

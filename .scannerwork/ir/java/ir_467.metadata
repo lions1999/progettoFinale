@@ -1,1 +1,1 @@
-logic.model.Registration#getRegID()Ljava/lang/String;
+logic.model.Registration#setRegID(Ljava/lang/String;)V

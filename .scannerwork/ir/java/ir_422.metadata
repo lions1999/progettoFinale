@@ -1,1 +1,1 @@
-logic.controller.guicontroller.first.owner.RatingUserGUI#setUp(Ljava/lang/String;Ljava/lang/String;)V
+logic.controller.guicontroller.first.owner.RatingUserGUI#submitRating()V

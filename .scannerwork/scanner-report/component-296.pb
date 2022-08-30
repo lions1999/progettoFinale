@@ -1,1 +1,1 @@
-¨ 2javaX2hrPCondominium/src/logic/controller/guicontroller/second/owner/RateResidentGUI.java
+¨ 2javaX3hrBCondominium/src/logic/engineeringclasses/bean/MeetRequestBean.java

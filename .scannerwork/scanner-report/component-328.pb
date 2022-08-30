@@ -1,1 +1,1 @@
-È 2javaX^hr$Condominium/src/logic/model/Fee.java
+È 2javaXKhr-Condominium/src/logic/model/Registration.java

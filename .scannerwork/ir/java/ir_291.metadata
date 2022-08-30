@@ -1,3 +1,1 @@
-logic.controller.applicationcontroller.PatternController#textFilter(LTextField;)V
-null
-java.util.regex.Pattern#compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+logic.engineeringclasses.bean.MeetRequestBean#instance-init#

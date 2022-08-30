@@ -1,1 +1,2 @@
-logic.controller.guicontroller.first.resident.ContactGUI#clearReason()V
+logic.controller.guicontroller.first.resident.ContactGUI#sendMail()V
+null

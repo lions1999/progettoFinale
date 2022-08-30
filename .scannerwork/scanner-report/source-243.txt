@@ -1,33 +1,57 @@
 package logic.controller.applicationcontroller;
 
 import javafx.collections.ObservableList;
-import logic.engineeringclasses.dao.MeetDAO;
-import logic.model.MeetRequest;
-
+import logic.engineeringclasses.bean.UserBean;
+import logic.engineeringclasses.dao.UserDAO;
+import logic.model.User;
 import java.sql.SQLException;
 
-public class MeetController {
+public class UserController {
 
-    private final MeetDAO meet = new MeetDAO();
-    private final UserController usrCtrl = new UserController();
+    private final UserDAO dao = new UserDAO();
+    private final FeeController feeCtrl = new FeeController();
+    private final ApartmentController aptCtrl = new ApartmentController();
 
-    public ObservableList<MeetRequest> loadMeetRequest(String address) throws SQLException {
-        return meet.loadMeetList(address);
+    public ObservableList<User> loadUserList(String address) {
+        try {
+            return dao.loadUserList(address);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
-    public void removeMeetRequest(int meetId) {
+    public ObservableList<String> loadMailList(String addr) throws SQLException {
+        return dao.loadMailList(addr);
+    }
+
+    public void updateInfo(UserBean bean) {
+        try {
+            dao.updateInfo(bean);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void removeResident(String usrId)  {
         try{
-            meet.deleteMeetRequest(meetId);
+            String aptId = aptCtrl.loadAptId(usrId);
+            if(feeCtrl.checkPastId(aptId)){
+                feeCtrl.removeFee(aptId,"pastfee");
+            }
+            feeCtrl.removeFee(aptId,"fee");
+            aptCtrl.removeAptRes(aptId);
+            removeUsr(usrId);
         }catch(SQLException e){
             e.printStackTrace();
         }
     }
 
-    public ObservableList<String> loadMailList(String addr) throws SQLException {
-        return usrCtrl.loadMailList(addr);
-    }
-
-    public void addMeeting(String meetFrom, String meetAddr, String meetObj, String meetTxt) throws SQLException{
-        meet.addMeeting(meetFrom, meetAddr, meetObj, meetTxt);
+    public void removeUsr(String usrId){
+        try{
+            dao.removeUsr(usrId);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 }

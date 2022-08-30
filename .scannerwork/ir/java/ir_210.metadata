@@ -1,3 +1,2 @@
-logic.controller.guicontroller.first.general.FeeInfoGUI#loadFeeInfo(Ljava/lang/String;)V
-java.lang.String#equals(Ljava/lang/Object;)Z
-java.lang.Double#toString()Ljava/lang/String;
+logic.controller.guicontroller.first.general.FeeInfoGUI#setUp(Ljava/lang/String;)V
+logic.controller.guicontroller.first.general.FeeInfoGUI#noFee(LTextField;)V

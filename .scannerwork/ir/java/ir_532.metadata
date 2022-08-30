@@ -1,1 +1,1 @@
-logic.model.Request#getUser()Ljava/lang/String;
+logic.model.Request#getReason()Ljava/lang/String;

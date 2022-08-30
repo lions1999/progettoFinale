@@ -1,1 +1,1 @@
-Ä 2javaX/hr=Condominium/src/logic/engineeringclasses/query/UserQuery.java
+Ä 2javaX;hr,Condominium/src/logic/model/MeetRequest.java

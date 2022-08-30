@@ -1,1 +1,1 @@
-• 2javaX1hr`Condominium/src/logic/controller/guicontroller/second/admin/condominium/UpdateRatingItemGUI.java
+• 2javaXhrkCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationTableGUI.java

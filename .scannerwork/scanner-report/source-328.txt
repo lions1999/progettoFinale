@@ -1,93 +1,74 @@
 package logic.model;
 
-public class Fee {
+public class Registration {
 
-    private String apt;
-    private Double admin;
-    private Double park;
-    private Double elevator;
-    private Double pet;
-    private Double wifi;
-    private boolean availablePark;
-    private boolean availableElevator;
-    private boolean availablePet;
-    private boolean availableWifi;
+    private String regID;
+    private String regName;
+	private String regEmail;
+	private String regPwd;
+	private String regRole;
+	private String regAddr;
+    private String regApt;
+	
+	public Registration(String regID, String regName, String regEmail, String regPwd, String regRole, String regAddr, String regApt){
+		this.setRegID(regID);
+        this.setRegName(regName);
+		this.setRegEmail(regEmail);
+		this.setRegPwd(regPwd);
+		this.setRegRole(regRole);
+		this.setRegAddr(regAddr);
+        this.setRegApt(regApt);
+	}
 
+    public String getRegID(){return regID;}
 
-    public Fee(String apt, Double admin, Double park, Double elevator, Double pet, Double wifi) {
-        this.apt = apt;
-        this.admin = admin;
-        this.park = park;
-        this.elevator = elevator;
-        this.pet = pet;
-        this.wifi = wifi;
+    public void setRegID(String regID){this.regID = regID;}
+
+    public String getRegName() {
+        return regName;
     }
 
-    public Fee(boolean park,boolean elevator,boolean pet,boolean wifi){
-        this.availablePark = park;
-        this.availableElevator = elevator;
-        this.availablePet = pet;
-        this.availableWifi = wifi;
+    public void setRegName(String regName){
+        this.regName = regName;
     }
 
-    public String getApt() {
-        return apt;
+    public String getRegEmail() {
+        return regEmail;
     }
 
-    public void setApt(String apt) {
-        this.apt = apt;
+    public void setRegEmail(String regEmail){
+        this.regEmail = regEmail;
+    }
+    
+    public String getRegPwd() {
+        return regPwd;
     }
 
-    public Double getAdmin() {
-        return admin;
+    public void setRegPwd(String regPwd) {
+        this.regPwd = regPwd;
+    }
+    
+    public String getRegRole() {
+        return regRole;
     }
 
-    public void setAdmin(Double admin) {
-        this.admin = admin;
+    public void setRegRole(String regRole) {
+        this.regRole = regRole;
+    }
+    
+    public String getRegAddr() {
+        return regAddr;
     }
 
-    public Double getPark() {
-        return park;
+    public void setRegAddr(String regAddr) {
+        this.regAddr = regAddr;
     }
 
-    public void setPark(Double park) {
-        this.park = park;
+    private void setRegApt(String regApt) {
+        this.regApt = regApt;
     }
 
-    public Double getElevator() {
-        return elevator;
-    }
-
-    public void setElevator(Double elevator) {
-        this.elevator = elevator;
-    }
-
-    public Double getPet() {
-        return pet;
-    }
-
-    public void setPet(Double pet) {
-        this.pet = pet;
-    }
-
-    public Double getWifi() {
-        return wifi;
-    }
-
-    public void setWifi(Double wifi) {
-        this.wifi = wifi;
-    }
-
-    public boolean getAvailablePark(){
-        return availablePark;
-    }
-    public boolean getAvailableElevator(){
-        return availableElevator;
-    }
-    public boolean getAvailablePet(){
-        return availablePet;
-    }
-    public boolean getAvailableWifi(){
-        return availableWifi;
+    public String getRegApt(){
+        return regApt;
     }
 }

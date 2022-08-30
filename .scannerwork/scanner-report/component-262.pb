@@ -1,1 +1,1 @@
-† 2javaXDhrQCondominium/src/logic/controller/guicontroller/first/general/home/AddPostGUI.java
+† 2javaXrhrZCondominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java

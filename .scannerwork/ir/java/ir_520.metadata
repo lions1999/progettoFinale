@@ -1,1 +1,3 @@
-logic.controller.applicationcontroller.ApartmentController#removeAptRes(Ljava/lang/String;)V
+logic.controller.guicontroller.second.owner.RateResidentGUI#instance-init#
+logic.controller.applicationcontroller.ApartmentController#instance-init#
+logic.controller.applicationcontroller.ApartmentController#<init>()V

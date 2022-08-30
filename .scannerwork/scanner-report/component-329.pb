@@ -1,1 +1,1 @@
-É 2javaX;hr,Condominium/src/logic/model/MeetRequest.java
+É 2javaX1hr(Condominium/src/logic/model/Request.java

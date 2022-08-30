@@ -1,1 +1,1 @@
-€ 2javaXVhrfCondominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetDetailGUI.java
+€ 2javaXihrLCondominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java

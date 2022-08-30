@@ -1,68 +1,74 @@
 package logic.controller.applicationcontroller;
 
-import javafx.collections.ObservableList;
-import logic.engineeringclasses.dao.ApartmentDAO;
-import logic.model.Apartment;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
+import javafx.util.StringConverter;
 
-import java.sql.SQLException;
+import java.util.function.UnaryOperator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-public class ApartmentController {
+public class PatternController {
 
-    private final ApartmentDAO dao = new ApartmentDAO();
+	public static  final Pattern VALID_TEXT_REGEX =
+			Pattern.compile("^[A-z\\s]", Pattern.CASE_INSENSITIVE);
 
-    public ObservableList<String> loadApartmentResident(String address) throws SQLException {
-        return dao.loadApartmentResident(address);
-    }
+	public static final Pattern VALID_NAME_REGEX = 
+		    Pattern.compile("^[A-Z][a-z\\s]{2,15}$", Pattern.CASE_INSENSITIVE);
+	
+	public static final Pattern VALID_EMAIL_ADDRESS_REGEX = 
+		    Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+	
+	public static final Pattern VALID_PASSWORD_REGEX = 
+		    Pattern.compile("^(?=.*[A-z])(?=.*\\d)[A-z\\d]{4,15}$", Pattern.CASE_INSENSITIVE);
 
-    public ObservableList<String> loadApartmentOwner(String address) throws SQLException {
-        return dao.loadApartmentOwner(address);
-    }
+	public  boolean isText(String text){
+		Matcher matcher = VALID_TEXT_REGEX.matcher(text);
+		return !matcher.find();
+	}
 
-    public String loadApartmentId(String apartment, String address) throws SQLException{
-        return dao.loadApartmentId(apartment,address);
-    }
 
-    public void addResident(String apartment,String address) {
-        try{
-            dao.addResident(apartment,address);
-        }catch(SQLException e){
-            e.printStackTrace();
-        }
-    }
+	public boolean isName(String name) {
+		Matcher matcher = VALID_NAME_REGEX.matcher(name);
+	    return !matcher.find();
+	}
+	    
+	public  boolean isEmail(String emailStr) {
+		Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);
+	    return matcher.find();
+	}
+	
+	public  boolean isPassword(String password) {
+		Matcher matcher = VALID_PASSWORD_REGEX.matcher(password);
+	    return matcher.find();
+	}
 
-    public void addOwner(String apartment,String address){
-        try{
-            dao.addOwner(apartment,address);
-        }catch(SQLException e){
-            e.printStackTrace();
-        }
-    }
+	public void textFilter(TextField tf){
+		Pattern validEditingState = Pattern.compile("-?(([1-9]\\d*)|0)?(\\.\\d*)?");
+		UnaryOperator<TextFormatter.Change> filter = c -> {
+			String text = c.getControlNewText();
+			if (validEditingState.matcher(text).matches()) {
+				return c ;
+			} else {
+				return null ;
+			}
+		};
+		StringConverter<Double> converter = new StringConverter<Double>() {
+			@Override
+			public Double fromString(String s) {
+				if (s.isEmpty() || "-".equals(s) || ".".equals(s) || "-.".equals(s)) {
+					return 0.0 ;
+				} else {
+					return Double.valueOf(s);
+				}
+			}
+			@Override
+			public String toString(Double d) {
+				return d.toString();
+			}
+		};
+		TextFormatter<Double> textFormatter = new TextFormatter<>(converter, 0.0, filter);
+		tf.setTextFormatter(textFormatter);
+	}
 
-    public Apartment checkApartments(String userID, String address, String aptRes) throws SQLException {
-        return dao.checkApartments(userID, address, aptRes);
-    }
-
-    public String checkMailById(String userId) throws SQLException{
-        return dao.checkMailById(userId);
-    }
-
-    public String checkUserAptFromNumber(String aptNumber,String condAddr, String userRequired) throws SQLException{
-        return dao.checkUserAptFromNumber(aptNumber,condAddr,userRequired);
-    }
-
-    public ObservableList<Apartment> checkApartmentsList(String userID, String address, String aptRes) throws SQLException {
-        return dao.checkApartmentsList(userID, address, aptRes);
-    }
-
-    public String loadAptId(String resID) throws SQLException {
-        return dao.loadAptIdRes(resID);
-    }
-
-    public String getAptName(String aptId) throws SQLException {
-        return dao.loadApartmentName(aptId);
-    }
-
-    public void removeAptRes(String aptId) throws SQLException{
-        dao.removeAptRes(aptId);
-    }
 }

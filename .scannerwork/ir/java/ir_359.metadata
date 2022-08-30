@@ -1,1 +1,1 @@
-logic.model.UserSingleton#getUserID()Ljava/lang/String;
+logic.model.UserSingleton#getResident()LResident;

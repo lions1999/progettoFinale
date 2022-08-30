@@ -1,4 +1,2 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#btnAddClick()V
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#residentAdd()V
-logic.model.Role#valueOf(Ljava/lang/String;)Llogic/model/Role;
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#ownerAdd()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#btnDeleteClick()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#remove()V

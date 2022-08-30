@@ -1,1 +1,1 @@
-˜ 2javaXhraCondominium/src/logic/controller/guicontroller/second/admin/requests/meeting/MeetingTableGUI.java
+˜ 2javaX*hrRCondominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java

@@ -1,2 +1,5 @@
-logic.controller.guicontroller.second.general.Menu2GUI#setUp()V
-null
+logic.controller.guicontroller.second.general.Menu2GUI#getChoice(Ljavafx/event/ActionEvent;)V
+logic.controller.guicontroller.second.general.Menu2GUI#apartmentInfo()V
+logic.controller.guicontroller.second.general.Menu2GUI#btnMeetingRequest()V
+logic.controller.guicontroller.second.general.Menu2GUI#contactOwner()V
+logic.controller.guicontroller.second.general.Menu2GUI#rateResident()V

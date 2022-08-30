@@ -1,59 +1,60 @@
 package logic.model;
 
+import java.io.InputStream;
 
-public class Apartment {
+public class Post {
 
-	private String number;
-	private String address;
-	private String owner;
-	private String resident;
-	private String fee;
+	private String id;
+	private String usr;
+	private Role role;
+	private InputStream img;
+	private String text;
 
-	public Apartment(String number,String address,String owner,String resident,String fee) {
-		this.number = number;
-		this.address = address;
-		this.owner = owner;
-		this.resident = resident;
-		this.fee = fee;
+	public Post(String id,String usr,Role role,String text,InputStream img){
+		this.setId(id);
+		this.setUser(usr);
+		this.setRole(role);
+		this.setText(text);
+		this.setImage(img);
+	}
+	
+	public String getId() {
+		return this.id;
 	}
 
-	public void setNumber(String number) {
-		this.number = number;
+	public void setId(String id) {
+		this.id = id;
 	}
 
-	public String getNumber() {
-		return number;
+	public void setUser(String usr) {
+		this.usr = usr;
+	}
+	
+	public String getUser() {
+		return this.usr;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setRole(Role role) {
+		this.role = role;
 	}
 
-	public String getAddress() {
-		return address;
+	public Role getRole() {
+		return this.role;
+	}
+	
+	public void setImage(InputStream img) {
+		this.img = img;
+	}
+	
+	public InputStream getImage() {
+		return this.img;
+	}	
+
+	public String getText() {
+		return text;
 	}
 
-	public void setOwner(String owner) {
-		this.owner = owner;
-	}
-
-	public String getOwner() {
-		return owner;
-	}
-
-	public void setResident(String resident) {
-		this.resident = resident;
-	}
-
-	public String getResident() {
-		return resident;
-	}
-
-	public void setFee(String fee) {
-		this.fee = fee;
-	}
-
-	public String getFee() {
-		return fee;
+	public void setText(String text) {
+		this.text = text;
 	}
 }

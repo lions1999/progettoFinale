@@ -1,3 +1,1 @@
-logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpMeeting(Llogic/model/MeetRequest;)Llogic/engineeringclasses/bean/MeetRequestBean;
-logic.engineeringclasses.bean.MeetRequestBean#<init>()V
-logic.engineeringclasses.bean.MeetRequestBean#instance-init#
+logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setAddress(Ljava/lang/String;)V

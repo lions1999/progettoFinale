@@ -1,1 +1,1 @@
-‘ 2javaX³hrMCondominium/src/logic/controller/guicontroller/first/resident/AptInfoGUI.java
+‘ 2javaXhraCondominium/src/logic/controller/guicontroller/second/admin/condominium/UpdateRatingTableGUI.java

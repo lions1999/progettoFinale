@@ -1,1 +1,1 @@
-logic.model.Registration#setRegPwd(Ljava/lang/String;)V
+logic.model.Registration#getRegRole()Ljava/lang/String;

@@ -1,1 +1,1 @@
-¢ 2javaXŽhr[Condominium/src/logic/controller/guicontroller/second/general/registration/RegisterGUI.java
+¢ 2javaXhrHCondominium/src/logic/controller/guicontroller/second/owner/RateGUI.java

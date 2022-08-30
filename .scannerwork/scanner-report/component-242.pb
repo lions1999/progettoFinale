@@ -1,1 +1,1 @@
-ò 2javaXBhrKCondominium/src/logic/controller/applicationcontroller/LoginController.java
+ò 2javaXˆhrNCondominium/src/logic/controller/applicationcontroller/RegisterController.java

@@ -1,1 +1,1 @@
-logic.model.Post#getRole()Llogic/model/Role;
+logic.model.Post#setImage(Ljava/io/InputStream;)V

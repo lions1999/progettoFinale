@@ -1,1 +1,1 @@
-logic.controller.guicontroller.first.admin.requests.TabOrganizeGUI#selectTab(I)V
+logic.controller.guicontroller.first.admin.requests.TabOrganizeGUI#onMeetSelect()V

@@ -1,1 +1,3 @@
+logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;
+logic.model.UserSingleton#instance-init#
 logic.model.UserSingleton#<init>()V

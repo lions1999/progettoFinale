@@ -1,1 +1,1 @@
-logic.model.UserSingleton#setAdministrator(Llogic/model/Administrator;)V
+logic.model.UserSingleton#getAdministrator()Llogic/model/Administrator;

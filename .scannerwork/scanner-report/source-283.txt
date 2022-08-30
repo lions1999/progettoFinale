@@ -1,97 +1,32 @@
-package logic.controller.guicontroller.second.admin.requests;
+package logic.controller.guicontroller.second.general;
 
-import javafx.collections.ObservableList;
-import javafx.fxml.FXMLLoader;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
-import logic.controller.applicationcontroller.MeetController;
-import logic.controller.applicationcontroller.RegisterController;
+import javafx.stage.Stage;
 import logic.controller.applicationcontroller.ViewController;
-import logic.controller.guicontroller.second.admin.requests.meeting.MeetingItemGUI;
-import logic.controller.guicontroller.second.admin.requests.meeting.MeetingTableGUI;
-import logic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI;
-import logic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI;
-import logic.engineeringclasses.bean.MeetRequestBean;
-import logic.engineeringclasses.bean.RegistrationBean;
-import logic.model.MeetRequest;
-import logic.model.Registration;
-import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
+import logic.controller.guicontroller.AlertGUI;
 
-public class RequestBottomNavMenuGUI {
+public class Main2GUI extends Application{
 
-    private final ViewController view = new ViewController();
-    protected final MeetController meetCtrl = new MeetController();
-    protected final RegisterController regCtrl = new RegisterController();
-    private String address;
+    public final ViewController view = new ViewController();
+    public final AlertGUI alert = new AlertGUI();
+    public static final BorderPane secondBorder = new BorderPane();
 
-    private RegistrationBean setUpRegistration(Registration registration){
-        RegistrationBean bean = new RegistrationBean();
-        bean.setID(registration.getRegID());
-        bean.setName(registration.getRegName());
-        bean.setEmail(registration.getRegEmail());
-        bean.setPassword(registration.getRegPwd());
-        bean.setRole(registration.getRegRole());
-        bean.setAddress(registration.getRegAddr());
-        bean.setApartment(registration.getRegApt());
-        return bean;
+    @Override public void start(Stage primaryStage) {
+        Pane pane = view.getPage("Login",2);
+        secondBorder.setCenter(pane);
+        secondBorder.setStyle("-fx-background-color: #121212;");
+        Scene scene = new Scene(secondBorder);
+        primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image("/logic/view/icon/outline_apartment_white_24dp.png"));
+        primaryStage.show();
     }
 
-    private MeetRequestBean setUpMeeting(MeetRequest meet){
-        MeetRequestBean bean = new MeetRequestBean();
-        bean.setMeetId(meet.getId());
-        bean.setMeetName(meet.getName());
-        bean.setMeetAddress(meet.getAddress());
-        bean.setMeetObject(meet.getObject());
-        bean.setMeetTextArea(meet.getText());
-        return bean;
-    }
-
-    public void setAddress(String address){
-        this.address = address;
-    }
-
-    public void btnRegClick() {
-        secondBorder.setCenter(null);
-        try {
-            FXMLLoader loader = view.loader("RegistrationTable", 2);
-            Pane table = loader.load();
-            RegistrationTableGUI tableCtrl = loader.getController();
-            tableCtrl.clearChildren();
-            ObservableList<Registration> list = regCtrl.loadRegistration(this.address);
-            for(int i = 0; i<=list.size()-1; i++){
-                RegistrationBean bean = setUpRegistration(list.get(i));
-                FXMLLoader item = view.loader("ItemRegistration",2);
-                Pane root = item.load();
-                RegistrationItemGUI itemCtrl = item.getController();
-                itemCtrl.setUp(bean);
-                tableCtrl.addChildren(root);
-            }
-            table.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-            secondBorder.setCenter(table);
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    public void btnMeetClick() {
-        secondBorder.setCenter(null);
-        try {
-            FXMLLoader loader = view.loader("MeetingTable", 2);
-            Pane table = loader.load();
-            MeetingTableGUI tableCtrl = loader.getController();
-            tableCtrl.clearChildren();
-            ObservableList<MeetRequest> list = meetCtrl.loadMeetRequest(this.address);
-             for (int i = list.size() - 1; i >= 0; i--) {
-                 MeetRequestBean bean = setUpMeeting(list.get(i));
-                 FXMLLoader item = view.loader("ItemMeeting",2);
-                 Pane root = item.load();
-                 MeetingItemGUI itemCtrl = item.getController();
-                 itemCtrl.setUp(bean);
-                 tableCtrl.addChildren(root);
-            }
-            table.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-            secondBorder.setCenter(table);
-        }catch(Exception e){
-            e.printStackTrace();
-        }
+    public void fullScreen(Boolean bool){
+        Stage stage = (Stage) secondBorder.getScene().getWindow();
+        stage.setMaximized(bool);
     }
 }

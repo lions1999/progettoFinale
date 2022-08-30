@@ -1,2 +1,2 @@
-logic.controller.guicontroller.second.general.registration.RegisterGUI#viewResident(LObservableList;LDialogPane;)LObservableList;
+logic.controller.guicontroller.second.general.registration.RegisterGUI#viewOwner(LObservableList;LDialogPane;)LObservableList;
 null

@@ -1,1 +1,1 @@
-logic.model.Post#setId(Ljava/lang/String;)V
+logic.model.Post#setUser(Ljava/lang/String;)V

@@ -1,1 +1,1 @@
-£ 2javaX2hrMCondominium/src/logic/controller/guicontroller/second/owner/AddRatingGUI.java
+£ 2javaX2hrPCondominium/src/logic/controller/guicontroller/second/owner/RateResidentGUI.java

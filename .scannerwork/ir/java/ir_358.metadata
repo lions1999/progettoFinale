@@ -1,1 +1,1 @@
-logic.model.UserSingleton#setUserID(Ljava/lang/String;)V
+logic.model.UserSingleton#getUserID()Ljava/lang/String;

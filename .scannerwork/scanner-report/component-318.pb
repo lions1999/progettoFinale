@@ -1,1 +1,1 @@
-¾ 2javaXhrDCondominium/src/logic/engineeringclasses/query/CondominiumQuery.java
+¾ 2javaXhrACondominium/src/logic/engineeringclasses/query/RegisterQuery.java

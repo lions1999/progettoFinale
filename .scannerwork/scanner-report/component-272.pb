@@ -1,1 +1,1 @@
-ê 2javaX/hrQCondominium/src/logic/controller/guicontroller/first/owner/RequestMeetingGUI.java
+ê 2javaX1hr`Condominium/src/logic/controller/guicontroller/second/admin/condominium/UpdateRatingItemGUI.java

@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.UserController#loadMailList(Ljava/lang/String;)LObservableList;
+logic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetGUI#instance-init#

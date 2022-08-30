@@ -1,1 +1,1 @@
-¥ 2javaX8hrRCondominium/src/logic/controller/guicontroller/second/owner/PreviousRatingGUI.java
+¥ 2javaXæhrNCondominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.java

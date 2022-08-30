@@ -1,60 +1,31 @@
-package logic.controller.guicontroller.first.admin.requests;
+package logic.controller.guicontroller.first.general;
 
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import logic.controller.applicationcontroller.ViewController;
-import logic.controller.guicontroller.first.admin.requests.meeting.MeetingTableGUI;
-import logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI;
-import logic.model.UserSingleton;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
+import logic.controller.guicontroller.AlertGUI;
 
-import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
+public class Main1GUI extends Application{
 
-public class TabOrganizeGUI implements Initializable {
+    public final ViewController view = new ViewController();
+    public final AlertGUI alert = new AlertGUI();
+    public static final BorderPane firstBorder = new BorderPane();
 
-    @FXML private TabPane tabOrganize;
-    @FXML private Tab tabRegistration;
-    @FXML private Tab tabMeeting;
-    protected ViewController view = new ViewController();
-    UserSingleton sg = UserSingleton.getInstance();
-
-    public void selectTab(int ind){
-        if(ind == 0 || ind == 1) tabOrganize.getSelectionModel().select(ind);
+    @Override public void start(Stage primaryStage) {
+        Pane pane = view.getPage("Login",1);
+        firstBorder.setCenter(pane);
+        Scene scene = new Scene(firstBorder);
+        primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image("/logic/view/icon/outline_apartment_white_24dp.png"));
+        primaryStage.show();
     }
 
-    @FXML private void onMeetSelect() {
-        firstBorder.setRight(null);
-    }
-
-    @FXML private void onRegSelect() {
-        firstBorder.setRight(null);
-    }
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        try {
-            FXMLLoader loader = view.loader("RegistrationTable",1);
-            Parent root = loader.load();
-            RegistrationTableGUI reg = loader.getController();
-            reg.setUpRegistration(sg.getAddress());
-            tabRegistration.setContent(root);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            FXMLLoader loader = view.loader("MeetTable",1);
-            Parent root = loader.load();
-            MeetingTableGUI meet = loader.getController();
-            meet.setUpMeeting(sg.getAddress());
-            tabMeeting.setContent(root);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public void fullScreen(Boolean bool){
+        Stage stage = (Stage) firstBorder.getScene().getWindow();
+        stage.setMaximized(bool);
     }
 }

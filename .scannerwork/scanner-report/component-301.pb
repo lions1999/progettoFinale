@@ -1,1 +1,1 @@
-­ 2javaX3hrBCondominium/src/logic/engineeringclasses/bean/MeetRequestBean.java
+­ 2javaXÃhr>Condominium/src/logic/engineeringclasses/dao/ApartmentDAO.java

@@ -1,1 +1,1 @@
-logic.model.Fee#getWifi()Ljava/lang/Double;
+logic.model.Fee#setWifi(Ljava/lang/Double;)V

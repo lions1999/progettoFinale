@@ -1,1 +1,3 @@
-logic.controller.applicationcontroller.PatternController#instance-init#
+logic.controller.applicationcontroller.PatternController#isText(Ljava/lang/String;)Z
+java.util.regex.Pattern#matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+java.util.regex.Matcher#find()Z

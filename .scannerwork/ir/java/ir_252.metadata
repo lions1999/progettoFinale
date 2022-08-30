@@ -1,1 +1,3 @@
-logic.controller.guicontroller.second.admin.requests.meeting.MeetingTableGUI#clearChildren()V
+logic.controller.applicationcontroller.FeeController#instance-init#
+logic.engineeringclasses.dao.FeeDAO#instance-init#
+logic.engineeringclasses.dao.FeeDAO#<init>()V

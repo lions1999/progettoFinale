@@ -1,1 +1,1 @@
-logic.model.UserSingleton#instance-init#
+logic.model.UserSingleton#<init>()V
