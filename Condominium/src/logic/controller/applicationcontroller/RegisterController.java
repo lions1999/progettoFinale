@@ -50,7 +50,7 @@ public class RegisterController{
 		}
 	}
 
-	private boolean checkRegistration(String email, String address) throws SQLException{
+	public boolean checkRegistration(String email, String address) throws SQLException{
 		return register.checkRegistration(email,address);
 	}
 

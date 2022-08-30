@@ -12,8 +12,13 @@ public class UserController {
     private final FeeController feeCtrl = new FeeController();
     private final ApartmentController aptCtrl = new ApartmentController();
 
-    public ObservableList<User> loadUserList(String address) throws SQLException {
-        return dao.loadUserList(address);
+    public ObservableList<User> loadUserList(String address) {
+        try {
+            return dao.loadUserList(address);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public ObservableList<String> loadMailList(String addr) throws SQLException {

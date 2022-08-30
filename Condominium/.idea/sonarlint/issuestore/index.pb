@@ -7,13 +7,7 @@ S
 Osrc/logic/controller/guicontroller/second/general/registration/RegisterGUI.java,f\c\fc5a959091defefb858c8077379f1d44cc9afac4
 f
 6src/logic/engineeringclasses/query/ApartmentQuery.java,9\1\9156634883594c7e484109b8ddcbf8d1745a4e8d
-]
--src/logic/engineeringclasses/dao/UserDAO.java,f\4\f4cd4a47447355b59569130f117571d07b7b5e27
 |
 Lsrc/logic/controller/guicontroller/second/owner/RequestMeetingDialogGUI.java,5\e\5e230d3718486236d0883483d335bcabbbb42d2d
-s
-Csrc/logic/controller/applicationcontroller/ApartmentController.java,c\b\cb087b39c1cfb8c8ebc1d4fe97068f85e35a0d9c
-]
--src/logic/engineeringclasses/dao/MeetDAO.java,d\9\d9d51e99a433ef99a11b98ea1a533f4d372c45c0
 o
 ?src/logic/controller/guicontroller/second/general/Menu2GUI.java,7\e\7eb15797d2f2204e38c7591d3d3ba8872dba99f0

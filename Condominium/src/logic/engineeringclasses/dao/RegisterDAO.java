@@ -11,10 +11,10 @@ import java.sql.SQLException;
 
 public class RegisterDAO extends SqlDAO{
 
-    public boolean checkRegistration(String email,String condominiumCode) throws SQLException {
+    public boolean checkRegistration(String email,String address) throws SQLException {
         try {
             connect();
-            ResultSet rs = RegisterQuery.selectRegistration(stmt, email, condominiumCode);
+            ResultSet rs = RegisterQuery.selectRegistration(stmt, email, address);
             if(rs.next()) {
                 return false;
             }
