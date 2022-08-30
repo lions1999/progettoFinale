@@ -1,0 +1,3 @@
+logic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetGUI#getBean(Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/MeetRequestBean;
+logic.engineeringclasses.bean.MeetRequestBean#<init>()V
+logic.engineeringclasses.bean.MeetRequestBean#instance-init#

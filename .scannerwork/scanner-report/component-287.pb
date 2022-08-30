@@ -1,0 +1,1 @@
+Ÿ 2javaXJhrQCondominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java

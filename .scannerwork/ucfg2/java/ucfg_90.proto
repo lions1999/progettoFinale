@@ -1,0 +1,39 @@
+
+rlogic.engineeringclasses.query.RateQuery#getRatesOwner(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java ()"1*õ	
+1€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (>ô
+ñ
+€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (F
+%0java.lang.String"__concat*+)
+'SELECT * FROM rating WHERE rate_own = '*
+
+ownerIDjava.lang.StringÊ
+Ç
+€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (K
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+' ¿
+¼
+€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (L
+sqljava.lang.String"__id*
+
+%1java.lang.StringÄÁ
+€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (%
+%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+
+stmtjava.sql.Statement*
+
+sqljava.lang.String2 executeQuery(Ljava/lang/String;)"Ÿ
+€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (&
+
+%2java.sql.ResultSet:
+stmtjava.sql.Statement:
+ownerIDjava.lang.StringB,"*
+(logic.engineeringclasses.query.RateQuery

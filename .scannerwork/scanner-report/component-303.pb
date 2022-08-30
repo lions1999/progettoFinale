@@ -1,0 +1,1 @@
+¯ 2javaX0hr;Condominium/src/logic/engineeringclasses/bean/RateBean.java

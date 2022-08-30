@@ -1,0 +1,1 @@
+Ï 2javaXhr)Condominium/src/logic/model/Resident.java

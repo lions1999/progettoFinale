@@ -1,0 +1,3 @@
+logic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI#remove()V
+java.lang.Integer#parseInt(Ljava/lang/String;)I
+logic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI#reloadPage()V

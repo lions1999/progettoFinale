@@ -1,0 +1,2 @@
+logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#setUp(Llogic/engineeringclasses/bean/UserBean;)V
+logic.model.Role#valueOf(Ljava/lang/String;)Llogic/model/Role;

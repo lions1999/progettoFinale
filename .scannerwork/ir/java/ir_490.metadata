@@ -1,0 +1,3 @@
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#removeAll()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#reloadPage()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#btnX()V

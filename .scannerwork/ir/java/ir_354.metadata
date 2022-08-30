@@ -1,0 +1,1 @@
+logic.engineeringclasses.query.CondominiumQuery#selectAddressList(Ljava/sql/Statement;)Ljava/sql/ResultSet;

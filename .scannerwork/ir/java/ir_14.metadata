@@ -1,0 +1,4 @@
+logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#removeRating(LDialogPane;)V
+null
+logic.controller.guicontroller.second.admin.condominium.InfoItemGUI#instance-init#
+logic.controller.guicontroller.second.admin.condominium.InfoItemGUI#<init>()V

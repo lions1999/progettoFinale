@@ -1,0 +1,1 @@
+logic.controller.applicationcontroller.ApartmentController#loadApartmentOwner(Ljava/lang/String;)LObservableList;

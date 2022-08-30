@@ -1,0 +1,1 @@
+Í 2javaXKhr-Condominium/src/logic/model/Registration.java

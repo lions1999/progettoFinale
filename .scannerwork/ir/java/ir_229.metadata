@@ -1,0 +1,2 @@
+logic.controller.guicontroller.ChartGUI#newBarChart(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LBarChart;
+null

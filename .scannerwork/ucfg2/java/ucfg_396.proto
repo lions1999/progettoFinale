@@ -1,0 +1,57 @@
+
+Qlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#checkInfo()Zù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java ("5*€
+2ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.javaZ (a¿
+Ω
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.javaZ (a>
+%48logic.controller.applicationcontroller.PatternController"__id*U*SF
+Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI"	
+patternÌÍ
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.javaZ (}
+%5"Xlogic.controller.applicationcontroller.PatternController#isPassword(Ljava/lang/String;)Z*@
+>
+%48logic.controller.applicationcontroller.PatternController*
+""2isPassword(Ljava/lang/String;)*
+1*ÿ
+4ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java4 (;¿
+Ω
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java4 (;>
+%28logic.controller.applicationcontroller.PatternController"__id*U*SF
+Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI"	
+patternÁ‰
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java4 (V
+%3"Ulogic.controller.applicationcontroller.PatternController#isEmail(Ljava/lang/String;)Z*@
+>
+%28logic.controller.applicationcontroller.PatternController*
+""2isEmail(Ljava/lang/String;)*
+2
+1*Ÿ
+5ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (¿
+Ω
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (>
+%08logic.controller.applicationcontroller.PatternController"__id*U*SF
+Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI"	
+patternÂ‚
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (0
+%1"Tlogic.controller.applicationcontroller.PatternController#isName(Ljava/lang/String;)Z*@
+>
+%08logic.controller.applicationcontroller.PatternController*
+""2isName(Ljava/lang/String;)*	
+2
+4
+1*Œ
+1ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (~"®
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (~
+""BHF
+Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI

@@ -1,0 +1,1 @@
+¼ 2javaXhrHCondominium/src/logic/engineeringclasses/exception/PatternException.java

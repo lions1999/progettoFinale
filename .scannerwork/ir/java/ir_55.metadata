@@ -1,0 +1,3 @@
+logic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetDetailGUI#remove()V
+java.lang.Integer#parseInt(Ljava/lang/String;)I
+logic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetDetailGUI#reloadPage()V

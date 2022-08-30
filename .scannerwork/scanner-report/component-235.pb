@@ -1,0 +1,1 @@
+ë 2cssXÊhr+Condominium/bin/logic/view/second/style.css

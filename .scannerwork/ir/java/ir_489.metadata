@@ -1,0 +1,3 @@
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#regBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/RegistrationBean;
+logic.engineeringclasses.bean.RegistrationBean#<init>()V
+logic.engineeringclasses.bean.RegistrationBean#instance-init#
