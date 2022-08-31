@@ -1,1 +1,1 @@
-Ò 2javaXihr.Condominium/src/logic/model/UserSingleton.java
+Ò 2javaX3hr;Condominium/src/logic/engineeringclasses/bean/PostBean.java

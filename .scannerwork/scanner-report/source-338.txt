@@ -1,104 +1,50 @@
-package logic.model;
+package logic.engineeringclasses.bean;
 
-public class UserSingleton {
+import logic.model.Role;
 
-	private Administrator administrator = null;
-	private Resident resident = null;
-	private Owner owner = null;	
-	private String usrId;
+import java.io.InputStream;
+
+public class PostBean {
+
+	private String id;
+	private String usr;
 	private Role role;
-
-	private Fee fee;
-	private Fee pastfee;
-	private String address;
-	private Request req;
-
-	private static UserSingleton instance = null;
-
-	private UserSingleton() {
+	private InputStream img;
+	private String text;
+	
+	public String getPostId() {
+		return this.id;
 	}
 
-	public static UserSingleton getInstance() {
-		if (instance == null)
-			instance = new UserSingleton();
-		return instance;
+	public void setPostId(String id) {
+		this.id = id;
+	}
+
+	public void setPostUser(String usr) {
+		this.usr = usr;
 	}
 	
-	public void setUserID(String usrId) {
-		this.usrId = usrId;
+	public String getPostUser() {
+		return this.usr;
+	}
+
+	public void setPostRole(Role role){this.role = role;}
+
+	public Role getPostRole(){return this.role;}
+	
+	public void setPostImage(InputStream img) {
+		this.img = img;
 	}
 	
-	public String getUserID() {
-		return this.usrId;
-	}
-	
-	public Resident getResident() {
-		return resident;
-	}
+	public InputStream getPostImage() {
+		return this.img;
+	}	
 
-	public void setResident(Resident resident) {
-		this.resident = resident;
+	public String getPostText() {
+		return text;
 	}
 
-	public Owner getOwner() {
-		return owner;
+	public void setPostText(String text) {
+		this.text = text;
 	}
-
-	public void setOwner(Owner owner) {
-		this.owner = owner;
-	}
-
-	public void setAdministrator(Administrator user) {
-		this.administrator = user;
-	}
-
-	public Administrator getAdministrator() {
-		return this.administrator;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getAddress(){return this.address;}
-
-	public Role getRole() {
-		return this.role;
-	}
-
-	public void setRole(Role role) {
-		this.role = role;
-	}
-
-	public Request getReq() {
-		return this.req;
-	}
-
-	public void setReq(Request req) {
-		this.req = req;
-	}
-	
-	
-	
-	public void clearState() {
-		this.setUserID(null);
-		this.setAddress(null);
-		this.setRole(null);
-		this.setAdministrator(null);
-		this.setResident(null);
-		this.setOwner(null);
-		this.setReq(null);
-	}
-
-	public Fee getFee() {
-		return fee;
-	}
-
-	public void setFee(Fee fee) {
-		this.fee = fee;
-	}
-
-	public Fee getPastfee() {return pastfee;}
-
-	public void setPastfee(Fee pastfee) {this.pastfee = pastfee;}
 }

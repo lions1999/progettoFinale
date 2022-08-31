@@ -1,1 +1,1 @@
-¼ 2javaXhr=Condominium/src/logic/engineeringclasses/query/PostQuery.java
+¼ 2javaXhraCondominium/src/logic/controller/guicontroller/second/admin/requests/meeting/MeetingTableGUI.java

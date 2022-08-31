@@ -1,0 +1,1 @@
+â 2javaXhrDCondominium/src/logic/engineeringclasses/query/CondominiumQuery.java

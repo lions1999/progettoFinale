@@ -1,28 +1,24 @@
-package logic.engineeringclasses.query;
+package logic.controller.guicontroller.second.admin.condominium;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 
-public class FeeQuery {
+public class UpdateRatingTableGUI {
 
-    private FeeQuery(){}
+    @FXML private Label ownName;
+    @FXML private VBox scrollBox;
 
-    public static ResultSet loadAvailableFees(Statement stmt, String address) throws SQLException {
-        String sql = "SELECT * FROM condominiums where con_addr='" + address +"'";
-        
-        return stmt.executeQuery(sql);
+    public void addChildren(Node node){
+        scrollBox.getChildren().add(node);
     }
 
-    public static ResultSet loadFees(Statement stmt, String aptId, String typeFee) throws SQLException {
-        String sql = "Select * from "+typeFee+"  WHERE fee_apt ='"+aptId+"'";
-        
-        return stmt.executeQuery(sql);
+    public void clearChildren(){
+        scrollBox.getChildren().clear();
     }
 
-    public static ResultSet checkApt(Statement stmt, String aptId) throws SQLException {
-        String sql = "SELECT fee_apt FROM pastfee where fee_apt='" + aptId +"'";
-        
-        return stmt.executeQuery(sql);
+    public void setOwnName(String name){
+        ownName.setText(name+"\tRating table");
     }
 }

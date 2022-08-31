@@ -1,1 +1,1 @@
-© 2javaX3hr;Condominium/src/logic/engineeringclasses/bean/PostBean.java
+© 2javaXihrLCondominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java

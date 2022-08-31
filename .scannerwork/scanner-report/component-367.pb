@@ -1,0 +1,1 @@
+ï 2javaX=hr%Condominium/src/logic/model/Post.java

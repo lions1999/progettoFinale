@@ -1,1 +1,1 @@
-Ì 2javaXNhr%Condominium/src/logic/model/User.java
+Ì 2javaX2hrPCondominium/src/logic/controller/guicontroller/second/owner/RateResidentGUI.java

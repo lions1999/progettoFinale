@@ -1,41 +1,74 @@
-package logic.controller.guicontroller.second.general.home;
+package logic.controller.applicationcontroller;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
-import logic.controller.applicationcontroller.PostController;
-import java.io.File;
+import javafx.scene.control.TextFormatter;
+import javafx.util.StringConverter;
 
-public class AddPostGUI {
+import java.util.function.UnaryOperator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-    private final PostController controller = new PostController();
-    private File file;
+public class PatternController {
 
-    @FXML private TextField txtMsg;
-    @FXML private Button btnAddPost;
-    @FXML private Text txtFile;
+	public static  final Pattern VALID_TEXT_REGEX =
+			Pattern.compile("^[A-z\\s]", Pattern.CASE_INSENSITIVE);
 
-    @FXML private void addFileClick() {
-        btnAddPost.setDisable(true);
-        this.file = controller.selectFile(2);
-        if (this.file != null) {
-            txtFile.setText(this.file.getName());
-        }
-        btnAddPost.setDisable(false);
-    }
+	public static final Pattern VALID_NAME_REGEX = 
+		    Pattern.compile("^[A-Z][a-z\\s]{2,15}$", Pattern.CASE_INSENSITIVE);
+	
+	public static final Pattern VALID_EMAIL_ADDRESS_REGEX = 
+		    Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+	
+	public static final Pattern VALID_PASSWORD_REGEX = 
+		    Pattern.compile("^(?=.*[A-z])(?=.*\\d)[A-z\\d]{4,15}$", Pattern.CASE_INSENSITIVE);
 
-    public String getMsg(){
-        if(!txtMsg.getText().isEmpty()) {
-            return txtMsg.getText();
-        }
-        return null;
-    }
+	public  boolean isText(String text){
+		Matcher matcher = VALID_TEXT_REGEX.matcher(text);
+		return !matcher.find();
+	}
 
-    public File getFile(){
-        if(!txtFile.getText().isEmpty()){
-            return this.file;
-        }
-        return null;
-    }
+
+	public boolean isName(String name) {
+		Matcher matcher = VALID_NAME_REGEX.matcher(name);
+	    return !matcher.find();
+	}
+	    
+	public  boolean isEmail(String emailStr) {
+		Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);
+	    return matcher.find();
+	}
+	
+	public  boolean isPassword(String password) {
+		Matcher matcher = VALID_PASSWORD_REGEX.matcher(password);
+	    return matcher.find();
+	}
+
+	public void textFilter(TextField tf){
+		Pattern validEditingState = Pattern.compile("-?(([1-9]\\d*)|0)?(\\.\\d*)?");
+		UnaryOperator<TextFormatter.Change> filter = c -> {
+			String text = c.getControlNewText();
+			if (validEditingState.matcher(text).matches()) {
+				return c ;
+			} else {
+				return null ;
+			}
+		};
+		StringConverter<Double> converter = new StringConverter<Double>() {
+			@Override
+			public Double fromString(String s) {
+				if (s.isEmpty() || "-".equals(s) || ".".equals(s) || "-.".equals(s)) {
+					return 0.0 ;
+				} else {
+					return Double.valueOf(s);
+				}
+			}
+			@Override
+			public String toString(Double d) {
+				return d.toString();
+			}
+		};
+		TextFormatter<Double> textFormatter = new TextFormatter<>(converter, 0.0, filter);
+		tf.setTextFormatter(textFormatter);
+	}
+
 }

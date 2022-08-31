@@ -1,41 +1,33 @@
-package logic.controller.guicontroller.second.general;
+package logic.controller.applicationcontroller;
 
-import javafx.application.Platform;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Dialog;
-import javafx.scene.control.DialogPane;
-import javafx.scene.control.ListView;
-import logic.controller.applicationcontroller.RegisterController;
-import logic.controller.guicontroller.AlertGUI;
-import java.util.Optional;
+import javafx.collections.ObservableList;
+import logic.engineeringclasses.dao.MeetDAO;
+import logic.model.MeetRequest;
 
-public class AddressesDialogGUI {
+import java.sql.SQLException;
 
-    private final RegisterController controller = new RegisterController();
-    private final AlertGUI alert = new AlertGUI();
+public class MeetController {
 
-    public String loadAddresses() {
-        try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/logic/view/first/Dialog.fxml"));
-            DialogPane pane = loader.load();
-            ListView<String> list = new ListView<>();
-            list.setItems(controller.loadAddresses());
-            pane.setContent(list);
-            Dialog<ButtonType> dialog = new Dialog<>();
-            dialog.setDialogPane(pane);
-            Optional<ButtonType> btn = dialog.showAndWait();
-            if (btn.isPresent() && btn.get() == ButtonType.OK) {
-                String address = list.getSelectionModel().getSelectedItem();
-                if (address != null) {
-                    return address;
-                }
-            }
-        } catch (Exception e) {
-            alert.alertError("DATA BASE ERROR", "DATA BASE not connected ", "Please Restart the Application");
-            Platform.exit();
+    private final MeetDAO meet = new MeetDAO();
+    private final UserController usrCtrl = new UserController();
+
+    public ObservableList<MeetRequest> loadMeetRequest(String address) throws SQLException {
+        return meet.loadMeetList(address);
+    }
+
+    public void removeMeetRequest(int meetId) {
+        try{
+            meet.deleteMeetRequest(meetId);
+        }catch(SQLException e){
+            e.printStackTrace();
         }
-        return null;
+    }
+
+    public ObservableList<String> loadMailList(String addr) throws SQLException {
+        return usrCtrl.loadMailList(addr);
+    }
+
+    public void addMeeting(String meetFrom, String meetAddr, String meetObj, String meetTxt) throws SQLException{
+        meet.addMeeting(meetFrom, meetAddr, meetObj, meetTxt);
     }
 }

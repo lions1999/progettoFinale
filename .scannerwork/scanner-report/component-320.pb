@@ -1,1 +1,1 @@
-À 2javaX	hr.Condominium/src/logic/model/Administrator.java
+À 2javaX*hrUCondominium/src/logic/controller/guicontroller/second/general/AddressesDialogGUI.java

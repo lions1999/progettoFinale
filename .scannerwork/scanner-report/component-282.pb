@@ -1,1 +1,1 @@
-š 2javaXJhrQCondominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java
+š 2javaXhrJCondominium/src/logic/controller/applicationcontroller/RateController.java

@@ -1,16 +1,16 @@
 
-,logic.model.Post#getText()Ljava/lang/String;h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java5 5("1*¢
+0logic.model.Post#getImage()Ljava/io/InputStream;h
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java1 1("1*§
 1h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java6	 6(«
-¨
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java2	 2(­
+ª
 h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java6	 6(
-%0java.lang.String"__id**
-logic.model.Post"
-text"„
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java2	 2(
+%0java.io.InputStream"__id**
+logic.model.Post"
+img"‡
 h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java6 6(
-
-%0java.lang.StringB
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java2 2(
+
+%0java.io.InputStreamB
 logic.model.Post

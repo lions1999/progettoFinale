@@ -1,1 +1,1 @@
-¡ 2javaXhrNCondominium/src/logic/controller/guicontroller/second/owner/RateDialogGUI.java
+¡ 2javaXIhrSCondominium/src/logic/controller/guicontroller/first/admin/condominium/InfoGUI.java

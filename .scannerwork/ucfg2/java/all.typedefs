@@ -1043,10 +1043,9 @@ ownerAdd()glogic.controller.guicontroller.first.admin.requests.registration.Reg
 remove()elogic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#remove()V–
 7setUp(Llogic/engineeringclasses/bean/RegistrationBean;)îlogic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#setUp(Llogic/engineeringclasses/bean/RegistrationBean;)V{
 residentAdd()jlogic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#residentAdd()Vm
-btnX()clogic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#btnX()V‰
+btnX()clogic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#btnX()Ví
 Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUIjava.lang.Objectb
-<init>()Vlogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#<init>()Vœ
-'setUpMeeting(Llogic/model/MeetRequest;)£logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpMeeting(Llogic/model/MeetRequest;)Llogic/engineeringclasses/bean/MeetRequestBean;é
+<init>()Vlogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#<init>()Vé
 setAddress(Ljava/lang/String;)llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setAddress(Ljava/lang/String;)V‹
 -setUpRegistration(Llogic/model/Registration;)™logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpRegistration(Llogic/model/Registration;)Llogic/engineeringclasses/bean/RegistrationBean;l
 btnRegClick()[logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#btnRegClick()Vn
@@ -1073,9 +1072,10 @@ getEmail()Klogic.engineeringclasses.bean.RegistrationBean#getEmail()Ljava/lang/
 setUp(Ljava/util/List;)Vlogic.controller.guicontroller.second.owner.PreviousRatingGUI#setUp(Ljava/util/List;)Vá
 3logic.controller.guicontroller.second.owner.RateGUIjava.lang.Objects
 setupRate(Llogic/model/Rate;)Rlogic.controller.guicontroller.second.owner.RateGUI#setupRate(Llogic/model/Rate;)VI
-<init>()=logic.controller.guicontroller.second.owner.RateGUI#<init>()V 
+<init>()=logic.controller.guicontroller.second.owner.RateGUI#<init>()Và
 
-test.Testsjava.lang.Object 
+test.Testsjava.lang.Object<
+testRemoveRegistered()"test.Tests#testRemoveRegistered()V 
 <init>()test.Tests#<init>()VL
 testRegistrationAlreadyExist()*test.Tests#testRegistrationAlreadyExist()V:
 testAddRegistration()!test.Tests#testAddRegistration()V´
@@ -1734,19 +1734,7 @@ getRegID()5logic.model.Registration#getRegID()Ljava/lang/String;Z
 Ü<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)†logic.model.Registration#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VX
 setRegApt(Ljava/lang/String;)7logic.model.Registration#setRegApt(Ljava/lang/String;)VZ
 setRegRole(Ljava/lang/String;)8logic.model.Registration#setRegRole(Ljava/lang/String;)VZ
-setRegName(Ljava/lang/String;)8logic.model.Registration#setRegName(Ljava/lang/String;)Vé
-logic.model.MeetRequestjava.lang.ObjectS
-setName(Ljava/lang/String;)4logic.model.MeetRequest#setName(Ljava/lang/String;)VO
-setId(Ljava/lang/String;)2logic.model.MeetRequest#setId(Ljava/lang/String;)V<
-getId()1logic.model.MeetRequest#getId()Ljava/lang/String;F
-getAddress()6logic.model.MeetRequest#getAddress()Ljava/lang/String;@
-	getText()3logic.model.MeetRequest#getText()Ljava/lang/String;@
-	getName()3logic.model.MeetRequest#getName()Ljava/lang/String;W
-setObject(Ljava/lang/String;)6logic.model.MeetRequest#setObject(Ljava/lang/String;)VY
-setAddress(Ljava/lang/String;)7logic.model.MeetRequest#setAddress(Ljava/lang/String;)VD
-getObject()5logic.model.MeetRequest#getObject()Ljava/lang/String;·
-b<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;){logic.model.MeetRequest#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VS
-setText(Ljava/lang/String;)4logic.model.MeetRequest#setText(Ljava/lang/String;)V·
+setRegName(Ljava/lang/String;)8logic.model.Registration#setRegName(Ljava/lang/String;)V·
 8logic.controller.guicontroller.first.owner.RatingUserGUIjava.lang.ObjectZ
 enableButton()Hlogic.controller.guicontroller.first.owner.RatingUserGUI#enableButton()VN
 <init>()Blogic.controller.guicontroller.first.owner.RatingUserGUI#<init>()VZ
@@ -1785,7 +1773,19 @@ DsetShardingKeyIfValid(Ljava/sql/ShardingKey;Ljava/sql/ShardingKey;I)Yjava.sql.
 endRequest()!java.sql.Connection#endRequest()Vˇ
 +logic.engineeringclasses.dao.CondominiumDAO#logic.engineeringclasses.dao.SqlDAOA
 <init>()5logic.engineeringclasses.dao.CondominiumDAO#<init>()Vh
-checkAddressesList()Plogic.engineeringclasses.dao.CondominiumDAO#checkAddressesList()LObservableList;Æ
+checkAddressesList()Plogic.engineeringclasses.dao.CondominiumDAO#checkAddressesList()LObservableList;é
+logic.model.MeetRequestjava.lang.ObjectS
+setName(Ljava/lang/String;)4logic.model.MeetRequest#setName(Ljava/lang/String;)VO
+setId(Ljava/lang/String;)2logic.model.MeetRequest#setId(Ljava/lang/String;)V<
+getId()1logic.model.MeetRequest#getId()Ljava/lang/String;F
+getAddress()6logic.model.MeetRequest#getAddress()Ljava/lang/String;@
+	getText()3logic.model.MeetRequest#getText()Ljava/lang/String;@
+	getName()3logic.model.MeetRequest#getName()Ljava/lang/String;W
+setObject(Ljava/lang/String;)6logic.model.MeetRequest#setObject(Ljava/lang/String;)VY
+setAddress(Ljava/lang/String;)7logic.model.MeetRequest#setAddress(Ljava/lang/String;)VD
+getObject()5logic.model.MeetRequest#getObject()Ljava/lang/String;·
+b<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;){logic.model.MeetRequest#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VS
+setText(Ljava/lang/String;)4logic.model.MeetRequest#setText(Ljava/lang/String;)VÆ
 ,logic.engineeringclasses.query.RegisterQueryjava.lang.Objectﬁ
 LselectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)çlogic.engineeringclasses.query.RegisterQuery#selectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;B
 <init>()6logic.engineeringclasses.query.RegisterQuery#<init>()V∆

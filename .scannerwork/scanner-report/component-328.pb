@@ -1,1 +1,1 @@
-È 2javaXKhr-Condominium/src/logic/model/Registration.java
+È 2javaXMhrLCondominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java

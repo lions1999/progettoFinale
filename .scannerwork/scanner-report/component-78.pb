@@ -1,0 +1,1 @@
+N 2xmlXhrCondominium/.idea/vcs.xml

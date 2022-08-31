@@ -1,1 +1,1 @@
-£ 2javaX2hrPCondominium/src/logic/controller/guicontroller/second/owner/RateResidentGUI.java
+£ 2javaX@hr`Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java

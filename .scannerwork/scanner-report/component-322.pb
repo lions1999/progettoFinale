@@ -1,1 +1,1 @@
-Â 2javaX-hr,Condominium/src/logic/model/Condominium.java
+Â 2javaXFhrOCondominium/src/logic/controller/guicontroller/second/general/home/PostGUI.java

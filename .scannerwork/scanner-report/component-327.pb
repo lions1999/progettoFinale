@@ -1,1 +1,1 @@
-Ç 2javaX@hr%Condominium/src/logic/model/Rate.java
+Ç 2javaX2hrMCondominium/src/logic/controller/guicontroller/second/owner/AddRatingGUI.java

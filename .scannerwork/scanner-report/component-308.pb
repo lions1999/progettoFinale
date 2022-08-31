@@ -1,1 +1,1 @@
-´ 2javaX>hr8Condominium/src/logic/engineeringclasses/dao/SqlDAO.java
+´ 2javaX/hrQCondominium/src/logic/controller/guicontroller/first/owner/RequestMeetingGUI.java

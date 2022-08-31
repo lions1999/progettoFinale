@@ -1,1 +1,1 @@
-› 2javaX hrKCondominium/src/logic/controller/guicontroller/second/general/Main2GUI.java
+› 2javaXˆhrNCondominium/src/logic/controller/applicationcontroller/RegisterController.java

@@ -1,39 +1,55 @@
 
-ologic.engineeringclasses.query.UserQuery#selectRole(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;€
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (&"1*ó	
+ƒlogic.engineeringclasses.query.UserQuery#selectUserID(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (("1*¶
 1€
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (Bó
-ð
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (C÷
+ô
 €
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (G
-%0java.lang.String"__concat*/-
-+SELECT user_role FROM users WHERE user_id='*
-
-idjava.lang.StringÉ
-Æ
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (K
+%0java.lang.String"__concat*0.
+,SELECT user_id FROM users where user_email='*
+
+emailjava.lang.StringØ
+Õ
 €
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (M
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (`
 %1java.lang.String"__concat*
 
-%0java.lang.String*
+%0java.lang.String*
+'and user_addr='á
+Þ
+€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (j
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+
+addressjava.lang.StringÉ
+Æ
+€
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (p
+%3java.lang.String"__concat*
+
+%2java.lang.String*
 '¿
 ¼
 €
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (N
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (q
 sqljava.lang.String"__id*
 
-%1java.lang.StringÄÁ
+%3java.lang.StringÄÁ
 €
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (%
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (%
+%4java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
 
 stmtjava.sql.Statement*
 
 sqljava.lang.String2 executeQuery(Ljava/lang/String;)"Ÿ
 €
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (&
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java (&
 
-%2java.sql.ResultSet:
-stmtjava.sql.Statement:
-idjava.lang.StringB,"*
+%4java.sql.ResultSet:
+stmtjava.sql.Statement:
+emailjava.lang.String:
+addressjava.lang.StringB,"*
 (logic.engineeringclasses.query.UserQuery

@@ -1,1 +1,1 @@
-è 2cssXØhr*Condominium/src/logic/view/first/style.css
+è 2javaX/hr=Condominium/src/logic/engineeringclasses/query/UserQuery.java

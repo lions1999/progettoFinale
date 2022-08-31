@@ -1,0 +1,1 @@
+á 2javaXChrBCondominium/src/logic/engineeringclasses/query/ApartmentQuery.java

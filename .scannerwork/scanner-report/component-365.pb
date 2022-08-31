@@ -1,0 +1,1 @@
+í 2javaX;hr,Condominium/src/logic/model/MeetRequest.java

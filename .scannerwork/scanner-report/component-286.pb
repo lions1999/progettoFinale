@@ -1,1 +1,1 @@
-ž 2javaX2hrMCondominium/src/logic/controller/guicontroller/second/owner/AddRatingGUI.java
+ž 2javaX+hr<Condominium/src/logic/controller/guicontroller/AlertGUI.java

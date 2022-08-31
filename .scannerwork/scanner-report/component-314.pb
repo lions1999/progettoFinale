@@ -1,1 +1,1 @@
-º 2javaXhr<Condominium/src/logic/engineeringclasses/query/FeeQuery.java
+º 2javaXhraCondominium/src/logic/controller/guicontroller/second/admin/condominium/UpdateRatingTableGUI.java

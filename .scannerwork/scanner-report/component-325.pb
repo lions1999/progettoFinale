@@ -1,1 +1,1 @@
-Å 2javaXhr&Condominium/src/logic/model/Owner.java
+Å 2javaXÎhrKCondominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java

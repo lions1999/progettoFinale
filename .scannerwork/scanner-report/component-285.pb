@@ -1,1 +1,1 @@
-ù 2javaXéhr[Condominium/src/logic/controller/guicontroller/second/general/registration/RegisterGUI.java
+ù 2javaXWhrJCondominium/src/logic/controller/applicationcontroller/ViewController.java

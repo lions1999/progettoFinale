@@ -1,1 +1,1 @@
-² 2javaXOhr9Condominium/src/logic/engineeringclasses/dao/RateDAO.java
+² 2javaX\hrOCondominium/src/logic/controller/guicontroller/first/owner/RateResidentGUI.java

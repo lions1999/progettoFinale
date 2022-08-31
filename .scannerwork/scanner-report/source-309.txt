@@ -1,187 +1,179 @@
-package logic.engineeringclasses.dao;
+package logic.controller.guicontroller.first.resident;
 
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import logic.engineeringclasses.bean.UserBean;
-import logic.engineeringclasses.exception.InputException;
-import logic.engineeringclasses.query.ApartmentQuery;
-import logic.engineeringclasses.query.UserQuery;
-import logic.model.*;
-
-import java.sql.ResultSet;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.PieChart;
+import javafx.scene.chart.XYChart;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ComboBox;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+import javafx.stage.Screen;
+import logic.controller.applicationcontroller.ApartmentController;
+import logic.controller.applicationcontroller.FeeController;
+import logic.controller.guicontroller.first.general.Main1GUI;
+import logic.model.Apartment;
+import logic.model.Fee;
+import logic.model.UserSingleton;
+import logic.controller.guicontroller.ChartGUI;
+import java.net.URL;
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ResourceBundle;
 
-public class UserDAO extends SqlDAO{
+public class AptInfoGUI extends Main1GUI implements Initializable {
+    private static final UserSingleton sg = UserSingleton.getInstance();
+    private final ChartGUI chart = new ChartGUI();
+    private final ApartmentController aptController = new ApartmentController();
+    private final FeeController feeController = new FeeController();
+    private final List<String> seriesName = Arrays.asList("Water","Gas","Electricity","Admin","Parking","Elevator","Pet","WiFi");
+    private static final String CHOOSE_CHART = "Choose Chart";
+    private static final String BAR_CHART = "Bar Chart";
+    private static final String PIE_CHART = "Pie Chart";
+    private static final String LINE_CHART = "Line Chart";
 
-    private String usrName;
-    private static final String USER_NAME = "user_name";
-    private static final String USER_PASSWORD = "user_pwd";
-    private static final String USER_EMAIL = "user_email";
-    private static final String USER_ADDRESS = "user_addr";
+    @FXML private ComboBox<String> chartCombo;
+    @FXML private CheckBox lastMonthBtn;
+    @FXML private Text tfNumber;
+    @FXML private Text tfAdmin;
+    @FXML private Text tfPark;
+    @FXML private Text tfElevator;
+    @FXML private Text tfPet;
+    @FXML private Text tfWifi;
+    @FXML private Text tfOwner;
+    @FXML private Text tfPastAdmin;
+    @FXML private Text tfPastElevator;
+    @FXML private Text tfPastPark;
+    @FXML private Text tfPastPet;
+    @FXML private Text tfPastWifi;
+    @FXML private GridPane pastGrid;
 
-    public String checkNameByID(String id)throws SQLException {
+    @Override
+    public void initialize(URL location, ResourceBundle resources){setUp();}
+
+    public void submitLastMonth() {
+        List<Double> chartDataList = getList(sg.getPastfee());
+        pastGrid.setVisible(lastMonthBtn.isSelected());
+        switch (chartCombo.getValue()) {
+            default:
+            case CHOOSE_CHART:
+                firstBorder.setRight(null);
+                break;
+            case BAR_CHART:
+                BarChart<String, Number> oldBarChart = (BarChart) firstBorder.getRight();
+                if (lastMonthBtn.isSelected()) {
+                    XYChart.Series<String, Number> series2 = chart.newSeries(chartDataList, seriesName, "Outgoings Last Month");
+                    oldBarChart.getData().add(series2);
+                } else if (!lastMonthBtn.isSelected() && oldBarChart.getData().size() == 2) {
+                        oldBarChart.getData().remove(1);
+                }
+                break;
+            case LINE_CHART:
+                LineChart<String, Number> oldLineChart = (LineChart) firstBorder.getRight();
+                if (lastMonthBtn.isSelected()) {
+                    XYChart.Series<String, Number> series2 = chart.newSeries(chartDataList, seriesName, "Outgoings Last Month");
+                    oldLineChart.getData().add(series2);
+                } else if (!lastMonthBtn.isSelected() && oldLineChart.getData().size() == 2) {
+                        oldLineChart.getData().remove(1);
+                }
+                break;
+            case PIE_CHART:
+                Pane oldPieChart = (Pane) firstBorder.getRight();
+                VBox vBox = (VBox) oldPieChart.getChildren().get(0);
+                if (lastMonthBtn.isSelected()) {
+                    ObservableList<PieChart.Data> valueList = chart.value(chartDataList, seriesName);
+                    PieChart pc = chart.newPieChart(valueList, "Outgoing Last Month");
+                    pc.setPrefHeight((Screen.getPrimary().getBounds().getHeight()-100)/2);
+                    pc.setPrefWidth(Screen.getPrimary().getBounds().getWidth()/3);
+                    vBox.getChildren().add(pc);
+                } else if (!lastMonthBtn.isSelected() && vBox.getChildren().size() == 2) {
+                        vBox.getChildren().remove(1);
+                }
+                break;
+        }
+    }
+
+    public void submitTypeChart() {
+        List<Double> chartDataList = getList(sg.getFee());
+        String chartTitle = "Outgoing Current Month";
+        switch (chartCombo.getValue()){
+            default: case CHOOSE_CHART:
+                firstBorder.setRight(null);
+                break;
+            case BAR_CHART:
+                BarChart<String, Number> bc = chart.newBarChart("Fees","","Outgoings");
+                XYChart.Series<String, Number> bcSeries = chart.newSeries(chartDataList,seriesName,chartTitle);
+                bc.getData().add(bcSeries);
+                bc.setPrefWidth((Screen.getPrimary().getBounds().getWidth()/2));
+                firstBorder.setRight(bc);
+                break;
+            case PIE_CHART:
+                ObservableList<PieChart.Data> valueList = chart.value(chartDataList,seriesName);
+                PieChart pc = chart.newPieChart(valueList,chartTitle);
+                pc.setPrefHeight((Screen.getPrimary().getBounds().getHeight()-100)/2);
+                pc.setPrefWidth(Screen.getPrimary().getBounds().getWidth()/3);
+                VBox vbox = new VBox(pc);
+                Pane paneC = new Pane(vbox);
+                firstBorder.setRight(paneC);
+                break;
+            case LINE_CHART:
+                LineChart<String ,Number> lc = chart.newLineChart("Fees","","Outgoings");
+                lc.setPrefWidth((Screen.getPrimary().getBounds().getWidth()/2));
+                XYChart.Series<String, Number> lcSeries = chart.newSeries(chartDataList,seriesName,chartTitle);
+                lc.getData().add(lcSeries);
+                firstBorder.setRight(lc);
+                break;
+        }
+        submitLastMonth();
+    }
+
+    private void thereAreNoFee(Text t){
+        t.setText("Unavailable in your Condominium");
+    }
+
+    public void setUp(){
+
         try {
-            connect();
-            ResultSet rs = ApartmentQuery.selectNameByID(stmt, id);
-            if(rs.next()) {
-                this.usrName = rs.getString(USER_NAME);
-            }
-        } finally {
-            disconnect();
-        }
-        return this.usrName;
-    }
+            pastGrid.setVisible(false);
+            Fee boolFee = feeController.setUpFees(sg.getAddress());
+            final Apartment apartment = aptController.checkApartments(sg.getUserID(),sg.getAddress(),"apt_res");
+            Fee currentFee = feeController.loadFees(aptController.loadApartmentId(apartment.getNumber(),sg.getAddress()),"fee");
+            sg.setFee(currentFee);
+            Fee pastFee = feeController.loadFees(aptController.loadApartmentId(apartment.getNumber(),sg.getAddress()),"pastfee" );
+            sg.setPastfee(pastFee);
 
-    public String checkUserID(String email,String address) throws SQLException{
-        String getID = "";
-        try {
-            connect();
-            ResultSet rs = UserQuery.selectUserID(stmt, email,address);
-            if(rs.next()) {
-                getID = rs.getString("user_id");
-            }
-        } finally {
-            disconnect();
-        }
-        return getID;
-    }
+            if (boolFee.getAvailablePark()) { tfPark.setText(currentFee.getPark() + " â‚¬"); tfPastPark.setText(pastFee.getPark() + " â‚¬");}
+            else {
+                thereAreNoFee(tfPark); thereAreNoFee(tfPastPark);}
+            if (boolFee.getAvailableElevator()) { tfElevator.setText(currentFee.getElevator() + " â‚¬"); tfPastElevator.setText(pastFee.getElevator()+" â‚¬"); }
+            else {
+                thereAreNoFee(tfElevator); thereAreNoFee(tfPastElevator);}
+            if (boolFee.getAvailablePet()) { tfPet.setText(currentFee.getPet() + " â‚¬"); tfPastPet.setText(pastFee.getPet()+" â‚¬"); }
+            else {
+                thereAreNoFee(tfPet); thereAreNoFee(tfPastPet);}
+            if (boolFee.getAvailableWifi()) { tfWifi.setText(currentFee.getWifi()+" â‚¬"); tfPastWifi.setText(pastFee.getWifi()+" â‚¬"); }
+            else {
+                thereAreNoFee(tfWifi); thereAreNoFee(tfPastWifi);}
 
-    public Role checkRole(String id) throws SQLException {
-        Role role = null;
-        try {
-            connect();
-            ResultSet rs = UserQuery.selectRole(stmt,id);
-            if(rs.next()) {
-                role = Role.valueOf(rs.getString("user_role"));
-            }
-        } finally {
-            disconnect();
-        }
-        return role;
-    }
-
-    public  String checkLogin(String email,String condominiumCode) throws SQLException {
-        String pwd = "";
-        try {
-            connect();
-            ResultSet rs = UserQuery.selectLogin(stmt, email, condominiumCode);
-            if(rs.next()) {
-                pwd = rs.getString(USER_PASSWORD);
-            }
-        } finally {
-            disconnect();
-        }
-        return pwd;
-    }
-
-    //USER INITIALIZATION
-    public Administrator loadAdminID(String id) throws SQLException {
-        Administrator admin = null;
-        try {
-            connect();
-            ResultSet rs = UserQuery.loadUserByID(stmt,id);
-            if(rs.next()) {
-                String userName = rs.getString(USER_NAME);
-                String userEmail = rs.getString(USER_EMAIL);
-                String userPwd = rs.getString(USER_PASSWORD);
-                String userAddr = rs.getString(USER_ADDRESS);
-                admin = new Administrator(id,userName,userEmail,userPwd,userAddr);
-            }
-        } finally {
-            disconnect();
-        }
-        return admin;
-    }
-
-    public Owner loadOwnerID(String id) throws SQLException {
-        Owner owner = null;
-        try {
-            connect();
-            ResultSet rs = UserQuery.loadUserByID(stmt,id);
-            if(rs.next()) {
-                String userName = rs.getString(USER_NAME);
-                String userEmail = rs.getString(USER_EMAIL);
-                String userPwd = rs.getString(USER_PASSWORD);
-                String userAddr = rs.getString(USER_ADDRESS);
-                owner = new Owner(id,userName,userEmail,userPwd,userAddr);
-            }
-        } finally {
-            disconnect();
-        }
-        return owner;
-    }
-
-    public Resident loadResidentID(String id) throws SQLException, InputException {
-        Resident resident = null;
-        try {
-            connect();
-            ResultSet rs = UserQuery.loadUserByID(stmt,id);
-            if(rs.next()) {
-                String userName = rs.getString(USER_NAME);
-                String userEmail = rs.getString(USER_EMAIL);
-                String userPwd = rs.getString(USER_PASSWORD);
-                String userAddr = rs.getString(USER_ADDRESS);
-                resident = new Resident(id,userName,userEmail,userPwd,userAddr);
-            }
-        } finally {
-            disconnect();
-        }
-        return resident;
-    }
-
-    public ObservableList<User> loadUserList(String address) throws SQLException{
-        ObservableList<User> list = FXCollections.observableArrayList();
-        ResultSet rs;
-        try {
-            connect();
-            rs = UserQuery.selectUserList(stmt,address);
-            while(rs.next()) {
-                list.add(new User(rs.getString("user_id"),rs.getString(USER_NAME),rs.getString(USER_EMAIL),rs.getString(USER_PASSWORD),rs.getString("user_role"),rs.getString(USER_ADDRESS)));
-            }
-        } finally {
-            disconnect();
-        }
-        return list;
-    }
-
-    public ObservableList<String> loadMailList(String address) throws SQLException {
-        ObservableList<String> list = FXCollections.observableArrayList();
-        ResultSet rs;
-        try{
-            connect();
-            rs = UserQuery.selectMailList(stmt,address);
-            while(rs.next()) {
-                list.add(rs.getString(USER_EMAIL));
-            }
-        }finally{
-            disconnect();
-        }
-        return list;
-    }
-
-    public void updateInfo(UserBean bean) throws SQLException {
-        try{
-            connect();
-            String sql = "UPDATE users SET user_name=?,user_email=?,user_pwd=? WHERE user_id='"+bean.getUsrID()+"'";
-            preset = prepConnect(sql);
-            preset.setString(1,bean.getUsrName());
-            preset.setString(2,bean.getUsrEmail());
-            preset.setString(3,bean.getUsrPwd());
-            preset.execute();
+            tfAdmin.setText(currentFee.getAdmin()+" â‚¬");
+            tfPastAdmin.setText(pastFee.getAdmin()+" â‚¬");
+            chartCombo.getItems().addAll(CHOOSE_CHART, BAR_CHART, PIE_CHART, LINE_CHART);
+            chartCombo.setValue(CHOOSE_CHART);
+            tfOwner.setText(apartment.getOwner());
+            tfNumber.setText(apartment.getNumber());
+            submitTypeChart();
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            disconnect();
         }
     }
 
-    public void removeUsr(String usrId) throws SQLException {
-        try{
-            connect();
-            String sql= "DELETE FROM users WHERE user_id='"+usrId+"'";
-            stmt.executeUpdate(sql);
-        }  finally {
-            disconnect();
-        }
+    public List<Double> getList(Fee fee){
+        return Arrays.asList(fee.getAdmin(),fee.getPark(),fee.getElevator(),fee.getPet(),fee.getWifi());
     }
 }

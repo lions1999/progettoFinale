@@ -1,77 +1,50 @@
-package logic.model;
+package logic.engineeringclasses.bean;
 
-public class User {
+public class MeetRequestBean{
 
-	private String usrID;
-    private String usrName;
-	private String usrEmail;
-	private String usrPwd;
-    private String usrRole;
-	private String usrAddr;
-	
-	public User(String usrID, String usrName, String usrEmail, String usrPwd, String usrAddr){
-		this.setUsrID(usrID);
-		this.setUsrName(usrName);
-		this.setUsrEmail(usrEmail);
-		this.setUsrPwd(usrPwd);
-		this.setUsrAddr(usrAddr);
-	}
+    private String id;
+    private String name;
+    private String address;
+    private String object;
+    private String textArea;
 
-    public User(String usrID, String usrName, String usrEmail, String usrPwd,String usrRole, String usrAddr){
-        this.setUsrID(usrID);
-        this.setUsrName(usrName);
-        this.setUsrEmail(usrEmail);
-        this.setUsrPwd(usrPwd);
-        this.setUsrRole(usrRole);
-        this.setUsrAddr(usrAddr);
+    public String getMeetId() {
+        return id;
     }
 
-
-	public String getUsrID() {
-        return usrID;
+    public void setMeetId(String id) {
+        this.id = id;
     }
 
-    public void setUsrID(String usrID) {
-        this.usrID = usrID;
-    }
-    
-    public String getUsrName() {
-        return usrName;
+    public String getMeetName() {
+        return name;
     }
 
-    public void setUsrName(String usrName){
-        this.usrName = usrName;
+    public void setMeetName(String name) {
+        this.name = name;
     }
 
-    public String getUsrEmail() {
-        return usrEmail;
+    public String getMeetAddress() {
+        return address;
     }
 
-    public void setUsrEmail(String usrEmail){
-        this.usrEmail = usrEmail;
-    }
-    
-    public String getUsrPwd() {
-        return usrPwd;
+    public void setMeetAddress(String address) {
+        this.address = address;
     }
 
-    public void setUsrPwd(String usrPwd) {
-        this.usrPwd = usrPwd;
+    public String getMeetObject() {
+        return object;
     }
 
-    public String getUsrRole() {
-        return usrRole;
+    public void setMeetObject(String object) {
+        this.object = object;
     }
 
-    public void setUsrRole(String usrRole) {
-        this.usrRole = usrRole;
-    }
-    
-    public String getUsrAddr() {
-        return usrAddr;
+    public String getMeetTextArea() {
+        return textArea;
     }
 
-    public void setUsrAddr(String usrAddr) {
-        this.usrAddr = usrAddr;
+    public void setMeetTextArea(String textArea) {
+        this.textArea = textArea;
     }
 }

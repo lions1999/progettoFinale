@@ -1,10 +1,18 @@
-package logic.model;
+package logic.controller.guicontroller.second.owner;
 
-import logic.engineeringclasses.exception.InputException;
+import javafx.fxml.FXML;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.text.Text;
 
-public class Resident extends User{
+public class RateDialogGUI{
+    @FXML private ToggleGroup group1;
+    @FXML public Text titleTxt;
 
-	public Resident(String userID, String name, String email, String password,String cc)throws InputException {
-		super( userID,  name,  email,  password, cc);
-	}
+
+    public String submitValue(String string){
+        titleTxt.setText("What would you do with resident "+string+"?");
+        RadioButton selected = (RadioButton) group1.getSelectedToggle();
+        return selected.getText();
+    }
 }

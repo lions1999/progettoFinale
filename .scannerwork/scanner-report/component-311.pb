@@ -1,1 +1,1 @@
-· 2javaXhrHCondominium/src/logic/engineeringclasses/exception/PatternException.java
+· 2javaX¬hrXCondominium/src/logic/controller/guicontroller/second/admin/condominium/InfoItemGUI.java

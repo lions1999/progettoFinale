@@ -1,1 +1,1 @@
-ª 2javaX0hr;Condominium/src/logic/engineeringclasses/bean/RateBean.java
+ª 2javaXDhrQCondominium/src/logic/controller/guicontroller/first/general/home/AddPostGUI.java

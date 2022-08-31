@@ -1,1 +1,1 @@
-¾ 2javaXhrACondominium/src/logic/engineeringclasses/query/RegisterQuery.java
+¾ 2javaXhrkCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationTableGUI.java

@@ -1,106 +1,113 @@
-package logic.engineeringclasses.dao;
+package logic.controller.guicontroller.first.general.registration;
 
-import logic.engineeringclasses.bean.FeeBean;
-import logic.engineeringclasses.query.FeeQuery;
-import logic.model.Fee;
-import java.sql.ResultSet;
+import javafx.application.Platform;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
+import javafx.scene.layout.Pane;
+import logic.controller.applicationcontroller.RegisterController;
+import logic.controller.applicationcontroller.ViewController;
+import logic.controller.guicontroller.AlertGUI;
+import logic.engineeringclasses.bean.UserBean;
+import logic.model.User;
+
+import java.io.IOException;
+import java.net.URL;
 import java.sql.SQLException;
-import java.sql.Types;
+import java.util.Optional;
+import java.util.ResourceBundle;
 
-public class FeeDAO extends SqlDAO{
+import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
 
-    public Fee loadAvailableFees(String address) throws SQLException {
-        Fee fee = null;
-        try {
-            connect();
-            ResultSet rs = FeeQuery.loadAvailableFees(stmt,address);
-            if(rs.next()) {
-                boolean park = rs.getBoolean("con_park");
-                boolean elevator = rs.getBoolean("con_elevator");
-                boolean pet = rs.getBoolean("con_pet");
-                boolean wifi = rs.getBoolean("con_wifi");
-                fee = new Fee(park,elevator,pet,wifi);
-            }
-        } finally {
-            disconnect();
-        }
-        return fee;
+public class RegisterGUI implements Initializable{
+	 
+	private final RegisterController registerController = new RegisterController();
+	private final ViewController viewController = new ViewController();
+	private final AlertGUI alertGUI = new AlertGUI();
+
+	@FXML private TextField tfname;
+	@FXML private TextField tfsurname;
+	@FXML private TextField tfemail;
+	@FXML private PasswordField tfpassword;
+	@FXML private PasswordField tfokpwd;
+	@FXML private ComboBox<String> rolebox;
+    @FXML private ComboBox<String> addressbox;
+
+	@FXML private void onSignClick() {
+		Pane pane = viewController.getPage("Login",1);
+		firstBorder.setCenter(pane);
     }
 
-    public Fee loadFees(String aptId,String typeFee) throws SQLException{
-        Fee fee = null;
-        try{
-            connect();
-            ResultSet rs = FeeQuery.loadFees(stmt,aptId,typeFee);
-            while (rs.next()) {
-                Double admin = rs.getDouble("fee_admin");
-                Double park = rs.getDouble("fee_park");
-                Double elevator = rs.getDouble("fee_elevator");
-                Double pet = rs.getDouble("fee_pet");
-                Double wifi = rs.getDouble("fee_wifi");
-                fee = new Fee(aptId,admin, park, elevator, pet, wifi);
-            }
-        } finally {disconnect();}
-        return fee;
+    @FXML
+    void onSignupClick() throws IOException, SQLException {
+    	UserBean bean = getUsrBean(tfname.getText(), tfsurname.getText(), tfemail.getText(), tfpassword.getText(), tfokpwd.getText(), rolebox.getValue(), addressbox.getValue());
+		if(registerController.registration(bean)){
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(getClass().getResource("/logic/view/first/SelectApartmentDialog.fxml"));
+			DialogPane pane = loader.load();
+			SelectApartmentDialogGUI apt = loader.getController();
+			ObservableList<String> list = registerController.loadAddress(bean);
+			apt.setUp(list,bean);
+			Dialog<ButtonType> dialog = new Dialog<>();
+			dialog.setDialogPane(pane);
+			Optional<ButtonType> btn = dialog.showAndWait();
+			if(btn.isPresent() && btn.get() == ButtonType.OK && !apt.getApt().isEmpty()) {
+				for(String aptName : apt.getApt()){
+					String name = bean.getUsrName() +" "+ bean.getUsrSurname();
+					User user = new User(null,name,bean.getUsrEmail(),bean.getUsrPwd(),bean.getUsrAddr());
+					registerController.addRegistrationUser(user,bean.getUsrRole().toUpperCase(),aptName);
+				}
+				alertGUI.alertInfo("Condominium/Register/Info","Successful Registration" ,
+						"Your request has successfully sent to the administrator of the condominium");
+				clearState();
+			}
+		}else{
+			alertGUI.alertError("Condominium/Register/Error","Incorrect Data","ERROR TYPE:\nDATABASE NOT CONNECTED\nEmpty Fields\nPASSWORD:least one letter and one number maximum 15 charters\nPassword mismatch");
+		}
     }
 
-    public void addFees(FeeBean feeBean,String table) throws SQLException{
-        try{
-            String sql = "INSERT INTO "+table+" (fee_apt,fee_admin,fee_park,fee_elevator,fee_pet,fee_wifi) VALUES (?,?,?,?,?,?)";
-            preset = prepConnect(sql);
-            preset.setString(1,feeBean.getApt());
-            preset.setDouble(2,feeBean.getFeeAdmin());
-            if(feeBean.getFeePark().equals(0.0)) preset.setNull(3, Types.NULL);
-            else preset.setDouble(3,feeBean.getFeePark());
-            if(feeBean.getFeeElevator().equals(0.0)) preset.setNull(4, Types.NULL);
-            else preset.setDouble(4,feeBean.getFeeElevator());
-            if(feeBean.getFeePet().equals(0.0)) preset.setNull(5, Types.NULL);
-            else preset.setDouble(5,feeBean.getFeePet());
-            if(feeBean.getFeeWifi().equals(0.0)) preset.setNull(6, Types.NULL);
-            else preset.setDouble(6,feeBean.getFeeWifi());
-            preset.execute();
-        } finally {
-            disconnect();
-        }
+    public UserBean getUsrBean(String name, String surname, String email, String password, String okPassword, String role, String condominiumCode){
+		UserBean user = new UserBean();
+		user.setUsrName(name);
+		user.setUsrSurname(surname);
+		user.setUsrEmail(email);
+		user.setUsrPwd(password);
+		user.setUsrRole(role);
+		user.setOkPassword(okPassword);
+		user.setUsrAddr(condominiumCode);
+		return user;
+	}
+
+    private void clearState() {
+    	tfname.setText("");
+    	tfsurname.setText("");
+    	tfemail.setText("");
+    	tfpassword.setText("");
+    	tfokpwd.setText("");
+    	rolebox.setValue(null);
+    	addressbox.setValue(null);
     }
 
-    public void updateFee(FeeBean fee, String table) throws SQLException{
-        try{
-            connect();
-            String sql = "UPDATE "+table+" SET fee_admin=?, fee_park=?, fee_elevator=?, fee_pet=?, fee_wifi=? WHERE fee_apt='"+fee.getApt()+"'";
-            preset = prepConnect(sql);
-            preset.setDouble(1,fee.getFeeAdmin());
-            if(fee.getFeePark().equals(0.0)) preset.setNull(2, Types.NULL);
-            else preset.setDouble(2,fee.getFeePark());
-            if(fee.getFeeElevator().equals(0.0)) preset.setNull(3, Types.NULL);
-            else preset.setDouble(3,fee.getFeeElevator());
-            if(fee.getFeePet().equals(0.0)) preset.setNull(4, Types.NULL);
-            else preset.setDouble(4,fee.getFeePet());
-            if(fee.getFeeWifi().equals(0.0)) preset.setNull(5, Types.NULL);
-            else preset.setDouble(5,fee.getFeeWifi());
-            preset.execute();
-        } finally {
-            disconnect();
-        }
+    private void setUp() {
+    	rolebox.getItems().addAll("Resident","Owner");
     }
 
-    public boolean checkPastId(String aptId) throws SQLException {
-        try{
-            connect();
-            ResultSet rs = FeeQuery.checkApt(stmt,aptId);
-            return rs.next();
-        }finally {
-            disconnect();
-        }
-    }
-
-    public void removeFee(String aptId, String table) throws SQLException {
-        try{
-            connect();
-            String sql= "DELETE FROM "+table+" WHERE fee_apt='"+aptId+"'";
-            stmt.executeUpdate(sql);
-        }  finally {
-            disconnect();
-        }
+    @Override
+   	public void initialize(URL location, ResourceBundle resources){
+       	setUp();
+       	try {
+			 addressbox.setItems(registerController.loadAddresses());
+		 }catch(Exception e) {
+			 alertGUI.alertError("DATA BASE ERROR","DATA BASE not connected ","Please Restart the Application");
+			 Platform.exit();
+		 }
     }
 }
+
+
+    
+
+	
+    

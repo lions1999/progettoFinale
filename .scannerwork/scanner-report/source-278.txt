@@ -1,97 +1,66 @@
-package logic.controller.guicontroller.second.admin.requests;
+package logic.controller.applicationcontroller;
 
 import javafx.collections.ObservableList;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.Pane;
-import logic.controller.applicationcontroller.MeetController;
-import logic.controller.applicationcontroller.RegisterController;
-import logic.controller.applicationcontroller.ViewController;
-import logic.controller.guicontroller.second.admin.requests.meeting.MeetingItemGUI;
-import logic.controller.guicontroller.second.admin.requests.meeting.MeetingTableGUI;
-import logic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI;
-import logic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI;
-import logic.engineeringclasses.bean.MeetRequestBean;
-import logic.engineeringclasses.bean.RegistrationBean;
-import logic.model.MeetRequest;
-import logic.model.Registration;
-import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
+import logic.engineeringclasses.bean.UserBean;
+import logic.engineeringclasses.dao.CondominiumDAO;
+import logic.engineeringclasses.dao.UserDAO;
+import logic.engineeringclasses.exception.InputException;
+import logic.model.Administrator;
+import logic.model.Owner;
+import logic.model.Resident;
+import logic.model.UserSingleton;
 
-public class RequestBottomNavMenuGUI {
+import java.sql.SQLException;
 
-    private final ViewController view = new ViewController();
-    protected final MeetController meetCtrl = new MeetController();
-    protected final RegisterController regCtrl = new RegisterController();
-    private String address;
+public class LoginController {
 
-    private RegistrationBean setUpRegistration(Registration registration){
-        RegistrationBean bean = new RegistrationBean();
-        bean.setID(registration.getRegID());
-        bean.setName(registration.getRegName());
-        bean.setEmail(registration.getRegEmail());
-        bean.setPassword(registration.getRegPwd());
-        bean.setRole(registration.getRegRole());
-        bean.setAddress(registration.getRegAddr());
-        bean.setApartment(registration.getRegApt());
-        return bean;
-    }
-
-    private MeetRequestBean setUpMeeting(MeetRequest meet){
-        MeetRequestBean bean = new MeetRequestBean();
-        bean.setMeetId(meet.getId());
-        bean.setMeetName(meet.getName());
-        bean.setMeetAddress(meet.getAddress());
-        bean.setMeetObject(meet.getObject());
-        bean.setMeetTextArea(meet.getText());
-        return bean;
-    }
-
-    public void setAddress(String address){
-        this.address = address;
-    }
-
-    public void btnRegClick() {
-        secondBorder.setCenter(null);
-        try {
-            FXMLLoader loader = view.loader("RegistrationTable", 2);
-            Pane table = loader.load();
-            RegistrationTableGUI tableCtrl = loader.getController();
-            tableCtrl.clearChildren();
-            ObservableList<Registration> list = regCtrl.loadRegistration(this.address);
-            for(int i = 0; i<=list.size()-1; i++){
-                RegistrationBean bean = setUpRegistration(list.get(i));
-                FXMLLoader item = view.loader("ItemRegistration",2);
-                Pane root = item.load();
-                RegistrationItemGUI itemCtrl = item.getController();
-                itemCtrl.setUp(bean);
-                tableCtrl.addChildren(root);
-            }
-            table.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-            secondBorder.setCenter(table);
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    public void btnMeetClick() {
-        secondBorder.setCenter(null);
-        try {
-            FXMLLoader loader = view.loader("MeetingTable", 2);
-            Pane table = loader.load();
-            MeetingTableGUI tableCtrl = loader.getController();
-            tableCtrl.clearChildren();
-            ObservableList<MeetRequest> list = meetCtrl.loadMeetRequest(this.address);
-             for (int i = list.size() - 1; i >= 0; i--) {
-                 MeetRequestBean bean = setUpMeeting(list.get(i));
-                 FXMLLoader item = view.loader("ItemMeeting",2);
-                 Pane root = item.load();
-                 MeetingItemGUI itemCtrl = item.getController();
-                 itemCtrl.setUp(bean);
-                 tableCtrl.addChildren(root);
-            }
-            table.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-            secondBorder.setCenter(table);
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-    }
+	private final CondominiumDAO cond = new CondominiumDAO();
+	private final UserDAO login = new UserDAO();
+	private static final UserSingleton sg = UserSingleton.getInstance();
+	
+	public boolean login(UserBean bean){
+		try {
+			if (checkBean(bean)) {			
+				sg.setUserID(login.checkUserID(bean.getUsrEmail(), bean.getUsrAddr()));
+				sg.setAddress(bean.getUsrAddr());
+				sg.setRole(login.checkRole((sg.getUserID())));
+					switch (sg.getRole()) {
+						case ADMINISTRATOR:						
+							Administrator admin = login.loadAdminID(sg.getUserID());
+							sg.setAdministrator(admin);
+							break;
+						case OWNER:
+							Owner owner = login.loadOwnerID(sg.getUserID());
+							sg.setOwner(owner);
+							break;
+						case RESIDENT:
+							Resident resident = login.loadResidentID(sg.getUserID());
+							sg.setResident(resident);
+							break;				
+						default:
+							break;
+					}
+					return true;
+			}
+			return false;
+		}catch(SQLException| InputException e){
+			return false;
+		}
+	}
+	
+	public boolean checkBean(UserBean bean) {
+		try {
+			if(bean.getUsrEmail().isEmpty() || bean.getUsrPwd().isEmpty()||bean.getUsrAddr().isEmpty()) {
+				return false;
+			}
+			return login.checkLogin(bean.getUsrEmail(), bean.getUsrAddr()).equals(bean.getUsrPwd());
+		}catch(NullPointerException | SQLException e) {
+			return false;
+		}
+	}
+	
+	public ObservableList<String> loadAddresses() throws SQLException{
+		return cond.checkAddressesList();
+	}
+	
 }

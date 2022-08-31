@@ -1,1 +1,1 @@
-½ 2javaXhr=Condominium/src/logic/engineeringclasses/query/RateQuery.java
+½ 2javaX}hrjCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java

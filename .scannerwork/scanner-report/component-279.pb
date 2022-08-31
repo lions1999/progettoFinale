@@ -1,1 +1,1 @@
-— 2javaX*hrUCondominium/src/logic/controller/guicontroller/second/general/AddressesDialogGUI.java
+— 2javaX"hrJCondominium/src/logic/controller/applicationcontroller/MeetController.java

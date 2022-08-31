@@ -1,1 +1,1 @@
-¥ 2javaXæhrNCondominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.java
+¥ 2javaXhr`Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java

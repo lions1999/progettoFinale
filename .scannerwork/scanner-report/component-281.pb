@@ -1,1 +1,1 @@
-™ 2javaXFhrOCondominium/src/logic/controller/guicontroller/second/general/home/PostGUI.java
+™ 2javaXJhrJCondominium/src/logic/controller/applicationcontroller/PostController.java

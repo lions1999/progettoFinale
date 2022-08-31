@@ -1,69 +1,73 @@
-package logic.controller.guicontroller.second.general.home;
+package logic.controller.applicationcontroller;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.effect.ColorAdjust;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import logic.controller.applicationcontroller.PostController;
-import logic.controller.applicationcontroller.ViewController;
-import logic.controller.guicontroller.AlertGUI;
-import logic.controller.guicontroller.second.general.Menu2GUI;
-import logic.engineeringclasses.bean.PostBean;
+import javafx.stage.FileChooser;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import logic.engineeringclasses.dao.PostDAO;
+import logic.model.Post;
 import logic.model.UserSingleton;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.SQLException;
 
-public class PostGUI {
+import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
+import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
 
-    private final Menu2GUI menu = new Menu2GUI();
-    private final AlertGUI alert = new AlertGUI();
-    private final ViewController view = new ViewController();
-    private final PostController controller = new PostController();
+public class PostController {
 
-    UserSingleton sg = UserSingleton.getInstance();
+	UserSingleton sg = UserSingleton.getInstance();
+	private final PostDAO post = new PostDAO();
 
-    @FXML private ImageView usrImg;
-    @FXML private Label usrName;
-    @FXML private TextField posTxt;
-    @FXML private Button btnDelete;
-    @FXML private ImageView imageView;
+	public File selectFile(int gui) {
+			Stage stage = new Stage();
+			switch (gui){
+				case 1:
+					stage.initOwner(firstBorder.getScene().getWindow());
+					break;
+				case 2:
+					stage.initOwner(secondBorder.getScene().getWindow());
+					break;
+				default:
+					break;
+			}
+			stage.initModality(Modality.WINDOW_MODAL);
+			FileChooser fc = new FileChooser();
+			FileChooser.ExtensionFilter fileExtensions = new FileChooser.ExtensionFilter("JPEG/JPG/PNG/GIF file", "*.jpg", "*.jpeg", "*.png", "*.gif");
+			fc.getExtensionFilters().add(fileExtensions);
+			fc.setTitle("Condominium/Home/AddImageToPost");
+		return fc.showOpenDialog(stage);
+	}
 
-    public void onDeletePress() {
-        switch (sg.getRole()) {
-            case ADMINISTRATOR:
-                try {
-                    controller.deletePost(btnDelete.getAccessibleText());
-                    menu.btnHomeClick();
-                }catch(Exception e) {
-                    e.printStackTrace();
-                }
-                break;
-            case OWNER:
-                case RESIDENT:
-                    alert.alertInfo(null ,  "Sorry you are not allowed to do that", null);
-                break;
-        }
-    }
+	public ObservableList<Post> loadPost() {
+		ObservableList<Post> list = FXCollections.observableArrayList();
+		try {
+			list = post.checkListPost(sg.getAddress());
+			return list ;
+		}catch(Exception e) {
+			return list;
+		}
+	}
 
-    public void onImageClick() {
-        DialogPane pane = new DialogPane();
-        pane.setContent(imageView);
-        imageView.setVisible(true);
-        ButtonType cancelButtonType = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
-        Dialog<ButtonType> dialog = new Dialog<>();
-        dialog.setDialogPane(pane);
-        dialog.getDialogPane().getButtonTypes().add(cancelButtonType);
-        dialog.showAndWait();
-    }
+	public void addPost(String userID, String text, File file, String address) throws SQLException, IOException {
+		post.addPost(userID, text, file, address);
+	}
 
-    public void setUpPost(PostBean bean) {
-        posTxt.setText(bean.getPostText());
-        posTxt.setEditable(false);
-        btnDelete.setAccessibleText(bean.getPostId());
-        usrName.setText(bean.getPostUser());
-        usrImg.setImage(new Image(view.addImage(bean.getPostRole())));
-        imageView.setImage(controller.setPostImage(bean.getPostImage()));
-        ColorAdjust color = new ColorAdjust();
-        color.setBrightness(1);
-        usrImg.setEffect(color);
-    }
+	public void deletePost(String postID) throws SQLException {
+		post.deletePost(postID);
+	}
+
+	public Image setPostImage(InputStream input){
+		try {
+			if (input != null && input.available() > 1) {
+				return new Image(input);
+			}
+			return null;
+		}catch(Exception e){
+			return null;
+		}
+	}
 }

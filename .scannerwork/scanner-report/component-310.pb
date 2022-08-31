@@ -1,1 +1,1 @@
-¶ 2javaXhrFCondominium/src/logic/engineeringclasses/exception/InputException.java
+¶ 2javaX?hrMCondominium/src/logic/controller/guicontroller/first/resident/ContactGUI.java

@@ -1,1 +1,1 @@
-Í 2javaXihr.Condominium/src/logic/model/UserSingleton.java
+Í 2javaXhrXCondominium/src/logic/controller/guicontroller/second/owner/RequestMeetingDialogGUI.java

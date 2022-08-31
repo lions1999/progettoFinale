@@ -1,56 +1,60 @@
 
-hlogic.controller.guicontroller.first.general.FeeInfoGUI#getFees()Llogic/engineeringclasses/bean/FeeBean;ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java< <("1*Ê
-1ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java= =(¿
-Ω
+@logic.controller.guicontroller.first.general.FeeInfoGUI#check()Zê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java5 5("7*¥
+2ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java8' 8(,"õ
 ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java=3 =(K
-%0"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*;9
-7logic.controller.guicontroller.first.general.FeeInfoGUI*
-""¿
-Ω
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java8  8(-
+""*÷
+3ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java8 8(µ
+≤
 ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java> >(
-%1"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*;9
-7logic.controller.guicontroller.first.general.FeeInfoGUI*
-""¿
-Ω
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java> >(-
-%2"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*;9
-7logic.controller.guicontroller.first.general.FeeInfoGUI*
-""¿
-Ω
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java>. >(;
-%3"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*;9
-7logic.controller.guicontroller.first.general.FeeInfoGUI*
-""¿
-Ω
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java>< >(J
-%4"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*;9
-7logic.controller.guicontroller.first.general.FeeInfoGUI*
-""‡
-›
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java= >(K
-%5"‘logic.controller.guicontroller.first.general.FeeInfoGUI#feeBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/FeeBean;*;9
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java8 8(
+%2"Rlogic.controller.guicontroller.first.general.FeeInfoGUI#checkErrorTf(LTextField;)Z*;9
 7logic.controller.guicontroller.first.general.FeeInfoGUI*
 ""*
-
-%0*
-
-%1*
-
-%2*
-
-%3*
-
-%4"õ
+2
+1*¥
+4ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java7, 7(1"õ
 ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java= >(L
-
-%5B;9
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java7% 7(2
+""*÷
+5ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java7 7(µ
+≤
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java7 7(#
+%1"Rlogic.controller.guicontroller.first.general.FeeInfoGUI#checkErrorTf(LTextField;)Z*;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*
+""*
+3
+4*¥
+6ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java62 6(7"õ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java6+ 6(8
+""*÷
+7ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java6 6(µ
+≤
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java6 6()
+%0"Rlogic.controller.guicontroller.first.general.FeeInfoGUI#checkErrorTf(LTextField;)Z*;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*
+""*
+5
+6*Ï
+1ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java9 9(µ
+≤
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java9 9($
+%3"Rlogic.controller.guicontroller.first.general.FeeInfoGUI#checkErrorTf(LTextField;)Z*;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*
+"""õ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java9 9(%
+""B;9
 7logic.controller.guicontroller.first.general.FeeInfoGUI

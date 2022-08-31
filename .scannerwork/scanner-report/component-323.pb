@@ -1,1 +1,1 @@
-Ã 2javaX^hr$Condominium/src/logic/model/Fee.java
+Ã 2javaXJhrQCondominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java

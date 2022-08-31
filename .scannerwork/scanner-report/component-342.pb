@@ -1,0 +1,1 @@
+Ö 2javaXÃhr>Condominium/src/logic/engineeringclasses/dao/ApartmentDAO.java

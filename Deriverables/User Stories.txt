@@ -1,0 +1,7 @@
+As a condominium resident, i want a tool to check my months rates and compare them to the past months rates.
+
+
+As a condominium administrator i want a tool to check and manage people inside my condiminium.
+
+
+As a user i want a tool to comunicate with my owner or administrator if something is goimg wront inside the condominium.

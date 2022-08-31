@@ -1,1 +1,1 @@
-Á 2javaX<hr*Condominium/src/logic/model/Apartment.java
+Á 2javaX*hrRCondominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java

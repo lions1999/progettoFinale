@@ -1,1 +1,1 @@
-Ñ 2javaXNhr%Condominium/src/logic/model/User.java
+Ñ 2javaX3hrBCondominium/src/logic/engineeringclasses/bean/MeetRequestBean.java
