@@ -1,1 +1,3 @@
-logic.controller.guicontroller.second.general.registration.RegisterGUI#onSignClick()V
+logic.controller.guicontroller.second.general.registration.RegisterGUI#addressBtnClick()V
+logic.controller.guicontroller.second.general.AddressesDialogGUI#instance-init#
+logic.controller.guicontroller.second.general.AddressesDialogGUI#<init>()V

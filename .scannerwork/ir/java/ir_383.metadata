@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.RegisterController#loadRegistration(Ljava/lang/String;)LObservableList;
+logic.controller.applicationcontroller.RegisterController#loadAddresses()LObservableList;

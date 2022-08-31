@@ -1,2 +1,2 @@
-logic.controller.guicontroller.ChartGUI#newPieChart(LObservableList;Ljava/lang/String;)LPieChart;
+logic.controller.guicontroller.ChartGUI#newBarChart(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LBarChart;
 null

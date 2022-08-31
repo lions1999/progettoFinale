@@ -1,1 +1,1 @@
-logic.engineeringclasses.dao.CondominiumDAO#instance-init#
+logic.model.Registration#getRegApt()Ljava/lang/String;

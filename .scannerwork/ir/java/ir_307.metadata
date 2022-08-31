@@ -1,1 +1,1 @@
-logic.model.Fee#getAdmin()Ljava/lang/Double;
+logic.model.Fee#setApt(Ljava/lang/String;)V

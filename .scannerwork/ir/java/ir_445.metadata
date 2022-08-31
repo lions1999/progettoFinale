@@ -1,1 +1,4 @@
-logic.controller.applicationcontroller.MeetController#loadMeetRequest(Ljava/lang/String;)LObservableList;
+logic.controller.applicationcontroller.MeetController#instance-init#
+null
+logic.controller.applicationcontroller.UserController#instance-init#
+logic.controller.applicationcontroller.UserController#<init>()V

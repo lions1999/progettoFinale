@@ -1,3 +1,3 @@
-logic.controller.applicationcontroller.PatternController#isPassword(Ljava/lang/String;)Z
+logic.controller.applicationcontroller.PatternController#isEmail(Ljava/lang/String;)Z
 java.util.regex.Pattern#matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 java.util.regex.Matcher#find()Z

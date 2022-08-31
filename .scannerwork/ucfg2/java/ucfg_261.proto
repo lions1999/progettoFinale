@@ -1,34 +1,34 @@
 
-ilogic.controller.applicationcontroller.PatternController$1#toString(Ljava/lang/Double;)Ljava/lang/String;‘
-†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaB B("startingBlock*Ì
-startingBlock‘
-†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaB B(#Ú
-×
-‘
-†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaA A(
-%1"
-__annotate*
-java.lang.Override*
-
-djava.lang.DoubleÄ
+Xlogic.controller.applicationcontroller.PatternController#isPassword(Ljava/lang/String;)Z‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.java) )("1*Ë
+
+1‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.java* *((Ä
 Á
 ‘
-†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaB! B("
-djava.lang.Double"__annotation*
-
-%1*
-1*Î
-1‘
-†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaC C(ƒ€
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.java* *((
+%0java.util.regex.Pattern"__id*
+""îë
 ‘
-†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaC C(
-%0java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*
-
-djava.lang.Double2
-toString()"®
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.java* *(:
+%1java.util.regex.Matcher"Rjava.util.regex.Pattern#matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;*
+
+%0java.util.regex.Pattern*
+
+passwordjava.lang.String2!matcher(Ljava/lang/CharSequence;)â
+ß
 ‘
-†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaC C(
-
-%0java.lang.String:
-djava.lang.DoubleB><
-:logic.controller.applicationcontroller.PatternController$1
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.java* *(;"
+matcherjava.util.regex.Matcher"__id*
+
+%1java.util.regex.Matcherõò
+‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.java+ +(
+%2boolean"java.util.regex.Matcher#find()Z*$
+"
+matcherjava.util.regex.Matcher2find()"œ
+‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.java+ +(
+"":
+passwordjava.lang.StringB<:
+8logic.controller.applicationcontroller.PatternController

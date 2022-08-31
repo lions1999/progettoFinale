@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.FeeBean#getFeePet()Ljava/lang/Double;
+logic.engineeringclasses.bean.FeeBean#setFeeElevator(Ljava/lang/Double;)V

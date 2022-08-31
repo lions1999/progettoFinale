@@ -1,16 +1,16 @@
 
-Hlogic.engineeringclasses.bean.RegistrationBean#getID()Ljava/lang/String;†
-|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java ("1*›
-1†
-|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java (æ
-ã
-†
-|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java (
-%0java.lang.String"__id*:*80
-.logic.engineeringclasses.bean.RegistrationBean"
-id"£
-†
-|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java (
+Flogic.engineeringclasses.bean.PostBean#getPostText()Ljava/lang/String;~
+tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java+ +("1*ú
+1~
+tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java,	 ,(×
+Ô
+~
+tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java,	 ,(
+%0java.lang.String"__id*4*2(
+&logic.engineeringclasses.bean.PostBean"
+text"š
+~
+tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java, ,(
 
-%0java.lang.StringB20
-.logic.engineeringclasses.bean.RegistrationBean
+%0java.lang.StringB*(
+&logic.engineeringclasses.bean.PostBean

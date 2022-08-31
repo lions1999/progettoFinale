@@ -1,1 +1,1 @@
-logic.controller.guicontroller.second.general.home.AddPostGUI#getFile()Ljava/io/File;
+logic.controller.guicontroller.second.general.home.AddPostGUI#getMsg()Ljava/lang/String;

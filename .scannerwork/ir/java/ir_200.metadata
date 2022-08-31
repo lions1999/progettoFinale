@@ -1,1 +1,1 @@
-logic.model.Apartment#getResident()Ljava/lang/String;
+logic.model.Apartment#setResident(Ljava/lang/String;)V

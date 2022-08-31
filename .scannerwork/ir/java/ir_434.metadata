@@ -1,1 +1,3 @@
-logic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#setUp(Llogic/engineeringclasses/bean/UserBean;)V
+logic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#instance-init#
+logic.controller.applicationcontroller.PatternController#<init>()V
+logic.controller.applicationcontroller.PatternController#instance-init#

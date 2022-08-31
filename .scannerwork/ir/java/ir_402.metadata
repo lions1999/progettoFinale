@@ -1,1 +1,1 @@
-logic.model.Rate#setResId(Ljava/lang/String;)V
+logic.model.Rate#getResId()Ljava/lang/String;

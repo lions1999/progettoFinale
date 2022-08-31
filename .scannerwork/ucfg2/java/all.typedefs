@@ -1073,7 +1073,12 @@ getEmail()Klogic.engineeringclasses.bean.RegistrationBean#getEmail()Ljava/lang/
 setUp(Ljava/util/List;)Vlogic.controller.guicontroller.second.owner.PreviousRatingGUI#setUp(Ljava/util/List;)Vá
 3logic.controller.guicontroller.second.owner.RateGUIjava.lang.Objects
 setupRate(Llogic/model/Rate;)Rlogic.controller.guicontroller.second.owner.RateGUI#setupRate(Llogic/model/Rate;)VI
-<init>()=logic.controller.guicontroller.second.owner.RateGUI#<init>()V´
+<init>()=logic.controller.guicontroller.second.owner.RateGUI#<init>()V 
+
+test.Testsjava.lang.Object 
+<init>()test.Tests#<init>()VL
+testRegistrationAlreadyExist()*test.Tests#testRegistrationAlreadyExist()V:
+testAddRegistration()!test.Tests#testAddRegistration()V´
 ;logic.controller.guicontroller.first.general.login.LoginGUIInitializablejava.lang.ObjectO
 error()Dlogic.controller.guicontroller.first.general.login.LoginGUI#error()VQ
 <init>()Elogic.controller.guicontroller.first.general.login.LoginGUI#<init>()V_
@@ -1400,11 +1405,7 @@ KaddRegistrationUser(Llogic/model/User;Ljava/lang/String;Ljava/lang/String;)ulo
 (loadRegistrationList(Ljava/lang/String;)alogic.engineeringclasses.dao.RegisterDAO#loadRegistrationList(Ljava/lang/String;)LObservableList;>
 <init>()2logic.engineeringclasses.dao.RegisterDAO#<init>()VT
 deleteRegistered(I)=logic.engineeringclasses.dao.RegisterDAO#deleteRegistered(I)Vú
-7checkRegistration(Ljava/lang/String;Ljava/lang/String;)alogic.engineeringclasses.dao.RegisterDAO#checkRegistration(Ljava/lang/String;Ljava/lang/String;)ZÆ
-,logic.engineeringclasses.query.RegisterQueryjava.lang.Objectﬁ
-LselectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)çlogic.engineeringclasses.query.RegisterQuery#selectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;B
-<init>()6logic.engineeringclasses.query.RegisterQuery#<init>()V∆
-@selectRegisteredUserList(Ljava/sql/Statement;Ljava/lang/String;)Ålogic.engineeringclasses.query.RegisterQuery#selectRegisteredUserList(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;©
+7checkRegistration(Ljava/lang/String;Ljava/lang/String;)alogic.engineeringclasses.dao.RegisterDAO#checkRegistration(Ljava/lang/String;Ljava/lang/String;)Z©
 :logic.controller.guicontroller.first.general.home.Post1GUIjava.lang.ObjectP
 <init>()Dlogic.controller.guicontroller.first.general.home.Post1GUI#<init>()V^
 onDeletePress()Klogic.controller.guicontroller.first.general.home.Post1GUI#onDeletePress()V¶
@@ -1784,7 +1785,11 @@ DsetShardingKeyIfValid(Ljava/sql/ShardingKey;Ljava/sql/ShardingKey;I)Yjava.sql.
 endRequest()!java.sql.Connection#endRequest()Vˇ
 +logic.engineeringclasses.dao.CondominiumDAO#logic.engineeringclasses.dao.SqlDAOA
 <init>()5logic.engineeringclasses.dao.CondominiumDAO#<init>()Vh
-checkAddressesList()Plogic.engineeringclasses.dao.CondominiumDAO#checkAddressesList()LObservableList;“
+checkAddressesList()Plogic.engineeringclasses.dao.CondominiumDAO#checkAddressesList()LObservableList;Æ
+,logic.engineeringclasses.query.RegisterQueryjava.lang.Objectﬁ
+LselectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)çlogic.engineeringclasses.query.RegisterQuery#selectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;B
+<init>()6logic.engineeringclasses.query.RegisterQuery#<init>()V∆
+@selectRegisteredUserList(Ljava/sql/Statement;Ljava/lang/String;)Ålogic.engineeringclasses.query.RegisterQuery#selectRegisteredUserList(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;“
 :logic.controller.applicationcontroller.ApartmentControllerjava.lang.Object°
 )loadApartmentResident(Ljava/lang/String;)tlogic.controller.applicationcontroller.ApartmentController#loadApartmentResident(Ljava/lang/String;)LObservableList;ì
 !checkMailById(Ljava/lang/String;)nlogic.controller.applicationcontroller.ApartmentController#checkMailById(Ljava/lang/String;)Ljava/lang/String;P
@@ -1822,11 +1827,7 @@ $logic.engineeringclasses.dao.MeetDAOSqlDAOy
  loadMeetList(Ljava/lang/String;)Ulogic.engineeringclasses.dao.MeetDAO#loadMeetList(Ljava/lang/String;)LObservableList;“
 TaddMeeting(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)zlogic.engineeringclasses.dao.MeetDAO#addMeeting(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)VR
 deleteMeetRequest(I):logic.engineeringclasses.dao.MeetDAO#deleteMeetRequest(I)V:
-<init>().logic.engineeringclasses.dao.MeetDAO#<init>()V∆
-	test.testjava.lang.Object
-<init>()test.test#<init>()VK
-testRegistrationAlreadyExist())test.test#testRegistrationAlreadyExist()V9
-testAddRegistration() test.test#testAddRegistration()V¯
+<init>().logic.engineeringclasses.dao.MeetDAO#<init>()V¯
 6logic.controller.applicationcontroller.EmailControllerjava.lang.ObjectL
 <init>()@logic.controller.applicationcontroller.EmailController#<init>()V›
 Psend([Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)àlogic.controller.applicationcontroller.EmailController#send([Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)ZŒ1

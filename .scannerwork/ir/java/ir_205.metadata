@@ -1,4 +1,1 @@
-logic.controller.guicontroller.first.general.FeeInfoGUI#checkErrorTf(LTextField;)Z
-java.lang.String#valueOf(I)Ljava/lang/String;
-java.lang.String#length()I
-java.lang.Double#parseDouble(Ljava/lang/String;)D
+logic.controller.guicontroller.first.general.FeeInfoGUI#noFee(LTextField;)V

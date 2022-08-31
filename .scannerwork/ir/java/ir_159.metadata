@@ -1,1 +1,2 @@
-logic.controller.guicontroller.second.resident.AptInfoGUI#submitLastMonthFee()V
+logic.controller.guicontroller.second.resident.AptInfoGUI#setUpGrid(LGridPane;Ljava/util/List;)LGridPane;
+null

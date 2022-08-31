@@ -1,17 +1,16 @@
 
-Qlogic.engineeringclasses.bean.MeetRequestBean#getMeetTextArea()Ljava/lang/String;Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java+ +(!"1*ù
+Ologic.engineeringclasses.bean.MeetRequestBean#getMeetObject()Ljava/lang/String;Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java# #("1*õ
 1Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java, ,(Í
-Á
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java$ $(Ë
+Â
 Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java, ,(
-%0java.lang.String"__id*?*=/
--logic.engineeringclasses.bean.MeetRequestBean"
-
-textArea"¢
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java$ $(
+%0java.lang.String"__id*=*;/
+-logic.engineeringclasses.bean.MeetRequestBean"
+object"¢
 Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java, ,(
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java$ $(
 
 %0java.lang.StringB1/
 -logic.engineeringclasses.bean.MeetRequestBean

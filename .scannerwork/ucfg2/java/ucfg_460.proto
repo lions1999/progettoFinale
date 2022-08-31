@@ -1,11 +1,55 @@
 
-‚logic.controller.applicationcontroller.ApartmentController#loadApartmentId(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;“
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java (!"1*º
-1“
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java ("ž
-“
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java (6
-"":
-	apartmentjava.lang.String:
-addressjava.lang.StringB><
-:logic.controller.applicationcontroller.ApartmentController
+logic.engineeringclasses.query.RegisterQuery#selectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (."1*Ú
+1„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (H€
+ý
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (P
+%0java.lang.String"__concat*53
+1SELECT reg_id from registration where reg_email='*
+
+emailjava.lang.StringÛ
+Ø
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (d
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+'and reg_addr='å
+â
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (n
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+
+addressjava.lang.StringÍ
+Ê
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (s
+%3java.lang.String"__concat*
+
+%2java.lang.String*
+'Ã
+À
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (t
+sqljava.lang.String"__id*
+
+%3java.lang.StringÈÅ
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (%
+%4java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+
+stmtjava.sql.Statement*
+
+sqljava.lang.String2 executeQuery(Ljava/lang/String;)"£
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (&
+
+%4java.sql.ResultSet:
+stmtjava.sql.Statement:
+emailjava.lang.String:
+addressjava.lang.StringB0".
+,logic.engineeringclasses.query.RegisterQuery

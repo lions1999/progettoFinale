@@ -1,40 +1,71 @@
 
-xlogic.engineeringclasses.query.ApartmentQuery#selectNameByID(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java% %(*"1*‘
-
+›logic.engineeringclasses.query.ApartmentQuery#selectAptInfo(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java ()"1*¨
 1…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java& &(Aø
-õ
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (5ð
+í
 …
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java& &(D
-%0java.lang.String"__concat*/-
-+SELECT user_name FROM users WHERE user_id='*
-
-idjava.lang.StringÎ
-Ë
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (=
+%0java.lang.String"__concat*" 
+SELECT * from apartment where *
+
+typeUsrjava.lang.StringÏ
+Ì
 …
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java& &(H
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (B
 %1java.lang.String"__concat*
 
-%0java.lang.String*
-'Ä
-Á
+%0java.lang.String*
+='å
+â
 …
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java& &(I
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (I
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+
+userIdjava.lang.StringÝ
+Ú
+…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (\
+%3java.lang.String"__concat*
+
+%2java.lang.String*
+' and apt_addr='ç
+ä
+…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (e
+%4java.lang.String"__concat*
+
+%3java.lang.String*
+
+condAddrjava.lang.Stringè
+å
+†
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (‚
+%5java.lang.String"__concat*
+
+%4java.lang.String*
+' and apt_res is not NULL Å
+Â
+†
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (ƒ
 sqljava.lang.String"__id*
 
-%1java.lang.StringÉÆ
+%5java.lang.StringÉÆ
 …
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java( ((%
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (%
+%6java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
 
 stmtjava.sql.Statement*
 
 sqljava.lang.String2 executeQuery(Ljava/lang/String;)"¤
 …
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java( ((&
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (&
 
-%2java.sql.ResultSet:
-stmtjava.sql.Statement:
-idjava.lang.StringB1"/
+%6java.sql.ResultSet:
+stmtjava.sql.Statement:
+userIdjava.lang.String:
+condAddrjava.lang.String:
+typeUsrjava.lang.StringB1"/
 -logic.engineeringclasses.query.ApartmentQuery

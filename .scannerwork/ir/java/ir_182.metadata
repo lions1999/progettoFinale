@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.RegistrationBean#setRole(Ljava/lang/String;)V
+logic.engineeringclasses.bean.RegistrationBean#getRole()Ljava/lang/String;

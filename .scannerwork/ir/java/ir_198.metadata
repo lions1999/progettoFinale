@@ -1,1 +1,1 @@
-logic.model.Apartment#getOwner()Ljava/lang/String;
+logic.model.Apartment#setOwner(Ljava/lang/String;)V

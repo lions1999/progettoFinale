@@ -1,4 +1,4 @@
-logic.engineeringclasses.dao.SqlDAO#prepConnect(Ljava/lang/String;)Ljava/sql/PreparedStatement;
+logic.engineeringclasses.dao.SqlDAO#connect()V
 null
 java.sql.DriverManager#getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;
 java.sql.DriverManager#registerDriver(Ljava/sql/Driver;)V

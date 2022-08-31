@@ -1,1 +1,1 @@
-logic.model.UserSingleton#setReq(LRequest;)V
+logic.model.UserSingleton#getReq()LRequest;

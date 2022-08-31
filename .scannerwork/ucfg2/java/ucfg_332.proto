@@ -1,16 +1,16 @@
 
-8logic.model.UserSingleton#getAddress()Ljava/lang/String;q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java? ?("1*…
+Glogic.model.UserSingleton#getAdministrator()Llogic/model/Administrator;q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java7 7(&"1*·
 1q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java?# ?('¿
-Ω
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java8	 8(œ
+Ã
 q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java?# ?(/
-%0java.lang.String"__id***(
-logic.model.UserSingleton"	
-address"ç
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java8	 8(
+%0logic.model.Administrator"__id*0*.
+logic.model.UserSingleton"
+administrator"ñ
 q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java? ?(0
-
-%0java.lang.StringB
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java8 8(!
+
+%0logic.model.AdministratorB
 logic.model.UserSingleton

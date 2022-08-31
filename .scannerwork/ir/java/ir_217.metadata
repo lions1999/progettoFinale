@@ -1,1 +1,1 @@
-logic.controller.guicontroller.first.resident.ContactGUI#clearReason()V
+logic.controller.guicontroller.first.resident.ContactGUI#initialize(Ljava/net/URL;Ljava/util/ResourceBundle;)V

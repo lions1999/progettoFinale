@@ -1,1 +1,1 @@
-logic.controller.guicontroller.first.owner.RatingUserGUI#enableButton()V
+logic.controller.guicontroller.first.owner.RatingUserGUI#submitRating()V

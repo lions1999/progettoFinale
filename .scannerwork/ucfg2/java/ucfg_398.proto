@@ -1,61 +1,57 @@
 
-ælogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#setBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/UserBean;ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java   ("1*®
+Qlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#checkInfo()Zù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java ("5*€
+2ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.javaZ (a¿
+Ω
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.javaZ (a>
+%48logic.controller.applicationcontroller.PatternController"__id*U*SF
+Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI"	
+patternÌÍ
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.javaZ (}
+%5"Xlogic.controller.applicationcontroller.PatternController#isPassword(Ljava/lang/String;)Z*@
+>
+%48logic.controller.applicationcontroller.PatternController*
+""2isPassword(Ljava/lang/String;)*
+1*ÿ
+4ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java4 (;¿
+Ω
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java4 (;>
+%28logic.controller.applicationcontroller.PatternController"__id*U*SF
+Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI"	
+patternÁ‰
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java4 (V
+%3"Ulogic.controller.applicationcontroller.PatternController#isEmail(Ljava/lang/String;)Z*@
+>
+%28logic.controller.applicationcontroller.PatternController*
+""2isEmail(Ljava/lang/String;)*
+2
+1*Ÿ
+5ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (¿
+Ω
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (>
+%08logic.controller.applicationcontroller.PatternController"__id*U*SF
+Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI"	
+patternÂ‚
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (0
+%1"Tlogic.controller.applicationcontroller.PatternController#isName(Ljava/lang/String;)Z*@
+>
+%08logic.controller.applicationcontroller.PatternController*
+""2isName(Ljava/lang/String;)*	
+2
+4
+1*Œ
 1ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java! !(&˘ˆ
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (~"®
 ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java! !($,
-%0&logic.engineeringclasses.bean.UserBean"&logic.engineeringclasses.bean.UserBeanã
-à
-ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java! !(&
-%1"0logic.engineeringclasses.bean.UserBean#<init>()V*.
-,
-%0&logic.engineeringclasses.bean.UserBeanâ
-Ü
-ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java! !('.
-bean&logic.engineeringclasses.bean.UserBean"__id*.
-,
-%0&logic.engineeringclasses.bean.UserBeanﬂ‹
-ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java" "(
-
-%2void"Dlogic.engineeringclasses.bean.UserBean#setUsrID(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-idjava.lang.String2setUsrID(Ljava/lang/String;)Â‚
-ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java# #(
-
-%3void"Flogic.engineeringclasses.bean.UserBean#setUsrName(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-namejava.lang.String2setUsrName(Ljava/lang/String;)ËÂ
-ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java$ $(
-
-%4void"Glogic.engineeringclasses.bean.UserBean#setUsrEmail(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-emailjava.lang.String2setUsrEmail(Ljava/lang/String;)‚ﬂ
-ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java% %(
-
-%5void"Elogic.engineeringclasses.bean.UserBean#setUsrPwd(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-pwdjava.lang.String2setUsrPwd(Ljava/lang/String;)"“
-ù
-íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java& &(0
-.
-bean&logic.engineeringclasses.bean.UserBean:
-idjava.lang.String:
-namejava.lang.String:
-emailjava.lang.String:
-pwdjava.lang.StringBHF
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java (~
+""BHF
 Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI

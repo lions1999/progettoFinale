@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.PostBean#getPostUser()Ljava/lang/String;
+logic.engineeringclasses.bean.PostBean#setPostUser(Ljava/lang/String;)V

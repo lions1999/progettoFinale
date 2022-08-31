@@ -1,3 +1,1 @@
-logic.controller.guicontroller.second.owner.ListItemGUI#instance-init#
-logic.controller.guicontroller.AlertGUI#instance-init#
-logic.controller.guicontroller.AlertGUI#<init>()V
+logic.engineeringclasses.query.ApartmentQuery#selectAptName(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;

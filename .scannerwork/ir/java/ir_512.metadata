@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.ApartmentController#loadApartmentId(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+logic.controller.applicationcontroller.ApartmentController#loadApartmentOwner(Ljava/lang/String;)LObservableList;

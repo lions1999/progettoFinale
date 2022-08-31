@@ -1,1 +1,1 @@
-logic.model.MeetRequest#getId()Ljava/lang/String;
+logic.model.MeetRequest#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V

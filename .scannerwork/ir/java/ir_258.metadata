@@ -1,2 +1,3 @@
-logic.controller.guicontroller.second.general.login.LoginGUI#onSignClick()V
-logic.controller.guicontroller.second.general.login.LoginGUI#error()V
+logic.controller.guicontroller.second.general.login.LoginGUI#onSelectCondominium()V
+logic.controller.guicontroller.second.general.AddressesDialogGUI#instance-init#
+logic.controller.guicontroller.second.general.AddressesDialogGUI#<init>()V

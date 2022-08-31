@@ -1,1 +1,1 @@
-logic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI#clearChildren()V
+logic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI#addChildren(LNode;)V

@@ -1,3 +1,2 @@
-logic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#instance-init#
-logic.controller.applicationcontroller.PatternController#<init>()V
-logic.controller.applicationcontroller.PatternController#instance-init#
+logic.controller.applicationcontroller.ViewController#secondRight(LParent;LButton;)V
+null

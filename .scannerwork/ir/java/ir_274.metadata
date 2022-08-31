@@ -1,2 +1,1 @@
-logic.controller.guicontroller.second.general.registration.RegisterGUI#viewResident(LObservableList;LDialogPane;)LObservableList;
-null
+logic.controller.guicontroller.second.general.registration.RegisterGUI#clearState()V

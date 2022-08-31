@@ -1,2 +1,2 @@
-logic.controller.guicontroller.second.admin.requests.meeting.MeetingItemGUI#onDeletePress()V
-logic.controller.guicontroller.second.admin.requests.meeting.MeetingItemGUI#remove()V
+logic.controller.guicontroller.second.admin.requests.meeting.MeetingItemGUI#onAcceptPress()V
+null

@@ -1,1 +1,1 @@
-logic.model.UserSingleton#setRole(Llogic/model/Role;)V
+logic.model.UserSingleton#getRole()Llogic/model/Role;

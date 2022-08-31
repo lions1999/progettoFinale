@@ -1,2 +1,5 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI#getSelected()V
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI#style()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI#instance-init#
+logic.controller.applicationcontroller.RegisterController#<init>()V
+logic.controller.applicationcontroller.RegisterController#instance-init#
+logic.controller.applicationcontroller.ViewController#<init>()V
+logic.controller.applicationcontroller.ViewController#instance-init#

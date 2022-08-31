@@ -1,1 +1,1 @@
-logic.model.UserSingleton#setOwner(Llogic/model/Owner;)V
+logic.model.UserSingleton#getOwner()Llogic/model/Owner;

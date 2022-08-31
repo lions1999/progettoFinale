@@ -1,1 +1,1 @@
-logic.model.Fee#getElevator()Ljava/lang/Double;
+logic.model.Fee#setPark(Ljava/lang/Double;)V

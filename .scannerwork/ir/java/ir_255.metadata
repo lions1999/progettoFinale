@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.FeeController#checkPastId(Ljava/lang/String;)Z
+logic.controller.applicationcontroller.FeeController#loadFees(Ljava/lang/String;Ljava/lang/String;)Llogic/model/Fee;

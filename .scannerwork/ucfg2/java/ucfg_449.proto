@@ -1,16 +1,16 @@
 
-3logic.model.MeetRequest#getName()Ljava/lang/String;o
-eC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/MeetRequest.java ("1*¾
+1logic.model.MeetRequest#getId()Ljava/lang/String;o
+eC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/MeetRequest.java ("1*¼
 1o
-eC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/MeetRequest.java (¹
-¶
+eC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/MeetRequest.java (·
+´
 o
-eC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/MeetRequest.java (
-%0java.lang.String"__id*%*#
-logic.model.MeetRequest"
-name"‹
+eC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/MeetRequest.java (
+%0java.lang.String"__id*#*!
+logic.model.MeetRequest"
+id"‹
 o
-eC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/MeetRequest.java (
+eC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/MeetRequest.java (
 
 %0java.lang.StringB
 logic.model.MeetRequest

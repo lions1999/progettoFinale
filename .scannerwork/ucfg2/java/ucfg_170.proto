@@ -1,17 +1,16 @@
 
-5logic.model.Apartment#getResident()Ljava/lang/String;m
-cC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Apartment.java0 0("1*º
+2logic.model.Apartment#getOwner()Ljava/lang/String;m
+cC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Apartment.java( (("1*·
 1m
-cC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Apartment.java1	 1(¹
-¶
+cC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Apartment.java)	 )(¶
+³
 m
-cC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Apartment.java1	 1(
-%0java.lang.String"__id*'*%
-logic.model.Apartment"
-
-resident"‰
+cC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Apartment.java)	 )(
+%0java.lang.String"__id*$*"
+logic.model.Apartment"
+owner"‰
 m
-cC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Apartment.java1 1(
+cC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Apartment.java) )(
 
 %0java.lang.StringB
 logic.model.Apartment

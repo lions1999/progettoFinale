@@ -1,1 +1,1 @@
-logic.model.User#setUsrAddr(Ljava/lang/String;)V
+logic.model.User#getUsrAddr()Ljava/lang/String;

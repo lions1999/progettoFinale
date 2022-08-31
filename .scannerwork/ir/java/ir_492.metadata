@@ -1,1 +1,1 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#setUp(Llogic/engineeringclasses/bean/RegistrationBean;)V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#reloadPage()V

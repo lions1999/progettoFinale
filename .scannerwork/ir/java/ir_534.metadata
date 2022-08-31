@@ -1,1 +1,1 @@
-logic.model.Request#getPos()I
+logic.model.Request#setReason(Ljava/lang/String;)V

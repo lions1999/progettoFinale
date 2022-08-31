@@ -1,16 +1,16 @@
 
-Flogic.engineeringclasses.bean.PostBean#getPostRole()Llogic/model/Role;~
-tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java! !("1*ú
+Flogic.engineeringclasses.bean.PostBean#getPostUser()Ljava/lang/String;~
+tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java ("1*ù
 1~
-tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java!" !(&×
-Ô
+tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java	 (Ö
+Ó
 ~
-tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java!" !(+
-%0logic.model.Role"__id*4*2(
-&logic.engineeringclasses.bean.PostBean"
-role"š
+tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java	 (
+%0java.lang.String"__id*3*1(
+&logic.engineeringclasses.bean.PostBean"
+usr"š
 ~
-tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java! !(,
+tC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/PostBean.java (
 
-%0logic.model.RoleB*(
+%0java.lang.StringB*(
 &logic.engineeringclasses.bean.PostBean

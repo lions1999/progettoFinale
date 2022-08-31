@@ -1,81 +1,16 @@
 
-\logic.controller.guicontroller.second.resident.ContactDialogGUI#getMessage()Ljava/util/List;ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (""1*¶
-1ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (%í
-è
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java6 (8
-%0logic.model.UserSingleton"__id*K*IA
-?logic.controller.guicontroller.second.resident.ContactDialogGUI"
-sgüú
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java6 (D
-%1java.lang.String"7logic.model.UserSingleton#getUserID()Ljava/lang/String;*!
-
-%0logic.model.UserSingleton2getUserID()í
-è
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaF (H
-%2logic.model.UserSingleton"__id*K*IA
-?logic.controller.guicontroller.second.resident.ContactDialogGUI"
-sg°û
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaF (U
-%3java.lang.String"8logic.model.UserSingleton#getAddress()Ljava/lang/String;*!
-
-%2logic.model.UserSingleton2getAddress() 
-«
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (b
-aptlogic.model.Apartment"__id*
-""í
-è
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaW (Y
-%4logic.model.UserSingleton"__id*K*IA
-?logic.controller.guicontroller.second.resident.ContactDialogGUI"
-sg°û
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaW (f
-%5java.lang.String"8logic.model.UserSingleton#getAddress()Ljava/lang/String;*!
-
-%4logic.model.UserSingleton2getAddress()òï
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javag (v
-%6java.lang.String"3logic.model.Apartment#getNumber()Ljava/lang/String;*
-
-aptlogic.model.Apartment2getNumber()«
-ƒ
-ô
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (É
-mailjava.lang.String"__id*
-""òï
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java# (2
-%7java.lang.String"3logic.model.Apartment#getNumber()Ljava/lang/String;*
-
-aptlogic.model.Apartment2getNumber()ñì
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaF (T
-%8java.lang.String"2logic.model.Apartment#getOwner()Ljava/lang/String;*
-
-aptlogic.model.Apartment2
-getOwner()–
-Õ
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (U
-%9"<java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;*"
-java.util.Arrays*
-
-mailjava.lang.String*
-
-%7java.lang.String*
-""*
-
-%8java.lang.String"£
-ò
-çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (V
-
-%9BCA
-?logic.controller.guicontroller.second.resident.ContactDialogGUI
+7logic.model.UserSingleton#getPastfee()Llogic/model/Fee;q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.javae e("1*«
+1q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.javae! e((ø
+º
+q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.javae! e((
+%0logic.model.Fee"__id***(
+logic.model.UserSingleton"	
+pastfee"å
+q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.javae e()
+
+%0logic.model.FeeB
+logic.model.UserSingleton

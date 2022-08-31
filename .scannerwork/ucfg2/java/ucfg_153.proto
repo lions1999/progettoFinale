@@ -1,16 +1,17 @@
 
-Jlogic.engineeringclasses.bean.RegistrationBean#getRole()Ljava/lang/String;Ü
-|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java- -("1*ù
+Nlogic.engineeringclasses.bean.RegistrationBean#getPassword()Ljava/lang/String;Ü
+|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java% %("1*°
 1Ü
-|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java. .(Ë
-Â
+|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java& &(Ï
+È
 Ü
-|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java. .(
-%0java.lang.String"__id*<*:0
-.logic.engineeringclasses.bean.RegistrationBean"
-role"£
+|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java& &(
+%0java.lang.String"__id*@*>0
+.logic.engineeringclasses.bean.RegistrationBean"
+
+password"£
 Ü
-|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java. .(
+|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java& &(
 
 %0java.lang.StringB20
 .logic.engineeringclasses.bean.RegistrationBean

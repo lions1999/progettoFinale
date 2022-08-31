@@ -1,3 +1,6 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#ownerAdd()V
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#removeAll()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#residentAdd()V
+null
+java.lang.Object#getClass()Ljava/lang/Class;
+java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#remove()V
 logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#getRegistered()Llogic/engineeringclasses/bean/RegistrationBean;

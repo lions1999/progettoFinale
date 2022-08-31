@@ -1,144 +1,90 @@
 
-[logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#btnRegClick()V•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java4 4("20*Û
-2•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaE E(¿
-Ω
+£logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpMeeting(Llogic/model/MeetRequest;)Llogic/engineeringclasses/bean/MeetRequestBean;•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java& &(("1*¡$
+1•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java' '(4èå
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaE E(
-%14"__id*
-""*
-0*∆
-3•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaD D(»
-≈
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java'# '(23
+%0-logic.engineeringclasses.bean.MeetRequestBean"-logic.engineeringclasses.bean.MeetRequestBean°
+û
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaD D(-
-%12double"__id*
-""»
-≈
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java' '(4
+%1"7logic.engineeringclasses.bean.MeetRequestBean#<init>()V*5
+3
+%0-logic.engineeringclasses.bean.MeetRequestBeanü
+ú
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaD/ D(?
-%13double"__id*
-""*
-2*€	
-15•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java;0 ;(7—
-Œ
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java' '(55
+bean-logic.engineeringclasses.bean.MeetRequestBean"__id*5
+3
+%0-logic.engineeringclasses.bean.MeetRequestBean¢ü
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java;0 ;(7?
-%49logic.controller.applicationcontroller.RegisterController"__id*]*[N
-Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI"	
-regCtrl®
-•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java( ((#
+%2java.lang.String"1logic.model.MeetRequest#getId()Ljava/lang/String;*!
+
+meetlogic.model.MeetRequest2getId()˜Ù
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java;I ;(U
-%5java.lang.String"__id*]*[N
-Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI"	
-address§°
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java;0 ;(V
-%6"nlogic.controller.applicationcontroller.RegisterController#loadRegistration(Ljava/lang/String;)LObservableList;*A
-?
-%49logic.controller.applicationcontroller.RegisterController*
-
-%5java.lang.String2$loadRegistration(Ljava/lang/String;)*
-3
-10*Ó
-16•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java9 9(Dû
-õ
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java9 9(Dc
-	tableCtrlVlogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI"__id*
-""òï
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java: :(%
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java( (($
 
-%3void"glogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI#clearChildren()V*e
-c
-	tableCtrlVlogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI2clearChildren()*
-15*⁄
-5•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaB B(£†
+%3void"Llogic.engineeringclasses.bean.MeetRequestBean#setMeetId(Ljava/lang/String;)V*7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean*
+
+%2java.lang.String2setMeetId(Ljava/lang/String;)¶£
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaB B(+
-%11"klogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI#addChildren(LNode;)V*e
-c
-	tableCtrlVlogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI*
-""2addChildren(LNode;)*
-3
-10*Û
-6•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java@ @(Dú
-ô
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java) )('
+%4java.lang.String"3logic.model.MeetRequest#getName()Ljava/lang/String;*!
+
+meetlogic.model.MeetRequest2	getName()˚¯
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java@ @(Da
-itemCtrlUlogic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI"__id*
-""°û
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java) )((
+
+%5void"Nlogic.engineeringclasses.bean.MeetRequestBean#setMeetName(Ljava/lang/String;)V*7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean*
+
+%4java.lang.String2setMeetName(Ljava/lang/String;)¨©
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaA A($
-%10void"élogic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI#setUp(Llogic/engineeringclasses/bean/RegistrationBean;)V*c
-a
-itemCtrlUlogic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI*8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean27setUp(Llogic/engineeringclasses/bean/RegistrationBean;)*
-5*ã
-19•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java7  7($ 
-«
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java* *(-
+%6java.lang.String"6logic.model.MeetRequest#getAddress()Ljava/lang/String;*!
+
+meetlogic.model.MeetRequest2getAddress()Å˛
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java7  7($;
-%15logic.controller.applicationcontroller.ViewController"__id*Z*XN
-Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI"
-viewâÜ
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java* *(.
+
+%7void"Qlogic.engineeringclasses.bean.MeetRequestBean#setMeetAddress(Ljava/lang/String;)V*7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean*
+
+%6java.lang.String2"setMeetAddress(Ljava/lang/String;)™ß
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java7  7(C
-%2"]logic.controller.applicationcontroller.ViewController#loader(Ljava/lang/String;I)LFXMLLoader;*=
-;
-%15logic.controller.applicationcontroller.ViewController*
-RegistrationTable*22loader(Ljava/lang/String;I)*
-16*¸
-9•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java= =(GÒ
-Ó
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java+ +(+
+%8java.lang.String"5logic.model.MeetRequest#getObject()Ljava/lang/String;*!
+
+meetlogic.model.MeetRequest2getObject()ˇ¸
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java= =(G6
-bean.logic.engineeringclasses.bean.RegistrationBean"__id*
-
-%7 
-«
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java+ +(,
+
+%9void"Plogic.engineeringclasses.bean.MeetRequestBean#setMeetObject(Ljava/lang/String;)V*7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean*
+
+%8java.lang.String2!setMeetObject(Ljava/lang/String;)ß§
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java>" >(&;
-%85logic.controller.applicationcontroller.ViewController"__id*Z*XN
-Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI"
-viewàÖ
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java, ,(+
+%10java.lang.String"3logic.model.MeetRequest#getText()Ljava/lang/String;*!
+
+meetlogic.model.MeetRequest2	getText()ÖÇ
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java>" >(C
-%9"]logic.controller.applicationcontroller.ViewController#loader(Ljava/lang/String;I)LFXMLLoader;*=
-;
-%85logic.controller.applicationcontroller.ViewController*
-ItemRegistration*22loader(Ljava/lang/String;I)*
-6*Ù
-20•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java5 5(ø
-º
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java, ,(,
+%11void"Rlogic.engineeringclasses.bean.MeetRequestBean#setMeetTextArea(Ljava/lang/String;)V*7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean*
+
+%10java.lang.String2#setMeetTextArea(Ljava/lang/String;)"·
 •
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java5 5(
-%0"__id*
-""*
-19*Ï
-10•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java=( =(F∏
-µ
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java=( =(F
-%7"™logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpRegistration(Llogic/model/Registration;)Llogic/engineeringclasses/bean/RegistrationBean;*PN
-Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI*
-""*
-9*≈
-0 "Ω
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaI I(
-implicit returnBPN
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java- -(7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean:
+meetlogic.model.MeetRequestBPN
 Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI

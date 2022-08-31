@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.FeeBean#setFeeWifi(Ljava/lang/Double;)V
+logic.engineeringclasses.bean.FeeBean#getFeeWifi()Ljava/lang/Double;

@@ -1,16 +1,48 @@
 
-7logic.model.UserSingleton#getUserID()Ljava/lang/String;q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java ("1*«
+Blogic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (("3*ƒ
+2q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (!≤Ø
+q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (
+%1logic.model.UserSingleton"logic.model.UserSingletonƒ
+¡
+q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (!
+%2"#logic.model.UserSingleton#<init>()V*!
+
+%1logic.model.UserSingleton 
+«
+q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (!)
+logic.model.UserSingleton"
+
+instance"__id*!
+
+%1logic.model.UserSingleton*
+1*À
+3q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java ( 
+«
+q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (
+%0logic.model.UserSingleton"__id*+*)
+logic.model.UserSingleton"
+
+instance*
+2
+1*‹
 1q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java 	  (æ
-ª
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java	 ( 
+«
 q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java 	  (
-%0java.lang.String"__id*(*&
-logic.model.UserSingleton"
-usrId"ç
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java	 (
+%3logic.model.UserSingleton"__id*+*)
+logic.model.UserSingleton"
+
+instance"ñ
 q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java   (
-
-%0java.lang.StringB
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (!
+
+%3logic.model.UserSingletonB"
 logic.model.UserSingleton

@@ -1,1 +1,1 @@
-logic.model.Request#setPos(I)V
+logic.model.Request#getPos()I

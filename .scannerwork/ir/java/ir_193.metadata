@@ -1,1 +1,1 @@
-logic.model.Apartment#setNumber(Ljava/lang/String;)V
+logic.model.Apartment#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V

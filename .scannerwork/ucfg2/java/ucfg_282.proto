@@ -1,16 +1,17 @@
 
-*logic.model.Fee#getPet()Ljava/lang/Double;g
-]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.javaA A("1*ù
+/logic.model.Fee#getElevator()Ljava/lang/Double;g
+]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.java9 9("1*¢
 1g
-]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.javaB B(®
-•
+]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.java: :(≠
+™
 g
-]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.javaB B(
-%0java.lang.Double"__id**
-logic.model.Fee"
-pet"É
+]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.java: :(
+%0java.lang.Double"__id*!*
+logic.model.Fee"
+
+elevator"É
 g
-]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.javaB B(
+]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.java: :(
 
 %0java.lang.DoubleB
 logic.model.Fee

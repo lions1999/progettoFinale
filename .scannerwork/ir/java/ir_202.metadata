@@ -1,1 +1,1 @@
-logic.model.Apartment#getFee()Ljava/lang/String;
+logic.model.Apartment#setFee(Ljava/lang/String;)V

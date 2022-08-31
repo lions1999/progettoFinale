@@ -1,1 +1,1 @@
-logic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#checkInfo()Z
+logic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#setUp(Llogic/engineeringclasses/bean/UserBean;)V

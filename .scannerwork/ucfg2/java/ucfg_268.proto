@@ -1,16 +1,16 @@
 
-Ologic.engineeringclasses.bean.MeetRequestBean#getMeetObject()Ljava/lang/String;…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java# #("1*›
+Plogic.engineeringclasses.bean.MeetRequestBean#getMeetAddress()Ljava/lang/String;…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java ( "1*œ
 1…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java$ $(è
-å
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java (é
+æ
 …
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java$ $(
-%0java.lang.String"__id*=*;/
--logic.engineeringclasses.bean.MeetRequestBean"
-object"¢
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java (
+%0java.lang.String"__id*>*</
+-logic.engineeringclasses.bean.MeetRequestBean"	
+address"¢
 …
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java$ $(
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java (
 
 %0java.lang.StringB1/
 -logic.engineeringclasses.bean.MeetRequestBean

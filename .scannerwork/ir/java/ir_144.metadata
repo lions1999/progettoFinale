@@ -1,1 +1,3 @@
-logic.controller.applicationcontroller.RateController#rateUser(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+logic.controller.applicationcontroller.RateController#instance-init#
+logic.engineeringclasses.dao.RateDAO#instance-init#
+logic.engineeringclasses.dao.RateDAO#<init>()V

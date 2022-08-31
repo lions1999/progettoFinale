@@ -1,52 +1,43 @@
 
-dlogic.controller.guicontroller.second.resident.AptInfoGUI#getList(Llogic/model/Fee;)Ljava/util/List;í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaR R("1*
-1í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS S(ÑÅ
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS S(+
-%0java.lang.Double",logic.model.Fee#getAdmin()Ljava/lang/Double;*
-
-feelogic.model.Fee2
-getAdmin()Çˇ
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS, S(9
-%1java.lang.Double"+logic.model.Fee#getPark()Ljava/lang/Double;*
-
-feelogic.model.Fee2	getPark()äá
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS: S(K
-%2java.lang.Double"/logic.model.Fee#getElevator()Ljava/lang/Double;*
-
-feelogic.model.Fee2getElevator()Ä˝
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaSL S(X
-%3java.lang.Double"*logic.model.Fee#getPet()Ljava/lang/Double;*
-
-feelogic.model.Fee2getPet()Çˇ
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaSY S(f
-%4java.lang.Double"+logic.model.Fee#getWifi()Ljava/lang/Double;*
-
-feelogic.model.Fee2	getWifi()Ñ
-Å
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS S(g
-%5java.util.List"<java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;*"
-java.util.Arrays*
-
-%0java.lang.Double*
-
-%1java.lang.Double*
-
-%2java.lang.Double*
-
-%3java.lang.Double*
-
-%4java.lang.Double"≠
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS S(h
-
-%5java.util.List:
-feelogic.model.FeeB=;
-9logic.controller.guicontroller.second.resident.AptInfoGUI
+®logic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetGUI#getBean(Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/MeetRequestBean;§
+ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java (#"1*Ó
+1§
+ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java (4éã
+§
+ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java# (23
+%0-logic.engineeringclasses.bean.MeetRequestBean"-logic.engineeringclasses.bean.MeetRequestBean†
+ù
+§
+ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java (4
+%1"7logic.engineeringclasses.bean.MeetRequestBean#<init>()V*5
+3
+%0-logic.engineeringclasses.bean.MeetRequestBeanû
+õ
+§
+ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java (55
+bean-logic.engineeringclasses.bean.MeetRequestBean"__id*5
+3
+%0-logic.engineeringclasses.bean.MeetRequestBeanˇ¸
+§
+ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java (
+
+%2void"Plogic.engineeringclasses.bean.MeetRequestBean#setMeetObject(Ljava/lang/String;)V*7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean*
+
+objjava.lang.String2!setMeetObject(Ljava/lang/String;)áÑ
+§
+ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java (%
+
+%3void"Rlogic.engineeringclasses.bean.MeetRequestBean#setMeetTextArea(Ljava/lang/String;)V*7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean*
+
+txtAreajava.lang.String2#setMeetTextArea(Ljava/lang/String;)"‡
+§
+ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java (7
+5
+bean-logic.engineeringclasses.bean.MeetRequestBean:
+objjava.lang.String:
+txtAreajava.lang.StringBOM
+Klogic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetGUI

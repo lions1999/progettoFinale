@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.MeetController#addMeeting(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+logic.controller.applicationcontroller.MeetController#loadMailList(Ljava/lang/String;)LObservableList;

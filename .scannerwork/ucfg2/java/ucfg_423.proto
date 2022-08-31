@@ -1,16 +1,16 @@
 
-7logic.model.Registration#getRegName()Ljava/lang/String;p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java ("1*Å
+5logic.model.Registration#getRegID()Ljava/lang/String;p
+fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java ("1*Ã
 1p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java (¾
-»
+fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java$ ()¼
+¹
 p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java (
-%0java.lang.String"__id*)*'
-logic.model.Registration"	
-regName"Œ
+fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java$ ()
+%0java.lang.String"__id*'*%
+logic.model.Registration"
+regID"Œ
 p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java (
+fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java (*
 
 %0java.lang.StringB
 logic.model.Registration

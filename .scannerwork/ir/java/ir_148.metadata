@@ -1,6 +1,1 @@
-logic.controller.applicationcontroller.UserController#instance-init#
-null
-logic.controller.applicationcontroller.FeeController#instance-init#
-logic.controller.applicationcontroller.FeeController#<init>()V
-logic.engineeringclasses.dao.UserDAO#instance-init#
-logic.engineeringclasses.dao.UserDAO#<init>()V
+logic.controller.applicationcontroller.RateController#deleteRate(Ljava/lang/String;)V

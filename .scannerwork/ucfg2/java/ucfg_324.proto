@@ -1,48 +1,23 @@
 
-Blogic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (("3*Ä
-2q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (!²¯
-q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (
-%1logic.model.UserSingleton"logic.model.UserSingletonÄ
-Á
-q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (!
-%2"#logic.model.UserSingleton#<init>()V*!
-
-%1logic.model.UserSingletonÊ
-Ç
-q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (!)
-logic.model.UserSingleton"
-
-instance"__id*!
-
-%1logic.model.UserSingleton*
-1*Ë
-3q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (Ê
-Ç
-q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (
-%0logic.model.UserSingleton"__id*+*)
-logic.model.UserSingleton"
-
-instance*
-2
-1*Ü
-1q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java	 (Ê
-Ç
-q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java	 (
-%3logic.model.UserSingleton"__id*+*)
-logic.model.UserSingleton"
-
-instance"–
-q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java (!
-
-%3logic.model.UserSingletonB"
-logic.model.UserSingleton
+klogic.engineeringclasses.query.CondominiumQuery#selectAddressList(Ljava/sql/Statement;)Ljava/sql/ResultSet;‡
+}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java (*"1*Ú
+1‡
+}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java (2Ó
+Ð
+‡
+}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java (3
+sqljava.lang.String"__id*%#
+!SELECT con_addr FROM condominiumsËÈ
+‡
+}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java	 (
+%0java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+
+stmtjava.sql.Statement*
+
+sqljava.lang.String2 executeQuery(Ljava/lang/String;)"¦
+‡
+}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java ( 
+
+%0java.sql.ResultSet:
+stmtjava.sql.StatementB3"1
+/logic.engineeringclasses.query.CondominiumQuery

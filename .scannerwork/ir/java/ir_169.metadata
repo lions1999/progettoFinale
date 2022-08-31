@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.PostBean#getPostImage()Ljava/io/InputStream;
+logic.engineeringclasses.bean.PostBean#setPostImage(Ljava/io/InputStream;)V

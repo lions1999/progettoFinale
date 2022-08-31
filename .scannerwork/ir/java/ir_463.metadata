@@ -1,1 +1,1 @@
-logic.controller.guicontroller.second.admin.condominium.InfoTableGUI#clearChildren()V
+logic.controller.guicontroller.second.admin.condominium.InfoTableGUI#addChildren(LNode;)V

@@ -1,1 +1,6 @@
-logic.controller.guicontroller.first.owner.RatingUserGUI#setUp(Ljava/lang/String;Ljava/lang/String;)V
+logic.controller.guicontroller.first.owner.RatingUserGUI#instance-init#
+logic.controller.applicationcontroller.RateController#<init>()V
+logic.controller.applicationcontroller.RateController#instance-init#
+logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;
+logic.engineeringclasses.bean.UserBean#instance-init#
+logic.engineeringclasses.bean.UserBean#<init>()V

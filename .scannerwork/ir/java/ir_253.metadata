@@ -1,1 +1,3 @@
-logic.controller.applicationcontroller.FeeController#setUpFees(Ljava/lang/String;)Llogic/model/Fee;
+logic.controller.applicationcontroller.FeeController#instance-init#
+logic.engineeringclasses.dao.FeeDAO#instance-init#
+logic.engineeringclasses.dao.FeeDAO#<init>()V

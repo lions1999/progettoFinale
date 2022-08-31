@@ -1,2 +1,1 @@
-logic.controller.guicontroller.first.general.login.LoginGUI#onSignClick()V
-logic.controller.guicontroller.first.general.login.LoginGUI#error()V
+logic.controller.guicontroller.first.general.login.LoginGUI#onSignupClick()V

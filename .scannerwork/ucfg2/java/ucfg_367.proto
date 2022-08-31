@@ -1,115 +1,16 @@
 
-™logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpRegistration(Llogic/model/Registration;)Llogic/engineeringclasses/bean/RegistrationBean;•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (."1*ﬁ/
-1•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java  (6ëé
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java$ (44
-%0.logic.engineeringclasses.bean.RegistrationBean".logic.engineeringclasses.bean.RegistrationBean£
-†
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java  (6
-%1"8logic.engineeringclasses.bean.RegistrationBean#<init>()V*6
-4
-%0.logic.engineeringclasses.bean.RegistrationBean°
-û
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (76
-bean.logic.engineeringclasses.bean.RegistrationBean"__id*6
-4
-%0.logic.engineeringclasses.bean.RegistrationBean≤Ø
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (*
-%2java.lang.String"5logic.model.Registration#getRegID()Ljava/lang/String;**
-(
-registrationlogic.model.Registration2
-getRegID()ÒÓ
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (+
-
-%3void"Ilogic.engineeringclasses.bean.RegistrationBean#setID(Ljava/lang/String;)V*8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean*
+/logic.model.Rate#getRateTxt()Ljava/lang/String;h
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Rate.java8 8("1*•
+1h
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Rate.java9 9(Æ
+´
+h
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Rate.java9 9(
+%0java.lang.String"__id*!*
+logic.model.Rate"	
+rateTxt"Ñ
+h
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Rate.java9 9(
 
-%2java.lang.String2setID(Ljava/lang/String;)∂≥
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (.
-%4java.lang.String"7logic.model.Registration#getRegName()Ljava/lang/String;**
-(
-registrationlogic.model.Registration2getRegName()ıÚ
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (/
-
-%5void"Klogic.engineeringclasses.bean.RegistrationBean#setName(Ljava/lang/String;)V*8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean*
-
-%4java.lang.String2setName(Ljava/lang/String;)∏µ
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (0
-%6java.lang.String"8logic.model.Registration#getRegEmail()Ljava/lang/String;**
-(
-registrationlogic.model.Registration2getRegEmail()˜Ù
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (1
-
-%7void"Llogic.engineeringclasses.bean.RegistrationBean#setEmail(Ljava/lang/String;)V*8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean*
-
-%6java.lang.String2setEmail(Ljava/lang/String;)¥±
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (1
-%8java.lang.String"6logic.model.Registration#getRegPwd()Ljava/lang/String;**
-(
-registrationlogic.model.Registration2getRegPwd()˝˙
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java (2
-
-%9void"Ologic.engineeringclasses.bean.RegistrationBean#setPassword(Ljava/lang/String;)V*8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean*
-
-%8java.lang.String2setPassword(Ljava/lang/String;)∑¥
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java   (.
-%10java.lang.String"7logic.model.Registration#getRegRole()Ljava/lang/String;**
-(
-registrationlogic.model.Registration2getRegRole()˜Ù
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java   (/
-%11void"Klogic.engineeringclasses.bean.RegistrationBean#setRole(Ljava/lang/String;)V*8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean*
-
-%10java.lang.String2setRole(Ljava/lang/String;)∑¥
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java! !(1
-%12java.lang.String"7logic.model.Registration#getRegAddr()Ljava/lang/String;**
-(
-registrationlogic.model.Registration2getRegAddr()˝˙
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java! !(2
-%13void"Nlogic.engineeringclasses.bean.RegistrationBean#setAddress(Ljava/lang/String;)V*8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean*
-
-%12java.lang.String2setAddress(Ljava/lang/String;)µ≤
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java" "(2
-%14java.lang.String"6logic.model.Registration#getRegApt()Ljava/lang/String;**
-(
-registrationlogic.model.Registration2getRegApt()Å˛
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java" "(3
-%15void"Plogic.engineeringclasses.bean.RegistrationBean#setApartment(Ljava/lang/String;)V*8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean*
-
-%14java.lang.String2 setApartment(Ljava/lang/String;)"‚
-•
-öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java# #(8
-6
-bean.logic.engineeringclasses.bean.RegistrationBean:(
-registrationlogic.model.RegistrationBPN
-Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI
+%0java.lang.StringB
+logic.model.Rate

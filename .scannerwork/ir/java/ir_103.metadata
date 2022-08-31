@@ -1,1 +1,2 @@
-logic.engineeringclasses.query.RateQuery#instance-init#
+logic.controller.guicontroller.first.general.login.LoginGUI#initialize(Ljava/net/URL;Ljava/util/ResourceBundle;)V
+logic.controller.guicontroller.first.general.login.LoginGUI#setUp()V

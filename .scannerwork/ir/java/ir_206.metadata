@@ -1,7 +1,4 @@
-logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;
-java.text.DecimalFormatSymbols#instance-init#
-java.text.DecimalFormatSymbols#<init>()V
-java.text.NumberFormat#format(D)Ljava/lang/String;
-java.text.DecimalFormat#<init>(Ljava/lang/String;Ljava/text/DecimalFormatSymbols;)V
-java.text.DecimalFormat#instance-init#
+logic.controller.guicontroller.first.general.FeeInfoGUI#checkErrorTf(LTextField;)Z
+java.lang.String#valueOf(I)Ljava/lang/String;
+java.lang.String#length()I
 java.lang.Double#parseDouble(Ljava/lang/String;)D
