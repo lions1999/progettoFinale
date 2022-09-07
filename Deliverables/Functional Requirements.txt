@@ -1,0 +1,14 @@
+The system shall provide a comunication method:
+-let the administrator to organize a meeting
+-let the owner to request a meeting to the administrator
+-allows residents to communicate with their homeowners
+
+
+The system shall include a section where the users can upload the files of the condominium:
+-resident and owner can only upload texts and photo
+-condominium administrator can both posts something or delete them
+
+
+The system shall provide a rating system:
+-which allows the homeowner to verify previous valuations from other owners to his tenant or make one
+-allow only the administrator to modify or delete them
