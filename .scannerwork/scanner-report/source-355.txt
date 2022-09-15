@@ -1,28 +1,47 @@
-package logic.engineeringclasses.query;
+package logic.engineeringclasses.bean;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+public class RateBean {
 
-public class FeeQuery {
+    private String rateId;
+    private String ownId;
+    private String resId;
+    private String rateVal;
+    private String rateTxt;
 
-    private FeeQuery(){}
-
-    public static ResultSet loadAvailableFees(Statement stmt, String address) throws SQLException {
-        String sql = "SELECT * FROM condominiums where con_addr='" + address +"'";
-        
-        return stmt.executeQuery(sql);
+    public String getRateBeanId(){
+        return rateId;
     }
 
-    public static ResultSet loadFees(Statement stmt, String aptId, String typeFee) throws SQLException {
-        String sql = "Select * from "+typeFee+"  WHERE fee_apt ='"+aptId+"'";
-        
-        return stmt.executeQuery(sql);
+    public void setRateBeanId(String rateId){
+        this.rateId = rateId;
     }
 
-    public static ResultSet checkApt(Statement stmt, String aptId) throws SQLException {
-        String sql = "SELECT fee_apt FROM pastfee where fee_apt='" + aptId +"'";
-        
-        return stmt.executeQuery(sql);
+    public String getOwnBeanId() {return ownId;}
+
+    public void setOwnBeanId(String ownId) {
+        this.ownId = ownId;}
+
+    public String getResBeanId() {
+        return resId;
+    }
+
+    public void setResBeanId(String resId) {
+        this.resId = resId;
+    }
+
+    public String getRateBeanVal() {
+        return rateVal;
+    }
+
+    public void setRateBeanVal(String rateVal) {
+        this.rateVal = rateVal;
+    }
+
+    public String getRateBeanTxt() {
+        return rateTxt;
+    }
+
+    public void setRateBeanTxt(String rateTxt) {
+        this.rateTxt = rateTxt;
     }
 }

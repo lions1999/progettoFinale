@@ -1,58 +1,61 @@
-package logic.model;
+package logic.engineeringclasses.dao;
 
-public class MeetRequest {
+import java.sql.*;
 
-    private String id;
-    private String name;
-    private String address;
-    private String object;
-    private String text;
+public class SqlDAO {
 
-    public MeetRequest(String id, String name, String address, String object, String text){
-        this.setId(id);
-        this.setName(name);
-        this.setAddress(address);
-        this.setObject(object);
-        this.setText(text);
-    }
+	private static final String URL = "jdbc:mysql://localhost:3306/condominium_db";
+	private static final String USER = "condominium";
+	private static final String PASSWORD = "ispw2021";
 
-    public String getId() {
-        return id;
-    }
+	private Connection conn;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+	PreparedStatement preset;
+	Statement stmt;
+	
+	public SqlDAO() {
+		this.stmt = null;
+		this.conn = null;
+		this.preset = null;
+	}
+	
+	void connect() throws SQLException 	{
+		 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+		 conn = DriverManager.getConnection(URL,USER,PASSWORD);
+		 stmt = conn.createStatement();
+	}
+	
+	PreparedStatement prepConnect(String sql) throws SQLException{
+		 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+		 conn = DriverManager.getConnection(URL,USER,PASSWORD);
+		 return conn.prepareStatement(sql);
+	}
+	
+	void disconnect() throws SQLException{
+        if (stmt != null)
+            stmt.close();
+        if (conn != null)
+            conn.close();
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String loadLatestId(String table,String column) throws SQLException{
+		String lastId = "";
+		ResultSet rs;
+		try{
+			connect();
+			rs = selectLastId(stmt,table,column);
+			if(rs.next()) {
+				lastId = rs.getString(column);
+			}
+		} finally {
+			disconnect();
+		}
+		return lastId;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getObject() {
-        return object;
-    }
-
-    public void setObject(String object) {
-        this.object = object;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
+	public static ResultSet selectLastId(Statement stmt, String table, String column) throws SQLException{
+		String sql="SELECT "+column+" FROM "+table+" ORDER BY "+column+" DESC LIMIT 1";
+		return stmt.executeQuery(sql);
+	}
 }
+	

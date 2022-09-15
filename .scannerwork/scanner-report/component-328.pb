@@ -1,1 +1,1 @@
-È 2javaXMhrLCondominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java
+È 2javaXhrYCondominium/src/logic/controller/guicontroller/second/admin/condominium/InfoTableGUI.java

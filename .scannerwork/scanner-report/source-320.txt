@@ -1,41 +1,32 @@
-package logic.controller.guicontroller.second.general;
+package logic.controller.guicontroller.first.general.registration;
 
-import javafx.application.Platform;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Dialog;
-import javafx.scene.control.DialogPane;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
-import logic.controller.applicationcontroller.RegisterController;
-import logic.controller.guicontroller.AlertGUI;
-import java.util.Optional;
+import javafx.scene.control.SelectionMode;
+import javafx.scene.text.Text;
+import logic.engineeringclasses.bean.UserBean;
+import logic.model.Role;
 
-public class AddressesDialogGUI {
+public class SelectApartmentDialogGUI {
 
-    private final RegisterController controller = new RegisterController();
-    private final AlertGUI alert = new AlertGUI();
+    @FXML private Text txt;
+    @FXML private ListView<String> listView;
 
-    public String loadAddresses() {
-        try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/logic/view/first/Dialog.fxml"));
-            DialogPane pane = loader.load();
-            ListView<String> list = new ListView<>();
-            list.setItems(controller.loadAddresses());
-            pane.setContent(list);
-            Dialog<ButtonType> dialog = new Dialog<>();
-            dialog.setDialogPane(pane);
-            Optional<ButtonType> btn = dialog.showAndWait();
-            if (btn.isPresent() && btn.get() == ButtonType.OK) {
-                String address = list.getSelectionModel().getSelectedItem();
-                if (address != null) {
-                    return address;
-                }
-            }
-        } catch (Exception e) {
-            alert.alertError("DATA BASE ERROR", "DATA BASE not connected ", "Please Restart the Application");
-            Platform.exit();
+    public void setUp(ObservableList<String> list, UserBean bean){
+        listView.setItems(list);
+        switch (Role.valueOf(bean.getUsrRole().toUpperCase())){
+            case RESIDENT:
+                listView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+                break;
+            case OWNER:
+                listView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+                break;
+            default:
+                break;
         }
-        return null;
+        txt.setText("Please "+bean.getUsrName()+" select an apartment\nAs "+bean.getUsrRole()+" in "+bean.getUsrAddr());
     }
+
+    public ObservableList<String> getApt() {return listView.getSelectionModel().getSelectedItems();}
 }

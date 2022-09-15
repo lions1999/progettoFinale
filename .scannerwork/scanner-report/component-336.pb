@@ -1,1 +1,1 @@
-Ð 2javaX?hr:Condominium/src/logic/engineeringclasses/bean/FeeBean.java
+Ð 2javaX*hrUCondominium/src/logic/controller/guicontroller/second/general/AddressesDialogGUI.java

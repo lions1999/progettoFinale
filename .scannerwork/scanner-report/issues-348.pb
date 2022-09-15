@@ -1,5 +1,2 @@
-¥
-javaS2077?Make sure using a dynamically formatted SQL query is safe here. 2>> ":I
-GÜ== P8SQL Query is dynamically formatted and assigned to 'sql'¥
-javaS2077?Make sure using a dynamically formatted SQL query is safe here. 2HH ":I
-GÜGG P8SQL Query is dynamically formatted and assigned to 'sql'
+p
+javaS4507UMake sure this debug feature is deactivated before delivering the code in production. 2.. 

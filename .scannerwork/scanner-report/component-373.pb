@@ -1,1 +1,1 @@
-õ 2javaXNhr%Condominium/src/logic/model/User.java
+õ 2javaXhr=Condominium/src/logic/engineeringclasses/query/PostQuery.java

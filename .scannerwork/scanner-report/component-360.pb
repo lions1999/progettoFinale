@@ -1,1 +1,1 @@
-è 2javaX/hr=Condominium/src/logic/engineeringclasses/query/UserQuery.java
+è 2javaXkhr8Condominium/src/logic/engineeringclasses/dao/FeeDAO.java

@@ -1,195 +1,141 @@
-package logic.engineeringclasses.dao;
+package logic.controller.guicontroller.second.general.registration;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import logic.engineeringclasses.query.ApartmentQuery;
-import logic.model.Apartment;
-import java.sql.ResultSet;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.*;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
+import logic.controller.applicationcontroller.RegisterController;
+import logic.controller.applicationcontroller.ViewController;
+import logic.controller.guicontroller.AlertGUI;
+import logic.controller.guicontroller.second.general.AddressesDialogGUI;
+import logic.engineeringclasses.bean.UserBean;
+import logic.model.Role;
+import logic.model.User;
+import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Optional;
 
-public class ApartmentDAO extends SqlDAO{
+import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
 
-    private final UserDAO userDao = new UserDAO();
-    private static final String APARTMENT = "apt_name";
-    private static final String APARTMENT_ADDRESS = "apt_addr";
-    private static final String APARTMENT_OWNER = "apt_own";
-    private static final String APARTMENT_RESIDENT = "apt_res";
+public class RegisterGUI {
 
-    public String loadApartmentId(String apartment, String address) throws SQLException {
-        String id = null;
-        ResultSet rs;
-        try{
-            connect();
-            rs = ApartmentQuery.selectApartmentId(stmt,apartment,address);
-            if(rs.next()) {
-                id = rs.getString("apt_id");
-            }
-        }finally{
-            disconnect();
-        }
-        return id;
+    private final RegisterController controller = new RegisterController();
+    private final ViewController view = new ViewController();
+    private final AlertGUI alert = new AlertGUI();
+
+    @FXML private TextField tfName;
+    @FXML private TextField tfSurname;
+    @FXML private TextField tfEmail;
+    @FXML private PasswordField tfPassword;
+    @FXML private PasswordField tfOkPwd;
+    @FXML private ToggleGroup radio;
+    @FXML private Text txtAddress;
+
+
+    public void addressBtnClick() {
+        AddressesDialogGUI address = new AddressesDialogGUI();
+        txtAddress.setText(address.loadAddresses());
     }
 
-    public ObservableList<String> loadApartmentResident(String address) throws SQLException{
-        ObservableList<String> list = FXCollections.observableArrayList();
-        ResultSet rs;
-        try{
-            connect();
-            rs = ApartmentQuery.selectApartmentResident(stmt,address);
-            while(rs.next()) {
-                list.add(rs.getString(APARTMENT));
-            }
-        }finally{
-            disconnect();
-        }
-        return list;
+    public void onSignClick() {
+        Pane pane = view.getPage("Login",2);
+        secondBorder.setCenter(pane);
     }
 
-    public ObservableList<String> loadApartmentOwner(String address) throws SQLException{
-        ObservableList<String> list = FXCollections.observableArrayList();
-		ResultSet rs;
-        try{
-            connect();
-            rs = ApartmentQuery.selectApartmentOwner(stmt,address);
-            while(rs.next()) {
-                list.add(rs.getString(APARTMENT));
-            }
-        }finally{
-            disconnect();
-        }
-        return list;
-    }
-
-    public Apartment checkApartments(String userId,String condAddress, String typeUsr) throws SQLException{
-        Apartment apartment = null;
-        ResultSet rs;
-        try{
-            connect();
-            rs = ApartmentQuery.selectAptInfo(stmt,userId,condAddress,typeUsr);
-            while(rs.next()) {
-                String aptID = rs.getString(APARTMENT);
-                String aptAdd = rs.getString(APARTMENT_ADDRESS);
-                String aptOwn = rs.getString(APARTMENT_OWNER);
-                String aptRes = rs.getString(APARTMENT_RESIDENT);
-                apartment = new Apartment(aptID, aptAdd, userDao.checkNameByID(aptOwn), userDao.checkNameByID(aptRes),"0");
-            }
-        }finally{
-            disconnect();
-        }
-        return apartment;
-    }
-
-    public ObservableList<Apartment> checkApartmentsList(String userId,String condAddress, String typeUsr) throws SQLException{
-        ObservableList<Apartment> list = FXCollections.observableArrayList();
-        ResultSet rs;
-        try{
-            connect();
-            rs = ApartmentQuery.selectAptInfo(stmt,userId,condAddress,typeUsr);
-            while(rs.next()) {
-                String aptID = rs.getString(APARTMENT);
-                String aptAdd = rs.getString(APARTMENT_ADDRESS);
-                String aptOwn = rs.getString(APARTMENT_OWNER);
-                String aptRes = rs.getString(APARTMENT_RESIDENT);
-                Apartment apartment = new Apartment(aptID, aptAdd, userDao.checkNameByID(aptOwn), userDao.checkNameByID(aptRes),"0");
-                list.add(apartment);
-            }
-        }finally{
-            disconnect();
-        }
-        return list;
-    }
-
-    public void addResident(String resApartment, String resAddress) throws SQLException{
-        try{
-            connect();
-            String sql = "UPDATE apartment SET apt_res=? where apt_name=? and apt_addr=?";
-            preset = prepConnect(sql);
-            preset.setString(1, loadLatestId("users","user_id"));
-            preset.setString(2, resApartment);
-            preset.setString(3,resAddress);
-            preset.executeUpdate();
-        } finally {
-            disconnect();
+    public void onSignupClick(){
+        logic.controller.guicontroller.first.general.registration.RegisterGUI registerGUI = new logic.controller.guicontroller.first.general.registration.RegisterGUI();
+        RadioButton selectedRadioButton = (RadioButton) radio.getSelectedToggle();
+        String radioTxt = selectedRadioButton.getText();
+        UserBean bean = registerGUI.getUsrBean(tfName.getText(),tfSurname.getText(),tfEmail.getText(),tfPassword.getText(),tfOkPwd.getText(),radioTxt,txtAddress.getText());
+        if(controller.registration(bean)){
+            loadApartments(bean);
+        }else{
+            alert.alertError("Condominium/Register/Error","Incorrect Data","ERROR TYPE:\nDATABASE NOT CONNECTED\nEmpty Fields\nPASSWORD:least one letter and one number maximum 15 charters\nPassword mismatch");
         }
     }
 
-    public void addOwner(String ownApartment, String ownAddress) throws SQLException{
-        try{
-            connect();
-            String sql = "UPDATE apartment SET apt_own=? where apt_name=? and apt_addr=?";
-            preset = prepConnect(sql);
-            preset.setString(1, loadLatestId("users","user_id"));
-            preset.setString(2,ownApartment);
-            preset.setString(3,ownAddress);
-            preset.executeUpdate();
-        } finally {
-            disconnect();
-        }
-    }
-
-    public String checkUserAptFromNumber(String aptNumber,String condAddr, String userRequired) throws SQLException{
-        String usrId = null;
+    private void loadApartments(UserBean bean) {
         try {
-            connect();
-            ResultSet rs = ApartmentQuery.checkApartmentFromNumber(stmt,aptNumber,condAddr,userRequired);
-            if(rs.next()) {
-                usrId = rs.getString(userRequired);
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/logic/view/first/SelectApartmentDialog.fxml"));
+            DialogPane pane = loader.load();
+            ObservableList<String> list = controller.loadAddress(bean);
+            ObservableList<String> apartments = FXCollections.observableArrayList();
+            switch (Role.valueOf(bean.getUsrRole().toUpperCase())) {
+                case RESIDENT:
+                    apartments = viewResident(list,pane);
+                    break;
+                case OWNER:
+                    apartments = viewOwner(list,pane);
+                    break;
+                default:
+                    break;
             }
-        } finally {
-            disconnect();
+            if(!apartments.isEmpty()){
+                for(String aptName : apartments){
+                    String name = bean.getUsrName() +" "+ bean.getUsrSurname();
+                    User user = new User(null,name,bean.getUsrEmail(),bean.getUsrPwd(),bean.getUsrAddr());
+                    controller.addRegistrationUser(user,bean.getUsrRole().toUpperCase(),aptName);
+                }
+                alert.alertInfo("Condominium/Register/Info","Successful Registration" ,
+                        "Your request has successfully sent to the administrator of the condominium");
+                clearState();
+            }
+        }catch(SQLException | NullPointerException |IOException ignored){
+            alert.alertError("Condominium/Register/Error","No Apartments Available","ERROR TYPE:\nDATABASE NOT CONNECTED");
         }
-        return usrId;
     }
 
-    public String checkMailById(String userId) throws SQLException {
-        String userEmail = null;
-        try {
-            connect();
-            ResultSet rs = ApartmentQuery.selectEmail(stmt, userId);
-            if(rs.next()) {
-                userEmail = rs.getString("user_email");
-            }
-        } finally {
-            disconnect();
-        }
-        return userEmail;
+    private void clearState() {
+        tfName.setText("");
+        tfSurname.setText("");
+        tfEmail.setText("");
+        tfPassword.setText("");
+        tfOkPwd.setText("");
+        txtAddress.setText("");
     }
 
-    public String loadAptIdRes(String resID) throws SQLException {
-        String aptId = null;
-        try {
-            connect();
-            ResultSet rs = ApartmentQuery.selectAptIdByRes(stmt, resID);
-            if(rs.next()) {
-                aptId = rs.getString("apt_id");
-            }
-        } finally {
-            disconnect();
+    private ObservableList<String> viewResident(ObservableList<String> list, DialogPane pane) {
+        final ToggleGroup group = new ToggleGroup();
+        ObservableList<String> apartments = FXCollections.observableArrayList();
+        ListView<RadioButton> listRadio = new ListView<>();
+        for(String apartment : list){
+            RadioButton btn = new RadioButton(apartment);
+            btn.setToggleGroup(group);
+            btn.setUserData(apartment);
+            listRadio.getItems().add(btn);
         }
-        return aptId;
+        pane.setContent(listRadio);
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setDialogPane(pane);
+        Optional<ButtonType> btn = dialog.showAndWait();
+        if(btn.isPresent() && btn.get() == ButtonType.OK) {
+            apartments.add(group.getSelectedToggle().getUserData().toString());
+        }
+        return apartments;
     }
 
-    public String loadApartmentName(String aptId) throws SQLException {
-        try {
-            connect();
-            ResultSet rs = ApartmentQuery.selectAptName(stmt, aptId);
-            if(rs.next()) {
-                aptId = rs.getString(APARTMENT);
+    private ObservableList<String> viewOwner(ObservableList<String> list,DialogPane pane) {
+        ListView<CheckBox> listCheck = new ListView<>();
+        ObservableList<String> apartments = FXCollections.observableArrayList();
+        for(String apartment : list){
+            CheckBox btn = new CheckBox(apartment);
+            listCheck.getItems().add(btn);
+        }
+        pane.setContent(listCheck);
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setDialogPane(pane);
+        Optional<ButtonType> btn = dialog.showAndWait();
+        if(btn.isPresent() && btn.get() == ButtonType.OK) {
+            for(CheckBox box: listCheck.getItems()){
+                if(box.isSelected()){
+                    apartments.add(box.getText());
+                }
             }
-        } finally {
-            disconnect();
         }
-        return aptId;
-    }
-
-    public void removeAptRes(String aptId) throws SQLException{
-        try {
-            connect();
-            String sql ="UPDATE apartment SET apt_res = NULL WHERE apt_id='"+aptId+"'";
-            preset = prepConnect(sql);
-            preset.executeUpdate();
-        } finally {
-            disconnect();
-        }
+        return apartments;
     }
 }

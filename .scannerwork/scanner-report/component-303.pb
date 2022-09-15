@@ -1,1 +1,1 @@
-¯ 2javaXrhrZCondominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java
+¯ 2javaX:hr<Condominium/src/logic/controller/guicontroller/ChartGUI.java

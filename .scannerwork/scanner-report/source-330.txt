@@ -1,18 +1,24 @@
-package logic.controller.guicontroller.second.owner;
+package logic.controller.guicontroller.second.admin.condominium;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
-import javafx.scene.text.Text;
+import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 
-public class RateDialogGUI{
-    @FXML private ToggleGroup group1;
-    @FXML public Text titleTxt;
+public class UpdateRatingTableGUI {
 
+    @FXML private Label ownName;
+    @FXML private VBox scrollBox;
 
-    public String submitValue(String string){
-        titleTxt.setText("What would you do with resident "+string+"?");
-        RadioButton selected = (RadioButton) group1.getSelectedToggle();
-        return selected.getText();
+    public void addChildren(Node node){
+        scrollBox.getChildren().add(node);
+    }
+
+    public void clearChildren(){
+        scrollBox.getChildren().clear();
+    }
+
+    public void setOwnName(String name){
+        ownName.setText(name+"\tRating table");
     }
 }

@@ -1,1 +1,1 @@
-à 2javaXhrHCondominium/src/logic/engineeringclasses/exception/PatternException.java
+à 2javaX?hr:Condominium/src/logic/engineeringclasses/bean/FeeBean.java

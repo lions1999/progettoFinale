@@ -1,1 +1,1 @@
-í 2javaX;hr,Condominium/src/logic/model/MeetRequest.java
+í 2javaX>hr8Condominium/src/logic/engineeringclasses/dao/SqlDAO.java

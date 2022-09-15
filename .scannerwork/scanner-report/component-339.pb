@@ -1,1 +1,1 @@
-Ó 2javaX0hr;Condominium/src/logic/engineeringclasses/bean/RateBean.java
+Ó 2javaXJhrQCondominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java

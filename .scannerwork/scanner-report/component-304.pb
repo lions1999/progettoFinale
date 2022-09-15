@@ -1,1 +1,1 @@
-° 2javaX!hrgCondominium/src/logic/controller/guicontroller/first/general/registration/SelectApartmentDialogGUI.java
+° 2javaX¢hrYCondominium/src/logic/controller/guicontroller/first/admin/condominium/InfoDetailGUI.java

@@ -1,1 +1,1 @@
-´ 2javaX/hrQCondominium/src/logic/controller/guicontroller/first/owner/RequestMeetingGUI.java
+´ 2javaXVhrfCondominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetDetailGUI.java

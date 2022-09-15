@@ -1,1 +1,1 @@
-ª 2javaXDhrQCondominium/src/logic/controller/guicontroller/first/general/home/AddPostGUI.java
+ª 2javaXhrJCondominium/src/logic/controller/applicationcontroller/RateController.java

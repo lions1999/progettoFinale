@@ -1,1 +1,1 @@
-¦ 2javaX†hrpCondominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java
+¦ 2javaXBhrKCondominium/src/logic/controller/applicationcontroller/LoginController.java

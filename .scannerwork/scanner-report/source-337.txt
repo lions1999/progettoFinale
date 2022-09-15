@@ -1,50 +1,41 @@
-package logic.engineeringclasses.bean;
+package logic.controller.guicontroller.second.general.home;
 
-public class MeetRequestBean{
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+import logic.controller.applicationcontroller.PostController;
+import java.io.File;
 
-    private String id;
-    private String name;
-    private String address;
-    private String object;
-    private String textArea;
+public class AddPostGUI {
 
-    public String getMeetId() {
-        return id;
+    private final PostController controller = new PostController();
+    private File file;
+
+    @FXML private TextField txtMsg;
+    @FXML private Button btnAddPost;
+    @FXML private Text txtFile;
+
+    @FXML private void addFileClick() {
+        btnAddPost.setDisable(true);
+        this.file = controller.selectFile(2);
+        if (this.file != null) {
+            txtFile.setText(this.file.getName());
+        }
+        btnAddPost.setDisable(false);
     }
 
-    public void setMeetId(String id) {
-        this.id = id;
+    public String getMsg(){
+        if(!txtMsg.getText().isEmpty()) {
+            return txtMsg.getText();
+        }
+        return null;
     }
 
-    public String getMeetName() {
-        return name;
-    }
-
-    public void setMeetName(String name) {
-        this.name = name;
-    }
-
-    public String getMeetAddress() {
-        return address;
-    }
-
-    public void setMeetAddress(String address) {
-        this.address = address;
-    }
-
-    public String getMeetObject() {
-        return object;
-    }
-
-    public void setMeetObject(String object) {
-        this.object = object;
-    }
-
-    public String getMeetTextArea() {
-        return textArea;
-    }
-
-    public void setMeetTextArea(String textArea) {
-        this.textArea = textArea;
+    public File getFile(){
+        if(!txtFile.getText().isEmpty()){
+            return this.file;
+        }
+        return null;
     }
 }

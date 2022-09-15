@@ -1,1 +1,1 @@
-â 2javaXhrDCondominium/src/logic/engineeringclasses/query/CondominiumQuery.java
+â 2javaX3hr;Condominium/src/logic/engineeringclasses/bean/PostBean.java

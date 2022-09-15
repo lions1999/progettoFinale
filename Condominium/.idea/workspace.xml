@@ -106,7 +106,7 @@
       <recent name="logic.controller.guicontroller.second" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test in Condominium">
+  <component name="RunManager" selected="Application.Main2GUI">
     <configuration name="Main1GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="logic.controller.guicontroller.first.general.Main1GUI" />
       <module name="Condominium" />
@@ -170,9 +170,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test in Condominium" />
-        <item itemvalue="Application.Main1GUI" />
         <item itemvalue="Application.Main2GUI" />
+        <item itemvalue="Application.Main1GUI" />
+        <item itemvalue="JUnit.test in Condominium" />
         <item itemvalue="JUnit.AllTests" />
       </list>
     </recent_temporary>
@@ -302,6 +302,7 @@
       <workItem from="1660039445556" duration="5712000" />
       <workItem from="1660055576752" duration="648000" />
       <workItem from="1661782838414" duration="10204000" />
+      <workItem from="1663231746351" duration="3513000" />
     </task>
     <task id="LOCAL-00001" summary="prova pack">
       <created>1638798010140</created>

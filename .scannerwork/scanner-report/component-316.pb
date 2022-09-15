@@ -1,1 +1,1 @@
-¼ 2javaXhraCondominium/src/logic/controller/guicontroller/second/admin/requests/meeting/MeetingTableGUI.java
+¼ 2javaXLhrPCondominium/src/logic/controller/guicontroller/first/general/login/LoginGUI.java

@@ -1,1 +1,1 @@
-ï 2javaX=hr%Condominium/src/logic/model/Post.java
+ï 2javaXhrFCondominium/src/logic/engineeringclasses/exception/InputException.java

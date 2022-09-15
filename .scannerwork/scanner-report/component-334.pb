@@ -1,1 +1,1 @@
-Î 2javaXæhrNCondominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.java
+Î 2javaXhrkCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationTableGUI.java

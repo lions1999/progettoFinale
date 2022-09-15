@@ -1,75 +1,57 @@
-package logic.controller.guicontroller.first.general.login;
+package logic.controller.applicationcontroller;
 
-import javafx.application.Platform;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.Pane;
-import logic.controller.applicationcontroller.LoginController;
-import logic.controller.applicationcontroller.ViewController;
-import logic.controller.guicontroller.AlertGUI;
-import logic.controller.guicontroller.first.general.Main1GUI;
+import javafx.collections.ObservableList;
 import logic.engineeringclasses.bean.UserBean;
+import logic.engineeringclasses.dao.UserDAO;
+import logic.model.User;
+import java.sql.SQLException;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+public class UserController {
 
-import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
+    private final UserDAO dao = new UserDAO();
+    private final FeeController feeCtrl = new FeeController();
+    private final ApartmentController aptCtrl = new ApartmentController();
 
-public class LoginGUI implements Initializable{
-
-	private final LoginController controller = new LoginController();
-	private final ViewController view = new ViewController();
-	private final AlertGUI alert = new AlertGUI();
-	private final Main1GUI main = new Main1GUI();
-
-	@FXML private TextField tfEmail;
-	@FXML private TextField tfPwd;
-	@FXML private ComboBox<String> comboBox;
-
-	@FXML private void onSignupClick(){
-		Pane pane = view.getPage("Register",1);
-		firstBorder.setCenter(pane);
+    public ObservableList<User> loadUserList(String address) {
+        try {
+            return dao.loadUserList(address);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
-	@FXML private void onSignClick(){
-    	UserBean bean = loginBean(tfEmail.getText(), tfPwd.getText(), comboBox.getValue());
-		if (controller.login(bean)) {
-			Pane menu = view.getPage("Menu",1);
-			firstBorder.setLeft(menu);
-			main.fullScreen(true);
-		} else {
-			alert.alertError("Login/Error", "Incorrect Email or Password or Address", "Please Retry");
-			error();
-		}
-	}
-
-    private void error() {
-		tfEmail.setText("");
-		tfPwd.setText("");
-		comboBox.setValue(null);
+    public ObservableList<String> loadMailList(String addr) throws SQLException {
+        return dao.loadMailList(addr);
     }
 
-	public UserBean loginBean(String email, String password, String address) {
-		UserBean user = new UserBean();
-		user.setUsrEmail(email);
-		user.setUsrPwd(password);
-		user.setUsrAddr(address);
-		return user;
-	}
+    public void updateInfo(UserBean bean) {
+        try {
+            dao.updateInfo(bean);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 
-	private void setUp() {
-		 try {
-			 comboBox.setItems(controller.loadAddresses());
-		 }catch(Exception e) {
-			 alert.alertError("DATA BASE ERROR","DATA BASE not connected ","Please Restart the Application");
-			 Platform.exit();
-		 }
-	}
+    public void removeResident(String usrId)  {
+        try{
+            String aptId = aptCtrl.loadAptId(usrId);
+            if(feeCtrl.checkPastId(aptId)){
+                feeCtrl.removeFee(aptId,"pastfee");
+            }
+            feeCtrl.removeFee(aptId,"fee");
+            aptCtrl.removeAptRes(aptId);
+            removeUsr(usrId);
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
 
-	@Override public void initialize(URL location, ResourceBundle resources) {
-    	setUp();
+    public void removeUsr(String usrId){
+        try{
+            dao.removeUsr(usrId);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 }
-

@@ -1,52 +1,55 @@
-package logic.engineeringclasses.dao;
+package logic.controller.guicontroller.second.owner;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import logic.engineeringclasses.query.MeetQuery;
-import logic.model.MeetRequest;
-import java.sql.ResultSet;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Screen;
+import logic.controller.applicationcontroller.ApartmentController;
+import logic.controller.applicationcontroller.RateController;
+import logic.controller.applicationcontroller.ViewController;
+import logic.controller.guicontroller.AlertGUI;
+import logic.model.Rate;
+import logic.model.UserSingleton;
+
+import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
-public class MeetDAO extends SqlDAO{
+public class PreviousRatingGUI {
 
-    private final UserDAO userDao = new UserDAO();
+    private final ApartmentController aptController = new ApartmentController();
+    private final RateController rateCtrl = new RateController();
+    private final UserSingleton sg = UserSingleton.getInstance();
 
-    public ObservableList<MeetRequest> loadMeetList(String address) throws SQLException{
-        ObservableList<MeetRequest> list = FXCollections.observableArrayList();
-        ResultSet rs;
-        try {
-            connect();
-            rs = MeetQuery.selectMeetRequests(stmt,address);
-            while(rs.next()) {
-                list.add(new MeetRequest(rs.getString("meet_id"),userDao.checkNameByID(rs.getString("meet_from")),rs.getString("meet_addr"),rs.getString("meet_obj"), rs.getString("meet_txt")));
+    @FXML private VBox vbox;
+
+    public void setUp(List<String> list) throws SQLException, IOException {
+        String id = aptController.checkUserAptFromNumber(sg.getAddress(),list.get(1),"apt_res");
+        ObservableList<Rate> rates = FXCollections.observableArrayList(rateCtrl.getRatesRes(id));
+        vbox.getChildren().clear();
+        if (!rates.isEmpty()) {
+            VBox ratesPane = new VBox();
+            ratesPane.setSpacing(20);
+            for (int i = rates.size() - 1; i >= 0; i--){
+                ViewController view = new ViewController();
+                FXMLLoader loader1 = view.loader("Rate",2);
+                Parent root1 = loader1.load();
+                RateGUI pastRate = loader1.getController();
+                pastRate.setupRate(rates.get(i));
+                ratesPane.getChildren().add(root1);
             }
-        } finally {
-            disconnect();
-        }
-        return list;
-    }
-
-    public void deleteMeetRequest(int meetId) throws SQLException {
-        try{
-            connect();
-            String sql= "DELETE FROM meeting WHERE meet_id='"+meetId+"'";
-            stmt.executeUpdate(sql);
-        } finally {
-            disconnect();
-        }
-    }
-
-    public void addMeeting(String meetFrom, String meetAddr, String meetObj, String meetTxt) throws SQLException{
-        try {
-            String sql = "INSERT INTO meeting (meet_from,meet_addr,meet_obj,meet_txt) values (?,?,?,?)";
-            preset = prepConnect(sql);
-            preset.setString(1,meetFrom);
-            preset.setString(2,meetAddr);
-            preset.setString(3,meetObj);
-            preset.setString(4,meetTxt);
-            preset.execute();
-        } finally {
-            disconnect();
+            ScrollPane scrollPane = new ScrollPane();
+            scrollPane.setContent(ratesPane);
+            scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+            scrollPane.setPrefHeight(Screen.getPrimary().getBounds().getHeight());
+            vbox.getChildren().add(scrollPane);
+        }else{
+            AlertGUI alert = new AlertGUI();
+            alert.alertInfo("Rates/Error","This user has no rates","No rates found on the user "+list.get(0));
         }
     }
 }

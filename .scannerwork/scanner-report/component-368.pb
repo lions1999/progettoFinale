@@ -1,1 +1,1 @@
-ð 2javaX@hr%Condominium/src/logic/model/Rate.java
+ð 2javaXhrHCondominium/src/logic/engineeringclasses/exception/PatternException.java

@@ -1,1 +1,1 @@
-ò 2javaX1hr(Condominium/src/logic/model/Request.java
+ò 2javaXhrDCondominium/src/logic/engineeringclasses/query/CondominiumQuery.java

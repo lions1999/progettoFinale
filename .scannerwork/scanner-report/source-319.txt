@@ -1,97 +1,113 @@
-package logic.controller.guicontroller.second.admin.requests;
+package logic.controller.guicontroller.first.general.registration;
 
+import javafx.application.Platform;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
-import logic.controller.applicationcontroller.MeetController;
 import logic.controller.applicationcontroller.RegisterController;
 import logic.controller.applicationcontroller.ViewController;
-import logic.controller.guicontroller.second.admin.requests.meeting.MeetingItemGUI;
-import logic.controller.guicontroller.second.admin.requests.meeting.MeetingTableGUI;
-import logic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI;
-import logic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI;
-import logic.engineeringclasses.bean.MeetRequestBean;
-import logic.engineeringclasses.bean.RegistrationBean;
-import logic.model.MeetRequest;
-import logic.model.Registration;
-import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
+import logic.controller.guicontroller.AlertGUI;
+import logic.engineeringclasses.bean.UserBean;
+import logic.model.User;
 
-public class RequestBottomNavMenuGUI {
+import java.io.IOException;
+import java.net.URL;
+import java.sql.SQLException;
+import java.util.Optional;
+import java.util.ResourceBundle;
 
-    private final ViewController view = new ViewController();
-    protected final MeetController meetCtrl = new MeetController();
-    protected final RegisterController regCtrl = new RegisterController();
-    private String address;
+import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
 
-    private RegistrationBean setUpRegistration(Registration registration){
-        RegistrationBean bean = new RegistrationBean();
-        bean.setID(registration.getRegID());
-        bean.setName(registration.getRegName());
-        bean.setEmail(registration.getRegEmail());
-        bean.setPassword(registration.getRegPwd());
-        bean.setRole(registration.getRegRole());
-        bean.setAddress(registration.getRegAddr());
-        bean.setApartment(registration.getRegApt());
-        return bean;
+public class RegisterGUI implements Initializable{
+	 
+	private final RegisterController registerController = new RegisterController();
+	private final ViewController viewController = new ViewController();
+	private final AlertGUI alertGUI = new AlertGUI();
+
+	@FXML private TextField tfname;
+	@FXML private TextField tfsurname;
+	@FXML private TextField tfemail;
+	@FXML private PasswordField tfpassword;
+	@FXML private PasswordField tfokpwd;
+	@FXML private ComboBox<String> rolebox;
+    @FXML private ComboBox<String> addressbox;
+
+	@FXML private void onSignClick() {
+		Pane pane = viewController.getPage("Login",1);
+		firstBorder.setCenter(pane);
     }
 
-    private MeetRequestBean setUpMeeting(MeetRequest meet){
-        MeetRequestBean bean = new MeetRequestBean();
-        bean.setMeetId(meet.getId());
-        bean.setMeetName(meet.getName());
-        bean.setMeetAddress(meet.getAddress());
-        bean.setMeetObject(meet.getObject());
-        bean.setMeetTextArea(meet.getText());
-        return bean;
+    @FXML
+    void onSignupClick() throws IOException, SQLException {
+    	UserBean bean = getUsrBean(tfname.getText(), tfsurname.getText(), tfemail.getText(), tfpassword.getText(), tfokpwd.getText(), rolebox.getValue(), addressbox.getValue());
+		if(registerController.registration(bean)){
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(getClass().getResource("/logic/view/first/SelectApartmentDialog.fxml"));
+			DialogPane pane = loader.load();
+			SelectApartmentDialogGUI apt = loader.getController();
+			ObservableList<String> list = registerController.loadAddress(bean);
+			apt.setUp(list,bean);
+			Dialog<ButtonType> dialog = new Dialog<>();
+			dialog.setDialogPane(pane);
+			Optional<ButtonType> btn = dialog.showAndWait();
+			if(btn.isPresent() && btn.get() == ButtonType.OK && !apt.getApt().isEmpty()) {
+				for(String aptName : apt.getApt()){
+					String name = bean.getUsrName() +" "+ bean.getUsrSurname();
+					User user = new User(null,name,bean.getUsrEmail(),bean.getUsrPwd(),bean.getUsrAddr());
+					registerController.addRegistrationUser(user,bean.getUsrRole().toUpperCase(),aptName);
+				}
+				alertGUI.alertInfo("Condominium/Register/Info","Successful Registration" ,
+						"Your request has successfully sent to the administrator of the condominium");
+				clearState();
+			}
+		}else{
+			alertGUI.alertError("Condominium/Register/Error","Incorrect Data","ERROR TYPE:\nDATABASE NOT CONNECTED\nEmpty Fields\nPASSWORD:least one letter and one number maximum 15 charters\nPassword mismatch");
+		}
     }
 
-    public void setAddress(String address){
-        this.address = address;
+    public UserBean getUsrBean(String name, String surname, String email, String password, String okPassword, String role, String condominiumCode){
+		UserBean user = new UserBean();
+		user.setUsrName(name);
+		user.setUsrSurname(surname);
+		user.setUsrEmail(email);
+		user.setUsrPwd(password);
+		user.setUsrRole(role);
+		user.setOkPassword(okPassword);
+		user.setUsrAddr(condominiumCode);
+		return user;
+	}
+
+    private void clearState() {
+    	tfname.setText("");
+    	tfsurname.setText("");
+    	tfemail.setText("");
+    	tfpassword.setText("");
+    	tfokpwd.setText("");
+    	rolebox.setValue(null);
+    	addressbox.setValue(null);
     }
 
-    public void btnRegClick() {
-        secondBorder.setCenter(null);
-        try {
-            FXMLLoader loader = view.loader("RegistrationTable", 2);
-            Pane table = loader.load();
-            RegistrationTableGUI tableCtrl = loader.getController();
-            tableCtrl.clearChildren();
-            ObservableList<Registration> list = regCtrl.loadRegistration(this.address);
-            for(int i = 0; i<=list.size()-1; i++){
-                RegistrationBean bean = setUpRegistration(list.get(i));
-                FXMLLoader item = view.loader("ItemRegistration",2);
-                Pane root = item.load();
-                RegistrationItemGUI itemCtrl = item.getController();
-                itemCtrl.setUp(bean);
-                tableCtrl.addChildren(root);
-            }
-            table.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-            secondBorder.setCenter(table);
-        }catch(Exception e){
-            e.printStackTrace();
-        }
+    private void setUp() {
+    	rolebox.getItems().addAll("Resident","Owner");
     }
 
-    public void btnMeetClick() {
-        secondBorder.setCenter(null);
-        try {
-            FXMLLoader loader = view.loader("MeetingTable", 2);
-            Pane table = loader.load();
-            MeetingTableGUI tableCtrl = loader.getController();
-            tableCtrl.clearChildren();
-            ObservableList<MeetRequest> list = meetCtrl.loadMeetRequest(this.address);
-             for (int i = list.size() - 1; i >= 0; i--) {
-                 MeetRequestBean bean = setUpMeeting(list.get(i));
-                 FXMLLoader item = view.loader("ItemMeeting",2);
-                 Pane root = item.load();
-                 MeetingItemGUI itemCtrl = item.getController();
-                 itemCtrl.setUp(bean);
-                 tableCtrl.addChildren(root);
-            }
-            table.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-            secondBorder.setCenter(table);
-        }catch(Exception e){
-            e.printStackTrace();
-        }
+    @Override
+   	public void initialize(URL location, ResourceBundle resources){
+       	setUp();
+       	try {
+			 addressbox.setItems(registerController.loadAddresses());
+		 }catch(Exception e) {
+			 alertGUI.alertError("DATA BASE ERROR","DATA BASE not connected ","Please Restart the Application");
+			 Platform.exit();
+		 }
     }
 }
+
+
+    
+
+	
+    

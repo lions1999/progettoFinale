@@ -1,113 +1,57 @@
-package logic.controller.guicontroller.first.general.registration;
+package logic.controller.guicontroller;
 
-import javafx.application.Platform;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.control.*;
-import javafx.scene.layout.Pane;
-import logic.controller.applicationcontroller.RegisterController;
-import logic.controller.applicationcontroller.ViewController;
-import logic.controller.guicontroller.AlertGUI;
-import logic.engineeringclasses.bean.UserBean;
-import logic.model.User;
+import javafx.scene.chart.*;
+import javafx.stage.Screen;
 
-import java.io.IOException;
-import java.net.URL;
-import java.sql.SQLException;
-import java.util.Optional;
-import java.util.ResourceBundle;
+import java.util.List;
 
-import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
-
-public class RegisterGUI implements Initializable{
-	 
-	private final RegisterController registerController = new RegisterController();
-	private final ViewController viewController = new ViewController();
-	private final AlertGUI alertGUI = new AlertGUI();
-
-	@FXML private TextField tfname;
-	@FXML private TextField tfsurname;
-	@FXML private TextField tfemail;
-	@FXML private PasswordField tfpassword;
-	@FXML private PasswordField tfokpwd;
-	@FXML private ComboBox<String> rolebox;
-    @FXML private ComboBox<String> addressbox;
-
-	@FXML private void onSignClick() {
-		Pane pane = viewController.getPage("Login",1);
-		firstBorder.setCenter(pane);
+public class ChartGUI {
+    public BarChart<String,Number> newBarChart(String xAxis, String yAxis, String title){
+        final CategoryAxis newCategoryAxis = new CategoryAxis();
+        final NumberAxis newNumberAxis = new NumberAxis();
+        final BarChart<String,Number> newBarChart = new BarChart<>(newCategoryAxis,newNumberAxis);
+        newBarChart.setTitle(title);
+        newCategoryAxis.setLabel(xAxis);
+        newNumberAxis.setLabel(yAxis);
+        newBarChart.setPrefWidth((Screen.getPrimary().getBounds().getWidth()/2));
+        return newBarChart;
     }
 
-    @FXML
-    void onSignupClick() throws IOException, SQLException {
-    	UserBean bean = getUsrBean(tfname.getText(), tfsurname.getText(), tfemail.getText(), tfpassword.getText(), tfokpwd.getText(), rolebox.getValue(), addressbox.getValue());
-		if(registerController.registration(bean)){
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(getClass().getResource("/logic/view/first/SelectApartmentDialog.fxml"));
-			DialogPane pane = loader.load();
-			SelectApartmentDialogGUI apt = loader.getController();
-			ObservableList<String> list = registerController.loadAddress(bean);
-			apt.setUp(list,bean);
-			Dialog<ButtonType> dialog = new Dialog<>();
-			dialog.setDialogPane(pane);
-			Optional<ButtonType> btn = dialog.showAndWait();
-			if(btn.isPresent() && btn.get() == ButtonType.OK && !apt.getApt().isEmpty()) {
-				for(String aptName : apt.getApt()){
-					String name = bean.getUsrName() +" "+ bean.getUsrSurname();
-					User user = new User(null,name,bean.getUsrEmail(),bean.getUsrPwd(),bean.getUsrAddr());
-					registerController.addRegistrationUser(user,bean.getUsrRole().toUpperCase(),aptName);
-				}
-				alertGUI.alertInfo("Condominium/Register/Info","Successful Registration" ,
-						"Your request has successfully sent to the administrator of the condominium");
-				clearState();
-			}
-		}else{
-			alertGUI.alertError("Condominium/Register/Error","Incorrect Data","ERROR TYPE:\nDATABASE NOT CONNECTED\nEmpty Fields\nPASSWORD:least one letter and one number maximum 15 charters\nPassword mismatch");
-		}
+    public PieChart newPieChart(ObservableList<PieChart.Data> valueList, String title){
+        PieChart newPieChart = new PieChart(valueList);
+        newPieChart.setTitle(title);
+        newPieChart.setPrefHeight((Screen.getPrimary().getBounds().getHeight()-100)/2);
+        newPieChart.setPrefWidth(Screen.getPrimary().getBounds().getWidth()/3);
+        return newPieChart;
     }
 
-    public UserBean getUsrBean(String name, String surname, String email, String password, String okPassword, String role, String condominiumCode){
-		UserBean user = new UserBean();
-		user.setUsrName(name);
-		user.setUsrSurname(surname);
-		user.setUsrEmail(email);
-		user.setUsrPwd(password);
-		user.setUsrRole(role);
-		user.setOkPassword(okPassword);
-		user.setUsrAddr(condominiumCode);
-		return user;
-	}
-
-    private void clearState() {
-    	tfname.setText("");
-    	tfsurname.setText("");
-    	tfemail.setText("");
-    	tfpassword.setText("");
-    	tfokpwd.setText("");
-    	rolebox.setValue(null);
-    	addressbox.setValue(null);
+    public LineChart<String, Number> newLineChart(String xAxis, String yAxis, String title){
+        final CategoryAxis categoryAxis = new CategoryAxis();
+        final NumberAxis numberAxis = new NumberAxis();
+        LineChart<String, Number> newLineChart = new LineChart<>(categoryAxis,numberAxis);
+        categoryAxis.setLabel(xAxis);
+        numberAxis.setLabel(yAxis);
+        newLineChart.setTitle(title);
+        newLineChart.setPrefWidth((Screen.getPrimary().getBounds().getWidth()/2));
+        return newLineChart;
     }
 
-    private void setUp() {
-    	rolebox.getItems().addAll("Resident","Owner");
+    public XYChart.Series<String,Number> newSeries(List<Double> dataList, List<String> seriesName, String name){
+        XYChart.Series<String, Number> newSeries = new XYChart.Series<>();
+        newSeries.setName(name);
+        for (int i = 0;i < dataList.size(); i++){
+            newSeries.getData().add(new XYChart.Data<>(seriesName.get(i),dataList.get(i)));
+        }
+        return newSeries;
     }
 
-    @Override
-   	public void initialize(URL location, ResourceBundle resources){
-       	setUp();
-       	try {
-			 addressbox.setItems(registerController.loadAddresses());
-		 }catch(Exception e) {
-			 alertGUI.alertError("DATA BASE ERROR","DATA BASE not connected ","Please Restart the Application");
-			 Platform.exit();
-		 }
+    public ObservableList<PieChart.Data> value(List<Double> dataList,List<String> seriesName){
+        ObservableList<PieChart.Data> newData = FXCollections.observableArrayList();
+        for (int i = 0; i < dataList.size(); i++){
+            newData.add(new PieChart.Data(seriesName.get(i),dataList.get(i)));
+        }
+        return newData;
     }
 }
-
-
-    
-
-	
-    

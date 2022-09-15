@@ -1,1 +1,1 @@
-ä 2javaXhr=Condominium/src/logic/engineeringclasses/query/MeetQuery.java
+ä 2javaXGhrCCondominium/src/logic/engineeringclasses/bean/RegistrationBean.java

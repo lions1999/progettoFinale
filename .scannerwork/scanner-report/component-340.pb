@@ -1,1 +1,1 @@
-Ô 2javaXGhrCCondominium/src/logic/engineeringclasses/bean/RegistrationBean.java
+Ô 2javaX hrKCondominium/src/logic/controller/guicontroller/second/general/Main2GUI.java

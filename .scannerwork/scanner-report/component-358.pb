@@ -1,1 +1,1 @@
-æ 2javaXhr=Condominium/src/logic/engineeringclasses/query/RateQuery.java
+æ 2javaXÃhr>Condominium/src/logic/engineeringclasses/dao/ApartmentDAO.java

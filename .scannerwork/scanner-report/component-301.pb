@@ -1,1 +1,1 @@
-­ 2javaX hrJCondominium/src/logic/controller/guicontroller/first/general/Main1GUI.java
+­ 2javaXWhrJCondominium/src/logic/controller/applicationcontroller/ViewController.java

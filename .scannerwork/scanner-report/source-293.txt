@@ -1,30 +1,53 @@
-package logic.controller.guicontroller.first.admin.requests.meeting;
+package logic.controller.applicationcontroller;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
-import logic.engineeringclasses.bean.MeetRequestBean;
+import logic.engineeringclasses.bean.FeeBean;
+import logic.engineeringclasses.dao.FeeDAO;
+import logic.model.Fee;
 
-public class OrganizeMeetGUI {
+import java.sql.SQLException;
 
-    @FXML private Text txt;
-    @FXML private TextField txtObj;
-    @FXML private TextArea txtArea;
+public class FeeController {
 
-    public void setUp(String object){
-        txt.setText("You are currently organize meeting\nRemember the mail will sent to all OWNERS in your condominium");
-        txtObj.setText(object);
+    private final FeeDAO dao = new FeeDAO();
+
+    public Fee setUpFees(String address) throws SQLException {
+        return dao.loadAvailableFees(address);
     }
 
-    public MeetRequestBean getMeetBean(){
-        return getBean(txtObj.getText(),txtArea.getText());
+    public void addFees(FeeBean bean,String table) {
+        try{
+            dao.addFees(bean,table);
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
-    private MeetRequestBean getBean(String obj,String txtArea){
-        MeetRequestBean bean = new MeetRequestBean();
-        bean.setMeetObject(obj);
-        bean.setMeetTextArea(txtArea);
-        return bean;
+    public Fee loadFees(String loadApartmentId,String typeFee) throws SQLException {
+        return dao.loadFees(loadApartmentId,typeFee);
+    }
+
+    public boolean checkPastId(String aptId) throws SQLException {
+        return dao.checkPastId(aptId);
+    }
+
+    public void updateFees(FeeBean pastBean,FeeBean newBean) {
+        try {
+            if (checkPastId(pastBean.getApt())) {
+                dao.updateFee(pastBean, "pastfee");
+            } else {
+                addFees(pastBean, "pastfee");
+            }
+            dao.updateFee(newBean, "fee");
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void removeFee(String aptId,String table) {
+        try {
+            dao.removeFee(aptId, table);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 }

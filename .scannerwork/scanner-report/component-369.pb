@@ -1,1 +1,1 @@
-ñ 2javaXKhr-Condominium/src/logic/model/Registration.java
+ñ 2javaXChrBCondominium/src/logic/engineeringclasses/query/ApartmentQuery.java

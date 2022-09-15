@@ -1,1 +1,1 @@
-³ 2javaX6hrMCondominium/src/logic/controller/guicontroller/first/owner/RatingUserGUI.java
+³ 2javaX@hr`Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java

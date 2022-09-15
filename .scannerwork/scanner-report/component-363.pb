@@ -1,1 +1,1 @@
-ë 2javaX-hr,Condominium/src/logic/model/Condominium.java
+ë 2javaXOhr9Condominium/src/logic/engineeringclasses/dao/RateDAO.java

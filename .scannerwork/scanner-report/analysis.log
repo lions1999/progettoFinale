@@ -12,20 +12,20 @@ SonarCloud plugins:
   - VB.NET Code Quality and Security 8.44.0.52574 (vbnet)
   - Swift Code Quality and Security 4.6.1.5444 (swift)
   - CFamily Code Quality and Security 6.36.0.52033 (cpp)
-  - Python Code Quality and Security 3.15.1.9817 (python)
-  - Dataflow Bug Detection Rules for Python 1.5.0.1969 (dbdpythonfrontend)
-  - Dataflow Bug Detection 1.5.0.1969 (dbd)
+  - Python Code Quality and Security 3.16.0.9967 (python)
+  - Dataflow Bug Detection Rules for Python 1.6.0.2275 (dbdpythonfrontend)
+  - Dataflow Bug Detection 1.6.0.2275 (dbd)
   - Go Code Quality and Security 1.10.0.3710 (go)
   - JaCoCo 1.1.1.1157 (jacoco)
   - Kotlin Code Quality and Security 2.10.0.1456 (kotlin)
-  - Dataflow Bug Detection Rules for Java 1.5.0.1969 (dbdjavafrontend)
+  - Dataflow Bug Detection Rules for Java 1.6.0.2275 (dbdjavafrontend)
   - T-SQL Code Quality and Security 1.6.0.4844 (tsql)
   - Apex Code Quality and Security 1.10.0.3710 (sonarapex)
   - JavaScript/TypeScript/CSS Code Quality and Security 9.7.0.18911 (javascript)
   - Ruby Code Quality and Security 1.10.0.3710 (ruby)
   - Vulnerability Rules for C# 9.6.1.17278 (securitycsharpfrontend)
   - Vulnerability Rules for Java 9.6.1.17278 (securityjavafrontend)
-  - License for SonarLint 8.0.0.31532 (license)
+  - License for SonarLint 8.0.0.31745 (license)
   - Vulnerability Rules for JS 9.6.1.17278 (securityjsfrontend)
   - COBOL Code Quality 5.0.0.5433 (cobol)
   - Vulnerability Rules for Python 9.6.1.17278 (securitypythonfrontend)
@@ -41,7 +41,7 @@ Global server settings:
   - sonar.auth.microsoft.enabled=true
   - sonar.core.id=1BD809FA-AWHW8ct9-T_TB3XqouNu
   - sonar.core.serverBaseURL=https://sonarcloud.io
-  - sonar.core.startTime=2022-08-30T16:12:27+0200
+  - sonar.core.startTime=2022-09-07T14:36:46+0200
   - sonar.dbcleaner.weeksBeforeDeletingAllSnapshots=260
   - sonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByMonth=4
   - sonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByWeek=1

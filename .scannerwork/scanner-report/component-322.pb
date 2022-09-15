@@ -1,1 +1,1 @@
-Â 2javaXFhrOCondominium/src/logic/controller/guicontroller/second/general/home/PostGUI.java
+Â 2javaX\hrOCondominium/src/logic/controller/guicontroller/first/owner/RateResidentGUI.java

@@ -1,62 +1,41 @@
-package logic.engineeringclasses.bean;
+package logic.controller.guicontroller.second.general;
 
-public class FeeBean {
+import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Dialog;
+import javafx.scene.control.DialogPane;
+import javafx.scene.control.ListView;
+import logic.controller.applicationcontroller.RegisterController;
+import logic.controller.guicontroller.AlertGUI;
+import java.util.Optional;
 
-    private String apartment;
-    private Double admin;
-    private Double park;
-    private Double elevator;
-    private Double pet;
-    private Double wifi;
+public class AddressesDialogGUI {
 
+    private final RegisterController controller = new RegisterController();
+    private final AlertGUI alert = new AlertGUI();
 
-    public String getApt() {
-        return apartment;
+    public String loadAddresses() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/logic/view/first/Dialog.fxml"));
+            DialogPane pane = loader.load();
+            ListView<String> list = new ListView<>();
+            list.setItems(controller.loadAddresses());
+            pane.setContent(list);
+            Dialog<ButtonType> dialog = new Dialog<>();
+            dialog.setDialogPane(pane);
+            Optional<ButtonType> btn = dialog.showAndWait();
+            if (btn.isPresent() && btn.get() == ButtonType.OK) {
+                String address = list.getSelectionModel().getSelectedItem();
+                if (address != null) {
+                    return address;
+                }
+            }
+        } catch (Exception e) {
+            alert.alertError("DATA BASE ERROR", "DATA BASE not connected ", "Please Restart the Application");
+            Platform.exit();
+        }
+        return null;
     }
-
-    public void setApt(String apartment) {
-        this.apartment = apartment;
-    }
-
-    public Double getFeeAdmin() {
-        return admin;
-    }
-
-    public void setFeeAdmin(Double admin) {
-        this.admin = admin;
-    }
-
-    public Double getFeePark() {
-        return park;
-    }
-
-    public void setFeePark(Double park) {
-        this.park = park;
-    }
-
-    public Double getFeeElevator() {
-        return elevator;
-    }
-
-    public void setFeeElevator(Double elevator) {
-        this.elevator = elevator;
-    }
-
-    public Double getFeePet() {
-        return pet;
-    }
-
-    public void setFeePet(Double pet) {
-        this.pet = pet;
-    }
-
-    public Double getFeeWifi() {
-        return wifi;
-    }
-
-    public void setFeeWifi(Double wifi) {
-        this.wifi = wifi;
-    }
-
-
 }

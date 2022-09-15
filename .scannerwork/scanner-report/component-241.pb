@@ -1,1 +1,1 @@
-ñ 2javaXhrJCondominium/src/logic/controller/applicationcontroller/RateController.java
+ñ 2cssXØhr*Condominium/bin/logic/view/first/style.css

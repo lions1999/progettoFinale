@@ -1,16 +1,70 @@
-package logic.engineeringclasses.query;
+package logic.engineeringclasses.bean;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+public class RegistrationBean {
 
-public class MeetQuery {
+    private String id;
+    private String name;
+    private String email;
+    private String password;
+    private String role;
+    private String address;
+    private String apartment;
 
-    private MeetQuery() {}
-
-    public static ResultSet selectMeetRequests(Statement stmt, String address) throws SQLException{
-        String sql = "SELECT * from meeting where meet_addr ='" + address + "'";
-        
-        return stmt.executeQuery(sql);
+    public String getID() {
+        return id;
     }
+
+    public void setID(String userID) {
+        this.id = userID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email)	{
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getApartment() {
+        return apartment;
+    }
+
+    public void setApartment(String apartment) {
+        this.apartment = apartment;
+    }
+
+
 }

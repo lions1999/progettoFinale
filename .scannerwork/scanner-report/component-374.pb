@@ -1,1 +1,1 @@
-ö 2javaXihr.Condominium/src/logic/model/UserSingleton.java
+ö 2javaXhr=Condominium/src/logic/engineeringclasses/query/RateQuery.java

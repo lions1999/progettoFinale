@@ -1,1 +1,1 @@
-× 2javaXhr@Condominium/src/logic/engineeringclasses/dao/CondominiumDAO.java
+× 2javaX2hrMCondominium/src/logic/controller/guicontroller/second/owner/AddRatingGUI.java

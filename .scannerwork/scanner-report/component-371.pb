@@ -1,1 +1,1 @@
-ó 2javaXhr)Condominium/src/logic/model/Resident.java
+ó 2javaXhr<Condominium/src/logic/engineeringclasses/query/FeeQuery.java
