@@ -1,1 +1,0 @@
-Å 2javaX³hrMCondominium/src/logic/controller/guicontroller/first/resident/AptInfoGUI.java

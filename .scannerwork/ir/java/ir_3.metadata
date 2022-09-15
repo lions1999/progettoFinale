@@ -1,4 +1,0 @@
-logic.controller.guicontroller.second.admin.condominium.InfoItemGUI#onUpdatePress()V
-logic.model.Role#valueOf(Ljava/lang/String;)Llogic/model/Role;
-logic.controller.guicontroller.second.admin.condominium.InfoItemGUI#updateReview()V
-logic.controller.guicontroller.second.admin.condominium.InfoItemGUI#updateFee()V

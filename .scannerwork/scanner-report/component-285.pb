@@ -1,1 +1,0 @@
-ù 2javaXWhrJCondominium/src/logic/controller/applicationcontroller/ViewController.java

@@ -1,1 +1,0 @@
-â 2javaX3hr;Condominium/src/logic/engineeringclasses/bean/PostBean.java

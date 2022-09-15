@@ -1,7 +1,0 @@
-logic.controller.guicontroller.first.resident.AptInfoGUI#instance-init#
-null
-logic.controller.applicationcontroller.FeeController#instance-init#
-logic.controller.guicontroller.ChartGUI#instance-init#
-logic.controller.applicationcontroller.FeeController#<init>()V
-java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
-logic.controller.guicontroller.ChartGUI#<init>()V

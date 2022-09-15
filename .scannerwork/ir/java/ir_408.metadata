@@ -1,7 +1,0 @@
-logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#instance-init#
-logic.controller.applicationcontroller.MeetController#instance-init#
-logic.controller.applicationcontroller.RegisterController#<init>()V
-logic.controller.applicationcontroller.ViewController#<init>()V
-logic.controller.applicationcontroller.RegisterController#instance-init#
-logic.controller.applicationcontroller.MeetController#<init>()V
-logic.controller.applicationcontroller.ViewController#instance-init#

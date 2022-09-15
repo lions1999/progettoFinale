@@ -1,2 +1,0 @@
-logic.controller.guicontroller.first.admin.requests.meeting.MeetingTableGUI#getSelected()V
-logic.controller.guicontroller.first.admin.requests.meeting.MeetingTableGUI#meetRequestBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/MeetRequestBean;

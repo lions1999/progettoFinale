@@ -1,4 +1,0 @@
-logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#btnRemoveClick()V
-logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#reloadPage()V
-logic.model.Role#valueOf(Ljava/lang/String;)Llogic/model/Role;
-logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#btnX()V

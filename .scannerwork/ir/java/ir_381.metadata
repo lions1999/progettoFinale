@@ -1,8 +1,0 @@
-logic.controller.applicationcontroller.RegisterController#instance-init#
-logic.engineeringclasses.dao.RegisterDAO#instance-init#
-null
-logic.controller.applicationcontroller.PatternController#<init>()V
-logic.engineeringclasses.dao.RegisterDAO#<init>()V
-logic.engineeringclasses.dao.CondominiumDAO#<init>()V
-logic.engineeringclasses.dao.CondominiumDAO#instance-init#
-logic.controller.applicationcontroller.PatternController#instance-init#

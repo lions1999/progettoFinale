@@ -1,1 +1,0 @@
-Ã 2javaX6hrMCondominium/src/logic/controller/guicontroller/first/owner/RatingUserGUI.java

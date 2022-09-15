@@ -1,23 +1,0 @@
-
-klogic.engineeringclasses.query.CondominiumQuery#selectAddressList(Ljava/sql/Statement;)Ljava/sql/ResultSet;‡
-}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java (*"1*Ú
-1‡
-}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java (2Ó
-Ð
-‡
-}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java (3
-sqljava.lang.String"__id*%#
-!SELECT con_addr FROM condominiumsËÈ
-‡
-}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java	 (
-%0java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
-
-stmtjava.sql.Statement*
-
-sqljava.lang.String2 executeQuery(Ljava/lang/String;)"¦
-‡
-}C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/CondominiumQuery.java ( 
-
-%0java.sql.ResultSet:
-stmtjava.sql.StatementB3"1
-/logic.engineeringclasses.query.CondominiumQuery

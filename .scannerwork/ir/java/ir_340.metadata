@@ -1,7 +1,0 @@
-logic.controller.guicontroller.second.owner.ListItemGUI#getValues()V
-null
-java.lang.Object#getClass()Ljava/lang/Class;
-java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;
-logic.controller.applicationcontroller.ViewController#<init>()V
-java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
-logic.controller.applicationcontroller.ViewController#instance-init#

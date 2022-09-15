@@ -1,138 +1,0 @@
-
-àlogic.controller.applicationcontroller.EmailController#send([Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Zè
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java ("27*≤
-2è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java+ +("ö
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java+ +(
-""*í
-24è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (Û
-
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (,
-%5java.lang.Object"__mapSet*
-
-propsjava.util.Properties*
-
-mail.debug*	
-false*
-23*ï
-25è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (ˆ
-Û
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (/
-%4java.lang.Object"__mapSet*
-
-propsjava.util.Properties*
-mail.smtp.auth*
-true*
-24*ã
-15è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java   (Ê
-„
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java 5  (B
-%11java.lang.String"
-__arrayGet*"
- 
-
-recipientsjava.lang.String[]*
-""*
-
-2
-15
-9*æ
-26è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (0ÿ
-’
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (0
-propsjava.util.Properties"__id*
-
-%0java.util.Propertiesª
-∏
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java( (1
-%2java.lang.String"__id*
-""Ü
-É
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (2
-%3java.lang.Object"__mapSet*
-
-propsjava.util.Properties*
-mail.smtp.host*
-
-%2java.lang.String*
-25*¬
-27è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (/«ƒ
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java# (-
-%0java.util.Properties"java.util.PropertiesŸ
-÷
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (/
-%1"java.util.Properties#<init>()V*
-
-%0java.util.Properties*
-26*ü
-19è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (3ª
-∏
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java7 (C
-%9java.lang.String"__id*
-""º
-π
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.javaE (N
-%10java.lang.String"__id*
-""*
-
-2
-15
-9*â
-9è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java% %(È
-Ê
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java%6 %(F
-%12java.lang.String"
-__arrayGet*%
-#
-bccRecipientsjava.lang.String[]*
-""*
-2
-9*ˆ
-22è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (%°û
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java= (GG
-%7Alogic.controller.applicationcontroller.EmailController$SocialAuth"Alogic.controller.applicationcontroller.EmailController$SocialAuth≥
-∞
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java9 (I
-%8"Klogic.controller.applicationcontroller.EmailController$SocialAuth#<init>()V*I
-G
-%7Alogic.controller.applicationcontroller.EmailController$SocialAuth*
-19*õ
-23è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (¸
-˘
-è
-ÑC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/EmailController.java (5
-%6java.lang.Object"__mapSet*
-
-propsjava.util.Properties*
-mail.smtp.ssl.enable*
-true*
-22: 
-
-recipientsjava.lang.String[]:#
-bccRecipientsjava.lang.String[]:
-subjectjava.lang.String:
-messagejava.lang.StringB:8
-6logic.controller.applicationcontroller.EmailController

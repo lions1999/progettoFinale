@@ -1,8 +1,0 @@
-logic.controller.guicontroller.first.general.home.Post1GUI#instance-init#
-logic.controller.applicationcontroller.ViewController#<init>()V
-logic.controller.applicationcontroller.PostController#<init>()V
-logic.controller.guicontroller.AlertGUI#instance-init#
-logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;
-logic.controller.guicontroller.AlertGUI#<init>()V
-logic.controller.applicationcontroller.PostController#instance-init#
-logic.controller.applicationcontroller.ViewController#instance-init#

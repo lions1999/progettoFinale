@@ -1,1 +1,0 @@
-Ü 2javaX2hrPCondominium/src/logic/controller/guicontroller/second/owner/RateResidentGUI.java

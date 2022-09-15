@@ -1,1 +1,0 @@
-Ê 2javaXhraCondominium/src/logic/controller/guicontroller/second/admin/condominium/UpdateRatingTableGUI.java

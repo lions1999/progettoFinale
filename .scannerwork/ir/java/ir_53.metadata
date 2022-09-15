@@ -1,5 +1,0 @@
-logic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetDetailGUI#btnOrganizeClick()V
-null
-java.lang.Object#getClass()Ljava/lang/Class;
-java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;
-logic.controller.guicontroller.first.admin.requests.meeting.OrganizeMeetDetailGUI#remove()V

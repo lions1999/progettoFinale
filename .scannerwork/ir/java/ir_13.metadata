@@ -1,8 +1,0 @@
-logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#btnRoleClick()V
-null
-java.lang.Object#getClass()Ljava/lang/Class;
-java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;
-logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#removeRating(LDialogPane;)V
-logic.model.Role#valueOf(Ljava/lang/String;)Llogic/model/Role;
-logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#btnX()V
-logic.controller.guicontroller.first.admin.condominium.InfoDetailGUI#updateFee(LDialogPane;)V

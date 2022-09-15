@@ -1,55 +1,0 @@
-
-çlogic.engineeringclasses.query.RegisterQuery#selectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (."1*⁄
-1Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (HÄ
-˝
-Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (P
-%0java.lang.String"__concat*53
-1SELECT reg_id from registration where reg_email='*
-
-emailjava.lang.String€
-ÿ
-Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (d
-%1java.lang.String"__concat*
-
-%0java.lang.String*
-'and reg_addr='Â
-‚
-Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (n
-%2java.lang.String"__concat*
-
-%1java.lang.String*
-
-addressjava.lang.StringÕ
- 
-Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (s
-%3java.lang.String"__concat*
-
-%2java.lang.String*
-'√
-¿
-Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (t
-sqljava.lang.String"__id*
-
-%3java.lang.String»≈
-Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (%
-%4java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
-
-stmtjava.sql.Statement*
-
-sqljava.lang.String2 executeQuery(Ljava/lang/String;)"£
-Ñ
-zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (&
-
-%4java.sql.ResultSet:
-stmtjava.sql.Statement:
-emailjava.lang.String:
-addressjava.lang.StringB0".
-,logic.engineeringclasses.query.RegisterQuery

@@ -1,1 +1,0 @@
-Ä 2javaX/hrQCondominium/src/logic/controller/guicontroller/first/owner/RequestMeetingGUI.java

@@ -1,1 +1,0 @@
-“ 2cssXÊhr+Condominium/src/logic/view/second/style.css

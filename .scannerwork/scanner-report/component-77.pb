@@ -1,1 +1,0 @@
-M 2xmlX|hr Condominium/.idea/uiDesigner.xml

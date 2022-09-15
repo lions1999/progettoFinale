@@ -1,1 +1,0 @@
- 2xmlXhrZCondominium/.idea/shelf/Uncommitted_changes_before_Merge_at_12_02_2022_12_56__Changes_.xml

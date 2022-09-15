@@ -1,4 +1,0 @@
-logic.controller.applicationcontroller.PostController#instance-init#
-logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;
-logic.engineeringclasses.dao.PostDAO#<init>()V
-logic.engineeringclasses.dao.PostDAO#instance-init#

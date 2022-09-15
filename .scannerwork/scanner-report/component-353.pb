@@ -1,1 +1,0 @@
-á 2javaX3hrBCondominium/src/logic/engineeringclasses/bean/MeetRequestBean.java

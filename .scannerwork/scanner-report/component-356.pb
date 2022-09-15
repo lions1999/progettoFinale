@@ -1,1 +1,0 @@
-ä 2javaXGhrCCondominium/src/logic/engineeringclasses/bean/RegistrationBean.java

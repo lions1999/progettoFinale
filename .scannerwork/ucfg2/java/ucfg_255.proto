@@ -1,103 +1,0 @@
-
-|logic.controller.guicontroller.second.general.Menu2GUI#setUpBean(Llogic/model/User;)Llogic/engineeringclasses/bean/UserBean;‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java° °("1*º%
-1‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java± ±(&íê
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java± ±($,
-%0&logic.engineeringclasses.bean.UserBean"&logic.engineeringclasses.bean.UserBeanÿ
-ü
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java± ±(&
-%1"0logic.engineeringclasses.bean.UserBean#<init>()V*.
-,
-%0&logic.engineeringclasses.bean.UserBeaný
-ú
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java± ±('.
-bean&logic.engineeringclasses.bean.UserBean"__id*.
-,
-%0&logic.engineeringclasses.bean.UserBean†ƒ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java² ²(%
-%2java.lang.String"-logic.model.User#getUsrID()Ljava/lang/String;*
-
-userlogic.model.User2
-getUsrID()ÓÐ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java² ²(&
-
-%3void"Dlogic.engineeringclasses.bean.UserBean#setUsrID(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-%2java.lang.String2setUsrID(Ljava/lang/String;)Š‡
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java³ ³()
-%4java.lang.String"/logic.model.User#getUsrName()Ljava/lang/String;*
-
-userlogic.model.User2getUsrName()×Ô
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java³ ³(*
-
-%5void"Flogic.engineeringclasses.bean.UserBean#setUsrName(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-%4java.lang.String2setUsrName(Ljava/lang/String;)Œ‰
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java´ ´(+
-%6java.lang.String"0logic.model.User#getUsrEmail()Ljava/lang/String;*
-
-userlogic.model.User2getUsrEmail()ÙÖ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java´ ´(,
-
-%7void"Glogic.engineeringclasses.bean.UserBean#setUsrEmail(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-%6java.lang.String2setUsrEmail(Ljava/lang/String;)ˆ…
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.javaµ µ('
-%8java.lang.String".logic.model.User#getUsrPwd()Ljava/lang/String;*
-
-userlogic.model.User2getUsrPwd()ÕÒ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.javaµ µ((
-
-%9void"Elogic.engineeringclasses.bean.UserBean#setUsrPwd(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-%8java.lang.String2setUsrPwd(Ljava/lang/String;)‹ˆ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java¶ ¶()
-%10java.lang.String"/logic.model.User#getUsrRole()Ljava/lang/String;*
-
-userlogic.model.User2getUsrRole()ÙÖ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java¶ ¶(*
-%11void"Flogic.engineeringclasses.bean.UserBean#setUsrRole(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-%10java.lang.String2setUsrRole(Ljava/lang/String;)‹ˆ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java· ·()
-%12java.lang.String"/logic.model.User#getUsrAddr()Ljava/lang/String;*
-
-userlogic.model.User2getUsrAddr()ÙÖ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java· ·(*
-%13void"Flogic.engineeringclasses.bean.UserBean#setUsrAddr(Ljava/lang/String;)V*0
-.
-bean&logic.engineeringclasses.bean.UserBean*
-
-%12java.lang.String2setUsrAddr(Ljava/lang/String;)"Æ
-‘
-„C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java¸ ¸(0
-.
-bean&logic.engineeringclasses.bean.UserBean:
-userlogic.model.UserB:8
-6logic.controller.guicontroller.second.general.Menu2GUI

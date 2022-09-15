@@ -1,4 +1,0 @@
-logic.controller.guicontroller.second.general.registration.RegisterGUI#onSignupClick()V
-logic.controller.guicontroller.second.general.registration.RegisterGUI#loadApartments(Llogic/engineeringclasses/bean/UserBean;)V
-logic.controller.guicontroller.first.general.registration.RegisterGUI#<init>()V
-logic.controller.guicontroller.first.general.registration.RegisterGUI#instance-init#

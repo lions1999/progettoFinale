@@ -1,3 +1,0 @@
-logic.controller.guicontroller.first.general.FeeInfoGUI#loadFeeInfo(Ljava/lang/String;)V
-java.lang.String#equals(Ljava/lang/Object;)Z
-java.lang.Double#toString()Ljava/lang/String;

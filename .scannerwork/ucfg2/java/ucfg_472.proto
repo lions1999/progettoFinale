@@ -1,39 +1,0 @@
-
-ulogic.engineeringclasses.query.FeeQuery#loadAvailableFees(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (-"1*Ï	
-1
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (Bˆ
-Û
-
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (L
-%0java.lang.String"__concat*/-
-+SELECT * FROM condominiums where con_addr='*
-
-addressjava.lang.String«
-ƒ
-
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (Q
-%1java.lang.String"__concat*
-
-%0java.lang.String*
-'Ω
-∫
-
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (R
-sqljava.lang.String"__id*
-
-%1java.lang.String¬ø
-
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (%
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
-
-stmtjava.sql.Statement*
-
-sqljava.lang.String2 executeQuery(Ljava/lang/String;)"ù
-
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (&
-
-%2java.sql.ResultSet:
-stmtjava.sql.Statement:
-addressjava.lang.StringB+")
-'logic.engineeringclasses.query.FeeQuery
