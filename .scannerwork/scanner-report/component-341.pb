@@ -1,0 +1,1 @@
+Õ 2javaXOhr;Condominium/src/logic/engineeringclasses/bean/UserBean.java

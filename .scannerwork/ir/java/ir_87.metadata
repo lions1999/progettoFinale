@@ -1,0 +1,3 @@
+logic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI#addOwner()V
+logic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI#getRegistered()Llogic/engineeringclasses/bean/RegistrationBean;
+logic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI#removeAll()V

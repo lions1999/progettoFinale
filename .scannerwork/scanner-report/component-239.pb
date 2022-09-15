@@ -1,0 +1,1 @@
+ï 2javaXKhrMCondominium/src/logic/controller/applicationcontroller/PatternController.java

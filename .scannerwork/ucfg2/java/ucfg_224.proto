@@ -1,0 +1,27 @@
+
+tlogic.controller.applicationcontroller.FeeController#loadFees(Ljava/lang/String;Ljava/lang/String;)Llogic/model/Fee;ç
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java ("1*˛
+1ç
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (á
+Ñ
+ç
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java ()
+%0#logic.engineeringclasses.dao.FeeDAO"__id*A*?6
+4logic.controller.applicationcontroller.FeeController"
+dao≤Ø
+ç
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (4
+%1logic.model.Fee"clogic.engineeringclasses.dao.FeeDAO#loadFees(Ljava/lang/String;Ljava/lang/String;)Llogic/model/Fee;*+
+)
+%0#logic.engineeringclasses.dao.FeeDAO*%
+#
+loadApartmentIdjava.lang.String*
+
+typeFeejava.lang.String2.loadFees(Ljava/lang/String;Ljava/lang/String;)"©
+ç
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (5
+
+%1logic.model.Fee:#
+loadApartmentIdjava.lang.String:
+typeFeejava.lang.StringB86
+4logic.controller.applicationcontroller.FeeController

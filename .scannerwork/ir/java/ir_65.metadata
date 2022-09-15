@@ -1,0 +1,6 @@
+logic.controller.guicontroller.first.owner.RequestMeetingGUI#instance-init#
+logic.controller.applicationcontroller.MeetController#instance-init#
+logic.controller.applicationcontroller.MeetController#<init>()V
+logic.controller.guicontroller.AlertGUI#instance-init#
+logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;
+logic.controller.guicontroller.AlertGUI#<init>()V

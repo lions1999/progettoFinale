@@ -1,0 +1,2 @@
+logic.controller.guicontroller.second.resident.ContactDialogGUI#getMessage()Ljava/util/List;
+java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;

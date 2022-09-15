@@ -1,0 +1,90 @@
+
+ølogic.controller.guicontroller.first.general.registration.RegisterGUI#getUsrBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/UserBean;ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaG G("1*—
+1ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaH H( ú÷
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaH H(,
+%0&logic.engineeringclasses.bean.UserBean"&logic.engineeringclasses.bean.UserBeanŒ
+‰
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaH H( 
+%1"0logic.engineeringclasses.bean.UserBean#<init>()V*.
+,
+%0&logic.engineeringclasses.bean.UserBeanŠ
+‡
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaH H(!.
+user&logic.engineeringclasses.bean.UserBean"__id*.
+,
+%0&logic.engineeringclasses.bean.UserBeanæã
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaI I(
+
+%2void"Flogic.engineeringclasses.bean.UserBean#setUsrName(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*
+
+namejava.lang.String2setUsrName(Ljava/lang/String;)ïì
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaJ J(
+
+%3void"Ilogic.engineeringclasses.bean.UserBean#setUsrSurname(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*
+
+surnamejava.lang.String2!setUsrSurname(Ljava/lang/String;)éæ
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaK K(
+
+%4void"Glogic.engineeringclasses.bean.UserBean#setUsrEmail(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*
+
+emailjava.lang.String2setUsrEmail(Ljava/lang/String;)èå
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaL L(
+
+%5void"Elogic.engineeringclasses.bean.UserBean#setUsrPwd(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*
+
+passwordjava.lang.String2setUsrPwd(Ljava/lang/String;)æã
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaM M(
+
+%6void"Flogic.engineeringclasses.bean.UserBean#setUsrRole(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*
+
+rolejava.lang.String2setUsrRole(Ljava/lang/String;)òï
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaN N( 
+
+%7void"Ilogic.engineeringclasses.bean.UserBean#setOkPassword(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean* 
+
+
+okPasswordjava.lang.String2!setOkPassword(Ljava/lang/String;)ñî
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaO O("
+
+%8void"Flogic.engineeringclasses.bean.UserBean#setUsrAddr(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*%
+#
+condominiumCodejava.lang.String2setUsrAddr(Ljava/lang/String;)"Ó
+ž
+“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaP P(0
+.
+user&logic.engineeringclasses.bean.UserBean:
+namejava.lang.String:
+surnamejava.lang.String:
+emailjava.lang.String:
+passwordjava.lang.String:
+
+okPasswordjava.lang.String:
+rolejava.lang.String:#
+condominiumCodejava.lang.StringBIG
+Elogic.controller.guicontroller.first.general.registration.RegisterGUI

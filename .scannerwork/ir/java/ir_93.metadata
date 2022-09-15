@@ -1,0 +1,5 @@
+logic.controller.guicontroller.second.owner.PreviousRatingGUI#instance-init#
+null
+logic.controller.applicationcontroller.RateController#<init>()V
+logic.controller.applicationcontroller.RateController#instance-init#
+logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;

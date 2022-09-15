@@ -1,0 +1,79 @@
+
+Ålogic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#regBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/RegistrationBean;¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java] ](#"1*à
+1¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java^  ^(6†ù
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java^$ ^(44
+%0.logic.engineeringclasses.bean.RegistrationBean".logic.engineeringclasses.bean.RegistrationBean≤
+Ø
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java^  ^(6
+%1"8logic.engineeringclasses.bean.RegistrationBean#<init>()V*6
+4
+%0.logic.engineeringclasses.bean.RegistrationBean∞
+≠
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java^ ^(76
+bean.logic.engineeringclasses.bean.RegistrationBean"__id*6
+4
+%0.logic.engineeringclasses.bean.RegistrationBeanÜÉ
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java_ _(
+
+%2void"Klogic.engineeringclasses.bean.RegistrationBean#setName(Ljava/lang/String;)V*8
+6
+bean.logic.engineeringclasses.bean.RegistrationBean*
+
+namejava.lang.String2setName(Ljava/lang/String;)âÜ
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java` `(
+
+%3void"Llogic.engineeringclasses.bean.RegistrationBean#setEmail(Ljava/lang/String;)V*8
+6
+bean.logic.engineeringclasses.bean.RegistrationBean*
+
+emailjava.lang.String2setEmail(Ljava/lang/String;)çä
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.javaa a(
+
+%4void"Ologic.engineeringclasses.bean.RegistrationBean#setPassword(Ljava/lang/String;)V*8
+6
+bean.logic.engineeringclasses.bean.RegistrationBean*
+
+pwdjava.lang.String2setPassword(Ljava/lang/String;)ÜÉ
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.javab b(
+
+%5void"Klogic.engineeringclasses.bean.RegistrationBean#setRole(Ljava/lang/String;)V*8
+6
+bean.logic.engineeringclasses.bean.RegistrationBean*
+
+rolejava.lang.String2setRole(Ljava/lang/String;)åâ
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.javac c(
+
+%6void"Nlogic.engineeringclasses.bean.RegistrationBean#setAddress(Ljava/lang/String;)V*8
+6
+bean.logic.engineeringclasses.bean.RegistrationBean*
+
+addrjava.lang.String2setAddress(Ljava/lang/String;)èå
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.javad d(
+
+%7void"Plogic.engineeringclasses.bean.RegistrationBean#setApartment(Ljava/lang/String;)V*8
+6
+bean.logic.engineeringclasses.bean.RegistrationBean*
+
+aptjava.lang.String2 setApartment(Ljava/lang/String;)"Ò
+¥
+©C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.javae e(8
+6
+bean.logic.engineeringclasses.bean.RegistrationBean:
+namejava.lang.String:
+emailjava.lang.String:
+pwdjava.lang.String:
+rolejava.lang.String:
+addrjava.lang.String:
+aptjava.lang.StringB_]
+[logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI

@@ -1,0 +1,13 @@
+
+mlogic.controller.guicontroller.AlertGUI#alertConfirm(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/AlertGUI.java ("1*ê
+1
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/AlertGUI.java   (B"â
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/AlertGUI.java   (B
+"":
+titlejava.lang.String:
+
+headerTextjava.lang.String:
+contentTextjava.lang.StringB+)
+'logic.controller.guicontroller.AlertGUI

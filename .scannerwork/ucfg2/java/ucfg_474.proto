@@ -1,0 +1,39 @@
+
+llogic.engineeringclasses.query.FeeQuery#checkApt(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java ($"1*Í	
+1
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (BÙ
+Ò
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (J
+%0java.lang.String"__concat*/-
++SELECT fee_apt FROM pastfee where fee_apt='*
+
+aptIdjava.lang.String«
+ƒ
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (O
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+'Ω
+∫
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (P
+sqljava.lang.String"__id*
+
+%1java.lang.String¬ø
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (%
+%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+
+stmtjava.sql.Statement*
+
+sqljava.lang.String2 executeQuery(Ljava/lang/String;)"ù
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (&
+
+%2java.sql.ResultSet:
+stmtjava.sql.Statement:
+aptIdjava.lang.StringB+")
+'logic.engineeringclasses.query.FeeQuery

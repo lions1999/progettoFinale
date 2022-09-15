@@ -1,0 +1,1 @@
+5 2xmlX	hrCCondominium/.settings/org.eclipse.wst.common.project.facet.core.xml

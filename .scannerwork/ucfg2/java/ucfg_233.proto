@@ -1,0 +1,52 @@
+
+¦logic.controller.guicontroller.second.general.login.LoginGUI#loginBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/UserBean;•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java> >("1*Ž
+1•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java? ?(&ñî
+•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java? ?($,
+%0&logic.engineeringclasses.bean.UserBean"&logic.engineeringclasses.bean.UserBeanƒ
+€
+•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java? ?(&
+%1"0logic.engineeringclasses.bean.UserBean#<init>()V*.
+,
+%0&logic.engineeringclasses.bean.UserBean
+þ
+•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java? ?('.
+user&logic.engineeringclasses.bean.UserBean"__id*.
+,
+%0&logic.engineeringclasses.bean.UserBeanàÝ
+•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java@ @(
+
+%2void"Glogic.engineeringclasses.bean.UserBean#setUsrEmail(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*
+
+emailjava.lang.String2setUsrEmail(Ljava/lang/String;)ßÜ
+•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.javaA A( 
+
+%3void"Elogic.engineeringclasses.bean.UserBean#setUsrPwd(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*
+
+passwordjava.lang.String2setUsrPwd(Ljava/lang/String;)àÝ
+•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.javaB B( 
+
+%4void"Flogic.engineeringclasses.bean.UserBean#setUsrAddr(Ljava/lang/String;)V*0
+.
+user&logic.engineeringclasses.bean.UserBean*
+
+addressjava.lang.String2setUsrAddr(Ljava/lang/String;)"Ê
+•
+ŠC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.javaC C(0
+.
+user&logic.engineeringclasses.bean.UserBean:
+emailjava.lang.String:
+passwordjava.lang.String:
+addressjava.lang.StringB@>
+<logic.controller.guicontroller.second.general.login.LoginGUI

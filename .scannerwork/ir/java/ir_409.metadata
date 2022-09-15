@@ -1,0 +1,3 @@
+logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpRegistration(Llogic/model/Registration;)Llogic/engineeringclasses/bean/RegistrationBean;
+logic.engineeringclasses.bean.RegistrationBean#<init>()V
+logic.engineeringclasses.bean.RegistrationBean#instance-init#

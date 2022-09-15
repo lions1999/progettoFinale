@@ -1,0 +1,1 @@
+÷ 2javaX¢hrYCondominium/src/logic/controller/guicontroller/first/admin/condominium/InfoDetailGUI.java

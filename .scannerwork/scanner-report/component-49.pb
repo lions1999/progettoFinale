@@ -1,0 +1,1 @@
+1 2xmlX^hr[Condominium/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2021_12_47__Changes_.xml

@@ -1,0 +1,1 @@
+½ 2javaX}hrjCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java

@@ -1,0 +1,1 @@
+ð 2javaX@hr%Condominium/src/logic/model/Rate.java

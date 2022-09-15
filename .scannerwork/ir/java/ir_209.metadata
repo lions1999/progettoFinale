@@ -1,0 +1,3 @@
+logic.controller.guicontroller.first.general.FeeInfoGUI#getFees()Llogic/engineeringclasses/bean/FeeBean;
+logic.controller.guicontroller.first.general.FeeInfoGUI#feeBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/FeeBean;
+logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;

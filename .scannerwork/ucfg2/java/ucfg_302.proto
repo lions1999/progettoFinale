@@ -1,0 +1,40 @@
+
+xlogic.engineeringclasses.query.ApartmentQuery#selectNameByID(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java% %(*"1*‘
+
+1…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java& &(Aø
+õ
+…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java& &(D
+%0java.lang.String"__concat*/-
++SELECT user_name FROM users WHERE user_id='*
+
+idjava.lang.StringÎ
+Ë
+…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java& &(H
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+'Ä
+Á
+…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java& &(I
+sqljava.lang.String"__id*
+
+%1java.lang.StringÉÆ
+…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java( ((%
+%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+
+stmtjava.sql.Statement*
+
+sqljava.lang.String2 executeQuery(Ljava/lang/String;)"¤
+…
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java( ((&
+
+%2java.sql.ResultSet:
+stmtjava.sql.Statement:
+idjava.lang.StringB1"/
+-logic.engineeringclasses.query.ApartmentQuery

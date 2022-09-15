@@ -1,0 +1,355 @@
+
+qlogic.controller.applicationcontroller.RegisterController#registration(Llogic/engineeringclasses/bean/UserBean;)Zí
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java ("45*Î
+24í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java$ $(1ÖÇ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java$ $(8
+%241logic.engineeringclasses.exception.InputException"1logic.engineeringclasses.exception.InputException¬
+ø
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java$
+ $(2
+%25"Mlogic.engineeringclasses.exception.InputException#<init>(Ljava/lang/String;)V*:
+8
+%241logic.engineeringclasses.exception.InputException*
+Incorrect Password*
+1*¶
+26í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java# #(+Ä˝
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java# #(+
+%23boolean"Xlogic.controller.applicationcontroller.PatternController#isPassword(Ljava/lang/String;)Z*A
+?
+%218logic.controller.applicationcontroller.PatternController*
+
+%22java.lang.String2isPassword(Ljava/lang/String;)*
+24
+22*Ü
+27í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java# #(´
+®
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java# #(?
+%218logic.controller.applicationcontroller.PatternController"__id*J*H;
+9logic.controller.applicationcontroller.RegisterController"	
+pattern∂≥
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java# #(*
+%22java.lang.String"Dlogic.engineeringclasses.bean.UserBean#getUsrPwd()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrPwd()*
+26*ﬂ
+29í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java! !(DÓ
+Î
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java! !(D
+%18java.lang.String"__concat*
+Incorrect Email : *
+
+%17java.lang.StringÖÇ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java! !(8
+%191logic.engineeringclasses.exception.InputException"1logic.engineeringclasses.exception.InputException≈
+¬
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java!
+ !(E
+%20"Mlogic.engineeringclasses.exception.InputException#<init>(Ljava/lang/String;)V*:
+8
+%191logic.engineeringclasses.exception.InputException*
+
+%18java.lang.String*
+1*‹
+30í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java! !(1∫∑
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java!2 !(D
+%17java.lang.String"Flogic.engineeringclasses.bean.UserBean#getUsrEmail()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrEmail()*
+29*†
+32í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java   (*˙˜
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java   (*
+%16boolean"Ulogic.controller.applicationcontroller.PatternController#isEmail(Ljava/lang/String;)Z*A
+?
+%148logic.controller.applicationcontroller.PatternController*
+
+%15java.lang.String2isEmail(Ljava/lang/String;)*
+27
+30*Ÿ
+10í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java,# ,('∏µ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java,# ,(4
+%35java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrAddr()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrAddr()*
+9*ä
+33í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java   (´
+®
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java   (?
+%148logic.controller.applicationcontroller.PatternController"__id*J*H;
+9logic.controller.applicationcontroller.RegisterController"	
+pattern∫∑
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java   ()
+%15java.lang.String"Flogic.engineeringclasses.bean.UserBean#getUsrEmail()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrEmail()*
+32*›
+12í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java, ,(
+∏µ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java, ,(
+%34java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrAddr()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrAddr()*
+7
+10*·
+35í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (H
+Ì
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (H
+%11java.lang.String"__concat*
+Incorrect Surname : *
+
+%10java.lang.StringÖÇ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (8
+%121logic.engineeringclasses.exception.InputException"1logic.engineeringclasses.exception.InputException≈
+¬
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java
+ (I
+%13"Mlogic.engineeringclasses.exception.InputException#<init>(Ljava/lang/String;)V*:
+8
+%121logic.engineeringclasses.exception.InputException*
+
+%11java.lang.String*
+1*‡
+36í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (3æª
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java4 (H
+%10java.lang.String"Hlogic.engineeringclasses.bean.UserBean#getUsrSurname()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrSurname()*
+35*È
+14í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java* *(/ÖÇ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java* *(8
+%321logic.engineeringclasses.exception.InputException"1logic.engineeringclasses.exception.InputException¿
+Ω
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java*
+ *(0
+%33"Mlogic.engineeringclasses.exception.InputException#<init>(Ljava/lang/String;)V*:
+8
+%321logic.engineeringclasses.exception.InputException*
+No Role Selected*
+1*õ
+38í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (*ıÚ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (*
+%9boolean"Tlogic.controller.applicationcontroller.PatternController#isName(Ljava/lang/String;)Z*@
+>
+%78logic.controller.applicationcontroller.PatternController*
+
+%8java.lang.String2isName(Ljava/lang/String;)*
+36
+33*ﬁ
+16í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java) )(
+∏µ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java) )(
+%31java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrRole()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrRole()*
+14
+12*å
+39í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (™
+ß
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (>
+%78logic.controller.applicationcontroller.PatternController"__id*J*H;
+9logic.controller.applicationcontroller.RegisterController"	
+patternΩ∫
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java ()
+%8java.lang.String"Hlogic.engineeringclasses.bean.UserBean#getUsrSurname()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrSurname()*
+38*Í
+18í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java' '(0ÖÇ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java' '(8
+%291logic.engineeringclasses.exception.InputException"1logic.engineeringclasses.exception.InputException¡
+æ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java'
+ '(1
+%30"Mlogic.engineeringclasses.exception.InputException#<init>(Ljava/lang/String;)V*:
+8
+%291logic.engineeringclasses.exception.InputException*
+Password Mismatch*
+1*∏
+1í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java0	 0(("ù
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java1 1(
+""*∏
+2í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java/ /(B"ù
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java/ /(B
+""*Í
+3í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java/
+ /(A «
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java/
+ /(A
+%41boolean"rlogic.controller.applicationcontroller.RegisterController#checkRegistration(Ljava/lang/String;Ljava/lang/String;)Z*=;
+9logic.controller.applicationcontroller.RegisterController*
+
+%39java.lang.String*
+
+%40java.lang.String27checkRegistration(Ljava/lang/String;Ljava/lang/String;)*
+2*ÿ
+4í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java// /(3∏µ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java// /(@
+%40java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrAddr()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrAddr()*
+3*⁄
+5í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java/
+ /(∫∑
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java/ /(.
+%39java.lang.String"Flogic.engineeringclasses.bean.UserBean#getUsrEmail()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrEmail()*
+4*Î
+7í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java- -(2ÖÇ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java- -(8
+%371logic.engineeringclasses.exception.InputException"1logic.engineeringclasses.exception.InputException√
+¿
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java-
+ -(3
+%38"Mlogic.engineeringclasses.exception.InputException#<init>(Ljava/lang/String;)V*:
+8
+%371logic.engineeringclasses.exception.InputException*
+No Address Selected*
+1*é
+9í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java,# ,(>ÎË
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java,# ,(>
+%36boolean"java.lang.String#isEmpty()Z*
+
+%35java.lang.String2	isEmpty()*
+5
+7*ÿ
+41í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (BÎ
+Ë
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (B
+%4java.lang.String"__concat*
+Incorrect Name : *
+
+%3java.lang.StringÑÅ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (7
+%51logic.engineeringclasses.exception.InputException"1logic.engineeringclasses.exception.InputException¬
+ø
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java
+ (C
+%6"Mlogic.engineeringclasses.exception.InputException#<init>(Ljava/lang/String;)V*9
+7
+%51logic.engineeringclasses.exception.InputException*
+
+%4java.lang.String*
+1*Ÿ
+42í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (0∑¥
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java1 (B
+%3java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrName()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrName()*
+41*Œ
+20í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java& &(4®•
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java& &(4
+%28boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%26java.lang.String*
+
+%27java.lang.String2equals(Ljava/lang/Object;)*
+16
+18*‡
+21í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java& &(#æª
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java& &(3
+%27java.lang.String"Hlogic.engineeringclasses.bean.UserBean#getOkPassword()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getOkPassword()*
+20*õ
+44í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java ('ıÚ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java ('
+%2boolean"Tlogic.controller.applicationcontroller.PatternController#isName(Ljava/lang/String;)Z*@
+>
+%08logic.controller.applicationcontroller.PatternController*
+
+%1java.lang.String2isName(Ljava/lang/String;)*
+39
+42*ÿ
+22í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java& &(∂≥
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java& &(
+%26java.lang.String"Dlogic.engineeringclasses.bean.UserBean#getUsrPwd()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrPwd()*
+21*Ü
+45í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (™
+ß
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (>
+%08logic.controller.applicationcontroller.PatternController"__id*J*H;
+9logic.controller.applicationcontroller.RegisterController"	
+pattern∑¥
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java (&
+%1java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrName()Ljava/lang/String;*0
+.
+bean&logic.engineeringclasses.bean.UserBean2getUsrName()*
+44:.
+bean&logic.engineeringclasses.bean.UserBeanB=;
+9logic.controller.applicationcontroller.RegisterController

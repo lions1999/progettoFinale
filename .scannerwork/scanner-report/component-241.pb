@@ -1,0 +1,1 @@
+ñ 2javaXhrJCondominium/src/logic/controller/applicationcontroller/RateController.java

@@ -1,0 +1,1 @@
+ý 2javaX†hrpCondominium/src/logic/controller/guicontroller/first/admin/requests/registration/RegistrationTableDetailGUI.java

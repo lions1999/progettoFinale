@@ -1,0 +1,3 @@
+logic.controller.guicontroller.second.admin.condominium.InfoItemGUI#onDeletePress()V
+logic.controller.guicontroller.second.admin.condominium.InfoItemGUI#reloadPage()V
+logic.model.Role#valueOf(Ljava/lang/String;)Llogic/model/Role;

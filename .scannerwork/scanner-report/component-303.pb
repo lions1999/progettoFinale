@@ -1,0 +1,1 @@
+¯ 2javaXrhrZCondominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java
