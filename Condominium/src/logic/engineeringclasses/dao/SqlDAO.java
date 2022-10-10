@@ -6,7 +6,7 @@ public class SqlDAO {
 
 	private static final String URL = "jdbc:mysql://localhost:3306/condominium_db";
 	private static final String USER = "condominium";
-	private static final String PASSWORD = "ispw2021";
+	private static final String PASSWORD = "";
 
 	private Connection conn;
 

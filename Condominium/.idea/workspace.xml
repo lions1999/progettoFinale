@@ -77,7 +77,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="sonarlint" />
@@ -106,7 +106,7 @@
       <recent name="logic.controller.guicontroller.second" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main2GUI">
+  <component name="RunManager" selected="Application.Main1GUI">
     <configuration name="Main1GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="logic.controller.guicontroller.first.general.Main1GUI" />
       <module name="Condominium" />
@@ -170,8 +170,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main2GUI" />
         <item itemvalue="Application.Main1GUI" />
+        <item itemvalue="Application.Main2GUI" />
         <item itemvalue="JUnit.test in Condominium" />
         <item itemvalue="JUnit.AllTests" />
       </list>
@@ -304,6 +304,9 @@
       <workItem from="1661782838414" duration="10204000" />
       <workItem from="1663231746351" duration="3513000" />
       <workItem from="1663246137178" duration="2000" />
+      <workItem from="1664786511388" duration="436000" />
+      <workItem from="1665133778986" duration="106000" />
+      <workItem from="1665389331360" duration="650000" />
     </task>
     <task id="LOCAL-00001" summary="prova pack">
       <created>1638798010140</created>

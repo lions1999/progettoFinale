@@ -1,12 +1,8 @@
 
-a
-1src/logic/engineeringclasses/query/UserQuery.java,2\d\2d2d3711426460221ee0198d419443b4c66cafcb
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 
 Osrc/logic/controller/guicontroller/second/general/registration/RegisterGUI.java,f\c\fc5a959091defefb858c8077379f1d44cc9afac4
-f
-6src/logic/engineeringclasses/query/ApartmentQuery.java,9\1\9156634883594c7e484109b8ddcbf8d1745a4e8d
 |
 Lsrc/logic/controller/guicontroller/second/owner/RequestMeetingDialogGUI.java,5\e\5e230d3718486236d0883483d335bcabbbb42d2d
 o
@@ -41,8 +37,6 @@ Bsrc/logic/controller/applicationcontroller/RegisterController.java,4\2\4251119
 Nsrc/logic/controller/guicontroller/first/general/registration/RegisterGUI.java,0\6\06362b3eca927b7b273bbda44cf9e2d5c6baaf48
 a
 1src/logic/engineeringclasses/dao/RegisterDAO.java,2\b\2b23675d4d093f97c9c11ea16a82248964f55123
-e
-5src/logic/engineeringclasses/query/RegisterQuery.java,0\f\0f5e036b3b5c809cbdb5a31d02610f563739b5a0
 n
 >src/logic/controller/applicationcontroller/UserController.java,f\6\f61c46b31bd49ce1474ebe1922baf639c5afa16d
 m
@@ -53,7 +47,23 @@ q
 Asrc/logic/controller/guicontroller/first/resident/AptInfoGUI.java,2\7\27afda862601c1e3023279a266b9e93d46dc8511
 n
 >src/logic/controller/applicationcontroller/ViewController.java,a\4\a459cf10086db8ce4a5c2bdff7ab2e85a5178cb8
-n
->src/logic/controller/guicontroller/first/general/Menu1GUI.java,6\c\6c6c92eefded154647c9098bae920b647b5721cf
 o
 ?src/logic/controller/applicationcontroller/LoginController.java,f\d\fdc9bfdfb99fb2cf6626864188b8748be54b9479
+n
+>src/logic/controller/guicontroller/first/general/Menu1GUI.java,6\c\6c6c92eefded154647c9098bae920b647b5721cf
+`
+0src/logic/engineeringclasses/query/FeeQuery.java,4\4\446fc81b43b203e5d8d29b8631ad60040e937f6d
+f
+6src/logic/engineeringclasses/query/ApartmentQuery.java,9\1\9156634883594c7e484109b8ddcbf8d1745a4e8d
+h
+8src/logic/engineeringclasses/query/CondominiumQuery.java,7\6\768f111fbaae1e4728004d72395f11047df191a8
+a
+1src/logic/engineeringclasses/query/MeetQuery.java,3\0\3016292337ccba090c53eef926e4fb9332799df7
+a
+1src/logic/engineeringclasses/query/PostQuery.java,c\1\c10c098f7b1e0a3f586d01477c746f102debfca0
+a
+1src/logic/engineeringclasses/query/RateQuery.java,a\8\a8a9ec6f62c2cbabd3e636ed82c98550205ee2eb
+e
+5src/logic/engineeringclasses/query/RegisterQuery.java,0\f\0f5e036b3b5c809cbdb5a31d02610f563739b5a0
+a
+1src/logic/engineeringclasses/query/UserQuery.java,2\d\2d2d3711426460221ee0198d419443b4c66cafcb
