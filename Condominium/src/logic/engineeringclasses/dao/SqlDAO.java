@@ -6,7 +6,6 @@ public class SqlDAO {
 
 	private static final String URL = "jdbc:mysql://localhost:3306/condominium_db";
 	private static final String USER = "condominium";
-	private static final String PASSWORD = "";
 
 	private Connection conn;
 
@@ -21,13 +20,13 @@ public class SqlDAO {
 	
 	void connect() throws SQLException 	{
 		 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-		 conn = DriverManager.getConnection(URL,USER,PASSWORD);
+		 conn = DriverManager.getConnection(URL,USER,"");
 		 stmt = conn.createStatement();
 	}
 	
 	PreparedStatement prepConnect(String sql) throws SQLException{
 		 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-		 conn = DriverManager.getConnection(URL,USER,PASSWORD);
+		 conn = DriverManager.getConnection(URL,USER,"");
 		 return conn.prepareStatement(sql);
 	}
 	
