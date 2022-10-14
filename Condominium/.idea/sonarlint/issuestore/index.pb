@@ -67,3 +67,5 @@ e
 5src/logic/engineeringclasses/query/RegisterQuery.java,0\f\0f5e036b3b5c809cbdb5a31d02610f563739b5a0
 a
 1src/logic/engineeringclasses/query/UserQuery.java,2\d\2d2d3711426460221ee0198d419443b4c66cafcb
+\
+,src/logic/engineeringclasses/dao/SqlDAO.java,d\e\de7171d7802fb766e14f48747984ca37362fe54e
