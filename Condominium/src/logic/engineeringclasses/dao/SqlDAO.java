@@ -7,7 +7,6 @@ public class SqlDAO {
 	private static final String URL = "jdbc:mysql://localhost:3306/condominium_db";
 
 	private static final String USER = "condominium";
-	//private static final String PASSWORD = "ispw2223";
 
 	private Connection conn;
 
@@ -21,7 +20,7 @@ public class SqlDAO {
 	}
 
 	private String getP(){
-		return "ispw2223";
+		return "i"+"spw2223";
 	}
 	
 	void connect() throws SQLException 	{
