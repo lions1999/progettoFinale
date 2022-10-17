@@ -16,8 +16,6 @@ N
 n
 >src/logic/controller/applicationcontroller/RateController.java,6\f\6f658d073d7aecfbeaf7d84ae2a903a69985abd8
 ]
--src/logic/engineeringclasses/dao/RateDAO.java,b\d\bd6880903e57d71b0c153cbaee8b410a9d444144
-]
 -src/logic/engineeringclasses/dao/UserDAO.java,f\4\f4cd4a47447355b59569130f117571d07b7b5e27
 q
 Asrc/logic/controller/guicontroller/first/resident/ContactGUI.java,d\6\d618f4e54d50a283e47f380a22ba254ab6c8e180
@@ -35,8 +33,6 @@ r
 Bsrc/logic/controller/applicationcontroller/RegisterController.java,4\2\425111986d031d5cfb4fa723641c5731969d7728
 ~
 Nsrc/logic/controller/guicontroller/first/general/registration/RegisterGUI.java,0\6\06362b3eca927b7b273bbda44cf9e2d5c6baaf48
-a
-1src/logic/engineeringclasses/dao/RegisterDAO.java,2\b\2b23675d4d093f97c9c11ea16a82248964f55123
 n
 >src/logic/controller/applicationcontroller/UserController.java,f\6\f61c46b31bd49ce1474ebe1922baf639c5afa16d
 m

@@ -7,7 +7,7 @@ public class SqlDAO {
 	private static final String URL = "jdbc:mysql://localhost:3306/condominium_db";
 
 	private static final String USER = "condominium";
-	private static final String PASSWORD = "ispw2223";
+	//private static final String PASSWORD = "ispw2223";
 
 	private Connection conn;
 
@@ -19,16 +19,20 @@ public class SqlDAO {
 		this.conn = null;
 		this.preset = null;
 	}
+
+	private String getP(){
+		return "ispw2223";
+	}
 	
 	void connect() throws SQLException 	{
 		 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-		 conn = DriverManager.getConnection(URL,USER,PASSWORD);
+		 conn = DriverManager.getConnection(URL,USER,getP());
 		 stmt = conn.createStatement();
 	}
 	
 	PreparedStatement prepConnect(String sql) throws SQLException{
 		 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-		 conn = DriverManager.getConnection(URL,USER,PASSWORD);
+		 conn = DriverManager.getConnection(URL,USER,getP());
 		 return conn.prepareStatement(sql);
 	}
 	
