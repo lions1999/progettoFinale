@@ -1,5 +1,8 @@
+//command for running sonarCloud
+
 sonar-scanner.bat -D"sonar.organization=lions-99" -D"sonar.projectKey=lions1999_progettoFinale" -D"sonar.sources=." -D"sonar.host.url=https://sonarcloud.io"
 
 
+//eviroment variable for running sonarCloud
 
 f272a251827157d8915281a60ae78045fa52ded2
