@@ -106,7 +106,7 @@
       <recent name="logic.controller.guicontroller.second" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SeleniumAPITest">
+  <component name="RunManager" selected="Application.Main1GUI">
     <configuration name="Main1GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="logic.controller.guicontroller.first.general.Main1GUI" />
       <module name="Condominium" />
@@ -184,9 +184,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main1GUI" />
         <item itemvalue="Application.SeleniumAPITest" />
         <item itemvalue="JUnit.SeleniumGUITest" />
-        <item itemvalue="Application.Main1GUI" />
         <item itemvalue="Application.Main2GUI" />
         <item itemvalue="JUnit.test in Condominium" />
       </list>
@@ -347,7 +347,7 @@
       <workItem from="1674207672146" duration="129000" />
       <workItem from="1674209177101" duration="251000" />
       <workItem from="1675879408550" duration="600000" />
-      <workItem from="1676029897651" duration="4669000" />
+      <workItem from="1676029897651" duration="5759000" />
     </task>
     <task id="LOCAL-00001" summary="prova pack">
       <created>1638798010140</created>
