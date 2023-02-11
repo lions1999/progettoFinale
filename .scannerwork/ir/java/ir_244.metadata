@@ -1,1 +1,1 @@
-logic.model.Post#getText()Ljava/lang/String;
+logic.model.Post#getRole()Llogic/model/Role;

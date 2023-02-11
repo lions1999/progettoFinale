@@ -1,1 +1,1 @@
-æ 2javaXhr=Condominium/src/logic/engineeringclasses/query/RateQuery.java
+æ 2javaXæhrNCondominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.java

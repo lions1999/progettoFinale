@@ -1,4 +1,2 @@
-logic.controller.guicontroller.first.admin.requests.TabOrganizeGUI#instance-init#
-logic.controller.applicationcontroller.ViewController#<init>()V
-logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;
-logic.controller.applicationcontroller.ViewController#instance-init#
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI#getSelected()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI#style()V

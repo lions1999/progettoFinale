@@ -1,1 +1,1 @@
-logic.model.UserSingleton#getFee()Llogic/model/Fee;
+logic.model.UserSingleton#getReq()LRequest;

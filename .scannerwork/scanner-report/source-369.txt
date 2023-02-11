@@ -1,74 +1,52 @@
-package logic.model;
+package logic.engineeringclasses.dao;
 
-public class Registration {
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import logic.engineeringclasses.query.MeetQuery;
+import logic.model.MeetRequest;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-    private String regID;
-    private String regName;
-	private String regEmail;
-	private String regPwd;
-	private String regRole;
-	private String regAddr;
-    private String regApt;
-	
-	public Registration(String regID, String regName, String regEmail, String regPwd, String regRole, String regAddr, String regApt){
-		this.setRegID(regID);
-        this.setRegName(regName);
-		this.setRegEmail(regEmail);
-		this.setRegPwd(regPwd);
-		this.setRegRole(regRole);
-		this.setRegAddr(regAddr);
-        this.setRegApt(regApt);
-	}
+public class MeetDAO extends SqlDAO{
 
-    public String getRegID(){return regID;}
+    private final UserDAO userDao = new UserDAO();
 
-    public void setRegID(String regID){this.regID = regID;}
-
-    public String getRegName() {
-        return regName;
+    public ObservableList<MeetRequest> loadMeetList(String address) throws SQLException{
+        ObservableList<MeetRequest> list = FXCollections.observableArrayList();
+        ResultSet rs;
+        try {
+            connect();
+            rs = MeetQuery.selectMeetRequests(stmt,address);
+            while(rs.next()) {
+                list.add(new MeetRequest(rs.getString("meet_id"),userDao.checkNameByID(rs.getString("meet_from")),rs.getString("meet_addr"),rs.getString("meet_obj"), rs.getString("meet_txt")));
+            }
+        } finally {
+            disconnect();
+        }
+        return list;
     }
 
-    public void setRegName(String regName){
-        this.regName = regName;
+    public void deleteMeetRequest(int meetId) throws SQLException {
+        try{
+            connect();
+            String sql= "DELETE FROM meeting WHERE meet_id='"+meetId+"'";
+            stmt.executeUpdate(sql);
+        } finally {
+            disconnect();
+        }
     }
 
-    public String getRegEmail() {
-        return regEmail;
-    }
-
-    public void setRegEmail(String regEmail){
-        this.regEmail = regEmail;
-    }
-    
-    public String getRegPwd() {
-        return regPwd;
-    }
-
-    public void setRegPwd(String regPwd) {
-        this.regPwd = regPwd;
-    }
-    
-    public String getRegRole() {
-        return regRole;
-    }
-
-    public void setRegRole(String regRole) {
-        this.regRole = regRole;
-    }
-    
-    public String getRegAddr() {
-        return regAddr;
-    }
-
-    public void setRegAddr(String regAddr) {
-        this.regAddr = regAddr;
-    }
-
-    private void setRegApt(String regApt) {
-        this.regApt = regApt;
-    }
-
-    public String getRegApt(){
-        return regApt;
+    public void addMeeting(String meetFrom, String meetAddr, String meetObj, String meetTxt) throws SQLException{
+        try {
+            String sql = "INSERT INTO meeting (meet_from,meet_addr,meet_obj,meet_txt) values (?,?,?,?)";
+            preset = prepConnect(sql);
+            preset.setString(1,meetFrom);
+            preset.setString(2,meetAddr);
+            preset.setString(3,meetObj);
+            preset.setString(4,meetTxt);
+            preset.execute();
+        } finally {
+            disconnect();
+        }
     }
 }

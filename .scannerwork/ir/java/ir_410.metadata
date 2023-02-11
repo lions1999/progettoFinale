@@ -1,3 +1,1 @@
-logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpMeeting(LMeetRequest;)Llogic/engineeringclasses/bean/MeetRequestBean;
-logic.engineeringclasses.bean.MeetRequestBean#<init>()V
-logic.engineeringclasses.bean.MeetRequestBean#instance-init#
+logic.model.Rate#setRateTxt(Ljava/lang/String;)V

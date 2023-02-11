@@ -1,1 +1,1 @@
-logic.controller.guicontroller.first.general.registration.RegisterGUI#clearState()V
+logic.controller.guicontroller.first.general.registration.RegisterGUI#onSignClick()V

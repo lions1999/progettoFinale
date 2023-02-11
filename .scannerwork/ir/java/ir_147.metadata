@@ -1,1 +1,3 @@
-logic.controller.applicationcontroller.RateController#getRatesOwn(Ljava/lang/String;)LObservableList;
+logic.controller.applicationcontroller.RateController#instance-init#
+logic.engineeringclasses.dao.RateDAO#instance-init#
+logic.engineeringclasses.dao.RateDAO#<init>()V

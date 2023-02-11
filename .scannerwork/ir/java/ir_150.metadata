@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.UserController#loadMailList(Ljava/lang/String;)LObservableList;
+logic.controller.applicationcontroller.RateController#getRatesOwn(Ljava/lang/String;)LObservableList;

@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.ApartmentController#loadApartmentOwner(Ljava/lang/String;)LObservableList;
+logic.engineeringclasses.query.RegisterQuery#selectRegistration(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;

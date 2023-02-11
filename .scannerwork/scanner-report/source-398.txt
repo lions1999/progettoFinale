@@ -1,201 +1,104 @@
-/*GLOBAL*/
-*{
-    /*-fx-background-color: #121212;*/
-    -fx-font-family: "Times New Roman";
-    -fx-text-fill: white;
-    -fx-font-size: 20px;
-}
+package logic.model;
 
-.pane {
-    -fx-background-color: #121212;
-}
+public class UserSingleton {
 
-.scrollPost, .scrollPost *{
-    -fx-background-color: #121212;
-    -fx-border-color: #121212;
-}
-.scrollPost .scroll-bar:horizontal .thumb {
-    -fx-background-color: #2E2E2E;
-    -fx-border-color: #121212;
-}
-/*BUTTON*/
-.btnGeneral {
-    -fx-background-color: #1E1E1E;
-}
-.btnGeneral:hover{
-    -fx-background-color: #2E2E2E;
-}
-/*TEXT FIELD*/
-.fieldGeneral {
-    -fx-background-color: #1E1E1E;
-}
-/*RADIO BUTTON*/
-.btnRadio{
-    -fx-background-color: #1E1E1E;
-}
-.btnRadio:hover{
-    -fx-background-color: #2E2E2E;
-}
-.btnRadio .radio{
-    -fx-background-image: null;
-}
-.btnRadio  .dot{
-    -fx-background-color: #2E2E2E;
-}
-.btnRadio:selected .dot{
-    -fx-background-color: white;
-}
-.item{
-    -fx-background-color: #121212;
-}
-.item:hover {
-    -fx-background-color: #2E2E2E;
-}
+	private Administrator administrator = null;
+	private Resident resident = null;
+	private Owner owner = null;	
+	private String usrId;
+	private Role role;
 
-.Text {
-    -fx-background-color: #121212;
-    -fx-fill: white;
-}
+	private Fee fee;
+	private Fee pastfee;
+	private String address;
+	private Request req;
 
-.choice-box{
-    -fx-background-color: #1E1E1E;
-}
+	private static UserSingleton instance = null;
 
-.choice-box .context-menu{
-    -fx-background-color: #121212;
-}
+	private UserSingleton() {
+	}
 
-.AreaGeneral {
-    -fx-border-color: #121212;
-}
+	public static UserSingleton getInstance() {
+		if (instance == null)
+			instance = new UserSingleton();
+		return instance;
+	}
+	
+	public void setUserID(String usrId) {
+		this.usrId = usrId;
+	}
+	
+	public String getUserID() {
+		return this.usrId;
+	}
+	
+	public Resident getResident() {
+		return resident;
+	}
 
-.MenuTop {
-    -fx-background-color: #2E2E2E;
-}
+	public void setResident(Resident resident) {
+		this.resident = resident;
+	}
 
-/*ListView*/
+	public Owner getOwner() {
+		return owner;
+	}
 
-.list-view{
-    -fx-background-color: #2E2E2E;
-}
-.list-view .cell{
-    -fx-background-color: #2E2E2E;
- }
+	public void setOwner(Owner owner) {
+		this.owner = owner;
+	}
 
-/* Add Post*/
+	public void setAdministrator(Administrator user) {
+		this.administrator = user;
+	}
 
-.addPost *{
-    -fx-background-color: #121212;
-}
+	public Administrator getAdministrator() {
+		return this.administrator;
+	}
 
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
- /*Prev RateView*/
+	public String getAddress(){return this.address;}
 
-.previousRate *{
-    -fx-background-color: #121212;
-}
+	public Role getRole() {
+		return this.role;
+	}
 
-.RateView *{
-    -fx-background-color: #121212;
-}
-.RateView .text-field{
-    -fx-text-fill: white;
- }
-.RateView, .RateView .label{
-    -fx-background-color: #2E2E2E;
-}
+	public void setRole(Role role) {
+		this.role = role;
+	}
 
+	public Request getReq() {
+		return this.req;
+	}
 
+	public void setReq(Request req) {
+		this.req = req;
+	}
+	
+	
+	
+	public void clearState() {
+		this.setUserID(null);
+		this.setAddress(null);
+		this.setRole(null);
+		this.setAdministrator(null);
+		this.setResident(null);
+		this.setOwner(null);
+		this.setReq(null);
+	}
 
+	public Fee getFee() {
+		return fee;
+	}
 
-/*resident list item*/
-.paneResList *{
-    -fx-background-color: #121212;
-}
+	public void setFee(Fee fee) {
+		this.fee = fee;
+	}
 
+	public Fee getPastfee() {return pastfee;}
 
-.itemList #resListHbox{
-    -fx-background-color: #121212;
-}
-
-.itemList .button{
-    -fx-background-color: #2E2E2E;
-    -fx-text-fill: white;
-}
-
-/*addRate*/
-
-.addRate{
-    -fx-background-color: #121213;
-}
-
-.addRate #addVbox, .addRate #addHbox, .addRate #rate, .addRate .radio-button, .addRate .text-area{
-    -fx-background-color: #2E2E2E;
-}
-
-.addRate .text-area, .addRate .button{
-    -fx-text-fill: black;
-}
-
-.addRate .radio-button:selected .radio .dot{
-    -fx-background-color: black;
-}
-
-/*Apt Info*/
-
-.AptInfo *{
-    -fx-text-fill: white;
-    -fx-font-family: "Times New Roman";
-    -fx-font-size: 20px;
-}
-
-.AptInfo .check-box .box{
-    -fx-background-color: white;
-}
-
-.AptInfo .check-box:selected .mark{
-    -fx-background-color: black;
-}
-
-.AptInfo .check-box .mark{
-    -fx-background-color: white;
-}
-
-.AptInfo .tab-pane *{
-    -fx-background-color: white;
-}
-
-.tab {
-    -fx-background-color: #2E2E2E;
-}
-
-.tab .Text{
-    -fx-background-color: #2E2E2E;
-    -fx-fill: white;
-}
-
-.tab:selected {
-    -fx-background-color: #121213;
-}
-/*INFO TABLE VIEW*/
-.InfoTableView , .InfoTableView *{
-    -fx-background-color: #121212;
-}
-
-/*MEETING TABLE VIEW*/
-
-.MeetingTableView , .MeetingTableView *{
-    -fx-background-color: #121212;
-}
-
-/*REGISTRATION TABLE VIEW*/
-
-.RegistrationTableView , .RegistrationTableView *{
-    -fx-background-color: #121212;
-}
-
-/*REQUEST BOTTOM NAV MENU VIEW*/
-
-.RequestBottomNavMenuView .button{
-    -fx-background-color: #2E2E2E;
+	public void setPastfee(Fee pastfee) {this.pastfee = pastfee;}
 }

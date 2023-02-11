@@ -1,77 +1,69 @@
-package logic.engineeringclasses.dao;
+package logic.controller.guicontroller.second.general.home;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import logic.engineeringclasses.query.PostQuery;
-import logic.model.Post;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.scene.effect.ColorAdjust;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import logic.controller.applicationcontroller.PostController;
+import logic.controller.applicationcontroller.ViewController;
+import logic.controller.guicontroller.AlertGUI;
+import logic.controller.guicontroller.second.general.Menu2GUI;
+import logic.engineeringclasses.bean.PostBean;
+import logic.model.UserSingleton;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+public class PostGUI {
 
-public class PostDAO extends SqlDAO{
+    private final Menu2GUI menu = new Menu2GUI();
+    private final AlertGUI alert = new AlertGUI();
+    private final ViewController view = new ViewController();
+    private final PostController controller = new PostController();
 
-    private final UserDAO usrDao = new UserDAO();
+    UserSingleton sg = UserSingleton.getInstance();
 
-    public ObservableList<Post> checkListPost(String address)throws SQLException {
-        ObservableList<Post> list = FXCollections.observableArrayList();
-        Post post;
-        ResultSet rs;
-        try {
-            connect();
-            rs = PostQuery.selectListPost(stmt,address);
-            while(rs.next()) {
-                String postId = rs.getString("post_id");
-                String postUsr = rs.getString("post_usr");
-                String postText = rs.getString("post_txt");
-                InputStream postImg = rs.getBinaryStream("post_img");
-                post = new Post(postId,checkNameByID(postUsr),usrDao.checkRole(postUsr),postText,postImg);
-                list.add(post);
-            }
-        } finally {
-            disconnect();
-        }
-        return list;
-    }
+    @FXML private ImageView usrImg;
+    @FXML private Label usrName;
+    @FXML private TextField posTxt;
+    @FXML private Button btnDelete;
+    @FXML private ImageView imageView;
 
-    public String checkNameByID(String id)throws SQLException {
-        String usrName = "";
-        try {
-            connect();
-            ResultSet rs = PostQuery.selectNameByID(stmt, id);
-            if(rs.next()) {
-                usrName = rs.getString("user_name");
-            }
-        } finally {
-            disconnect();
-        }
-        return usrName;
-    }
-
-    public void addPost(String usrId, String txt, File file, String address) throws SQLException, IOException {
-        try (InputStream input = new FileInputStream(file)){
-            String sql = "INSERT INTO posts (post_usr, post_addr, post_txt, post_img) VALUES ( ?, ?, ?, ?)";
-            preset = prepConnect(sql);
-            preset.setString(1, usrId);
-            preset.setString(2, address);
-            preset.setString(3, txt);
-            preset.setBinaryStream(4, input, (int) file.length());
-            preset.execute();
-        } finally {
-            disconnect();
+    public void onDeletePress() {
+        switch (sg.getRole()) {
+            case ADMINISTRATOR:
+                try {
+                    controller.deletePost(btnDelete.getAccessibleText());
+                    menu.btnHomeClick();
+                }catch(Exception e) {
+                    e.printStackTrace();
+                }
+                break;
+            case OWNER:
+                case RESIDENT:
+                    alert.alertInfo(null ,  "Sorry you are not allowed to do that", null);
+                break;
         }
     }
 
-    public void deletePost(String postId)throws SQLException {
-        try{
-            connect();
-            String sql= "DELETE FROM posts WHERE post_id='"+postId+"'";
-            stmt.executeUpdate(sql);
-        } finally {
-            disconnect();
-        }
+    public void onImageClick() {
+        DialogPane pane = new DialogPane();
+        pane.setContent(imageView);
+        imageView.setVisible(true);
+        ButtonType cancelButtonType = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setDialogPane(pane);
+        dialog.getDialogPane().getButtonTypes().add(cancelButtonType);
+        dialog.showAndWait();
+    }
+
+    public void setUpPost(PostBean bean) {
+        posTxt.setText(bean.getPostText());
+        posTxt.setEditable(false);
+        btnDelete.setAccessibleText(bean.getPostId());
+        usrName.setText(bean.getPostUser());
+        usrImg.setImage(new Image(view.addImage(bean.getPostRole())));
+        imageView.setImage(controller.setPostImage(bean.getPostImage()));
+        ColorAdjust color = new ColorAdjust();
+        color.setBrightness(1);
+        usrImg.setEffect(color);
     }
 }

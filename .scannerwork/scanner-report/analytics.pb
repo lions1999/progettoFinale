@@ -22,7 +22,7 @@
 
 msbuild_versionUnknown
  
-peak_used_heap_byte	310152928
+peak_used_heap_byte	333633536
 
 scanner_type
 ScannerCLI
@@ -45,15 +45,18 @@ Windows 11
 4.7.0.2747
 
 scmUnknown
-¤
-msbuild_unknown_reason‰Get version command exited / had an exception (exit code : -2147450735 ; stdout: N/A ; stderr: Could not execute because the application was not found or a compatible .NET SDK is not installed.
-Possible reasons for this include:
-  * You intended to execute a .NET program:
+ì
+msbuild_unknown_reasonÑGet version command exited / had an exception (exit code : -2147450735 ; stdout: N/A ; stderr: The command could not be loaded, possibly because:
+  * You intended to execute a .NET application:
       The application 'build' does not exist.
   * You intended to execute a .NET SDK command:
-      It was not possible to find any installed .NET SDKs.
-      Install a .NET SDK from:
-        https://aka.ms/dotnet-download ; exception : N/A)
+      No .NET SDKs were found.
+
+Download a .NET SDK:
+https://aka.ms/dotnet/download
+
+Learn about SDK resolution:
+https://aka.ms/dotnet/sdk-not-found ; exception : N/A)
 
 node_js_versionUnknown>
 garbage_collectors(

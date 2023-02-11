@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.MeetController#loadMailList(Ljava/lang/String;)LObservableList;
+logic.engineeringclasses.dao.SqlDAO#disconnect()V

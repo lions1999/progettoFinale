@@ -1,40 +1,109 @@
 
-wlogic.engineeringclasses.query.ApartmentQuery#selectAptName(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java= =()"1*ó
-
+¶logic.engineeringclasses.query.ApartmentQuery#checkApartmentFromNumber(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java+ +(4"1*Ù
 1Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java> >(E˛
-˚
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(Ù
+Ò
 Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java> >(K
-%0java.lang.String"__concat*20
-.SELECT apt_name FROM apartment WHERE apt_id ='*
-
-aptIdjava.lang.StringŒ
-À
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(*
+%0java.lang.String"__concat*ï
 Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java> >(O
-%1java.lang.String"__concat*
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(	
+SELECT *¨
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(*"
+ 
+userRequiredjava.lang.StringÉ
+Ä
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(M
+%1java.lang.String"__concat*¢
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(*
 
-%0java.lang.String*
-'ƒ
-¡
+%0java.lang.String*Æ
 Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java> >(P
-sqljava.lang.String"__id*
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java,+ ,(M$"
+  FROM apartment WHERE apt_name='˛
+˚
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(W
+%2java.lang.String"__concat*¢
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(M
 
-%1java.lang.String…∆
+%1java.lang.String*©
 Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java@ @(%
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java,N ,(W
+
+	aptNumberjava.lang.StringÛ
+
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(j
+%3java.lang.String"__concat*¢
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(W
+
+%2java.lang.String*û
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java,X ,(j
+' and apt_addr='˝
+˙
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(s
+%4java.lang.String"__concat*¢
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(j
+
+%3java.lang.String*®
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java,k ,(s
+
+condAddrjava.lang.String‰
+·
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(w
+%5java.lang.String"__concat*¢
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(s
+
+%4java.lang.String*è
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java,t ,(w
+'‡
+›
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java, ,(x
+sqljava.lang.String"__id*4
+
+__unknown_file (
+
+%5java.lang.StringÅ˛
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java. .(%
+%6java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*8
+
+__unknown_file (
 
-stmtjava.sql.Statement*
+stmtjava.sql.Statement*5
+
+__unknown_file (
 
 sqljava.lang.String2 executeQuery(Ljava/lang/String;)"§
 Ö
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java@ @(&
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java. .(&
 
-%2java.sql.ResultSet:
-stmtjava.sql.Statement:
-aptIdjava.lang.StringB1"/
--logic.engineeringclasses.query.ApartmentQuery
+%6java.sql.ResultSet:§
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java+5 +(D
+stmtjava.sql.Statement:¶
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java+E +(U
+condAddrjava.lang.String:ß
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java+V +(g
+	aptNumberjava.lang.String:™
+Ö
+{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java+h +({ 
+userRequiredjava.lang.StringB1"/
+-logic.engineeringclasses.query.ApartmentQueryH

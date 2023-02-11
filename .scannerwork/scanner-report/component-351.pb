@@ -1,1 +1,1 @@
-ß 2javaXhrFCondominium/src/logic/engineeringclasses/exception/InputException.java
+ß 2javaX2hrMCondominium/src/logic/controller/guicontroller/second/owner/AddRatingGUI.java

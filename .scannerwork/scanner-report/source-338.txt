@@ -1,50 +1,24 @@
-package logic.engineeringclasses.bean;
+package logic.controller.guicontroller.second.admin.condominium;
 
-import logic.model.Role;
+import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 
-import java.io.InputStream;
+public class UpdateRatingTableGUI {
 
-public class PostBean {
+    @FXML private Label ownName;
+    @FXML private VBox scrollBox;
 
-	private String id;
-	private String usr;
-	private Role role;
-	private InputStream img;
-	private String text;
-	
-	public String getPostId() {
-		return this.id;
-	}
+    public void addChildren(Node node){
+        scrollBox.getChildren().add(node);
+    }
 
-	public void setPostId(String id) {
-		this.id = id;
-	}
+    public void clearChildren(){
+        scrollBox.getChildren().clear();
+    }
 
-	public void setPostUser(String usr) {
-		this.usr = usr;
-	}
-	
-	public String getPostUser() {
-		return this.usr;
-	}
-
-	public void setPostRole(Role role){this.role = role;}
-
-	public Role getPostRole(){return this.role;}
-	
-	public void setPostImage(InputStream img) {
-		this.img = img;
-	}
-	
-	public InputStream getPostImage() {
-		return this.img;
-	}	
-
-	public String getPostText() {
-		return text;
-	}
-
-	public void setPostText(String text) {
-		this.text = text;
-	}
+    public void setOwnName(String name){
+        ownName.setText(name+"\tRating table");
+    }
 }

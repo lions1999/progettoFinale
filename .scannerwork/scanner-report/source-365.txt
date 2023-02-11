@@ -1,58 +1,78 @@
-package logic.model;
+package logic.engineeringclasses.bean;
 
-public class MeetRequest {
+public class UserBean {
 
-    private String id;
-    private String name;
-    private String address;
-    private String object;
-    private String text;
+	private String usrID;
+    private String usrName;
+    private String usrSurname;
+	private String usrEmail;
+	private String usrPwd;
+	private String usrRole;
+	private String usrOkPwd;
+	private String usrAddr;
 
-    public MeetRequest(String id, String name, String address, String object, String text){
-        this.setId(id);
-        this.setName(name);
-        this.setAddress(address);
-        this.setObject(object);
-        this.setText(text);
+	public String getUsrID() {
+        return usrID;
     }
 
-    public String getId() {
-        return id;
+    public void setUsrID(String userID) {
+        this.usrID = userID;
+    }
+    
+    public String getUsrName() {
+        return usrName;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUsrName(String usrName) {
+        this.usrName = usrName;
     }
 
-    public String getName() {
-        return name;
+    public String getUsrSurname() {
+        return usrSurname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsrSurname(String usrSurname) {
+        this.usrSurname = usrSurname;
+    }
+    
+    public String getUsrEmail() {
+        return usrEmail;
     }
 
-    public String getAddress() {
-        return address;
+    public void setUsrEmail(String usrEmail)	{
+        this.usrEmail = usrEmail;
+    }
+    
+    public String getUsrPwd() {
+        return usrPwd;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setUsrPwd(String usrPwd) {
+        this.usrPwd = usrPwd;
+    }
+    
+    public String getOkPassword() {
+        return usrOkPwd;
     }
 
-    public String getObject() {
-        return object;
+    public void setOkPassword(String okPwd) {
+        this.usrOkPwd = okPwd;
+    }
+       
+    public String getUsrRole() {
+        return usrRole;
     }
 
-    public void setObject(String object) {
-        this.object = object;
+    public void setUsrRole(String usrRole) {
+        this.usrRole = usrRole;
+    }
+    
+    public String getUsrAddr() {
+        return usrAddr;
     }
 
-    public String getText() {
-        return text;
+    public void setUsrAddr(String usrAddr) {
+        this.usrAddr = usrAddr;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
 }

@@ -1,1 +1,1 @@
-í 2javaX;hr,Condominium/src/logic/model/MeetRequest.java
+í 2javaXOhr;Condominium/src/logic/engineeringclasses/bean/UserBean.java

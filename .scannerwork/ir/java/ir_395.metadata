@@ -1,1 +1,1 @@
-logic.model.Rate#instance-init#
+logic.engineeringclasses.query.UserQuery#selectUserList(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;

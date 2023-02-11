@@ -1,46 +1,62 @@
-package logic.engineeringclasses.query;
+package logic.engineeringclasses.bean;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+public class FeeBean {
 
-public class UserQuery {
+    private String apartment;
+    private Double admin;
+    private Double park;
+    private Double elevator;
+    private Double pet;
+    private Double wifi;
 
-    private UserQuery(){}
 
-    public static ResultSet selectUserID(Statement stmt, String email, String address) throws SQLException {
-        String sql = "SELECT user_id FROM users where user_email='" + email + "'and user_addr='" + address + "'";
-        
-        return stmt.executeQuery(sql);
+    public String getApt() {
+        return apartment;
     }
 
-    public static ResultSet selectRole(Statement stmt, String id) throws SQLException {
-        String sql = "SELECT user_role FROM users WHERE user_id='" + id + "'";
-        
-        return stmt.executeQuery(sql);
+    public void setApt(String apartment) {
+        this.apartment = apartment;
     }
 
-    public static ResultSet selectLogin(Statement stmt, String email, String address) throws SQLException {
-        String sql = "SELECT user_pwd from users where user_email='" + email + "'and user_addr='" + address + "'";
-        
-        return stmt.executeQuery(sql);
+    public Double getFeeAdmin() {
+        return admin;
     }
 
-    public static ResultSet loadUserByID(Statement stmt, String id) throws SQLException {
-        String sql = "SELECT user_name,user_email,user_pwd,user_role,user_addr FROM users WHERE user_id='" + id + "'";
-        
-        return stmt.executeQuery(sql);
+    public void setFeeAdmin(Double admin) {
+        this.admin = admin;
     }
 
-    public static ResultSet selectUserList(Statement stmt, String address) throws SQLException{
-        String sql = "SELECT * FROM users WHERE user_addr='" + address + "' AND user_role !='ADMINISTRATOR'";
-        
-        return stmt.executeQuery(sql);
+    public Double getFeePark() {
+        return park;
     }
 
-    public static ResultSet selectMailList(Statement stmt, String address) throws SQLException {
-        String sql = "SELECT user_email FROM users WHERE user_addr='" + address + "' AND user_role ='OWNER'";
-        
-        return stmt.executeQuery(sql);
+    public void setFeePark(Double park) {
+        this.park = park;
     }
+
+    public Double getFeeElevator() {
+        return elevator;
+    }
+
+    public void setFeeElevator(Double elevator) {
+        this.elevator = elevator;
+    }
+
+    public Double getFeePet() {
+        return pet;
+    }
+
+    public void setFeePet(Double pet) {
+        this.pet = pet;
+    }
+
+    public Double getFeeWifi() {
+        return wifi;
+    }
+
+    public void setFeeWifi(Double wifi) {
+        this.wifi = wifi;
+    }
+
+
 }

@@ -1,2 +1,1 @@
-logic.controller.guicontroller.first.general.home.Post1GUI#setUpPost(Llogic/engineeringclasses/bean/PostBean;)V
-null
+logic.controller.applicationcontroller.PostController#deletePost(Ljava/lang/String;)V

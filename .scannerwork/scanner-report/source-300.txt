@@ -1,75 +1,62 @@
-package logic.controller.guicontroller.first.general.login;
+package logic.controller.applicationcontroller;
 
-import javafx.application.Platform;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.Pane;
-import logic.controller.applicationcontroller.LoginController;
-import logic.controller.applicationcontroller.ViewController;
-import logic.controller.guicontroller.AlertGUI;
-import logic.controller.guicontroller.first.general.Main1GUI;
-import logic.engineeringclasses.bean.UserBean;
+import javafx.collections.ObservableList;
+import logic.engineeringclasses.bean.MeetRequestBean;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import java.io.UnsupportedEncodingException;
+import java.util.Properties;
 
-import static logic.controller.guicontroller.first.general.Main1GUI.firstBorder;
+public class EmailController {
 
-public class LoginGUI implements Initializable{
+    private static final String SMTP_HOST = "smtp.gmail.com";
+    private static final String FROM_ADDRESS = "condominium.ispw@gmail.com";
+    private static final String PASSWORD = "Ispw_2021";
+    private static final String FROM_NAME = "noreply.condominium";
 
-	private final LoginController controller = new LoginController();
-	private final ViewController view = new ViewController();
-	private final AlertGUI alert = new AlertGUI();
-	private final Main1GUI main = new Main1GUI();
-
-	@FXML private TextField tfEmail;
-	@FXML private TextField tfPwd;
-	@FXML private ComboBox<String> comboBox;
-
-	@FXML private void onSignupClick(){
-		Pane pane = view.getPage("Register",1);
-		firstBorder.setCenter(pane);
+    public boolean send(String[] recipients, String[] bccRecipients, String subject, String message) {
+        try {
+            Properties props = new Properties();
+            props.put("mail.smtp.host", SMTP_HOST);
+            props.put("mail.smtp.auth", "true");
+            props.put("mail.debug", "false");
+            props.put("mail.smtp.ssl.enable", "true");
+            Session session = Session.getInstance(props, new SocialAuth());
+            Message msg = new MimeMessage(session);
+            InternetAddress from = new InternetAddress(FROM_ADDRESS, FROM_NAME);
+            msg.setFrom(from);
+            InternetAddress[] toAddresses = new InternetAddress[recipients.length];
+            for (int i = 0; i < recipients.length; i++) {
+                toAddresses[i] = new InternetAddress(recipients[i]);
+            }
+            msg.setRecipients(Message.RecipientType.TO, toAddresses);
+            InternetAddress[] bccAddresses = new InternetAddress[bccRecipients.length];
+            for (int j = 0; j < bccRecipients.length; j++) {
+                bccAddresses[j] = new InternetAddress(bccRecipients[j]);
+            }
+            msg.setRecipients(Message.RecipientType.BCC, bccAddresses);
+            msg.setSubject(subject);
+            msg.setContent(message, "text/plain");
+            Transport.send(msg);
+            return true;
+        } catch (UnsupportedEncodingException | MessagingException ex) {
+            return false;
+        }
     }
 
-	@FXML private void onSignClick(){
-    	UserBean bean = loginBean(tfEmail.getText(), tfPwd.getText(), comboBox.getValue());
-		if (controller.login(bean)) {
-			Pane menu = view.getPage("Menu",1);
-			firstBorder.setLeft(menu);
-			main.fullScreen(true);
-		} else {
-			alert.alertError("Login/Error", "Incorrect Email or Password or Address", "Please Retry");
-			error();
-		}
-	}
-
-    private void error() {
-		tfEmail.setText("");
-		tfPwd.setText("");
-		comboBox.setValue(null);
+    static class SocialAuth extends Authenticator {
+        @Override
+        protected PasswordAuthentication getPasswordAuthentication() {
+            return new PasswordAuthentication(FROM_ADDRESS, PASSWORD);
+        }
     }
 
-	public UserBean loginBean(String email, String password, String address) {
-		UserBean user = new UserBean();
-		user.setUsrEmail(email);
-		user.setUsrPwd(password);
-		user.setUsrAddr(address);
-		return user;
-	}
-
-	private void setUp() {
-		 try {
-			 comboBox.setItems(controller.loadAddresses());
-		 }catch(Exception e) {
-			 alert.alertError("DATA BASE ERROR","DATA BASE not connected ","Please Restart the Application");
-			 Platform.exit();
-		 }
-	}
-
-	@Override public void initialize(URL location, ResourceBundle resources) {
-    	setUp();
+    public void meetEmail(ObservableList<String> list, MeetRequestBean bean) {
+        for (String email : list) {
+            String[] recipient = new String[]{email};
+            send(recipient, recipient, bean.getMeetObject(), bean.getMeetTextArea());
+        }
     }
 }
-

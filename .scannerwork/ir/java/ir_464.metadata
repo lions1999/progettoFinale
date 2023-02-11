@@ -1,1 +1,1 @@
-logic.controller.guicontroller.second.admin.condominium.InfoTableGUI#clearChildren()V
+logic.engineeringclasses.bean.FeeBean#getFeeWifi()Ljava/lang/Double;

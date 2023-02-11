@@ -1,1 +1,2 @@
-logic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI#clearChildren()V
+logic.controller.guicontroller.second.owner.RateGUI#setupRate(Llogic/model/Rate;)V
+null

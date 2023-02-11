@@ -1,40 +1,18 @@
 
-slogic.engineeringclasses.query.PostQuery#selectListPost(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;€
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/PostQuery.java (*"1*Ç
-
-1
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/PostQuery.java (ŒÃ
-À
-
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/PostQuery.java (•
-%0java.lang.String"__concat*yw
-uSELECT post_id,post_usr,post_txt,post_img FROM posts where post_id IN (SELECT  post_id FROM `posts` WHERE post_addr='*
-
-addressjava.lang.StringË
-È
-
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/PostQuery.java (œ
-%1java.lang.String"__concat*
-
-%0java.lang.String*
-')À
-½
-
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/PostQuery.java (
-sqljava.lang.String"__id*
-
-%1java.lang.StringÄÁ
-€
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/PostQuery.java (%
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
-
-stmtjava.sql.Statement*
-
-sqljava.lang.String2 executeQuery(Ljava/lang/String;)"Ÿ
-€
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/PostQuery.java (&
+Ologic.engineeringclasses.bean.RegistrationBean#getApartment()Ljava/lang/String;†
+|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java= =("1*¾
+1†
+|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java> >(‰
+†
+†
+|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java> >(
+%0java.lang.String"__id*]
 
-%2java.sql.ResultSet:
-stmtjava.sql.Statement:
-addressjava.lang.StringB,"*
-(logic.engineeringclasses.query.PostQuery
+__unknown_file (A*?0
+.logic.engineeringclasses.bean.RegistrationBean"
+	apartment"£
+†
+|C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/RegistrationBean.java> >(
+
+%0java.lang.StringB20
+.logic.engineeringclasses.bean.RegistrationBeanH

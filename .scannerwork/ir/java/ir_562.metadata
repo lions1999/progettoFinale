@@ -1,2 +1,1 @@
-logic.controller.guicontroller.first.owner.RateResidentGUI#setUp()V
-null
+logic.engineeringclasses.bean.RateBean#setResBeanId(Ljava/lang/String;)V

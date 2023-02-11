@@ -1,1 +1,1 @@
-Ó 2javaX0hr;Condominium/src/logic/engineeringclasses/bean/RateBean.java
+Ó 2javaXRhr`Condominium/src/logic/controller/guicontroller/second/admin/requests/meeting/MeetingItemGUI.java

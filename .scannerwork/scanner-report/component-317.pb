@@ -1,1 +1,1 @@
-½ 2javaX}hrjCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java
+½ 2javaXhr`Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/OrganizeMeetGUI.java

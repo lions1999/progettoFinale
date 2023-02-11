@@ -1,2 +1,1 @@
-logic.controller.guicontroller.ChartGUI#newLineChart(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LLineChart;
-null
+logic.controller.guicontroller.ChartGUI#instance-init#

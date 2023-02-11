@@ -1,2 +1,1 @@
-logic.controller.guicontroller.second.general.login.LoginGUI#onSignClick()V
-logic.controller.guicontroller.second.general.login.LoginGUI#error()V
+logic.controller.applicationcontroller.FeeController#checkPastId(Ljava/lang/String;)Z

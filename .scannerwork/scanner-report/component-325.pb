@@ -1,1 +1,1 @@
-Å 2javaXÎhrKCondominium/src/logic/controller/guicontroller/second/general/Menu2GUI.java
+Å 2javaX hrJCondominium/src/logic/controller/guicontroller/first/general/Main1GUI.java

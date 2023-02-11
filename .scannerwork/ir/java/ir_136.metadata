@@ -1,1 +1,1 @@
-logic.model.User#getUsrEmail()Ljava/lang/String;
+logic.model.User#setUsrID(Ljava/lang/String;)V

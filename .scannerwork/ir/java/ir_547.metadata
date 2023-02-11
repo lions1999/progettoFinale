@@ -1,2 +1,1 @@
-logic.controller.guicontroller.second.admin.condominium.UpdateRatingItemGUI#instance-init#
-null
+logic.controller.applicationcontroller.LoginController#loadAddresses()LObservableList;

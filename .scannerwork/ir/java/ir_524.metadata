@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.FeeQuery#loadAvailableFees(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;
+logic.controller.applicationcontroller.ApartmentController#removeAptRes(Ljava/lang/String;)V

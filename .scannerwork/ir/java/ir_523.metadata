@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.FeeQuery#<init>()V
+logic.controller.applicationcontroller.ApartmentController#getAptName(Ljava/lang/String;)Ljava/lang/String;

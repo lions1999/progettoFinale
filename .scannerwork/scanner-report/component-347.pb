@@ -1,1 +1,1 @@
-Û 2javaXOhr9Condominium/src/logic/engineeringclasses/dao/RateDAO.java
+Û 2javaXJhrQCondominium/src/logic/controller/guicontroller/second/general/login/LoginGUI.java

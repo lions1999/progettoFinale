@@ -1,1 +1,1 @@
-î 2javaXhr&Condominium/src/logic/model/Owner.java
+î 2javaXÃhr>Condominium/src/logic/engineeringclasses/dao/ApartmentDAO.java

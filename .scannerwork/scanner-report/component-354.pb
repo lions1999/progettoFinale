@@ -1,1 +1,1 @@
-â 2javaXhrDCondominium/src/logic/engineeringclasses/query/CondominiumQuery.java
+â 2javaXhrNCondominium/src/logic/controller/guicontroller/second/owner/RateDialogGUI.java

@@ -1,1 +1,1 @@
-logic.model.Registration#getRegAddr()Ljava/lang/String;
+logic.model.Registration#getRegPwd()Ljava/lang/String;

@@ -1,2 +1,2 @@
-logic.controller.guicontroller.ChartGUI#newPieChart(LObservableList;Ljava/lang/String;)LPieChart;
+logic.controller.guicontroller.first.general.home.Post1GUI#setUpPost(Llogic/engineeringclasses/bean/PostBean;)V
 null

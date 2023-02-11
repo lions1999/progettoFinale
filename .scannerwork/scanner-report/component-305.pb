@@ -1,1 +1,1 @@
-± 2javaXhrGCondominium/src/logic/controller/guicontroller/first/owner/RateGUI.java
+± 2javaXJhrJCondominium/src/logic/controller/applicationcontroller/PostController.java

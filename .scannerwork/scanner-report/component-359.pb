@@ -1,1 +1,1 @@
-ç 2javaXhrACondominium/src/logic/engineeringclasses/query/RegisterQuery.java
+ç 2javaXhrTCondominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java

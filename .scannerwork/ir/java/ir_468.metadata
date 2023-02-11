@@ -1,1 +1,1 @@
-logic.model.Registration#setRegID(Ljava/lang/String;)V
+logic.controller.guicontroller.second.admin.condominium.InfoTableGUI#clearChildren()V

@@ -1,4 +1,3 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#remove()V
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#reloadPage()V
-java.lang.Integer#parseInt(Ljava/lang/String;)I
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#btnX()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#ownerAdd()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#removeAll()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#getRegistered()LRegistrationBean;

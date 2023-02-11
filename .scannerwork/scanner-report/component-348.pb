@@ -1,1 +1,1 @@
-Ü 2javaX^hr=Condominium/src/logic/engineeringclasses/dao/RegisterDAO.java
+Ü 2javaX hrKCondominium/src/logic/controller/guicontroller/second/general/Main2GUI.java

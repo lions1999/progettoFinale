@@ -1,1 +1,1 @@
-² 2javaX\hrOCondominium/src/logic/controller/guicontroller/first/owner/RateResidentGUI.java
+² 2javaXhrJCondominium/src/logic/controller/applicationcontroller/RateController.java

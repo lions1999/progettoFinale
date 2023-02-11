@@ -1,1 +1,2 @@
-logic.engineeringclasses.bean.PostBean#setPostId(Ljava/lang/String;)V
+logic.controller.guicontroller.second.resident.AptInfoGUI#typeChart()LEventHandler;
+null

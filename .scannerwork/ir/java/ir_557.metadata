@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.RateBean#getRateBeanVal()Ljava/lang/String;
+logic.engineeringclasses.bean.RateBean#getRateBeanId()Ljava/lang/String;

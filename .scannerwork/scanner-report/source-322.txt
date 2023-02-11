@@ -1,69 +1,67 @@
-package logic.controller.guicontroller.second.general.home;
+package logic.controller.guicontroller.first.general.home;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.effect.ColorAdjust;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import logic.controller.applicationcontroller.PostController;
-import logic.controller.applicationcontroller.ViewController;
 import logic.controller.guicontroller.AlertGUI;
-import logic.controller.guicontroller.second.general.Menu2GUI;
-import logic.engineeringclasses.bean.PostBean;
+import logic.controller.guicontroller.first.general.Menu1GUI;
 import logic.model.UserSingleton;
 
-public class PostGUI {
+import java.io.File;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-    private final Menu2GUI menu = new Menu2GUI();
-    private final AlertGUI alert = new AlertGUI();
-    private final ViewController view = new ViewController();
-    private final PostController controller = new PostController();
+public class AddPostGUI implements Initializable{
 
-    UserSingleton sg = UserSingleton.getInstance();
+	private static final Menu1GUI menu = new Menu1GUI();
+	private final AlertGUI alert = new AlertGUI();
+	private final PostController controller = new PostController();
+	private File file;
+	UserSingleton sg = UserSingleton.getInstance();
+	
+    @FXML private TextField txtMsg;
+    @FXML private Button btnAddPost;
+    @FXML private Button btnPublish;
+    
+    @FXML private void addFileClick() {
+		btnAddPost.setDisable(true);
+		this.file = controller.selectFile(1);
+		if (this.file != null) {
+			btnAddPost.setText(this.file.getName());
+		}
+		btnAddPost.setDisable(false);
+	}
 
-    @FXML private ImageView usrImg;
-    @FXML private Label usrName;
-    @FXML private TextField posTxt;
-    @FXML private Button btnDelete;
-    @FXML private ImageView imageView;
-
-    public void onDeletePress() {
-        switch (sg.getRole()) {
-            case ADMINISTRATOR:
-                try {
-                    controller.deletePost(btnDelete.getAccessibleText());
-                    menu.btnHomeClick();
-                }catch(Exception e) {
-                    e.printStackTrace();
-                }
-                break;
-            case OWNER:
-                case RESIDENT:
-                    alert.alertInfo(null ,  "Sorry you are not allowed to do that", null);
-                break;
-        }
+    @FXML private void onPublishClick() {
+		if(btnAddPost.getText().equals("Add File")) {
+			alert.alertWarn("Condominium/Home/Warning", "Ops... Missing File", "Please select one File");
+			txtMsg.setText("");
+		}
+	     else if(txtMsg.getText().isEmpty()) {
+	    	 alert.alertWarn("Condominium/Home/Warning", "Ops... Missing Text", "Please insert Text");
+	    	 btnAddPost.setText("Add File");
+	    } else {
+	    	try {
+				controller.addPost(sg.getUserID(), txtMsg.getText(),this.file,sg.getAddress());
+				menu.btnHomeClick();
+	    	} catch(Exception e) {
+	    		alert.alertError("Condominium/Home/Error", "Ops... Something goes wrong", "Please Retry");
+	    		e.printStackTrace();
+	    	}
+	    }
+    }
+    
+    @Override
+    public void initialize(URL location, ResourceBundle resources){
+    	btnColor(btnPublish);
+    	btnColor(btnAddPost);
+    }
+    
+    private void btnColor(Button btn) {
+    	btn.setOnMouseEntered(event -> btn.setStyle("-fx-background-color : #0A0E3F"));
+    	btn.setOnMouseExited(event -> btn.setStyle("-fx-background-color : #0C39FF"));
     }
 
-    public void onImageClick() {
-        DialogPane pane = new DialogPane();
-        pane.setContent(imageView);
-        imageView.setVisible(true);
-        ButtonType cancelButtonType = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
-        Dialog<ButtonType> dialog = new Dialog<>();
-        dialog.setDialogPane(pane);
-        dialog.getDialogPane().getButtonTypes().add(cancelButtonType);
-        dialog.showAndWait();
-    }
-
-    public void setUpPost(PostBean bean) {
-        posTxt.setText(bean.getPostText());
-        posTxt.setEditable(false);
-        btnDelete.setAccessibleText(bean.getPostId());
-        usrName.setText(bean.getPostUser());
-        usrImg.setImage(new Image(view.addImage(bean.getPostRole())));
-        imageView.setImage(controller.setPostImage(bean.getPostImage()));
-        ColorAdjust color = new ColorAdjust();
-        color.setBrightness(1);
-        usrImg.setEffect(color);
-    }
 }

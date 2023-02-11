@@ -1,1 +1,1 @@
-logic.model.Fee#getAvailableElevator()Z
+logic.model.Fee#getWifi()Ljava/lang/Double;

@@ -1,10 +1,76 @@
 
-J__sonar_lambda_5$logic.controller.guicontroller.second.resident.AptInfoGUIî
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.java„! „(>"1*º
-1î
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.java„* „(<"ü
-î
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.java„* „(>
-"":
-""B
-	!Unknown!
+dlogic.controller.guicontroller.second.resident.AptInfoGUI#getList(Llogic/model/Fee;)Ljava/util/List;í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaR R("1*§
+1í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS S(†ù
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS S(+
+%0java.lang.Double",logic.model.Fee#getAdmin()Ljava/lang/Double;*4
+
+__unknown_file (
+
+feelogic.model.Fee2
+getAdmin()ûõ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS, S(9
+%1java.lang.Double"+logic.model.Fee#getPark()Ljava/lang/Double;*4
+
+__unknown_file (
+
+feelogic.model.Fee2	getPark()¶£
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS: S(K
+%2java.lang.Double"/logic.model.Fee#getElevator()Ljava/lang/Double;*4
+
+__unknown_file (
+
+feelogic.model.Fee2getElevator()úô
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaSL S(X
+%3java.lang.Double"*logic.model.Fee#getPet()Ljava/lang/Double;*4
+
+__unknown_file (
+
+feelogic.model.Fee2getPet()ûõ
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaSY S(f
+%4java.lang.Double"+logic.model.Fee#getWifi()Ljava/lang/Double;*4
+
+__unknown_file (
+
+feelogic.model.Fee2	getWifi()¨
+©
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS S(g
+%5java.util.List"<java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;*0
+
+__unknown_file ("
+java.util.Arrays*4
+
+__unknown_file (
+
+%0java.lang.Double*4
+
+__unknown_file (
+
+%1java.lang.Double*4
+
+__unknown_file (
+
+%2java.lang.Double*4
+
+__unknown_file (
+
+%3java.lang.Double*4
+
+__unknown_file (
+
+%4java.lang.Double"≠
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaS S(h
+
+%5java.util.List:≠
+í
+áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/AptInfoGUI.javaR  R('
+feelogic.model.FeeB=;
+9logic.controller.guicontroller.second.resident.AptInfoGUIH

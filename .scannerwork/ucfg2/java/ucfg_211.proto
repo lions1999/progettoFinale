@@ -1,16 +1,18 @@
 
-,logic.model.Post#getUser()Ljava/lang/String;h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java! !("1*¡
+*logic.model.Post#getId()Ljava/lang/String;h
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java ("1*¼
 1h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java"	 "(ª
-§
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java	 (Å
+Â
 h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java"	 "(
-%0java.lang.String"__id**
-logic.model.Post"
-usr"„
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java	 (
+%0java.lang.String"__id*8
+
+__unknown_file (*
+logic.model.Post"
+id"„
 h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java" "(
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java (
 
 %0java.lang.StringB
-logic.model.Post
+logic.model.PostH

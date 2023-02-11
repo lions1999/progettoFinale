@@ -1,1 +1,1 @@
-ö 2javaXihr.Condominium/src/logic/model/UserSingleton.java
+ö 2javaX¼hr9Condominium/src/logic/engineeringclasses/dao/UserDAO.java

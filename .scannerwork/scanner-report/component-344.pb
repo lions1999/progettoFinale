@@ -1,1 +1,1 @@
-Ø 2javaXkhr8Condominium/src/logic/engineeringclasses/dao/FeeDAO.java
+Ø 2javaX*hrUCondominium/src/logic/controller/guicontroller/second/general/AddressesDialogGUI.java

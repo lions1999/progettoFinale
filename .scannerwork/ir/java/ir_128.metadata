@@ -1,2 +1,1 @@
-logic.controller.guicontroller.first.resident.AptInfoGUI#getList(Llogic/model/Fee;)Ljava/util/List;
-java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
+logic.controller.guicontroller.first.resident.AptInfoGUI#submitLastMonth()V

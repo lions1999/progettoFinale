@@ -1,16 +1,18 @@
 
-5logic.model.Registration#getRegID()Ljava/lang/String;p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java ("1*Ã
-1p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java$ ()¼
-¹
-p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java$ ()
-%0java.lang.String"__id*'*%
-logic.model.Registration"
-regID"Œ
-p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java (*
+Dlogic.engineeringclasses.bean.FeeBean#getFeeWifi()Ljava/lang/Double;}
+sC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/FeeBean.java5 5("1*’
+1}
+sC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/FeeBean.java6 6(ñ
+î
+}
+sC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/FeeBean.java6 6(
+%0java.lang.Double"__id*O
+
+__unknown_file (3*1'
+%logic.engineeringclasses.bean.FeeBean"
+wifi"™
+}
+sC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/FeeBean.java6 6(
 
-%0java.lang.StringB
-logic.model.Registration
+%0java.lang.DoubleB)'
+%logic.engineeringclasses.bean.FeeBeanH

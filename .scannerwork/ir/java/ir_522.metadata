@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.FeeQuery#instance-init#
+logic.controller.applicationcontroller.ApartmentController#loadAptId(Ljava/lang/String;)Ljava/lang/String;

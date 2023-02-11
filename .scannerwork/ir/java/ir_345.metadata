@@ -1,2 +1,1 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI#getSelected()V
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI#style()V
+logic.engineeringclasses.exception.InputException#instance-init#

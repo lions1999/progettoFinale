@@ -1,27 +1,113 @@
 
-rlogic.controller.applicationcontroller.RegisterController#checkRegistration(Ljava/lang/String;Ljava/lang/String;)Zí
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java5 5(!"1*ä
-1í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java6	 6(õ
-ò
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java6	 6(.
-%0(logic.engineeringclasses.dao.RegisterDAO"__id*K*I;
-9logic.controller.applicationcontroller.RegisterController"
-
-register±Æ
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java6	 6(2
-%1boolean"alogic.engineeringclasses.dao.RegisterDAO#checkRegistration(Ljava/lang/String;Ljava/lang/String;)Z*0
-.
-%0(logic.engineeringclasses.dao.RegisterDAO*
-
-emailjava.lang.String*
-
-addressjava.lang.String27checkRegistration(Ljava/lang/String;Ljava/lang/String;)"ù
-í
-áC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/RegisterController.java6 6(3
-"":
-emailjava.lang.String:
-addressjava.lang.StringB=;
-9logic.controller.applicationcontroller.RegisterController
+\logic.controller.guicontroller.second.resident.ContactDialogGUI#getMessage()Ljava/util/List;ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (""1*Ê
+1ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (%Æ
+´
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java6 (8
+%0logic.model.UserSingleton"__id*g
+
+__unknown_file (K*IA
+?logic.controller.guicontroller.second.resident.ContactDialogGUI"
+sgª∏
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java6 (D
+%1java.lang.String"7logic.model.UserSingleton#getUserID()Ljava/lang/String;*=
+
+__unknown_file (!
+
+%0logic.model.UserSingleton2getUserID()Æ
+´
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaF (H
+%2logic.model.UserSingleton"__id*g
+
+__unknown_file (K*IA
+?logic.controller.guicontroller.second.resident.ContactDialogGUI"
+sgΩ∫
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaF (U
+%3java.lang.String"8logic.model.UserSingleton#getAddress()Ljava/lang/String;*=
+
+__unknown_file (!
+
+%2logic.model.UserSingleton2getAddress()Ê
+„
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (b
+aptlogic.model.Apartment"__id*"
+
+__unknown_file (
+""Æ
+´
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaW (Y
+%4logic.model.UserSingleton"__id*g
+
+__unknown_file (K*IA
+?logic.controller.guicontroller.second.resident.ContactDialogGUI"
+sgΩ∫
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaW (f
+%5java.lang.String"8logic.model.UserSingleton#getAddress()Ljava/lang/String;*=
+
+__unknown_file (!
+
+%4logic.model.UserSingleton2getAddress()¥±
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javag (v
+%6java.lang.String"3logic.model.Apartment#getNumber()Ljava/lang/String;*:
+
+__unknown_file (
+
+aptlogic.model.Apartment2getNumber()„
+‡
+ô
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (É
+mailjava.lang.String"__id*"
+
+__unknown_file (
+""¥±
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java# (2
+%7java.lang.String"3logic.model.Apartment#getNumber()Ljava/lang/String;*:
+
+__unknown_file (
+
+aptlogic.model.Apartment2getNumber()≤Ø
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.javaF (T
+%8java.lang.String"2logic.model.Apartment#getOwner()Ljava/lang/String;*:
+
+__unknown_file (
+
+aptlogic.model.Apartment2
+getOwner()‹
+Ÿ
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (U
+%9"<java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;*0
+
+__unknown_file ("
+java.util.Arrays*6
+
+__unknown_file (
+
+mailjava.lang.String*4
+
+__unknown_file (
+
+%7java.lang.String*"
+
+__unknown_file (
+""*4
+
+__unknown_file (
+
+%8java.lang.String"£
+ò
+çC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java (V
+
+%9BCA
+?logic.controller.guicontroller.second.resident.ContactDialogGUIH

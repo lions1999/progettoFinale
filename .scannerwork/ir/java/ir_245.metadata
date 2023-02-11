@@ -1,1 +1,1 @@
-logic.model.Post#setText(Ljava/lang/String;)V
+logic.model.Post#setImage(Ljava/io/InputStream;)V

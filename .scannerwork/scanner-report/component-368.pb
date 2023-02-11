@@ -1,1 +1,1 @@
-ð 2javaX@hr%Condominium/src/logic/model/Rate.java
+ð 2javaXkhr8Condominium/src/logic/engineeringclasses/dao/FeeDAO.java

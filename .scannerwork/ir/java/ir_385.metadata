@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.RegisterController#addRegistrationUser(Llogic/model/User;Ljava/lang/String;Ljava/lang/String;)V
+logic.controller.applicationcontroller.RegisterController#checkRegistration(Ljava/lang/String;Ljava/lang/String;)Z

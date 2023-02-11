@@ -1,2 +1,2 @@
-logic.controller.guicontroller.first.general.FeeInfoGUI#setUp(Ljava/lang/String;)V
-logic.controller.guicontroller.first.general.FeeInfoGUI#noFee(LTextField;)V
+logic.controller.guicontroller.first.general.FeeInfoGUI#check()Z
+logic.controller.guicontroller.first.general.FeeInfoGUI#checkErrorTf(LTextField;)Z

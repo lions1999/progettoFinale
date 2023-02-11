@@ -1,1 +1,1 @@
-logic.model.Post#setRole(Llogic/model/Role;)V
+logic.model.Post#setId(Ljava/lang/String;)V

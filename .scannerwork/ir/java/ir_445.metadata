@@ -1,4 +1,5 @@
-logic.controller.applicationcontroller.MeetController#instance-init#
+logic.engineeringclasses.dao.SqlDAO#connect()V
 null
-logic.controller.applicationcontroller.UserController#instance-init#
-logic.controller.applicationcontroller.UserController#<init>()V
+java.sql.DriverManager#getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;
+java.sql.DriverManager#registerDriver(Ljava/sql/Driver;)V
+logic.engineeringclasses.dao.SqlDAO#getP()Ljava/lang/String;

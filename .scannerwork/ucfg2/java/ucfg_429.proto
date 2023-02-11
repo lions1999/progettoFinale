@@ -1,16 +1,18 @@
 
-6logic.model.Registration#getRegPwd()Ljava/lang/String;p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java+ +("1*Ä
+7logic.model.Registration#getRegName()Ljava/lang/String;p
+fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java ("1*á
 1p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java, ,(½
-º
+fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java (Ú
+×
 p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java, ,(
-%0java.lang.String"__id*(*&
-logic.model.Registration"
-regPwd"Œ
+fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java (
+%0java.lang.String"__id*E
+
+__unknown_file ()*'
+logic.model.Registration"	
+regName"Œ
 p
-fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java, ,(
+fC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Registration.java (
 
 %0java.lang.StringB
-logic.model.Registration
+logic.model.RegistrationH

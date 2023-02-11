@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.EmailController#instance-init#
+logic.model.Request#getUser()Ljava/lang/String;

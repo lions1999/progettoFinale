@@ -1,40 +1,23 @@
 
-~logic.engineeringclasses.query.ApartmentQuery#selectApartmentOwner(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (0"1*¨
-
-1…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (?ú
-÷
-…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (G
-%0java.lang.String"__concat*,*
-(SELECT * FROM apartment where apt_addr='*
-
-addressjava.lang.Stringã
-à
-…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (`
-%1java.lang.String"__concat*
-
-%0java.lang.String*
-' and  apt_own is NULLÄ
-Á
-…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (a
-sqljava.lang.String"__id*
-
-%1java.lang.StringÉÆ
-…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (%
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
-
-stmtjava.sql.Statement*
-
-sqljava.lang.String2 executeQuery(Ljava/lang/String;)"¤
-…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/ApartmentQuery.java (&
+Ulogic.controller.guicontroller.second.general.home.AddPostGUI#getFile()Ljava/io/File;–
+‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java# #("2"1*ð
+2–
+‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java% %(Ÿ
+œ
+–
+‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java% %(
+%0java.io.File"__id*g
 
-%2java.sql.ResultSet:
-stmtjava.sql.Statement:
-addressjava.lang.StringB1"/
--logic.engineeringclasses.query.ApartmentQuery
+__unknown_file (K*I?
+=logic.controller.guicontroller.second.general.home.AddPostGUI"
+file"¯
+–
+‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java% %(
+
+%0java.io.File*À
+1–
+‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java' '("¡
+–
+‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java' '(
+""BA?
+=logic.controller.guicontroller.second.general.home.AddPostGUIH

@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.PostBean#setPostRole(Llogic/model/Role;)V
+logic.engineeringclasses.bean.PostBean#setPostId(Ljava/lang/String;)V

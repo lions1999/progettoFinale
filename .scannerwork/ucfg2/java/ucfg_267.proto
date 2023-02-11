@@ -1,16 +1,44 @@
 
-Mlogic.engineeringclasses.bean.MeetRequestBean#getMeetName()Ljava/lang/String;…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java ("1*™
-1…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java (æ
-ã
-…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java (
-%0java.lang.String"__id*;*9/
--logic.engineeringclasses.bean.MeetRequestBean"
-name"¢
-…
-{C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/bean/MeetRequestBean.java (
+ilogic.controller.applicationcontroller.PatternController$1#toString(Ljava/lang/Double;)Ljava/lang/String;‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaB B("startingBlock* 
+startingBlock‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaB B(#’
+
+‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaA A(
+%1"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*3
+
+__unknown_file (
+
+djava.lang.Doubleà
+Ý
+‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaB! B("
+djava.lang.Double"__annotation*"
+
+__unknown_file (
+
+%1*
+1*ê
+1‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaC C(Ÿœ
+‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaC C(
+%0java.lang.String"-java.lang.Double#toString()Ljava/lang/String;*3
+
+__unknown_file (
+
+djava.lang.Double2
+toString()"®
+‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaC C(
 
-%0java.lang.StringB1/
--logic.engineeringclasses.bean.MeetRequestBean
+%0java.lang.String:«
+‘
+†C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/PatternController.javaB B("
+djava.lang.DoubleB><
+:logic.controller.applicationcontroller.PatternController$1H

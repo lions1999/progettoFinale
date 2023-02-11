@@ -1,50 +1,48 @@
-package logic.engineeringclasses.bean;
+package logic.controller.guicontroller.second.admin.condominium;
 
-public class MeetRequestBean{
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.effect.ColorAdjust;
+import javafx.scene.image.ImageView;
+import logic.controller.applicationcontroller.RateController;
+import logic.controller.guicontroller.AlertGUI;
+import logic.engineeringclasses.bean.RateBean;
+import java.sql.SQLException;
+import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
 
-    private String id;
-    private String name;
-    private String address;
-    private String object;
-    private String textArea;
+public class UpdateRatingItemGUI {
 
-    public String getMeetId() {
-        return id;
+    private final RateController controller = new RateController();
+    private final AlertGUI alert = new AlertGUI();
+
+    @FXML private Label lbID;
+    @FXML private Label lbName;
+    @FXML private Label lbVal;
+    @FXML private TextArea areaTxt;
+    @FXML private ImageView iconDelete;
+    private int gui;
+
+    public void onDeletePress() throws SQLException {
+        if(alert.alertConfirm("Condominium/Info","Are you sure you want to delete this review?",null)) {
+            controller.deleteRate(lbID.getText());
+            if (gui == 2) {
+                secondBorder.setRight(null);
+            }
+            alert.alertInfo("Condominium/Info","Review successfully deleted",null);
+        }
     }
 
-    public void setMeetId(String id) {
-        this.id = id;
-    }
-
-    public String getMeetName() {
-        return name;
-    }
-
-    public void setMeetName(String name) {
-        this.name = name;
-    }
-
-    public String getMeetAddress() {
-        return address;
-    }
-
-    public void setMeetAddress(String address) {
-        this.address = address;
-    }
-
-    public String getMeetObject() {
-        return object;
-    }
-
-    public void setMeetObject(String object) {
-        this.object = object;
-    }
-
-    public String getMeetTextArea() {
-        return textArea;
-    }
-
-    public void setMeetTextArea(String textArea) {
-        this.textArea = textArea;
+    public void setUp(RateBean bean,int gui) {
+        lbID.setText(bean.getRateBeanId());
+        lbName.setText(bean.getResBeanId());
+        lbVal.setText(bean.getRateBeanVal());
+        areaTxt.setText(bean.getRateBeanTxt());
+        this.gui = gui;
+        if(this.gui == 1){
+            ColorAdjust color = new ColorAdjust();
+            color.setBrightness(-1);
+            iconDelete.setEffect(color);
+        }
     }
 }

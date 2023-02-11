@@ -1,1 +1,1 @@
-Ï 2javaXhrTCondominium/src/logic/controller/guicontroller/second/resident/ContactDialogGUI.java
+Ï 2javaX¬hrXCondominium/src/logic/controller/guicontroller/second/admin/condominium/InfoItemGUI.java

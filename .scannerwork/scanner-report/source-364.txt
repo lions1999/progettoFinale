@@ -1,93 +1,70 @@
-package logic.model;
+package logic.engineeringclasses.bean;
 
-public class Fee {
+public class RegistrationBean {
 
-    private String apt;
-    private Double admin;
-    private Double park;
-    private Double elevator;
-    private Double pet;
-    private Double wifi;
-    private boolean availablePark;
-    private boolean availableElevator;
-    private boolean availablePet;
-    private boolean availableWifi;
+    private String id;
+    private String name;
+    private String email;
+    private String password;
+    private String role;
+    private String address;
+    private String apartment;
 
-
-    public Fee(String apt, Double admin, Double park, Double elevator, Double pet, Double wifi) {
-        this.apt = apt;
-        this.admin = admin;
-        this.park = park;
-        this.elevator = elevator;
-        this.pet = pet;
-        this.wifi = wifi;
+    public String getID() {
+        return id;
     }
 
-    public Fee(boolean park,boolean elevator,boolean pet,boolean wifi){
-        this.availablePark = park;
-        this.availableElevator = elevator;
-        this.availablePet = pet;
-        this.availableWifi = wifi;
+    public void setID(String userID) {
+        this.id = userID;
     }
 
-    public String getApt() {
-        return apt;
+    public String getName() {
+        return name;
     }
 
-    public void setApt(String apt) {
-        this.apt = apt;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Double getAdmin() {
-        return admin;
+    public String getEmail() {
+        return email;
     }
 
-    public void setAdmin(Double admin) {
-        this.admin = admin;
+    public void setEmail(String email)	{
+        this.email = email;
     }
 
-    public Double getPark() {
-        return park;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPark(Double park) {
-        this.park = park;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public Double getElevator() {
-        return elevator;
+    public String getRole() {
+        return role;
     }
 
-    public void setElevator(Double elevator) {
-        this.elevator = elevator;
+    public void setRole(String role) {
+        this.role = role;
     }
 
-    public Double getPet() {
-        return pet;
+    public String getAddress() {
+        return address;
     }
 
-    public void setPet(Double pet) {
-        this.pet = pet;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public Double getWifi() {
-        return wifi;
+    public String getApartment() {
+        return apartment;
     }
 
-    public void setWifi(Double wifi) {
-        this.wifi = wifi;
+    public void setApartment(String apartment) {
+        this.apartment = apartment;
     }
 
-    public boolean getAvailablePark(){
-        return availablePark;
-    }
-    public boolean getAvailableElevator(){
-        return availableElevator;
-    }
-    public boolean getAvailablePet(){
-        return availablePet;
-    }
-    public boolean getAvailableWifi(){
-        return availableWifi;
-    }
+
 }

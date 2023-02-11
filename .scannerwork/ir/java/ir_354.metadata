@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.CondominiumQuery#selectAddressList(Ljava/sql/Statement;)Ljava/sql/ResultSet;
+logic.controller.guicontroller.first.admin.requests.TabOrganizeGUI#onRegSelect()V

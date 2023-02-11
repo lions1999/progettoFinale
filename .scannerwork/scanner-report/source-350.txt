@@ -1,187 +1,141 @@
-package logic.engineeringclasses.dao;
+package logic.controller.guicontroller.second.general.registration;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.*;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
+import logic.controller.applicationcontroller.RegisterController;
+import logic.controller.applicationcontroller.ViewController;
+import logic.controller.guicontroller.AlertGUI;
+import logic.controller.guicontroller.second.general.AddressesDialogGUI;
 import logic.engineeringclasses.bean.UserBean;
-import logic.engineeringclasses.exception.InputException;
-import logic.engineeringclasses.query.ApartmentQuery;
-import logic.engineeringclasses.query.UserQuery;
-import logic.model.*;
-
-import java.sql.ResultSet;
+import logic.model.Role;
+import logic.model.User;
+import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Optional;
 
-public class UserDAO extends SqlDAO{
+import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
 
-    private String usrName;
-    private static final String USER_NAME = "user_name";
-    private static final String USER_PASSWORD = "user_pwd";
-    private static final String USER_EMAIL = "user_email";
-    private static final String USER_ADDRESS = "user_addr";
+public class RegisterGUI {
 
-    public String checkNameByID(String id)throws SQLException {
+    private final RegisterController controller = new RegisterController();
+    private final ViewController view = new ViewController();
+    private final AlertGUI alert = new AlertGUI();
+
+    @FXML private TextField tfName;
+    @FXML private TextField tfSurname;
+    @FXML private TextField tfEmail;
+    @FXML private PasswordField tfPassword;
+    @FXML private PasswordField tfOkPwd;
+    @FXML private ToggleGroup radio;
+    @FXML private Text txtAddress;
+
+
+    public void addressBtnClick() {
+        AddressesDialogGUI address = new AddressesDialogGUI();
+        txtAddress.setText(address.loadAddresses());
+    }
+
+    public void onSignClick() {
+        Pane pane = view.getPage("Login",2);
+        secondBorder.setCenter(pane);
+    }
+
+    public void onSignupClick(){
+        logic.controller.guicontroller.first.general.registration.RegisterGUI registerGUI = new logic.controller.guicontroller.first.general.registration.RegisterGUI();
+        RadioButton selectedRadioButton = (RadioButton) radio.getSelectedToggle();
+        String radioTxt = selectedRadioButton.getText();
+        UserBean bean = registerGUI.getUsrBean(tfName.getText(),tfSurname.getText(),tfEmail.getText(),tfPassword.getText(),tfOkPwd.getText(),radioTxt,txtAddress.getText());
+        if(controller.registration(bean)){
+            loadApartments(bean);
+        }else{
+            alert.alertError("Condominium/Register/Error","Incorrect Data","ERROR TYPE:\nDATABASE NOT CONNECTED\nEmpty Fields\nPASSWORD:least one letter and one number maximum 15 charters\nPassword mismatch");
+        }
+    }
+
+    private void loadApartments(UserBean bean) {
         try {
-            connect();
-            ResultSet rs = ApartmentQuery.selectNameByID(stmt, id);
-            if(rs.next()) {
-                this.usrName = rs.getString(USER_NAME);
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/logic/view/first/SelectApartmentDialog.fxml"));
+            DialogPane pane = loader.load();
+            ObservableList<String> list = controller.loadAddress(bean);
+            ObservableList<String> apartments = FXCollections.observableArrayList();
+            switch (Role.valueOf(bean.getUsrRole().toUpperCase())) {
+                case RESIDENT:
+                    apartments = viewResident(list,pane);
+                    break;
+                case OWNER:
+                    apartments = viewOwner(list,pane);
+                    break;
+                default:
+                    break;
             }
-        } finally {
-            disconnect();
-        }
-        return this.usrName;
-    }
-
-    public String checkUserID(String email,String address) throws SQLException{
-        String getID = "";
-        try {
-            connect();
-            ResultSet rs = UserQuery.selectUserID(stmt, email,address);
-            if(rs.next()) {
-                getID = rs.getString("user_id");
+            if(!apartments.isEmpty()){
+                for(String aptName : apartments){
+                    String name = bean.getUsrName() +" "+ bean.getUsrSurname();
+                    User user = new User(null,name,bean.getUsrEmail(),bean.getUsrPwd(),bean.getUsrAddr());
+                    controller.addRegistrationUser(user,bean.getUsrRole().toUpperCase(),aptName);
+                }
+                alert.alertInfo("Condominium/Register/Info","Successful Registration" ,
+                        "Your request has successfully sent to the administrator of the condominium");
+                clearState();
             }
-        } finally {
-            disconnect();
+        }catch(SQLException | NullPointerException |IOException ignored){
+            alert.alertError("Condominium/Register/Error","No Apartments Available","ERROR TYPE:\nDATABASE NOT CONNECTED");
         }
-        return getID;
     }
 
-    public Role checkRole(String id) throws SQLException {
-        Role role = null;
-        try {
-            connect();
-            ResultSet rs = UserQuery.selectRole(stmt,id);
-            if(rs.next()) {
-                role = Role.valueOf(rs.getString("user_role"));
+    private void clearState() {
+        tfName.setText("");
+        tfSurname.setText("");
+        tfEmail.setText("");
+        tfPassword.setText("");
+        tfOkPwd.setText("");
+        txtAddress.setText("");
+    }
+
+    private ObservableList<String> viewResident(ObservableList<String> list, DialogPane pane) {
+        final ToggleGroup group = new ToggleGroup();
+        ObservableList<String> apartments = FXCollections.observableArrayList();
+        ListView<RadioButton> listRadio = new ListView<>();
+        for(String apartment : list){
+            RadioButton btn = new RadioButton(apartment);
+            btn.setToggleGroup(group);
+            btn.setUserData(apartment);
+            listRadio.getItems().add(btn);
+        }
+        pane.setContent(listRadio);
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setDialogPane(pane);
+        Optional<ButtonType> btn = dialog.showAndWait();
+        if(btn.isPresent() && btn.get() == ButtonType.OK) {
+            apartments.add(group.getSelectedToggle().getUserData().toString());
+        }
+        return apartments;
+    }
+
+    private ObservableList<String> viewOwner(ObservableList<String> list,DialogPane pane) {
+        ListView<CheckBox> listCheck = new ListView<>();
+        ObservableList<String> apartments = FXCollections.observableArrayList();
+        for(String apartment : list){
+            CheckBox btn = new CheckBox(apartment);
+            listCheck.getItems().add(btn);
+        }
+        pane.setContent(listCheck);
+        Dialog<ButtonType> dialog = new Dialog<>();
+        dialog.setDialogPane(pane);
+        Optional<ButtonType> btn = dialog.showAndWait();
+        if(btn.isPresent() && btn.get() == ButtonType.OK) {
+            for(CheckBox box: listCheck.getItems()){
+                if(box.isSelected()){
+                    apartments.add(box.getText());
+                }
             }
-        } finally {
-            disconnect();
         }
-        return role;
-    }
-
-    public  String checkLogin(String email,String condominiumCode) throws SQLException {
-        String pwd = "";
-        try {
-            connect();
-            ResultSet rs = UserQuery.selectLogin(stmt, email, condominiumCode);
-            if(rs.next()) {
-                pwd = rs.getString(USER_PASSWORD);
-            }
-        } finally {
-            disconnect();
-        }
-        return pwd;
-    }
-
-    //USER INITIALIZATION
-    public Administrator loadAdminID(String id) throws SQLException {
-        Administrator admin = null;
-        try {
-            connect();
-            ResultSet rs = UserQuery.loadUserByID(stmt,id);
-            if(rs.next()) {
-                String userName = rs.getString(USER_NAME);
-                String userEmail = rs.getString(USER_EMAIL);
-                String userPwd = rs.getString(USER_PASSWORD);
-                String userAddr = rs.getString(USER_ADDRESS);
-                admin = new Administrator(id,userName,userEmail,userPwd,userAddr);
-            }
-        } finally {
-            disconnect();
-        }
-        return admin;
-    }
-
-    public Owner loadOwnerID(String id) throws SQLException {
-        Owner owner = null;
-        try {
-            connect();
-            ResultSet rs = UserQuery.loadUserByID(stmt,id);
-            if(rs.next()) {
-                String userName = rs.getString(USER_NAME);
-                String userEmail = rs.getString(USER_EMAIL);
-                String userPwd = rs.getString(USER_PASSWORD);
-                String userAddr = rs.getString(USER_ADDRESS);
-                owner = new Owner(id,userName,userEmail,userPwd,userAddr);
-            }
-        } finally {
-            disconnect();
-        }
-        return owner;
-    }
-
-    public Resident loadResidentID(String id) throws SQLException, InputException {
-        Resident resident = null;
-        try {
-            connect();
-            ResultSet rs = UserQuery.loadUserByID(stmt,id);
-            if(rs.next()) {
-                String userName = rs.getString(USER_NAME);
-                String userEmail = rs.getString(USER_EMAIL);
-                String userPwd = rs.getString(USER_PASSWORD);
-                String userAddr = rs.getString(USER_ADDRESS);
-                resident = new Resident(id,userName,userEmail,userPwd,userAddr);
-            }
-        } finally {
-            disconnect();
-        }
-        return resident;
-    }
-
-    public ObservableList<User> loadUserList(String address) throws SQLException{
-        ObservableList<User> list = FXCollections.observableArrayList();
-        ResultSet rs;
-        try {
-            connect();
-            rs = UserQuery.selectUserList(stmt,address);
-            while(rs.next()) {
-                list.add(new User(rs.getString("user_id"),rs.getString(USER_NAME),rs.getString(USER_EMAIL),rs.getString(USER_PASSWORD),rs.getString("user_role"),rs.getString(USER_ADDRESS)));
-            }
-        } finally {
-            disconnect();
-        }
-        return list;
-    }
-
-    public ObservableList<String> loadMailList(String address) throws SQLException {
-        ObservableList<String> list = FXCollections.observableArrayList();
-        ResultSet rs;
-        try{
-            connect();
-            rs = UserQuery.selectMailList(stmt,address);
-            while(rs.next()) {
-                list.add(rs.getString(USER_EMAIL));
-            }
-        }finally{
-            disconnect();
-        }
-        return list;
-    }
-
-    public void updateInfo(UserBean bean) throws SQLException {
-        try{
-            connect();
-            String sql = "UPDATE users SET user_name=?,user_email=?,user_pwd=? WHERE user_id='"+bean.getUsrID()+"'";
-            preset = prepConnect(sql);
-            preset.setString(1,bean.getUsrName());
-            preset.setString(2,bean.getUsrEmail());
-            preset.setString(3,bean.getUsrPwd());
-            preset.execute();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            disconnect();
-        }
-    }
-
-    public void removeUsr(String usrId) throws SQLException {
-        try{
-            connect();
-            String sql= "DELETE FROM users WHERE user_id='"+usrId+"'";
-            stmt.executeUpdate(sql);
-        }  finally {
-            disconnect();
-        }
+        return apartments;
     }
 }

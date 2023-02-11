@@ -1,2 +1,1 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#btnDeleteClick()V
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#remove()V
+logic.engineeringclasses.dao.CondominiumDAO#instance-init#

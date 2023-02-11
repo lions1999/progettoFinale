@@ -1,1 +1,1 @@
-logic.model.User#getUsrAddr()Ljava/lang/String;
+logic.model.User#setUsrPwd(Ljava/lang/String;)V

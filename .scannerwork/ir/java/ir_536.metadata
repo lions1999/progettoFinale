@@ -1,1 +1,1 @@
-logic.model.Request#setPos(I)V
+logic.model.Request#setId(Ljava/lang/String;)V

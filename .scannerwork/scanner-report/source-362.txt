@@ -1,59 +1,50 @@
-package logic.model;
+package logic.engineeringclasses.bean;
 
+import logic.model.Role;
 
-public class Apartment {
+import java.io.InputStream;
 
-	private String number;
-	private String address;
-	private String owner;
-	private String resident;
-	private String fee;
+public class PostBean {
 
-	public Apartment(String number,String address,String owner,String resident,String fee) {
-		this.number = number;
-		this.address = address;
-		this.owner = owner;
-		this.resident = resident;
-		this.fee = fee;
+	private String id;
+	private String usr;
+	private Role role;
+	private InputStream img;
+	private String text;
+	
+	public String getPostId() {
+		return this.id;
 	}
 
-	public void setNumber(String number) {
-		this.number = number;
+	public void setPostId(String id) {
+		this.id = id;
 	}
 
-	public String getNumber() {
-		return number;
+	public void setPostUser(String usr) {
+		this.usr = usr;
+	}
+	
+	public String getPostUser() {
+		return this.usr;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setPostRole(Role role){this.role = role;}
+
+	public Role getPostRole(){return this.role;}
+	
+	public void setPostImage(InputStream img) {
+		this.img = img;
+	}
+	
+	public InputStream getPostImage() {
+		return this.img;
+	}	
+
+	public String getPostText() {
+		return text;
 	}
 
-	public String getAddress() {
-		return address;
-	}
-
-	public void setOwner(String owner) {
-		this.owner = owner;
-	}
-
-	public String getOwner() {
-		return owner;
-	}
-
-	public void setResident(String resident) {
-		this.resident = resident;
-	}
-
-	public String getResident() {
-		return resident;
-	}
-
-	public void setFee(String fee) {
-		this.fee = fee;
-	}
-
-	public String getFee() {
-		return fee;
+	public void setPostText(String text) {
+		this.text = text;
 	}
 }

@@ -1,1 +1,1 @@
-÷ 2javaX¢hrYCondominium/src/logic/controller/guicontroller/first/admin/condominium/InfoDetailGUI.java
+÷ 2cssXØhr*Condominium/bin/logic/view/first/style.css

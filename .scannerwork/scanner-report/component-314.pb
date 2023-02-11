@@ -1,1 +1,1 @@
-º 2javaXhraCondominium/src/logic/controller/guicontroller/second/admin/condominium/UpdateRatingTableGUI.java
+º 2javaX)hrYCondominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java

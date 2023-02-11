@@ -1,1 +1,1 @@
-Ô 2javaXGhrCCondominium/src/logic/engineeringclasses/bean/RegistrationBean.java
+Ô 2javaXhraCondominium/src/logic/controller/guicontroller/second/admin/requests/meeting/MeetingTableGUI.java

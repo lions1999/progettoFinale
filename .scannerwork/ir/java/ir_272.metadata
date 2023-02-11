@@ -1,1 +1,2 @@
-logic.controller.guicontroller.second.general.registration.RegisterGUI#onSignClick()V
+logic.controller.guicontroller.AlertGUI#alertWarn(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+null

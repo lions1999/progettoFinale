@@ -1,1 +1,1 @@
-logic.model.Fee#getPet()Ljava/lang/Double;
+logic.model.Fee#setPark(Ljava/lang/Double;)V

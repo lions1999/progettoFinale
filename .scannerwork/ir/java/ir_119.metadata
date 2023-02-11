@@ -1,2 +1,1 @@
-logic.controller.guicontroller.second.owner.RateGUI#setupRate(Llogic/model/Rate;)V
-null
+logic.controller.guicontroller.second.admin.requests.meeting.MeetingItemGUI#reloadPage()V

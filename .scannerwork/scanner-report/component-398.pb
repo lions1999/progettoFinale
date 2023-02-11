@@ -1,1 +1,1 @@
-Ž 2cssXÊhr+Condominium/src/logic/view/second/style.css
+Ž 2javaXihr.Condominium/src/logic/model/UserSingleton.java

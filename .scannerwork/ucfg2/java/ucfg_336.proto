@@ -1,16 +1,18 @@
 
-5logic.model.UserSingleton#getRole()Llogic/model/Role;q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.javaA A("1*∆
+Glogic.model.UserSingleton#getAdministrator()Llogic/model/Administrator;q
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java7 7(&"1*˝
 1q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.javaB	 B(Ω
-∫
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java8	 8(Î
+Ë
 q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.javaB	 B(
-%0logic.model.Role"__id*'*%
-logic.model.UserSingleton"
-role"ç
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java8	 8(
+%0logic.model.Administrator"__id*L
+
+__unknown_file (0*.
+logic.model.UserSingleton"
+administrator"ñ
 q
-gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.javaB B(
-
-%0logic.model.RoleB
-logic.model.UserSingleton
+gC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/UserSingleton.java8 8(!
+
+%0logic.model.AdministratorB
+logic.model.UserSingletonH

@@ -1,16 +1,57 @@
 
-.logic.model.Rate#getRateId()Ljava/lang/String;h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Rate.java ("1*§
-1h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Rate.java (≠
-™
-h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Rate.java (
-%0java.lang.String"__id* *
-logic.model.Rate"
-rateId"Ñ
-h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Rate.java (
+slogic.engineeringclasses.query.UserQuery#selectMailList(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java) )(*"1*˛
+1Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java* *(Eá
+Ñ
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java* *(O
+%0java.lang.String"__concat*∑
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java* *(E20
+.SELECT user_email FROM users WHERE user_addr='*¢
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java*H *(O
+
+addressjava.lang.StringÏ
+È
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java* *(l
+%1java.lang.String"__concat*ù
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java* *(O
 
-%0java.lang.StringB
-logic.model.Rate
+%0java.lang.String*°
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java*R *(l
+' AND user_role ='OWNER'€
+ÿ
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java* *(m
+sqljava.lang.String"__id*4
+
+__unknown_file (
+
+%1java.lang.String¸˘
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java, ,(%
+%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*8
+
+__unknown_file (
+
+stmtjava.sql.Statement*5
+
+__unknown_file (
+
+sqljava.lang.String2 executeQuery(Ljava/lang/String;)"ü
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java, ,(&
+
+%2java.sql.ResultSet:ü
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java)+ )(:
+stmtjava.sql.Statement:†
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/UserQuery.java); )(I
+addressjava.lang.StringB,"*
+(logic.engineeringclasses.query.UserQueryH

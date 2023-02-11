@@ -1,1 +1,1 @@
-logic.model.Apartment#setNumber(Ljava/lang/String;)V
+logic.engineeringclasses.query.PostQuery#selectNameByID(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;

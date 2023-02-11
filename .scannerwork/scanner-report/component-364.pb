@@ -1,1 +1,1 @@
-ì 2javaX^hr$Condominium/src/logic/model/Fee.java
+ì 2javaXGhrCCondominium/src/logic/engineeringclasses/bean/RegistrationBean.java

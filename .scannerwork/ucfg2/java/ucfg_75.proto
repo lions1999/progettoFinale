@@ -1,36 +1,9 @@
 
 ïlogic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI#getRegistered()Llogic/engineeringclasses/bean/RegistrationBean;Æ
-£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.javaZ Z(*"1*∆
+£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.javaZ Z(*"1*Ò
 1Æ
-£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java[) [(IÙÒ
-Æ
-£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java[- [(Ga
-%0[logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI"[logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUIÜ
-É
-Æ
-£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java[) [(I
-%1"elogic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#<init>()V*c
-a
-%0[logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUIÉ
-Ä
-Æ
-£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java[ [(Jb
-reg[logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI"__id*c
-a
-%0[logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUIÃ…
+£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java[) [(I"∫
 Ø
-£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java\ \(Å
-%2"Ålogic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#regBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/RegistrationBean;*d
-b
-reg[logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI*
-""*
-""*
-""*
-""*
-""*
-""2uregBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)"∫
-Ø
-£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java\ \(Ç
-
-%2BYW
+£C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java\ \(Ç
+""BYW
 Ulogic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI

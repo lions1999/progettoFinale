@@ -1,1 +1,1 @@
-logic.model.Request#setUser(Ljava/lang/String;)V
+logic.engineeringclasses.query.FeeQuery#loadFees(Ljava/sql/Statement;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;

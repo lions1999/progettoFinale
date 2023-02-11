@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.MeetRequestBean#setMeetTextArea(Ljava/lang/String;)V
+logic.engineeringclasses.bean.MeetRequestBean#getMeetObject()Ljava/lang/String;

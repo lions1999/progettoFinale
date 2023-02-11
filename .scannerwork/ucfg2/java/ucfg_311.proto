@@ -1,377 +1,272 @@
 
-glogic.engineeringclasses.dao.FeeDAO#addFees(Llogic/engineeringclasses/bean/FeeBean;Ljava/lang/String;)V{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java/ /("31*ä
-25{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java5+ 5(.¸˘
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java5 5(/
-%10boolean",java.lang.Double#equals(Ljava/lang/Object;)Z*
+Dlogic.controller.guicontroller.second.owner.ListItemGUI#getValues()Vê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java% %("8*ﬁ
+3ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java? E(√¿
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java@/ @(I
+%12"]logic.controller.applicationcontroller.ViewController#loader(Ljava/lang/String;I)LFXMLLoader;*[
+
+__unknown_file (?
+=
+view5logic.controller.applicationcontroller.ViewController*)
+
+__unknown_file (
+	AddRating* 
+
+__unknown_file (22loader(Ljava/lang/String;I)Ö
+Ç
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.javaB B(IC
+addRate8logic.controller.guicontroller.second.owner.AddRatingGUI"__id*"
+
+__unknown_file (
+""®•
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.javaC C(+
+%13void"Qlogic.controller.guicontroller.second.owner.AddRatingGUI#setUp(Ljava/util/List;)V*a
+
+__unknown_file (E
+C
+addRate8logic.controller.guicontroller.second.owner.AddRatingGUI*4
+
+__unknown_file (
 
-%9java.lang.Double*
-""2equals(Ljava/lang/Object;)*
-22
-23*™
-26{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java5 5(†ù
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java5 5(#
-%9java.lang.Double"Dlogic.engineeringclasses.bean.FeeBean#getFeePark()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeePark()*
-25*î
-27{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java4 4(5äá
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java4 4(5
-
-%8void")java.sql.PreparedStatement#setDouble(ID)V*"
- 
-%6java.sql.PreparedStatement*2*
+listjava.util.List2setUp(Ljava/util/List;)«
+ƒ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.javaD D($
+%14"__id*"
+
+__unknown_file (
+""*
+0*ˇ
+4ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java8 >(«ƒ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java90 9(O
+%9"]logic.controller.applicationcontroller.ViewController#loader(Ljava/lang/String;I)LFXMLLoader;*[
+
+__unknown_file (?
+=
+view5logic.controller.applicationcontroller.ViewController*.
+
+__unknown_file (
+PreviousRating* 
+
+__unknown_file (22loader(Ljava/lang/String;I)ë
+é
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java; ;(VO
+prevController=logic.controller.guicontroller.second.owner.PreviousRatingGUI"__id*"
+
+__unknown_file (
+""π∂
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java< <(2
+%10void"Vlogic.controller.guicontroller.second.owner.PreviousRatingGUI#setUp(Ljava/util/List;)V*m
+
+__unknown_file (Q
+O
+prevController=logic.controller.guicontroller.second.owner.PreviousRatingGUI*4
+
+__unknown_file (
 
-%7java.lang.Double2setDouble(ID)*
-26*å
-28{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java4 4(›
-⁄
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java4 4( 
-%6java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-preset¢ü
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java4 4(4
-%7java.lang.Double"Elogic.engineeringclasses.bean.FeeBean#getFeeAdmin()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeeAdmin()*
-27*∂
-29{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java3 3(0¨©
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java3 3(0
-
-%5void":java.sql.PreparedStatement#setString(ILjava/lang/String;)V*"
- 
-%3java.sql.PreparedStatement*2*
+listjava.util.List2setUp(Ljava/util/List;)«
+ƒ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java= =($
+%11"__id*"
+
+__unknown_file (
+""*
+0*◊
+6ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java,  ,(0¿Ω
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java- -()
+%3java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*W
+
+__unknown_file (;9
+7logic.controller.guicontroller.second.owner.ListItemGUI2
+getClass()áÑ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java- -(_
+%4java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*3
+
+__unknown_file (
+
+%3java.lang.Class*F
+
+__unknown_file (*(
+&/logic/view/second/RateDialogView.fxml2getResource(Ljava/lang/String;)É
+Ä
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java/ /(8A
+rate9logic.controller.guicontroller.second.owner.RateDialogGUI"__id*"
+
+__unknown_file (
+""™
+ß
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0" 0(M
+%5java.lang.String"__concat*π
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0" 0(D$"
+ What you would do with resident *≥
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0E 0(M
+
+residentjava.lang.Stringí
+è
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0" 0(^
+%6java.lang.String"__concat*≠
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0" 0(M
 
-%4java.lang.String2setString(ILjava/lang/String;)*
-28*‚
-30{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java2 2(%›
-⁄
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java2 2(%1%
-#logic.engineeringclasses.dao.FeeDAO"
-preset"__id*"
- 
-%2java.sql.PreparedStatement›
-⁄
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java3 3( 
-%3java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-presetòï
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java3 3(/
-%4java.lang.String"@logic.engineeringclasses.bean.FeeBean#getApt()Ljava/lang/String;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getApt()*
-29*ô	
-31{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java1 1('—
-Œ
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java1 1(-
-%0java.lang.String"__concat*
-INSERT INTO *
-
-tablejava.lang.Stringì
-ê
-|
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java1 1(Ä
-%1java.lang.String"__concat*
+%5java.lang.String*ß
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0N 0(^
+ of apartment ô
+ñ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0" 0(b
+%7java.lang.String"__concat*≠
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0" 0(^
 
-%0java.lang.String*TR
-P (fee_apt,fee_admin,fee_park,fee_elevator,fee_pet,fee_wifi) VALUES (?,?,?,?,?,?)∫
-∑
-|
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java1 1(Å
-sqljava.lang.String"__id*
+%6java.lang.String*Æ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0_ 0(b
+
+aptjava.lang.StringÖ
+Ç
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0" 0(f
+%8java.lang.String"__concat*≠
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0" 0(b
 
-%1java.lang.StringËÂ
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java2 2(% 
-%2java.sql.PreparedStatement"_logic.engineeringclasses.dao.SqlDAO#prepConnect(Ljava/lang/String;)Ljava/sql/PreparedStatement;*'%
-#logic.engineeringclasses.dao.FeeDAO*
+%7java.lang.String*ö
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java0c 0(f
+?*
+0
+1*§
+7ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java* *(Ø
+¨
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java* *(-
+%1'logic.controller.guicontroller.AlertGUI"__id*b
+
+__unknown_file (F*D9
+7logic.controller.guicontroller.second.owner.ListItemGUI"
+alert‘—
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java* *(t
+
+%2void"klogic.controller.guicontroller.AlertGUI#alertError(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*K
+
+__unknown_file (/
+-
+%1'logic.controller.guicontroller.AlertGUI*2
+
+__unknown_file (
+Null item selected*B
+
+__unknown_file (&$
+"You have selected a non valid item*:
+
+__unknown_file (
+Please select a valid item2BalertError(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)*
+0*ÿ	
+8ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java& &(!ﬁ
+€
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java& &(,
+residentjava.lang.String"__id*"
+
+__unknown_file (
+""Ÿ
+÷
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java' '(&
+aptjava.lang.String"__id*"
+
+__unknown_file (
+""è
+å
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java( ((7
+%0java.util.List"<java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;*0
+
+__unknown_file ("
+java.util.Arrays*:
+
+__unknown_file (
+
+residentjava.lang.String*5
+
+__unknown_file (
 
-sqljava.lang.String2prepConnect(Ljava/lang/String;)*
-30*â
-10{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java: :(ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java: :(!
-%30java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-presetüú
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java:$ :(7
-%31java.lang.Double"Clogic.engineeringclasses.bean.FeeBean#getFeePet()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeePet()*
-9*É
-11{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java90 9(6ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java90 9(6!
-%27java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-presetö
-ó
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java9B 9(L
-
-%28int"__id*
-""¸˘
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java90 9(M
-%29void"'java.sql.PreparedStatement#setNull(II)V*#
-!
-%27java.sql.PreparedStatement*2*
-
-
-%28int2setNull(II)*
-8*ã
-13{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java9* 9(-˝˙
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java9 9(.
-%26boolean",java.lang.Double#equals(Ljava/lang/Object;)Z*
-
-%25java.lang.Double*
-""2equals(Ljava/lang/Object;)*
-10
-11*©
-14{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java9 9(üú
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java9 9("
-%25java.lang.Double"Clogic.engineeringclasses.bean.FeeBean#getFeePet()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeePet()*
-13*ó
-15{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java8 8(=çä
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java8 8(=
-%24void")java.sql.PreparedStatement#setDouble(ID)V*#
-!
-%22java.sql.PreparedStatement*2*
-
-%23java.lang.Double2setDouble(ID)*
-14*î
-16{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java8 8(ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java8 8(!
-%22java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-preset©¶
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java8$ 8(<
-%23java.lang.Double"Hlogic.engineeringclasses.bean.FeeBean#getFeeElevator()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeeElevator()*
-15*Ñ
-17{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java75 7(;ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java75 7(;!
-%19java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-presetö
-ó
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java7G 7(Q
-
-%20int"__id*
-""¸˘
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java75 7(R
-%21void"'java.sql.PreparedStatement#setNull(II)V*#
-!
-%19java.sql.PreparedStatement*2*
-
-
-%20int2setNull(II)*
-14*ã
-19{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java7/ 7(2˝˙
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java7 7(3
-%18boolean",java.lang.Double#equals(Ljava/lang/Object;)Z*
-
-%17java.lang.Double*
-""2equals(Ljava/lang/Object;)*
-16
-17*ö
-0 "í
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.javaA A(
-implicit return*ˇ
-1{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java? ?(˜Ù
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java? ?(
-%43void"1logic.engineeringclasses.dao.SqlDAO#disconnect()V*'%
-#logic.engineeringclasses.dao.FeeDAO2disconnect()*
-0*–
-2{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java= =(ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java= =(!
-%41java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-presetÁ‰
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java= =(
-%42boolean"%java.sql.PreparedStatement#execute()Z*#
-!
-%41java.sql.PreparedStatement2	execute()*
-1*ï
-3{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java< <(9çä
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java< <(9
-%40void")java.sql.PreparedStatement#setDouble(ID)V*#
-!
-%38java.sql.PreparedStatement*2*
-
-%39java.lang.Double2setDouble(ID)*
-2*ä
-4{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java< <(ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java< <(!
-%38java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-preset°û
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java<$ <(8
-%39java.lang.Double"Dlogic.engineeringclasses.bean.FeeBean#getFeeWifi()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeeWifi()*
-3*Ç
-5{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java;1 ;(7ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java;1 ;(7!
-%35java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-presetö
-ó
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java;C ;(M
-
-%36int"__id*
-""¸˘
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java;1 ;(N
-%37void"'java.sql.PreparedStatement#setNull(II)V*#
-!
-%35java.sql.PreparedStatement*2*
-
-
-%36int2setNull(II)*
-2*à
-7{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java;+ ;(.˝˙
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java; ;(/
-%34boolean",java.lang.Double#equals(Ljava/lang/Object;)Z*
-
-%33java.lang.Double*
-""2equals(Ljava/lang/Object;)*
+aptjava.lang.StringË
+Â
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java( ((8
+listjava.util.List"__id*2
+
+__unknown_file (
+
+%0java.util.List*
+6
+7*∞
+0 "®
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.javaK K(
+implicit return*Õ
+1ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java5& 5(:ãà
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java5* 5(8<
+%155logic.controller.applicationcontroller.ViewController"5logic.controller.applicationcontroller.ViewController∫
+∑
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java5& 5(:
+%16"?logic.controller.applicationcontroller.ViewController#<init>()V*Z
+
+__unknown_file (>
+<
+%155logic.controller.applicationcontroller.ViewController∑
+¥
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java5 5(;=
+view5logic.controller.applicationcontroller.ViewController"__id*Z
+
+__unknown_file (>
+<
+%155logic.controller.applicationcontroller.ViewController«
+ƒ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java6 6(
+%17"__id*"
+
+__unknown_file (
+""⁄◊
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/owner/ListItemGUI.java7 7(2
+%18java.lang.String"klogic.controller.guicontroller.second.owner.RateDialogGUI#submitValue(Ljava/lang/String;)Ljava/lang/String;*_
+
+__unknown_file (C
+A
+rate9logic.controller.guicontroller.second.owner.RateDialogGUI*:
+
+__unknown_file (
+
+residentjava.lang.String2submitValue(Ljava/lang/String;)*	
+3
 4
-5*©
-8{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java; ;(°û
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java; ;(#
-%33java.lang.Double"Dlogic.engineeringclasses.bean.FeeBean#getFeeWifi()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeeWifi()*
-7*ï
-9{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java: :(8çä
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java: :(8
-%32void")java.sql.PreparedStatement#setDouble(ID)V*#
-!
-%30java.sql.PreparedStatement*2*
-
-%31java.lang.Double2setDouble(ID)*
-8*≥
-20{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java7 7(©¶
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java7 7('
-%17java.lang.Double"Hlogic.engineeringclasses.bean.FeeBean#getFeeElevator()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeeElevator()*
-19*ó
-21{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java6 6(9çä
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java6 6(9
-%16void")java.sql.PreparedStatement#setDouble(ID)V*#
-!
-%14java.sql.PreparedStatement*2*
-
-%15java.lang.Double2setDouble(ID)*
-20*å
-22{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java6 6(ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java6 6(!
-%14java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-preset°û
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java6$ 6(8
-%15java.lang.Double"Dlogic.engineeringclasses.bean.FeeBean#getFeePark()Ljava/lang/Double;*2
-0
-feeBean%logic.engineeringclasses.bean.FeeBean2getFeePark()*
-21*Ñ
-23{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java51 5(7ﬁ
-€
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java51 5(7!
-%11java.sql.PreparedStatement"__id*3*1%
-#logic.engineeringclasses.dao.FeeDAO"
-presetö
-ó
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java5C 5(M
-
-%12int"__id*
-""¸˘
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/FeeDAO.java51 5(N
-%13void"'java.sql.PreparedStatement#setNull(II)V*#
-!
-%11java.sql.PreparedStatement*2*
-
-
-%12int2setNull(II)*
-20:0
-feeBean%logic.engineeringclasses.bean.FeeBean:
-tablejava.lang.StringB'%
-#logic.engineeringclasses.dao.FeeDAO
+0B;9
+7logic.controller.guicontroller.second.owner.ListItemGUIH

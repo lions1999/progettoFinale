@@ -1,1 +1,1 @@
-logic.model.MeetRequest#setId(Ljava/lang/String;)V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#setUp(LRegistrationBean;)V

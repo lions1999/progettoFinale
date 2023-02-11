@@ -1,8 +1,50 @@
-package logic.model;
+package logic.engineeringclasses.bean;
 
-public class Administrator extends User {
+public class MeetRequestBean{
 
-	public Administrator(String userID, String name, String email, String password,String cc) {
-		super( userID,  name,  email,  password, cc);
-	}
+    private String id;
+    private String name;
+    private String address;
+    private String object;
+    private String textArea;
+
+    public String getMeetId() {
+        return id;
+    }
+
+    public void setMeetId(String id) {
+        this.id = id;
+    }
+
+    public String getMeetName() {
+        return name;
+    }
+
+    public void setMeetName(String name) {
+        this.name = name;
+    }
+
+    public String getMeetAddress() {
+        return address;
+    }
+
+    public void setMeetAddress(String address) {
+        this.address = address;
+    }
+
+    public String getMeetObject() {
+        return object;
+    }
+
+    public void setMeetObject(String object) {
+        this.object = object;
+    }
+
+    public String getMeetTextArea() {
+        return textArea;
+    }
+
+    public void setMeetTextArea(String textArea) {
+        this.textArea = textArea;
+    }
 }

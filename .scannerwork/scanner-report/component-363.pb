@@ -1,1 +1,1 @@
-ë 2javaX-hr,Condominium/src/logic/model/Condominium.java
+ë 2javaX0hr;Condominium/src/logic/engineeringclasses/bean/RateBean.java

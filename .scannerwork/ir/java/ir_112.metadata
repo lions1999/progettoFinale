@@ -1,6 +1,1 @@
-logic.controller.guicontroller.second.admin.requests.meeting.MeetingItemGUI#instance-init#
-logic.controller.applicationcontroller.MeetController#instance-init#
-null
-logic.controller.applicationcontroller.ViewController#<init>()V
-logic.controller.applicationcontroller.MeetController#<init>()V
-logic.controller.applicationcontroller.ViewController#instance-init#
+test.SeleniumGUITest#instance-init#

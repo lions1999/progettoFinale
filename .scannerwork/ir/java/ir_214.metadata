@@ -1,3 +1,2 @@
-logic.engineeringclasses.dao.RateDAO#instance-init#
-logic.engineeringclasses.dao.UserDAO#instance-init#
-logic.engineeringclasses.dao.UserDAO#<init>()V
+logic.controller.guicontroller.first.general.FeeInfoGUI#setUp(Ljava/lang/String;)V
+logic.controller.guicontroller.first.general.FeeInfoGUI#noFee(LTextField;)V

@@ -1,70 +1,198 @@
 
-Êlogic.controller.guicontroller.first.admin.requests.meeting.MeetingTableGUI#meetRequestBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/MeetRequestBean;§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java( ((+"1*Ó
-1§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java) )(4éã
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java)# )(23
-%0-logic.engineeringclasses.bean.MeetRequestBean"-logic.engineeringclasses.bean.MeetRequestBean†
-ù
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java) )(4
-%1"7logic.engineeringclasses.bean.MeetRequestBean#<init>()V*5
-3
-%0-logic.engineeringclasses.bean.MeetRequestBeanû
-õ
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java) )(55
-meet-logic.engineeringclasses.bean.MeetRequestBean"__id*5
-3
-%0-logic.engineeringclasses.bean.MeetRequestBeanˆÛ
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java* *(
+[logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#btnRegClick()V•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java4 4("20*è
+2•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaE E(‹
+Ÿ
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaE E(
+%14"__id*"
+
+__unknown_file (
+""*
+0*˛
+3•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaD D(‰
+·
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaD D(-
+%12double"__id*"
+
+__unknown_file (
+""‰
+·
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaD/ D(?
+%13double"__id*"
+
+__unknown_file (
+""*
+2*À
 
-%2void"Llogic.engineeringclasses.bean.MeetRequestBean#setMeetId(Ljava/lang/String;)V*7
-5
-meet-logic.engineeringclasses.bean.MeetRequestBean*
+15•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java;0 ;(7Ì
+Í
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java;0 ;(7?
+%49logic.controller.applicationcontroller.RegisterController"__id*y
+
+__unknown_file (]*[N
+Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI"	
+regCtrlƒ
+¡
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java;I ;(U
+%5java.lang.String"__id*y
+
+__unknown_file (]*[N
+Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI"	
+address‹Ÿ
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java;0 ;(V
+%6"nlogic.controller.applicationcontroller.RegisterController#loadRegistration(Ljava/lang/String;)LObservableList;*]
+
+__unknown_file (A
+?
+%49logic.controller.applicationcontroller.RegisterController*4
+
+__unknown_file (
 
-idjava.lang.String2setMeetId(Ljava/lang/String;)¸˘
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java+ +(
-
-%3void"Nlogic.engineeringclasses.bean.MeetRequestBean#setMeetName(Ljava/lang/String;)V*7
-5
-meet-logic.engineeringclasses.bean.MeetRequestBean*
+%5java.lang.String2$loadRegistration(Ljava/lang/String;)*
+3
+10*ß
+16•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java9 9(D∫
+∑
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java9 9(Dc
+	tableCtrlVlogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI"__id*"
 
-namejava.lang.String2setMeetName(Ljava/lang/String;)ÖÇ
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java, ,($
+__unknown_file (
+""µ≤
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java: :(%
 
-%4void"Qlogic.engineeringclasses.bean.MeetRequestBean#setMeetAddress(Ljava/lang/String;)V*7
-5
-meet-logic.engineeringclasses.bean.MeetRequestBean*
-
-addressjava.lang.String2"setMeetAddress(Ljava/lang/String;)Çˇ
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java- -("
-
-%5void"Plogic.engineeringclasses.bean.MeetRequestBean#setMeetObject(Ljava/lang/String;)V*7
-5
-meet-logic.engineeringclasses.bean.MeetRequestBean*
-
-objectjava.lang.String2!setMeetObject(Ljava/lang/String;)ÑÅ
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java. .("
-
-%6void"Rlogic.engineeringclasses.bean.MeetRequestBean#setMeetTextArea(Ljava/lang/String;)V*7
-5
-meet-logic.engineeringclasses.bean.MeetRequestBean*
+%3void"glogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI#clearChildren()V*Å
 
-textjava.lang.String2#setMeetTextArea(Ljava/lang/String;)"‡
-§
-ôC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java/ /(7
-5
-meet-logic.engineeringclasses.bean.MeetRequestBean:
-idjava.lang.String:
-namejava.lang.String:
-addressjava.lang.String:
-objectjava.lang.String:
-textjava.lang.StringBOM
-Klogic.controller.guicontroller.first.admin.requests.meeting.MeetingTableGUI
+__unknown_file (e
+c
+	tableCtrlVlogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI2clearChildren()*
+15*ì
+5•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaB B(‹Ÿ
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaB B(+
+%11"klogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI#addChildren(LNode;)V*Å
+
+__unknown_file (e
+c
+	tableCtrlVlogic.controller.guicontroller.second.admin.requests.registration.RegistrationTableGUI*"
+
+__unknown_file (
+""2addChildren(LNode;)*
+3
+10*«
+6•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java@ @(D∏
+µ
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java@ @(Da
+itemCtrlUlogic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI"__id*"
+
+__unknown_file (
+""Ÿ÷
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaA A($
+%10void"élogic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI#setUp(Llogic/engineeringclasses/bean/RegistrationBean;)V*
+
+__unknown_file (c
+a
+itemCtrlUlogic.controller.guicontroller.second.admin.requests.registration.RegistrationItemGUI*T
+
+__unknown_file (8
+6
+bean.logic.engineeringclasses.bean.RegistrationBean27setUp(Llogic/engineeringclasses/bean/RegistrationBean;)*
+5*˚
+19•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java7  7($Ê
+„
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java7  7($;
+%15logic.controller.applicationcontroller.ViewController"__id*v
+
+__unknown_file (Z*XN
+Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI"
+view›⁄
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java7  7(C
+%2"]logic.controller.applicationcontroller.ViewController#loader(Ljava/lang/String;I)LFXMLLoader;*Y
+
+__unknown_file (=
+;
+%15logic.controller.applicationcontroller.ViewController*1
+
+__unknown_file (
+RegistrationTable* 
+
+__unknown_file (22loader(Ljava/lang/String;I)*
+16*à
+
+9•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java= =(Gç
+ä
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java= =(G6
+bean.logic.engineeringclasses.bean.RegistrationBean"__id*"
+
+__unknown_file (
+
+%7Ê
+„
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java>" >(&;
+%85logic.controller.applicationcontroller.ViewController"__id*v
+
+__unknown_file (Z*XN
+Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI"
+view‹Ÿ
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java>" >(C
+%9"]logic.controller.applicationcontroller.ViewController#loader(Ljava/lang/String;I)LFXMLLoader;*Y
+
+__unknown_file (=
+;
+%85logic.controller.applicationcontroller.ViewController*0
+
+__unknown_file (
+ItemRegistration* 
+
+__unknown_file (22loader(Ljava/lang/String;I)*
+6*ê
+20•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java5 5(€
+ÿ
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java5 5(
+%0"__id*"
+
+__unknown_file (
+""*
+19*§
+10•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java=( =(F
+Ì
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.java=( =(F
+%7"™logic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI#setUpRegistration(Llogic/model/Registration;)Llogic/engineeringclasses/bean/RegistrationBean;*l
+
+__unknown_file (PN
+Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUI*"
+
+__unknown_file (
+""*
+9*≈
+0 "Ω
+•
+öC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/admin/requests/RequestBottomNavMenuGUI.javaI I(
+implicit returnBPN
+Llogic.controller.guicontroller.second.admin.requests.RequestBottomNavMenuGUIH

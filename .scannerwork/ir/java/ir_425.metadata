@@ -1,2 +1,1 @@
-logic.controller.guicontroller.first.owner.RatingUserGUI#setBean(Ljava/lang/String;)V
-java.lang.String#valueOf(Ljava/lang/Object;)Ljava/lang/String;
+logic.controller.guicontroller.first.owner.RatingUserGUI#setUp(Ljava/lang/String;Ljava/lang/String;)V

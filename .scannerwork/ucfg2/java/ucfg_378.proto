@@ -1,259 +1,104 @@
 
-Vlogic.controller.guicontroller.first.general.registration.RegisterGUI#onSignupClick()Vž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java,	 ,("9*Ô
-
-2ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java> >(³
-°
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java> >(.
-%23'logic.controller.guicontroller.AlertGUI"__id*W*UG
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI"
-
-alertGUIž›
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java> ?(S
-%24void"jlogic.controller.guicontroller.AlertGUI#alertInfo(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*0
-.
-%23'logic.controller.guicontroller.AlertGUI*
-Condominium/Register/Info*
-Successful Registration*NL
-JYour request has successfully sent to the administrator of the condominium2AalertInfo(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ñ
-Î
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java@ @(
-%25void"Slogic.controller.guicontroller.first.general.registration.RegisterGUI#clearState()V*IG
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI*
-0*Þ
-3ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java9 9(Ï
-Ì
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java9 9(
-aptNamejava.lang.String"__id*
-""Ý
-Ú
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java9 9(
-aptNamejava.lang.String"
-__arrayGet*
-
-%9*
-""*
-2
-4*¡&
-4ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java: :(ÄÁ
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java: :($
-%10java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrName()Ljava/lang/String;*0
-.
-bean&logic.engineeringclasses.bean.UserBean2getUsrName()é
-æ
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java: :()
-%11java.lang.String"__concat*
-
-%10java.lang.String*
- ÊÇ
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java:+ :(?
-%12java.lang.String"Hlogic.engineeringclasses.bean.UserBean#getUsrSurname()Ljava/lang/String;*0
-.
-bean&logic.engineeringclasses.bean.UserBean2getUsrSurname()ý
-ú
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java: :(?
-%13java.lang.String"__concat*
-
-%11java.lang.String*
-
-%12java.lang.Stringß
-Ü
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java: :(@
-namejava.lang.String"__id*
-
-%13java.lang.StringÆÃ
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java;$ ;(6
-%14java.lang.String"Flogic.engineeringclasses.bean.UserBean#getUsrEmail()Ljava/lang/String;*0
-.
-bean&logic.engineeringclasses.bean.UserBean2getUsrEmail()Â¿
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java;7 ;(G
-%15java.lang.String"Dlogic.engineeringclasses.bean.UserBean#getUsrPwd()Ljava/lang/String;*0
-.
-bean&logic.engineeringclasses.bean.UserBean2getUsrPwd()ÄÁ
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java;H ;(Y
-%16java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrAddr()Ljava/lang/String;*0
-.
-bean&logic.engineeringclasses.bean.UserBean2getUsrAddr()ÏÌ
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java; ;(
-%17logic.model.User"logic.model.User±
-®
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java; ;(Z
-%18"tlogic.model.User#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*
-
-%17logic.model.User*
-""*
+ælogic.controller.guicontroller.first.admin.requests.meeting.MeetingTableGUI#meetRequestBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/MeetRequestBean;¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java( ((+"1*¾
+1¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java) )(4Ž‹
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java)# )(23
+%0-logic.engineeringclasses.bean.MeetRequestBean"-logic.engineeringclasses.bean.MeetRequestBean¼
+¹
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java) )(4
+%1"7logic.engineeringclasses.bean.MeetRequestBean#<init>()V*Q
 
-namejava.lang.String*
-
-%14java.lang.String*
-
-%15java.lang.String*
-
-%16java.lang.Stringß
-Ü
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java; ;([
-userlogic.model.User"__id*
-
-%17logic.model.UserÏ
-Ì
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java< <(@
-%199logic.controller.applicationcontroller.RegisterController"__id*a*_G
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI"
-registerControllerÄÁ
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java<1 <(B
-%20java.lang.String"Elogic.engineeringclasses.bean.UserBean#getUsrRole()Ljava/lang/String;*0
-.
-bean&logic.engineeringclasses.bean.UserBean2getUsrRole()™–
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java<1 <(P
-%21java.lang.String"0java.lang.String#toUpperCase()Ljava/lang/String;*
-
-%20java.lang.String2toUpperCase()¡ž
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java< <(Y
-%22void"†logic.controller.applicationcontroller.RegisterController#addRegistrationUser(Llogic/model/User;Ljava/lang/String;Ljava/lang/String;)V*B
-@
-%199logic.controller.applicationcontroller.RegisterController*
+__unknown_file (5
+3
+%0-logic.engineeringclasses.bean.MeetRequestBeanº
+·
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java) )(55
+meet-logic.engineeringclasses.bean.MeetRequestBean"__id*Q
 
-userlogic.model.User*
-
-%21java.lang.String*
+__unknown_file (5
+3
+%0-logic.engineeringclasses.bean.MeetRequestBean®«
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java* *(
+
+%2void"Llogic.engineeringclasses.bean.MeetRequestBean#setMeetId(Ljava/lang/String;)V*S
+
+__unknown_file (7
+5
+meet-logic.engineeringclasses.bean.MeetRequestBean*4
+
+__unknown_file (
+
+idjava.lang.String2setMeetId(Ljava/lang/String;)´±
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java+ +(
+
+%3void"Nlogic.engineeringclasses.bean.MeetRequestBean#setMeetName(Ljava/lang/String;)V*S
+
+__unknown_file (7
+5
+meet-logic.engineeringclasses.bean.MeetRequestBean*6
+
+__unknown_file (
+
+namejava.lang.String2setMeetName(Ljava/lang/String;)½º
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java, ,($
+
+%4void"Qlogic.engineeringclasses.bean.MeetRequestBean#setMeetAddress(Ljava/lang/String;)V*S
+
+__unknown_file (7
+5
+meet-logic.engineeringclasses.bean.MeetRequestBean*9
+
+__unknown_file (
 
-aptNamejava.lang.String2KaddRegistrationUser(Llogic/model/User;Ljava/lang/String;Ljava/lang/String;)*
-3*ª
-5ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java9 9(þû
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java9 9(%
-%9"klogic.controller.guicontroller.first.general.registration.SelectApartmentDialogGUI#getApt()LObservableList;*[
-Y
-aptRlogic.controller.guicontroller.first.general.registration.SelectApartmentDialogGUI2getApt()*
-3*­
-6ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java88 8(;þû
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java88 8(D
-%8"klogic.controller.guicontroller.first.general.registration.SelectApartmentDialogGUI#getApt()LObservableList;*[
-Y
-aptRlogic.controller.guicontroller.first.general.registration.SelectApartmentDialogGUI2getApt()*
-5
-0*«
-8ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java/ /('À½
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java0 0( 
-%3java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*IG
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI2
-getClass()ãà
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java0 0(\
-%4java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*
-
-%3java.lang.Class*0.
-,/logic/view/first/SelectApartmentDialog.fxml2getResource(Ljava/lang/String;)
-Š
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java2 2(9Y
-aptRlogic.controller.guicontroller.first.general.registration.SelectApartmentDialogGUI"__id*
-""Î
-Ë
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java3! 3(3?
-%59logic.controller.applicationcontroller.RegisterController"__id*a*_G
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI"
-registerController×Ô
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java3! 3(E
-%6"logic.controller.applicationcontroller.RegisterController#loadAddress(Llogic/engineeringclasses/bean/UserBean;)LObservableList;*A
-?
-%59logic.controller.applicationcontroller.RegisterController*0
-.
-bean&logic.engineeringclasses.bean.UserBean25loadAddress(Llogic/engineeringclasses/bean/UserBean;)˜•
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java4 4(
-%7"“logic.controller.guicontroller.first.general.registration.SelectApartmentDialogGUI#setUp(LObservableList;Llogic/engineeringclasses/bean/UserBean;)V*[
-Y
-aptRlogic.controller.guicontroller.first.general.registration.SelectApartmentDialogGUI*
-""*0
-.
-bean&logic.engineeringclasses.bean.UserBean2?setUp(LObservableList;Llogic/engineeringclasses/bean/UserBean;)*
-6
-0*ò
-9ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java- -(¶³
-Ÿ
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java- -(­
-%0"ølogic.controller.guicontroller.first.general.registration.RegisterGUI#getUsrBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/UserBean;*IG
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI*
-""*
-""*
-""*
-""*
-""*
-""*
-""2ŠgetUsrBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)ã
-à
-Ÿ
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java- -(®.
-bean&logic.engineeringclasses.bean.UserBean"__id*
-
-%0Î
-Ë
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java. .(?
-%19logic.controller.applicationcontroller.RegisterController"__id*a*_G
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI"
-registerControllerÓÐ
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.java. .(*
-%2boolean"qlogic.controller.applicationcontroller.RegisterController#registration(Llogic/engineeringclasses/bean/UserBean;)Z*A
-?
-%19logic.controller.applicationcontroller.RegisterController*0
-.
-bean&logic.engineeringclasses.bean.UserBean26registration(Llogic/engineeringclasses/bean/UserBean;)*
-8
-1*¾
-0 "¶
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaE E(
-implicit return*¶
-1ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaC C(³
-°
-ž
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaC C(.
-%26'logic.controller.guicontroller.AlertGUI"__id*W*UG
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI"
+addressjava.lang.String2"setMeetAddress(Ljava/lang/String;)º·
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java- -("
 
-alertGUIÔÑ
-Ÿ
-“C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/registration/RegisterGUI.javaC C(Ê
-%27void"klogic.controller.guicontroller.AlertGUI#alertError(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*0
-.
-%26'logic.controller.guicontroller.AlertGUI*
-Condominium/Register/Error*
-Incorrect Data*ˆ…
-‚ERROR TYPE:\nDATABASE NOT CONNECTED\nEmpty Fields\nPASSWORD:least one letter and one number maximum 15 charters\nPassword mismatch2BalertError(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)*
-0BIG
-Elogic.controller.guicontroller.first.general.registration.RegisterGUI
+%5void"Plogic.engineeringclasses.bean.MeetRequestBean#setMeetObject(Ljava/lang/String;)V*S
+
+__unknown_file (7
+5
+meet-logic.engineeringclasses.bean.MeetRequestBean*8
+
+__unknown_file (
+
+objectjava.lang.String2!setMeetObject(Ljava/lang/String;)¼¹
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java. .("
+
+%6void"Rlogic.engineeringclasses.bean.MeetRequestBean#setMeetTextArea(Ljava/lang/String;)V*S
+
+__unknown_file (7
+5
+meet-logic.engineeringclasses.bean.MeetRequestBean*6
+
+__unknown_file (
+
+textjava.lang.String2#setMeetTextArea(Ljava/lang/String;)"à
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java/ /(7
+5
+meet-logic.engineeringclasses.bean.MeetRequestBean:¿
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java(, ((6
+idjava.lang.String:Á
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java(7 ((C
+namejava.lang.String:Ä
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java(D ((S
+addressjava.lang.String:Ã
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java(T ((b
+objectjava.lang.String:Á
+¤
+™C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/requests/meeting/MeetingTableGUI.java(c ((n
+textjava.lang.StringBOM
+Klogic.controller.guicontroller.first.admin.requests.meeting.MeetingTableGUI

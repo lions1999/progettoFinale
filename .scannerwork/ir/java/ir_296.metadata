@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.MeetRequestBean#setMeetName(Ljava/lang/String;)V
+logic.engineeringclasses.bean.MeetRequestBean#getMeetId()Ljava/lang/String;

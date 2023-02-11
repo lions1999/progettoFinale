@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.FeeController#loadFees(Ljava/lang/String;Ljava/lang/String;)Llogic/model/Fee;
+logic.controller.guicontroller.second.admin.requests.meeting.MeetingTableGUI#clearChildren()V

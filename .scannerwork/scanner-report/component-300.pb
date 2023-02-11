@@ -1,1 +1,1 @@
-¬ 2javaXLhrPCondominium/src/logic/controller/guicontroller/first/general/login/LoginGUI.java
+¬ 2javaX?hrKCondominium/src/logic/controller/applicationcontroller/EmailController.java

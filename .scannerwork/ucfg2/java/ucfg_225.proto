@@ -1,23 +1,32 @@
 
-Ulogic.controller.applicationcontroller.FeeController#checkPastId(Ljava/lang/String;)Zç
-ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java ("1*é
+clogic.controller.applicationcontroller.FeeController#setUpFees(Ljava/lang/String;)Llogic/model/Fee;ç
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java ("1*ô
 1ç
-ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (á
-Ñ
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (£
+†
 ç
-ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java ()
-%0#logic.engineeringclasses.dao.FeeDAO"__id*A*?6
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java ()
+%0#logic.engineeringclasses.dao.FeeDAO"__id*]
+
+__unknown_file (A*?6
 4logic.controller.applicationcontroller.FeeController"
-dao”–
+dao±Æ
 ç
-ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (%
-%1boolean"Dlogic.engineeringclasses.dao.FeeDAO#checkPastId(Ljava/lang/String;)Z*+
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (-
+%1logic.model.Fee"Zlogic.engineeringclasses.dao.FeeDAO#loadAvailableFees(Ljava/lang/String;)Llogic/model/Fee;*G
+
+__unknown_file (+
 )
-%0#logic.engineeringclasses.dao.FeeDAO*
-
-aptIdjava.lang.String2checkPastId(Ljava/lang/String;)"ò
+%0#logic.engineeringclasses.dao.FeeDAO*9
+
+__unknown_file (
+
+addressjava.lang.String2%loadAvailableFees(Ljava/lang/String;)"©
 ç
-ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (&
-"":
-aptIdjava.lang.StringB86
-4logic.controller.applicationcontroller.FeeController
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java (.
+
+%1logic.model.Fee:≠
+ç
+ÇC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/FeeController.java ('
+addressjava.lang.StringB86
+4logic.controller.applicationcontroller.FeeControllerH

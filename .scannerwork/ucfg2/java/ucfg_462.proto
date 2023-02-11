@@ -1,11 +1,57 @@
 
-‚logic.controller.applicationcontroller.ApartmentController#loadApartmentId(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;“
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java (!"1*º
-1“
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java ("ž
-“
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java (6
-"":
-	apartmentjava.lang.String:
-addressjava.lang.StringB><
-:logic.controller.applicationcontroller.ApartmentController
+logic.engineeringclasses.query.RegisterQuery#selectRegisteredUserList(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (4"1*
+1„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (C‘
+Ž
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (M
+%0java.lang.String"__concat*¹
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (C0.
+,SELECT * from registration where reg_addr ='*¦
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.javaF (M
+
+addressjava.lang.Stringá
+Þ
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (S
+%1java.lang.String"__concat*¡
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (M
+
+%0java.lang.String*Ž
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.javaP (S
+'ß
+Ü
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (T
+sqljava.lang.String"__id*4
+
+__unknown_file (
+
+%1java.lang.String€ý
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (%
+%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*8
+
+__unknown_file (
+
+stmtjava.sql.Statement*5
+
+__unknown_file (
+
+sqljava.lang.String2 executeQuery(Ljava/lang/String;)"£
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java (&
+
+%2java.sql.ResultSet:£
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.java5 (D
+stmtjava.sql.Statement:¤
+„
+zC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RegisterQuery.javaE (S
+addressjava.lang.StringB0".
+,logic.engineeringclasses.query.RegisterQueryH

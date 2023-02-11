@@ -1,6 +1,14 @@
-o
-javaS2068T'PASSWORD' detected in this expression, review this potentially hard-coded password. 2		 %;
-javaS2068 Remove this hard-coded password. 2/ 7;
-javaS2068 Remove this hard-coded password. 2/ 7¥
-javaS2077?Make sure using a dynamically formatted SQL query is safe here. 2:: :I
-GÝ99 P8SQL Query is dynamically formatted and assigned to 'sql'
+p
+javaS4507UMake sure this debug feature is deactivated before delivering the code in production. 2xx r
+javaS4507UMake sure this debug feature is deactivated before delivering the code in production. 2
+”” r
+javaS4507UMake sure this debug feature is deactivated before delivering the code in production. 2
+   r
+javaS4507UMake sure this debug feature is deactivated before delivering the code in production. 2
+ºº r
+javaS4507UMake sure this debug feature is deactivated before delivering the code in production. 2
+„„ r
+javaS4507UMake sure this debug feature is deactivated before delivering the code in production. 2
+¬¬ r
+javaS4507UMake sure this debug feature is deactivated before delivering the code in production. 2
+ÊÊ 

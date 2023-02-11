@@ -1,2 +1,2 @@
-logic.controller.guicontroller.second.general.Menu2GUI#setUp()V
+logic.controller.guicontroller.second.general.registration.RegisterGUI#viewResident(LObservableList;LDialogPane;)LObservableList;
 null

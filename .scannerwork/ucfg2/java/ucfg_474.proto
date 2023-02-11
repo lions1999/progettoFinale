@@ -1,39 +1,57 @@
 
-llogic.engineeringclasses.query.FeeQuery#checkApt(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java ($"1*ê	
+ulogic.engineeringclasses.query.FeeQuery#loadAvailableFees(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (-"1*Ð
 1
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (Bô
-ñ
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (Bþ
+û
 
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (J
-%0java.lang.String"__concat*/-
-+SELECT fee_apt FROM pastfee where fee_apt='*
-
-aptIdjava.lang.StringÇ
-Ä
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (L
+%0java.lang.String"__concat*²
 
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (O
-%1java.lang.String"__concat*
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (B/-
++SELECT * FROM condominiums where con_addr='* 
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.javaE (L
+
+addressjava.lang.StringÏ
+Ì
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (Q
+%1java.lang.String"__concat*›
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (L
 
-%0java.lang.String*
-'½
-º
+%0java.lang.String*ˆ
 
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (P
-sqljava.lang.String"__id*
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.javaN (Q
+'Ù
+Ö
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (R
+sqljava.lang.String"__id*4
+
+__unknown_file (
 
-%1java.lang.StringÂ¿
+%1java.lang.Stringú÷
 
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (%
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (%
+%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*8
+
+__unknown_file (
 
-stmtjava.sql.Statement*
+stmtjava.sql.Statement*5
+
+__unknown_file (
 
 sqljava.lang.String2 executeQuery(Ljava/lang/String;)"
 
-uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (&
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java (&
 
-%2java.sql.ResultSet:
-stmtjava.sql.Statement:
-aptIdjava.lang.StringB+")
-'logic.engineeringclasses.query.FeeQuery
+%2java.sql.ResultSet:
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java. (=
+stmtjava.sql.Statement:ž
+
+uC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/FeeQuery.java> (L
+addressjava.lang.StringB+")
+'logic.engineeringclasses.query.FeeQueryH

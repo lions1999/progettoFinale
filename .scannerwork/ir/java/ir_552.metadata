@@ -1,1 +1,2 @@
-logic.engineeringclasses.bean.RateBean#setRateBeanId(Ljava/lang/String;)V
+logic.controller.guicontroller.second.general.home.PostGUI#setUpPost(LPostBean;)V
+null

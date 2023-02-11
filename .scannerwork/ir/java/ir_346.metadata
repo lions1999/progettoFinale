@@ -1,5 +1,1 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableGUI#style()V
-java.lang.Object#getClass()Ljava/lang/Class;
-java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;
-java.net.URL#toExternalForm()Ljava/lang/String;
-java.util.Objects#requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+logic.engineeringclasses.exception.InputException#<init>(Ljava/lang/String;)V

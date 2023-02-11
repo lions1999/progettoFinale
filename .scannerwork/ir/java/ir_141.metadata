@@ -1,1 +1,1 @@
-logic.model.User#setUsrRole(Ljava/lang/String;)V
+logic.model.User#getUsrPwd()Ljava/lang/String;

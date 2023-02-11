@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.PostController#addPost(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;)V
+logic.controller.guicontroller.first.resident.ContactGUI#disableSend()V

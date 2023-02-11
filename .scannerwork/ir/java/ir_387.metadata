@@ -1,1 +1,1 @@
-logic.engineeringclasses.query.UserQuery#<init>()V
+logic.controller.applicationcontroller.RegisterController#loadRegistration(Ljava/lang/String;)LObservableList;

@@ -1,1 +1,2 @@
-logic.model.Post#getId()Ljava/lang/String;
+logic.controller.guicontroller.ChartGUI#value(Ljava/util/List;Ljava/util/List;)LObservableList;
+null

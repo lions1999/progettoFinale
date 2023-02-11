@@ -1,39 +1,57 @@
 
 rlogic.engineeringclasses.query.RateQuery#getRatesOwner(Ljava/sql/Statement;Ljava/lang/String;)Ljava/sql/ResultSet;Ä
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java ()"1*ı	
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java ()"1*·
 1Ä
-vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (>Ù
-Ò
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (>Ä
+˝
 Ä
 vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (F
-%0java.lang.String"__concat*+)
-'SELECT * FROM rating WHERE rate_own = '*
+%0java.lang.String"__concat*∞
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (>+)
+'SELECT * FROM rating WHERE rate_own = '*¢
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java? (F
 
-ownerIDjava.lang.String 
-«
+ownerIDjava.lang.String÷
+”
 Ä
 vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (K
-%1java.lang.String"__concat*
+%1java.lang.String"__concat*ù
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (F
 
-%0java.lang.String*
-' ø
-º
+%0java.lang.String*ã
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.javaG (K
+' €
+ÿ
 Ä
 vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (L
-sqljava.lang.String"__id*
+sqljava.lang.String"__id*4
+
+__unknown_file (
 
-%1java.lang.Stringƒ¡
+%1java.lang.String¸˘
 Ä
 vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (%
-%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*
+%2java.sql.ResultSet"Gjava.sql.Statement#executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;*8
+
+__unknown_file (
 
-stmtjava.sql.Statement*
+stmtjava.sql.Statement*5
+
+__unknown_file (
 
 sqljava.lang.String2 executeQuery(Ljava/lang/String;)"ü
 Ä
 vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java (&
 
-%2java.sql.ResultSet:
-stmtjava.sql.Statement:
+%2java.sql.ResultSet:ü
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java* (9
+stmtjava.sql.Statement:†
+Ä
+vC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/query/RateQuery.java: (H
 ownerIDjava.lang.StringB,"*
-(logic.engineeringclasses.query.RateQuery
+(logic.engineeringclasses.query.RateQueryH

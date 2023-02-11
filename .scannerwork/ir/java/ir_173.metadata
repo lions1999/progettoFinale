@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.RegistrationBean#instance-init#
+logic.engineeringclasses.bean.PostBean#getPostImage()Ljava/io/InputStream;

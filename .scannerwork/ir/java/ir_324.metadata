@@ -1,1 +1,1 @@
-logic.controller.guicontroller.second.general.home.AddPostGUI#getMsg()Ljava/lang/String;
+logic.model.Fee#getAvailableWifi()Z

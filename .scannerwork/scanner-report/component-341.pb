@@ -1,1 +1,1 @@
-Õ 2javaXOhr;Condominium/src/logic/engineeringclasses/bean/UserBean.java
+Õ 2javaX}hrjCondominium/src/logic/controller/guicontroller/second/admin/requests/registration/RegistrationItemGUI.java

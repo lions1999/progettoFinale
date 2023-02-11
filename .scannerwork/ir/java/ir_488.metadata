@@ -1,1 +1,3 @@
-logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#getRegistered()Llogic/engineeringclasses/bean/RegistrationBean;
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#btnAddClick()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#residentAdd()V
+logic.controller.guicontroller.first.admin.requests.registration.RegistrationTableDetailGUI#ownerAdd()V

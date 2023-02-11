@@ -1,1 +1,2 @@
-logic.model.Post#<init>(Ljava/lang/String;Ljava/lang/String;Llogic/model/Role;Ljava/lang/String;Ljava/io/InputStream;)V
+logic.controller.guicontroller.ChartGUI#newSeries(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)LXYChart;
+null

@@ -1,1 +1,1 @@
-Á 2javaX*hrRCondominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java
+Á 2javaXihrLCondominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java

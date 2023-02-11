@@ -1,66 +1,89 @@
 
-_logic.engineeringclasses.dao.SqlDAO#prepConnect(Ljava/lang/String;)Ljava/sql/PreparedStatement;{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java ("1*â
-1{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java (Â
-‚
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java (<
-%0"9java.sql.DriverManager#registerDriver(Ljava/sql/Driver;)V*"
-java.sql.DriverManager*
-""¶
-£
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java& ()
-%1java.lang.String"__id*
-""¶
-£
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java* (.
-%2java.lang.String"__id*
-""¶
-£
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java/ (7
-%3java.lang.String"__id*
-""¯
-ı
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java
- (8
-%4java.sql.Connection"qjava.sql.DriverManager#getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;*"
-java.sql.DriverManager*
+ælogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#setBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/UserBean;ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java   ("1*¿
+1ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java! !(&˘ˆ
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java! !($,
+%0&logic.engineeringclasses.bean.UserBean"&logic.engineeringclasses.bean.UserBeanß
+§
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java! !(&
+%1"0logic.engineeringclasses.bean.UserBean#<init>()V*J
+
+__unknown_file (.
+,
+%0&logic.engineeringclasses.bean.UserBean•
+¢
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java! !('.
+bean&logic.engineeringclasses.bean.UserBean"__id*J
+
+__unknown_file (.
+,
+%0&logic.engineeringclasses.bean.UserBeanóî
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java" "(
+
+%2void"Dlogic.engineeringclasses.bean.UserBean#setUsrID(Ljava/lang/String;)V*L
+
+__unknown_file (0
+.
+bean&logic.engineeringclasses.bean.UserBean*4
+
+__unknown_file (
 
-%1java.lang.String*
-
-%2java.lang.String*
-
-%3java.lang.String‘
-—
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java (8/%
-#logic.engineeringclasses.dao.SqlDAO"
-conn"__id*
+idjava.lang.String2setUsrID(Ljava/lang/String;)ùö
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java# #(
+
+%3void"Flogic.engineeringclasses.bean.UserBean#setUsrName(Ljava/lang/String;)V*L
+
+__unknown_file (0
+.
+bean&logic.engineeringclasses.bean.UserBean*6
+
+__unknown_file (
+
+namejava.lang.String2setUsrName(Ljava/lang/String;)†ù
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java$ $(
+
+%4void"Glogic.engineeringclasses.bean.UserBean#setUsrEmail(Ljava/lang/String;)V*L
+
+__unknown_file (0
+.
+bean&logic.engineeringclasses.bean.UserBean*7
+
+__unknown_file (
 
-%4java.sql.Connection‘
-—
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java
- (
-%5java.sql.Connection"__id*1*/%
-#logic.engineeringclasses.dao.SqlDAO"
-conn÷”
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java
- ($ 
-%6java.sql.PreparedStatement"Tjava.sql.Connection#prepareStatement(Ljava/lang/String;)Ljava/sql/PreparedStatement;*
-
-%5java.sql.Connection*
+emailjava.lang.String2setUsrEmail(Ljava/lang/String;)öó
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java% %(
+
+%5void"Elogic.engineeringclasses.bean.UserBean#setUsrPwd(Ljava/lang/String;)V*L
+
+__unknown_file (0
+.
+bean&logic.engineeringclasses.bean.UserBean*5
+
+__unknown_file (
 
-sqljava.lang.String2$prepareStatement(Ljava/lang/String;)"°
-{
-qC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/engineeringclasses/dao/SqlDAO.java (%"
- 
-%6java.sql.PreparedStatement:
-sqljava.lang.StringB'%
-#logic.engineeringclasses.dao.SqlDAO
+pwdjava.lang.String2setUsrPwd(Ljava/lang/String;)"“
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java& &(0
+.
+bean&logic.engineeringclasses.bean.UserBean:∏
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java   ('
+idjava.lang.String:∫
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java '  (3
+namejava.lang.String:ª
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java 4  (A
+emailjava.lang.String:π
+ù
+íC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/admin/condominium/UpdateInfoGUI.java B  (L
+pwdjava.lang.StringBHF
+Dlogic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI

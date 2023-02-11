@@ -1,91 +1,127 @@
 
 {logic.controller.guicontroller.first.general.Menu1GUI#setUpPost(Llogic/model/Post;)Llogic/engineeringclasses/bean/PostBean;é
-ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.java ("1*¿ 
+ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.java ("1*ú$
 1ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÄ Ä(&ÏÈ
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÄ Ä($,
-%0&logic.engineeringclasses.bean.PostBean"&logic.engineeringclasses.bean.PostBean˛
-˚
+%0&logic.engineeringclasses.bean.PostBean"&logic.engineeringclasses.bean.PostBeanö
+ó
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÄ Ä(&
-%1"0logic.engineeringclasses.bean.PostBean#<init>()V*.
+%1"0logic.engineeringclasses.bean.PostBean#<init>()V*J
+
+__unknown_file (.
 ,
-%0&logic.engineeringclasses.bean.PostBean¸
-˘
+%0&logic.engineeringclasses.bean.PostBeanò
+ï
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÄ Ä('.
-post&logic.engineeringclasses.bean.PostBean"__id*.
+post&logic.engineeringclasses.bean.PostBean"__id*J
+
+__unknown_file (.
 ,
-%0&logic.engineeringclasses.bean.PostBeanˇ¸
+%0&logic.engineeringclasses.bean.PostBeanõò
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÅ Å(#
-%2java.lang.String"*logic.model.Post#getId()Ljava/lang/String;*
+%2java.lang.String"*logic.model.Post#getId()Ljava/lang/String;*6
 
-currlogic.model.Post2getId()‘—
+__unknown_file (
+
+currlogic.model.Post2getId()åâ
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÅ Å($
 
-%3void"Elogic.engineeringclasses.bean.PostBean#setPostId(Ljava/lang/String;)V*0
+%3void"Elogic.engineeringclasses.bean.PostBean#setPostId(Ljava/lang/String;)V*L
+
+__unknown_file (0
 .
-post&logic.engineeringclasses.bean.PostBean*
+post&logic.engineeringclasses.bean.PostBean*4
+
+__unknown_file (
 
-%2java.lang.String2setPostId(Ljava/lang/String;)ãà
+%2java.lang.String2setPostId(Ljava/lang/String;)ß§
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÇ Ç()
-%4java.io.InputStream"0logic.model.Post#getImage()Ljava/io/InputStream;*
+%4java.io.InputStream"0logic.model.Post#getImage()Ljava/io/InputStream;*6
+
+__unknown_file (
 
 currlogic.model.Post2
-getImage()„‡
+getImage()õò
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÇ Ç(*
 
-%5void"Klogic.engineeringclasses.bean.PostBean#setPostImage(Ljava/io/InputStream;)V*0
+%5void"Klogic.engineeringclasses.bean.PostBean#setPostImage(Ljava/io/InputStream;)V*L
+
+__unknown_file (0
 .
-post&logic.engineeringclasses.bean.PostBean*
+post&logic.engineeringclasses.bean.PostBean*7
+
+__unknown_file (
 
-%4java.io.InputStream2#setPostImage(Ljava/io/InputStream;)ÉÄ
+%4java.io.InputStream2#setPostImage(Ljava/io/InputStream;)üú
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÉ É('
-%6logic.model.Role",logic.model.Post#getRole()Llogic/model/Role;*
+%6logic.model.Role",logic.model.Post#getRole()Llogic/model/Role;*6
 
-currlogic.model.Post2	getRole()ÿ’
+__unknown_file (
+
+currlogic.model.Post2	getRole()êç
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÉ É((
 
-%7void"Glogic.engineeringclasses.bean.PostBean#setPostRole(Llogic/model/Role;)V*0
+%7void"Glogic.engineeringclasses.bean.PostBean#setPostRole(Llogic/model/Role;)V*L
+
+__unknown_file (0
 .
-post&logic.engineeringclasses.bean.PostBean*
+post&logic.engineeringclasses.bean.PostBean*4
+
+__unknown_file (
 
-%6logic.model.Role2setPostRole(Llogic/model/Role;)ÉÄ
+%6logic.model.Role2setPostRole(Llogic/model/Role;)üú
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÑ Ñ('
-%8java.lang.String",logic.model.Post#getText()Ljava/lang/String;*
+%8java.lang.String",logic.model.Post#getText()Ljava/lang/String;*6
 
-currlogic.model.Post2	getText()ÿ’
+__unknown_file (
+
+currlogic.model.Post2	getText()êç
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÑ Ñ((
 
-%9void"Glogic.engineeringclasses.bean.PostBean#setPostText(Ljava/lang/String;)V*0
+%9void"Glogic.engineeringclasses.bean.PostBean#setPostText(Ljava/lang/String;)V*L
+
+__unknown_file (0
 .
-post&logic.engineeringclasses.bean.PostBean*
+post&logic.engineeringclasses.bean.PostBean*4
+
+__unknown_file (
 
-%8java.lang.String2setPostText(Ljava/lang/String;)ÑÅ
+%8java.lang.String2setPostText(Ljava/lang/String;)†ù
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÖ Ö('
-%10java.lang.String",logic.model.Post#getUser()Ljava/lang/String;*
+%10java.lang.String",logic.model.Post#getUser()Ljava/lang/String;*6
 
-currlogic.model.Post2	getUser()⁄◊
+__unknown_file (
+
+currlogic.model.Post2	getUser()íè
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÖ Ö((
-%11void"Glogic.engineeringclasses.bean.PostBean#setPostUser(Ljava/lang/String;)V*0
+%11void"Glogic.engineeringclasses.bean.PostBean#setPostUser(Ljava/lang/String;)V*L
+
+__unknown_file (0
 .
-post&logic.engineeringclasses.bean.PostBean*
+post&logic.engineeringclasses.bean.PostBean*5
+
+__unknown_file (
 
 %10java.lang.String2setPostUser(Ljava/lang/String;)"≈
 ê
 ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.javaÜ Ü(0
 .
-post&logic.engineeringclasses.bean.PostBean:
+post&logic.engineeringclasses.bean.PostBean:´
+é
+ÉC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/Menu1GUI.java ('
 currlogic.model.PostB97
-5logic.controller.guicontroller.first.general.Menu1GUI
+5logic.controller.guicontroller.first.general.Menu1GUIH

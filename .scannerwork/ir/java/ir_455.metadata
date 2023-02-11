@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.FeeBean#setFeePark(Ljava/lang/Double;)V
+logic.engineeringclasses.bean.FeeBean#setApt(Ljava/lang/String;)V

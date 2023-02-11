@@ -1,1 +1,1 @@
-Ñ 2javaX3hrBCondominium/src/logic/engineeringclasses/bean/MeetRequestBean.java
+Ñ 2javaX1hr`Condominium/src/logic/controller/guicontroller/second/admin/condominium/UpdateRatingItemGUI.java

@@ -1,21 +1,9 @@
 
-Ulogic.controller.guicontroller.second.general.home.AddPostGUI#getFile()Ljava/io/File;–
-‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java# #("2"1*Ô
-2–
-‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java% %(ƒ
-€
-–
-‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java% %(
-%0java.io.File"__id*K*I?
-=logic.controller.guicontroller.second.general.home.AddPostGUI"
-file"¯
-–
-‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java% %(
-
-%0java.io.File*À
-1–
-‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java' '("¡
-–
-‹C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/second/general/home/AddPostGUI.java' '(
-""BA?
-=logic.controller.guicontroller.second.general.home.AddPostGUI
+#logic.model.Fee#getAvailableWifi()Zg
+]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.javaZ Z(#"1*ß
+1g
+]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.java[ [("q
+g
+]C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Fee.java[ [(
+""B
+logic.model.FeeHP

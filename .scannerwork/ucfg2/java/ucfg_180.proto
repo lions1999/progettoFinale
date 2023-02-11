@@ -1,112 +1,90 @@
 
-‘logic.controller.guicontroller.first.general.FeeInfoGUI#feeBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/FeeBean;ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java^ ^("1*Ñ$
+hlogic.controller.guicontroller.first.general.FeeInfoGUI#getFees()Llogic/engineeringclasses/bean/FeeBean;ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java< <("1*¬
 1ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java_ _($ÍÁ
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java= =(¯
+ı
 ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java_ _("+
-%0%logic.engineeringclasses.bean.FeeBean"%logic.engineeringclasses.bean.FeeBean¸
-˘
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java_ _($
-%1"/logic.engineeringclasses.bean.FeeBean#<init>()V*-
-+
-%0%logic.engineeringclasses.bean.FeeBean˙
-˜
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java_ _(%-
-bean%logic.engineeringclasses.bean.FeeBean"__id*-
-+
-%0%logic.engineeringclasses.bean.FeeBeanÕ 
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java` `(
-
-%2void"Alogic.engineeringclasses.bean.FeeBean#setApt(Ljava/lang/String;)V*/
--
-bean%logic.engineeringclasses.bean.FeeBean*
-
-aptjava.lang.String2setApt(Ljava/lang/String;)°
-û
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javaa a(.
-%3java.lang.Double">java.lang.Double#valueOf(Ljava/lang/String;)Ljava/lang/Double;*"
-java.lang.Double*
-
-adminjava.lang.String÷”
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javaa a(/
-
-%4void"Flogic.engineeringclasses.bean.FeeBean#setFeeAdmin(Ljava/lang/Double;)V*/
--
-bean%logic.engineeringclasses.bean.FeeBean*
-
-%3java.lang.Double2setFeeAdmin(Ljava/lang/Double;)†
-ù
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javab b(,
-%5java.lang.Double">java.lang.Double#valueOf(Ljava/lang/String;)Ljava/lang/Double;*"
-java.lang.Double*
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java=3 =(K
+%0"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*W
 
-parkjava.lang.String‘—
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javab b(-
-
-%6void"Elogic.engineeringclasses.bean.FeeBean#setFeePark(Ljava/lang/Double;)V*/
--
-bean%logic.engineeringclasses.bean.FeeBean*
-
-%5java.lang.Double2setFeePark(Ljava/lang/Double;)†
-ù
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javac c(0
-%7java.lang.Double">java.lang.Double#valueOf(Ljava/lang/String;)Ljava/lang/Double;*"
-java.lang.Double*
+__unknown_file (;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*"
 
-elevjava.lang.String‹Ÿ
+__unknown_file (
+""¯
+ı
 ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javac c(1
-
-%8void"Ilogic.engineeringclasses.bean.FeeBean#setFeeElevator(Ljava/lang/Double;)V*/
--
-bean%logic.engineeringclasses.bean.FeeBean*
-
-%7java.lang.Double2"setFeeElevator(Ljava/lang/Double;)ü
-ú
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javad d(*
-%9java.lang.Double">java.lang.Double#valueOf(Ljava/lang/String;)Ljava/lang/Double;*"
-java.lang.Double*
-
-petjava.lang.String”–
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javad d(+
-%10void"Dlogic.engineeringclasses.bean.FeeBean#setFeePet(Ljava/lang/Double;)V*/
--
-bean%logic.engineeringclasses.bean.FeeBean*
-
-%9java.lang.Double2setFeePet(Ljava/lang/Double;)°
-û
-ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javae e(,
-%11java.lang.Double">java.lang.Double#valueOf(Ljava/lang/String;)Ljava/lang/Double;*"
-java.lang.Double*
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java> >(
+%1"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*W
 
-wifijava.lang.String÷”
+__unknown_file (;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*"
+
+__unknown_file (
+""¯
+ı
 ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javae e(-
-%12void"Elogic.engineeringclasses.bean.FeeBean#setFeeWifi(Ljava/lang/Double;)V*/
--
-bean%logic.engineeringclasses.bean.FeeBean*
-
-%11java.lang.Double2setFeeWifi(Ljava/lang/Double;)"ƒ
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java> >(-
+%2"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*W
+
+__unknown_file (;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*"
+
+__unknown_file (
+""¯
+ı
 ê
-ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.javaf f(/
--
-bean%logic.engineeringclasses.bean.FeeBean:
-aptjava.lang.String:
-adminjava.lang.String:
-parkjava.lang.String:
-elevjava.lang.String:
-petjava.lang.String:
-wifijava.lang.StringB;9
-7logic.controller.guicontroller.first.general.FeeInfoGUI
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java>. >(;
+%3"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*W
+
+__unknown_file (;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*"
+
+__unknown_file (
+""¯
+ı
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java>< >(J
+%4"]logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;*W
+
+__unknown_file (;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*"
+
+__unknown_file (
+""§
+°
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java= >(K
+%5"‘logic.controller.guicontroller.first.general.FeeInfoGUI#feeBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/FeeBean;*W
+
+__unknown_file (;9
+7logic.controller.guicontroller.first.general.FeeInfoGUI*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+
+%0*"
+
+__unknown_file (
+
+%1*"
+
+__unknown_file (
+
+%2*"
+
+__unknown_file (
+
+%3*"
+
+__unknown_file (
+
+%4"õ
+ê
+ÖC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/guicontroller/first/general/FeeInfoGUI.java= >(L
+
+%5B;9
+7logic.controller.guicontroller.first.general.FeeInfoGUIH

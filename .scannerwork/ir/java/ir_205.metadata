@@ -1,1 +1,1 @@
-logic.controller.guicontroller.first.general.FeeInfoGUI#noFee(LTextField;)V
+logic.model.Apartment#setFee(Ljava/lang/String;)V

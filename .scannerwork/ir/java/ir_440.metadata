@@ -1,1 +1,2 @@
-logic.engineeringclasses.dao.SqlDAO#<init>()V
+logic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#getBean()Llogic/engineeringclasses/bean/UserBean;
+logic.controller.guicontroller.first.admin.condominium.UpdateInfoGUI#setBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/UserBean;

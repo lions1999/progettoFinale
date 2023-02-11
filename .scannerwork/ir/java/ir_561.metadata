@@ -1,4 +1,1 @@
-logic.controller.guicontroller.first.owner.RateResidentGUI#instance-init#
-null
-logic.controller.applicationcontroller.ApartmentController#instance-init#
-logic.controller.applicationcontroller.ApartmentController#<init>()V
+logic.engineeringclasses.bean.RateBean#getResBeanId()Ljava/lang/String;

@@ -1,2 +1,1 @@
-logic.controller.guicontroller.first.owner.RateResidentGUI#submitUser()V
-null
+logic.engineeringclasses.bean.RateBean#getRateBeanVal()Ljava/lang/String;

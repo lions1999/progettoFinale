@@ -1,1 +1,3 @@
-logic.controller.guicontroller.second.general.home.AddPostGUI#getFile()Ljava/io/File;
+logic.controller.guicontroller.second.general.home.AddPostGUI#instance-init#
+logic.controller.applicationcontroller.PostController#<init>()V
+logic.controller.applicationcontroller.PostController#instance-init#

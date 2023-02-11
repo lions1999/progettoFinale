@@ -1,1 +1,3 @@
-logic.engineeringclasses.exception.PatternException#<init>(Ljava/lang/String;)V
+logic.controller.guicontroller.second.resident.ContactDialogGUI#instance-init#
+null
+logic.model.UserSingleton#getInstance()Llogic/model/UserSingleton;

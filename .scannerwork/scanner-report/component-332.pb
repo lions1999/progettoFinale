@@ -1,1 +1,1 @@
-Ì 2javaX2hrPCondominium/src/logic/controller/guicontroller/second/owner/RateResidentGUI.java
+Ì 2javaX/hrQCondominium/src/logic/controller/guicontroller/first/owner/RequestMeetingGUI.java

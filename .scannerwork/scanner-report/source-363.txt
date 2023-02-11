@@ -1,44 +1,47 @@
-package logic.model;
+package logic.engineeringclasses.bean;
 
-import java.util.List;
+public class RateBean {
 
+    private String rateId;
+    private String ownId;
+    private String resId;
+    private String rateVal;
+    private String rateTxt;
 
-public class Condominium {
-	
-	
-	private int codiceCondominio;
-	private String via;
-	private List<User> listaPartecipanti;
-	
-	public Condominium(int codiceCondominio,String via, List<User> listaPartecipanti) {
-		this.codiceCondominio = codiceCondominio;
-		this.via = via;
-		this.listaPartecipanti = listaPartecipanti;
-	}
+    public String getRateBeanId(){
+        return rateId;
+    }
 
-	public void setCodiceCondominio(int codiceCondominio) {
-		this.codiceCondominio = codiceCondominio;
-	}
-	
-	
-	public int getCodiceCondominio() {
-		return this.codiceCondominio;
-	}
-		
-	public void setVia(String via) {
-		this.via = via;
-	}
-	
-	public String getVia() {
-		return this.via;
-	}
-	
-	public void setlistaPartecipanti(List<User> listaPartecipanti) {
-		this.listaPartecipanti = listaPartecipanti;
-	}
-	
-	public List<User> getlistaPartecipanti() {
-		return this.listaPartecipanti;
-	}
-	
+    public void setRateBeanId(String rateId){
+        this.rateId = rateId;
+    }
+
+    public String getOwnBeanId() {return ownId;}
+
+    public void setOwnBeanId(String ownId) {
+        this.ownId = ownId;}
+
+    public String getResBeanId() {
+        return resId;
+    }
+
+    public void setResBeanId(String resId) {
+        this.resId = resId;
+    }
+
+    public String getRateBeanVal() {
+        return rateVal;
+    }
+
+    public void setRateBeanVal(String rateVal) {
+        this.rateVal = rateVal;
+    }
+
+    public String getRateBeanTxt() {
+        return rateTxt;
+    }
+
+    public void setRateBeanTxt(String rateTxt) {
+        this.rateTxt = rateTxt;
+    }
 }

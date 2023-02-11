@@ -1,16 +1,18 @@
-package logic.engineeringclasses.query;
+package logic.controller.guicontroller.second.owner;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import javafx.fxml.FXML;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.text.Text;
 
-public class CondominiumQuery {
+public class RateDialogGUI{
+    @FXML private ToggleGroup group1;
+    @FXML public Text titleTxt;
 
-	private CondominiumQuery(){}
-	
-	public static ResultSet selectAddressList(Statement stmt)  throws SQLException{
-		String sql = "SELECT con_addr FROM condominiums";
-		return stmt.executeQuery(sql);
-	}
 
+    public String submitValue(String string){
+        titleTxt.setText("What would you do with resident "+string+"?");
+        RadioButton selected = (RadioButton) group1.getSelectedToggle();
+        return selected.getText();
+    }
 }

@@ -1,1 +1,3 @@
-logic.controller.guicontroller.first.resident.ContactGUI#initialize(Ljava/net/URL;Ljava/util/ResourceBundle;)V
+logic.engineeringclasses.dao.RateDAO#instance-init#
+logic.engineeringclasses.dao.UserDAO#instance-init#
+logic.engineeringclasses.dao.UserDAO#<init>()V

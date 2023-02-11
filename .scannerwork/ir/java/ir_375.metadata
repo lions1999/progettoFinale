@@ -1,1 +1,1 @@
-logic.model.UserSingleton#getPastfee()Llogic/model/Fee;
+logic.model.UserSingleton#clearState()V

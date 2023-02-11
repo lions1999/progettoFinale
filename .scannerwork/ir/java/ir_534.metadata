@@ -1,1 +1,1 @@
-logic.model.Request#setReason(Ljava/lang/String;)V
+logic.model.Request#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V

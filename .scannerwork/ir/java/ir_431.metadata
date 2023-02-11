@@ -1,4 +1,2 @@
-logic.controller.applicationcontroller.ViewController#loader(Ljava/lang/String;I)LFXMLLoader;
+logic.controller.guicontroller.first.general.Main1GUI#start(LStage;)V
 null
-java.lang.Object#getClass()Ljava/lang/Class;
-java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;

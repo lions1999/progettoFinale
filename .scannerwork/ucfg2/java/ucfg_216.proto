@@ -1,16 +1,18 @@
 
-,logic.model.Post#getText()Ljava/lang/String;h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java5 5("1*¢
+,logic.model.Post#getRole()Llogic/model/Role;h
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java) )("1*¾
 1h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java6	 6(«
-¨
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java*	 *(Ç
+Ä
 h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java6	 6(
-%0java.lang.String"__id**
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java*	 *(
+%0logic.model.Role"__id*:
+
+__unknown_file (*
 logic.model.Post"
-text"„
+role"„
 h
-^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java6 6(
+^C:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/model/Post.java* *(
 
-%0java.lang.StringB
-logic.model.Post
+%0logic.model.RoleB
+logic.model.PostH

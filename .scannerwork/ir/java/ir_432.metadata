@@ -1,1 +1,1 @@
-logic.controller.applicationcontroller.ViewController#addImage(Llogic/model/Role;)Ljava/lang/String;
+logic.controller.guicontroller.first.general.Main1GUI#fullScreen(Ljava/lang/Boolean;)V

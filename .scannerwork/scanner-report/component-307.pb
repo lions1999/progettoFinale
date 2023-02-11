@@ -1,1 +1,1 @@
-³ 2javaX6hrMCondominium/src/logic/controller/guicontroller/first/owner/RatingUserGUI.java
+³ 2javaXˆhrNCondominium/src/logic/controller/applicationcontroller/RegisterController.java

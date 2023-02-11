@@ -1,78 +1,73 @@
-package logic.engineeringclasses.dao;
+package logic.controller.guicontroller.second.general.login;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import logic.engineeringclasses.query.RateQuery;
-import logic.model.Rate;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
+import logic.controller.applicationcontroller.LoginController;
+import logic.controller.applicationcontroller.ViewController;
+import logic.controller.guicontroller.AlertGUI;
+import logic.controller.guicontroller.second.general.AddressesDialogGUI;
+import logic.controller.guicontroller.second.general.Main2GUI;
+import logic.engineeringclasses.bean.UserBean;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import static logic.controller.guicontroller.second.general.Main2GUI.secondBorder;
 
-public class RateDAO extends SqlDAO{
+public class LoginGUI implements Initializable {
 
-    private final UserDAO userDao = new UserDAO();
+    private final LoginController controller = new LoginController();
+    private final ViewController view = new ViewController();
+    private final AlertGUI alert = new AlertGUI();
+    private final Main2GUI main = new Main2GUI();
 
-    public void rateResident(String resId, String ownId, int rate, String comment) throws SQLException {
-        try {
-            String sql = "INSERT INTO rating (rate_res,rate_own,rate_val,rate_txt) values (?,?,?,?)";
-            preset = prepConnect(sql);
-            preset.setString(1, resId);
-            preset.setString(2, ownId);
-            preset.setInt(3, rate);
-            preset.setString(4, comment);
-            preset.execute();
-        } finally {
-            disconnect();
+    @FXML private Text txtAddress;
+    @FXML private TextField tfEmail;
+    @FXML private TextField tfPwd;
+
+    public void onSelectCondominium() {
+        AddressesDialogGUI address = new AddressesDialogGUI();
+        txtAddress.setText(address.loadAddresses());
+    }
+
+    public void onSignClick() {
+        UserBean bean = loginBean(tfEmail.getText(), tfPwd.getText(), txtAddress.getText());
+        if (controller.login(bean)) {
+            Pane menu = view.getPage("Menu2",2);
+            secondBorder.setTop(menu);
+            main.fullScreen(true);
+        } else {
+            alert.alertError("Login/Error", "Incorrect Email or Password or Address", "Please Retry");
+            error();
         }
     }
 
-    public ObservableList<Rate> getRatesRes(String userId) throws SQLException {
-        ObservableList<Rate> rates = FXCollections.observableArrayList();
-        try {
-            connect();
-            ResultSet rs = RateQuery.getRates(stmt,userId);
-            while(rs.next()) {
-                String rateId = rs.getString("rate_id");
-                String rateRes = rs.getString("rate_res");
-                String rateOwn = rs.getString("rate_own");
-                String rateVal = rs.getString("rate_val");
-                String rateTxt = rs.getString("rate_txt");
-                Rate rate = new Rate(rateId,rateRes,userDao.checkNameByID(rateOwn),rateVal,rateTxt);
-                rates.add(rate);
-            }
-        }finally {
-            disconnect();
-        }
-        return rates;
+    public void onSignupClick() {
+        Pane pane = view.getPage("Register",2);
+        secondBorder.setCenter(pane);
     }
 
-
-    public ObservableList<Rate> getRatesOwner(String userId) throws SQLException {
-        ObservableList<Rate> rates = FXCollections.observableArrayList();
-        try {
-            connect();
-            ResultSet rs = RateQuery.getRatesOwner(stmt,userId);
-            while(rs.next()) {
-                String rateId = rs.getString("rate_id");
-                String rateRes = rs.getString("rate_res");
-                String rateVal = rs.getString("rate_val");
-                String rateTxt = rs.getString("rate_txt");
-                Rate rate = new Rate(rateId,userDao.checkNameByID(rateRes),rateVal,rateTxt);
-                rates.add(rate);
-            }
-        }finally {
-            disconnect();
-        }
-        return rates;
+    private void setUp() {
+        tfEmail.setText("admin");
+        tfPwd.setText("admin");
     }
 
-    public void deleteRate(String rateId) throws SQLException {
-        try{
-            connect();
-            String sql= "DELETE FROM rating WHERE rate_id='"+rateId+"'";
-            stmt.executeUpdate(sql);
-        } finally {
-            disconnect();
-        }
+    private void error() {
+        tfEmail.setText("");
+        tfPwd.setText("");
+    }
+
+    public UserBean loginBean(String email, String password, String address) {
+        UserBean user = new UserBean();
+        user.setUsrEmail(email);
+        user.setUsrPwd(password);
+        user.setUsrAddr(address);
+        return user;
+    }
+
+    @Override public void initialize(URL location, ResourceBundle resources) {
+        setUp();
     }
 }

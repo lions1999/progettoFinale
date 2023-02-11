@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.FeeBean#getFeeElevator()Ljava/lang/Double;
+logic.engineeringclasses.bean.FeeBean#getFeeAdmin()Ljava/lang/Double;

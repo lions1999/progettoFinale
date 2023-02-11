@@ -1,3 +1,4 @@
-logic.controller.guicontroller.first.general.FeeInfoGUI#getFees()Llogic/engineeringclasses/bean/FeeBean;
-logic.controller.guicontroller.first.general.FeeInfoGUI#feeBean(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Llogic/engineeringclasses/bean/FeeBean;
-logic.controller.guicontroller.first.general.FeeInfoGUI#format(LTextField;)Ljava/lang/String;
+logic.controller.guicontroller.first.general.FeeInfoGUI#checkErrorTf(LTextField;)Z
+java.lang.String#valueOf(I)Ljava/lang/String;
+java.lang.String#length()I
+java.lang.Double#parseDouble(Ljava/lang/String;)D

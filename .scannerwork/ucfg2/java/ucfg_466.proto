@@ -1,12 +1,12 @@
 
-›logic.controller.applicationcontroller.ApartmentController#checkUserAptFromNumber(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;“
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java1 1(("1*º
+nlogic.controller.applicationcontroller.ApartmentController#checkMailById(Ljava/lang/String;)Ljava/lang/String;“
+ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java- -("1*º
 1“
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java2 2("ž
+ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java. .("ž
 “
-ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java2 2(K
-"":
-	aptNumberjava.lang.String:
-condAddrjava.lang.String: 
-userRequiredjava.lang.StringB><
-:logic.controller.applicationcontroller.ApartmentController
+ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java. .()
+"":²
+“
+ˆC:/Users/david/OneDrive/Desktop/progettoFinale.git/trunk/Condominium/src/logic/controller/applicationcontroller/ApartmentController.java-  -(-
+userIdjava.lang.StringB><
+:logic.controller.applicationcontroller.ApartmentControllerH

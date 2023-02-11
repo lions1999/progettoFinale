@@ -1,1 +1,1 @@
-logic.engineeringclasses.bean.PostBean#getPostImage()Ljava/io/InputStream;
+logic.engineeringclasses.bean.PostBean#setPostRole(Llogic/model/Role;)V
