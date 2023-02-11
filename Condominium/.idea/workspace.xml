@@ -74,13 +74,13 @@
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last.edited.regexp" value="dasdsa" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jar/selenium-java-4.8.0/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="sonarlint" />
+    <property name="settings.editor.selected.configurable" value="com.obiscr.chatgpt.settings.ChatGPTSettingsPanel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -106,7 +106,7 @@
       <recent name="logic.controller.guicontroller.second" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main1GUI">
+  <component name="RunManager" selected="Application.SeleniumAPITest">
     <configuration name="Main1GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="logic.controller.guicontroller.first.general.Main1GUI" />
       <module name="Condominium" />
@@ -133,7 +133,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumAPITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.SeleniumAPITest" />
+      <module name="Condominium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumGUITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Condominium" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +155,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.AllTests" />
+      <option name="MAIN_CLASS_NAME" value="test.SeleniumGUITest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,14 +179,16 @@
       <item itemvalue="Application.Main1GUI" />
       <item itemvalue="Application.Main2GUI" />
       <item itemvalue="JUnit.test in Condominium" />
-      <item itemvalue="JUnit.AllTests" />
+      <item itemvalue="JUnit.SeleniumGUITest" />
+      <item itemvalue="Application.SeleniumAPITest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SeleniumAPITest" />
+        <item itemvalue="JUnit.SeleniumGUITest" />
         <item itemvalue="Application.Main1GUI" />
         <item itemvalue="Application.Main2GUI" />
         <item itemvalue="JUnit.test in Condominium" />
-        <item itemvalue="JUnit.AllTests" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +323,31 @@
       <workItem from="1665133778986" duration="106000" />
       <workItem from="1665389331360" duration="1566000" />
       <workItem from="1665737314086" duration="95000" />
-      <workItem from="1665992085661" duration="1959000" />
+      <workItem from="1665992085661" duration="2437000" />
+      <workItem from="1666181383175" duration="1000" />
+      <workItem from="1666278301004" duration="219000" />
+      <workItem from="1670577289561" duration="154000" />
+      <workItem from="1670578281864" duration="340000" />
+      <workItem from="1671717932067" duration="12000" />
+      <workItem from="1673347303172" duration="25000" />
+      <workItem from="1673423870164" duration="853000" />
+      <workItem from="1673426723527" duration="203000" />
+      <workItem from="1673428316209" duration="429000" />
+      <workItem from="1673435852335" duration="65000" />
+      <workItem from="1673436064236" duration="42000" />
+      <workItem from="1673530163920" duration="341000" />
+      <workItem from="1673555238272" duration="35000" />
+      <workItem from="1673619529799" duration="121000" />
+      <workItem from="1673628786069" duration="11000" />
+      <workItem from="1673959047547" duration="68000" />
+      <workItem from="1673971874349" duration="1962000" />
+      <workItem from="1674047399006" duration="53000" />
+      <workItem from="1674204308467" duration="17000" />
+      <workItem from="1674204922139" duration="2598000" />
+      <workItem from="1674207672146" duration="129000" />
+      <workItem from="1674209177101" duration="251000" />
+      <workItem from="1675879408550" duration="600000" />
+      <workItem from="1676029897651" duration="4669000" />
     </task>
     <task id="LOCAL-00001" summary="prova pack">
       <created>1638798010140</created>
