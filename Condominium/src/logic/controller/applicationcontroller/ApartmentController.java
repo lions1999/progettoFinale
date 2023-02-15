@@ -8,8 +8,6 @@ import java.sql.SQLException;
 
 public class ApartmentController {
 
-    int a;
-
     private final ApartmentDAO dao = new ApartmentDAO();
 
     public ObservableList<String> loadApartmentResident(String address) throws SQLException {

@@ -79,3 +79,5 @@ s
 Csrc/logic/controller/guicontroller/first/owner/RateResidentGUI.java,1\9\19bd7d64182122b8cb68e575a7ff63ffc5a86e06
 n
 >src/logic/controller/applicationcontroller/PostController.java,c\6\c6cfc28fbbdadb14d6965b885f27aeb889e17586
+n
+>src/logic/controller/applicationcontroller/ViewController.java,a\4\a459cf10086db8ce4a5c2bdff7ab2e85a5178cb8
