@@ -26,6 +26,7 @@ public class InfoDetailGUI {
     private final ViewController view = new ViewController();
     private final AlertGUI alert = new AlertGUI();
     static final String TITLE = "Condominium/Info";
+    public int a;
 
     @FXML private Button btnRemove;
     @FXML private Button btnRole;
